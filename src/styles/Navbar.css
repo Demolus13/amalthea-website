@@ -1,0 +1,27 @@
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .nav-items{
+        display: none;
+    }
+}

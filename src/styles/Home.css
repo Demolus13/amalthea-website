@@ -381,6 +381,31 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+    #aml{
+        font-size: 4rem;
+
+    }
+
+    #waw{
+        font-size: 3rem;
+  padding: 1rem;
+  margin-top: 2rem;
+    }
+
+    .waw-text{
+        font-size: 0.8rem !important;
+    }
+
+    .title h2, #ot h2{
+        font-size: 4rem;
+    }
+    .rule-book{
+        font-size:19px;
+}
+
+
+}
 @media screen and ((max-height: 500px)){
     .event-name{
         font-size: 300% !important;

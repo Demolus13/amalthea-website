@@ -176,3 +176,28 @@ body {
     background: linear-gradient(to left, blue, hotpink);
   }
 }
+
+@media screen and (max-width: 600px) {
+  .myheading {
+    margin: auto;
+    justify-content: center;
+    padding-bottom: 20px;
+    font-size: 80%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #design-and-head{
+    font-size: 60%;
+  }
+
+  .sponsor-card{
+    scale: 0.7;
+  }
+
+  .main{
+    padding: 5%;
+  }
+
+
+}

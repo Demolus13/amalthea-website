@@ -226,7 +226,7 @@ export default function Sponsors() {
               />
             </div>
           </div>
-          <h2 className="myheading divider line glow">
+          <h2 className="myheading divider line glow" id="design-and-head">
             DESIGN AND INNOVATION PARTNERS
           </h2>
           <div className="sponsor-section">

@@ -164,6 +164,7 @@ body {
   &:after {
     height: 6px;
     -webkit-filter: blur(5px);
+    filter: blur(5px);
     border-radius: 5px;
   }
 

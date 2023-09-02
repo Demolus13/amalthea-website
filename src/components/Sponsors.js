@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "../styles/Sponsors.css";
 import Footer from "./Footer.js";
 
-export default function Symposium() {
+export default function Sponsors() {
   useEffect(() => {
     const H = window.innerHeight;
     window.onbeforeunload = () => {
@@ -64,11 +64,11 @@ export default function Symposium() {
           <h2 className="myheading divider line glow">PLATINUM SPONSORS</h2>
           <div className="sponsor-section">
             <div className="sponsor-card">
-              <img src="../Sponsors/jsw.png" alt="JSW logo" />
+              <img src="../Images/jsw.png" alt="JSW logo" />
             </div>
             <div className="sponsor-card">
               <img
-                src="../Sponsors/indextb.png"
+                src="../Images/indextb.png"
                 style={{ height: "80%" }}
                 alt="indextb logo"
               />
@@ -78,7 +78,7 @@ export default function Symposium() {
           <div className="sponsor-section">
             <div className="sponsor-card">
               <img
-                src="../Sponsors/gsmda.jpeg"
+                src="../Images/gsmda.jpeg"
                 alt="GSMDA logo"
                 style={{ width: 200 }}
               />
@@ -86,7 +86,7 @@ export default function Symposium() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your platinum sponsor */}
               <img
-                src="../Sponsors/CPwhite.png"
+                src="../Images/CPwhite.png"
                 style={{ width: 200 }}
                 alt="cp logo"
               />
@@ -99,7 +99,7 @@ export default function Symposium() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your gold sponsor */}
               <img
-                src="../Sponsors/adityabirla.png"
+                src="../Images/adityabirla.png"
                 alt="Aditya Birla logo"
                 style={{ width: 250 }}
               />
@@ -107,7 +107,7 @@ export default function Symposium() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your gold sponsor */}
               <img
-                src="../Sponsors/./gujaratmaritimeboard.png"
+                src="../Images/./gujaratmaritimeboard.png"
                 style={{ width: 200 }}
                 alt="Gujarat Maritime Board logo"
               />
@@ -115,7 +115,7 @@ export default function Symposium() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your gold sponsor */}
               <img
-                src="../Sponsors/metro.png"
+                src="../Images/metro.png"
                 alt="Metro logo"
                 style={{ width: 200 }}
               />
@@ -128,19 +128,19 @@ export default function Symposium() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your silver sponsor */}
               <img
-                src="../Sponsors/vrajgroupwhite.png"
+                src="../Images/vrajgroupwhite.png"
                 alt="Vraj Group logo"
                 style={{ width: 200 }}
               />
             </div>
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your silver sponsor */}
-              <img src="../Sponsors/GP.png" alt="GP logo" />
+              <img src="../Images/GP.png" alt="GP logo" />
             </div>
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your silver sponsor */}
               <img
-                src="../Sponsors/AC.png"
+                src="../Images/AC.png"
                 alt="AC logo"
                 style={{ width: 200 }}
               />
@@ -153,7 +153,7 @@ export default function Symposium() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your other sponsor */}
               <img
-                src="../Sponsors/ITC.png"
+                src="../Images/ITC.png"
                 alt="ITC logo"
                 style={{ width: 200 }}
               />
@@ -161,38 +161,38 @@ export default function Symposium() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your other sponsor */}
               <img
-                src="../Sponsors/nutanix.png"
+                src="../Images/nutanix.png"
                 alt="nutanix logo"
                 style={{ height: 70 }}
               />
             </div>
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your other sponsor */}
-              <img src="../Sponsors/Reliance.png" alt="reliance logo" />
+              <img src="../Images/Reliance.png" alt="reliance logo" />
             </div>
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your other sponsor */}
-              <img src="../Sponsors/crazylabs.png" alt="crazylabs logo" />
+              <img src="../Images/crazylabs.png" alt="crazylabs logo" />
             </div>
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your other sponsor */}
-              <img src="../Sponsors/redbull.png" alt="redbull logo" />
+              <img src="../Images/redbull.png" alt="redbull logo" />
             </div>
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your other sponsor */}
               <img
-                src="../Sponsors/tatachemicals.png"
+                src="../Images/tatachemicals.png"
                 alt="tata chemicals logo"
               />
             </div>
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your other sponsor */}
-              <img src="../Sponsors/codechef.png" alt="codechef logo" />
+              <img src="../Images/codechef.png" alt="codechef logo" />
             </div>
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your other sponsor */}
               <img
-                src="../Sponsors/wazirx.png"
+                src="../Images/wazirx.png"
                 alt="wazrix logo"
                 style={{ width: 200 }}
               />
@@ -200,7 +200,7 @@ export default function Symposium() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your other sponsor */}
               <img
-                src="../Sponsors/adani.png"
+                src="../Images/adani.png"
                 alt="adani logo"
                 style={{ height: 120 }}
               />
@@ -208,7 +208,7 @@ export default function Symposium() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your other sponsor */}
               <img
-                src="../Sponsors/beamable.png"
+                src="../Images/beamable.png"
                 alt="beamable logo"
                 style={{ height: 70 }}
               />
@@ -220,7 +220,7 @@ export default function Symposium() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your silver sponsor */}
               <img
-                src="../Sponsors/jklakshmi.png"
+                src="../Images/jklakshmi.png"
                 alt="JK Lakshmi cement logo"
                 style={{ height: 100 }}
               />
@@ -234,7 +234,7 @@ export default function Symposium() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your silver sponsor */}
               <img
-                src="../Sponsors/htc.png"
+                src="../Images/htc.png"
                 alt="htc logo"
                 style={{ height: 150 }}
               />
@@ -242,7 +242,7 @@ export default function Symposium() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your silver sponsor */}
               <img
-                src="../Sponsors/isro.png"
+                src="../Images/isro.png"
                 alt="isro logo"
                 style={{ width: 200 }}
               />
@@ -250,7 +250,7 @@ export default function Symposium() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your silver sponsor */}
               <img
-                src="../Sponsors/apple.png"
+                src="../Images/apple.png"
                 alt="apple logo"
                 style={{ width: 200 }}
               />
@@ -258,7 +258,7 @@ export default function Symposium() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your silver sponsor */}
               <img
-                src="../Sponsors/microsoft.png"
+                src="../Images/microsoft.png"
                 alt="microsoft logo"
                 style={{ height: 100 }}
               />

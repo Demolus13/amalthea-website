@@ -9,6 +9,7 @@ export default function Home() {
             window.scrollTo(0, 0);
         };
 
+        const body = document.querySelector('.home-body');
         const circle = document.querySelector('.circle');
         const L1 = document.querySelectorAll('.L1');
         const L2 = document.querySelectorAll('.L2');
@@ -21,6 +22,7 @@ export default function Home() {
         const tt = document.querySelectorAll('.title');
         const unit = document.getElementById('unit');
         const event_unit = document.querySelectorAll('.event-unit');
+        body.style.height = `${34*H}px`
 
         const handleScroll = () => {
             const scroll = window.scrollY;
@@ -195,31 +197,34 @@ export default function Home() {
             <div id="unit" style={{ zIndex: -4 }}>
                 <div className="subunit">
                     <div className="gallery-item item-1">
-                        <img className="gallery-img" src="./Images/Drone.png" alt="" />
+                        <img className="gallery-img" src="./Images/conclave1.jpeg" alt="" />
                     </div>
                     <div className="gallery-item item-2">
-                        <img className="gallery-img" src="./Images/Drone.png" alt="" />
+                        <img className="gallery-img" src="./Images/conclave2.JPG" alt="" />
                     </div>
                     <div className="gallery-item item-3">
-                        <img className="gallery-img" src="./Images/Drone.png" alt="" />
+                        <img className="gallery-img" src="./Images/conclave3.jpeg" alt="" />
                     </div>
                     <div className="gallery-item item-4">
-                        <img className="gallery-img" src="./Images/Drone.png" alt="" />
+                        <img className="gallery-img" src="./Images/conclave4.jpeg" alt="" />
                     </div>
                 </div>
                 <div className="subunit"></div>
                 <div className="subunit">
                     <div className="gallery-item item-1">
-                        <img className="gallery-img" src="./Images/Drone.png" alt="" />
+                        <img className="gallery-img" src="./Images/expo1.jpeg" alt="" />
                     </div>
                     <div className="gallery-item item-2">
-                        <img className="gallery-img" src="./Images/Drone.png" alt="" />
+                        <img className="gallery-img" src="./Images/expo2.jpeg" alt="" />
                     </div>
                     <div className="gallery-item item-3">
-                        <img className="gallery-img" src="./Images/Drone.png" alt="" />
+                        <img className="gallery-img" src="./Images/expo3.jpg" alt="" />
                     </div>
                     <div className="gallery-item item-4">
-                        <img className="gallery-img" src="./Images/Drone.png" alt="" />
+                        <img className="gallery-img" src="./Images/expo4.jpeg" alt="" />
+                    </div>
+                    <div className="gallery-item item-5">
+                        <img className="gallery-img" src="./Images/expo5.jpeg" alt="" />
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "../styles/Sponsors.css";
-import Footer from "./Footer/Footer";
+import Footer from "./Footer.js";
 
 export default function Symposium() {
   useEffect(() => {

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css";
+import "../styles/Footer.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
@@ -75,7 +75,7 @@ const Footer = () => {
                     </div>
                     <ul>
                       <li>
-                        <a href="#">Home</a>
+                        <a href="/">Home</a>
                       </li>
                       <li>
                         <a href="#">about</a>

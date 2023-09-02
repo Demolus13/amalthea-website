@@ -1,7 +1,177 @@
-.sponsors-body {
-    width: 100%;
-    height: 200vh;
-    background-color: black;
-    position: absolute;
-    z-index: -1;
+body {
+  font-family: Arial, sans-serif;
+  /* Changed the background-color to black */
+  background-color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.content {
+  position: relative;
+  top: 100vh;
+}
+
+.main {
+  position: relative;
+  padding: 90px;
+}
+
+.myheading {
+  font-size: 40px;
+  margin-bottom: 10px;
+  /* Added a slide-in animation for the headings */
+  animation: slide-in 1s ease-in-out;
+}
+
+.main p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  /* Changed the color to light gray */
+  color: #ccc;
+  /* Added a color change effect for the paragraphs */
+  transition: color 0.5s ease-in-out;
+}
+
+.main p:hover {
+  /* color: #333; */
+  color: rgb(200, 177, 233);
+}
+
+.sponsor-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  animation: slide-out 1s ease-in-out;
+}
+
+.sponsor-card {
+  width: 300px;
+  height: 200px;
+  /* Changed the border color to light gray */
+  /* border: 1px solid #ccc; */
+  /* border-radius: 10px; */
+  /* Changed the box-shadow color to dark gray */
+  /* box-shadow: 2px 2px 5px rgba(50,50,50,0.5); */
+  margin: 10px;
+  overflow: hidden;
+  /* Added a zoom-in effect for the sponsor cards */
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  /* Use flexbox layout */
+  vertical-align: middle;
+  justify-content: center;
+  /* Center items horizontally */
+  align-items: center;
+  /* Center items vertically */
+}
+
+.sponsor-card img {
+  width: 100%;
+  height: 100%;
+  /* object-fit:
+        cover;  */
+  /* max-width: 100%;
+        width: auto; */
+}
+
+.sponsor-card:hover {
+  transform: scale(1.1);
+}
+
+/* .footer { 
+    
+     background-color:
+        #222; 
+     color:
+        white; 
+     padding:
+        20px; 
+     text-align:
+        center; 
+      
+      animation:
+         fade-in 1s ease-in-out; 
+} 
+
+.footer p { 
+     font-size:
+        16px;            
+}  */
+.myheading {
+  color: rgb(200, 177, 233);
+  text-align: center;
+}
+
+/* CSS code for defining the keyframes of the animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-25%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(25%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* Horizontal lines */
+.divider {
+  display: flex;
+
+  &:before,
+  &:after {
+    content: "";
+    flex: 1;
+  }
+}
+
+.line {
+  align-items: center;
+  margin: 1em -1em;
+
+  &:before,
+  &:after {
+    height: 1px;
+    margin: 0 1em;
+  }
+}
+
+.glow {
+  &:before,
+  &:after {
+    height: 6px;
+    -webkit-filter: blur(5px);
+    border-radius: 5px;
+  }
+
+  &:before {
+    background: linear-gradient(to right, blue, hotpink);
+  }
+
+  &:after {
+    background: linear-gradient(to left, blue, hotpink);
+  }
 }

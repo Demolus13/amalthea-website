@@ -6,6 +6,7 @@ import Conclave from './components/Conclave';
 import Symposium from './components/Symposium';
 import TechExpo from './components/TechExpo';
 import Sponsors from './components/Sponsors';
+import WIT from './components/WIT';
 import {Routes, Route} from 'react-router-dom';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Route path='/symposium' element={<Symposium/>}/>
       <Route path='/tech-expo' element={<TechExpo/>}/>
       <Route path='/sponsors' element={<Sponsors/>}/>
+      <Route path='/women-in-tech' element={<WIT/>}/>
     </Routes>
     </>
   );

@@ -185,10 +185,11 @@ body {
     font-size: 80%;
     padding-left: 0px;
     padding-right: 0px;
+    font-size: 1.15rem;
   }
 
   #design-and-head{
-    font-size: 60%;
+    font-size: 0.95rem;
   }
 
   .sponsor-card{

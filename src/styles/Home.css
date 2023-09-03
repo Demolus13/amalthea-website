@@ -271,6 +271,7 @@
   inset: 0px;
   top: 100vh;
   bottom: -100vh;
+  border: 5px double #d121a5;
 }
 
 .event {

@@ -271,7 +271,7 @@
   inset: 0px;
   top: 100vh;
   bottom: -100vh;
-  border: 5px double #d121a5;
+  
 }
 
 .event {
@@ -283,6 +283,7 @@
   border-radius: 5vh;
   background-size: cover;
   background-position: center;
+  border: 5px solid white;
 }
 
 .event:nth-child(2) {

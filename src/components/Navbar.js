@@ -15,26 +15,6 @@ export default function Navbar() {
 
   return (
     <div id="navbar" className="poppins">
-      <div className="amalthea">
-        <a href="/">AMALTHEA'23</a>
-      </div>
-      <div className="nav-items">
-        <div className="item">
-          <a href="/events">EVENTS</a>
-        </div>
-        <div className="item">
-          <a href="/conclave">CONCLAVE</a>
-        </div>
-        <div className="item">
-          <a href="/symposium">SYMPOSIUM</a>
-        </div>
-        <div className="item">
-          <a href="/tech-expo">TECH EXPO</a>
-        </div>
-        <div className="item">
-          <a href="/sponsors">SPONSORS</a>
-        </div>
-      </div>
       <div className="amalthea"><a href="/">AMALTHEA'23</a></div>
       <div className="nav-items">
         <div className="item"><a href="/events">EVENTS</a></div>
@@ -69,13 +49,13 @@ export default function Navbar() {
             </li>
             <ul>
               <li className="subham-item">
-                <a href="/quill" className="ham-link">About Us</a>
+                <a href="/about" className="ham-link">About Us</a>
               </li>
               <li className="subham-item">
-                <a href="/student-archive" className="ham-link">Our Team</a>
+                <a href="/team" className="ham-link">Our Team</a>
               </li>
               <li className="subham-item">
-                <a href="/alumni-corner" className="ham-link">how to reach</a>
+                <a href="/how-to-reach" className="ham-link">how to reach</a>
               </li>
               <li className="subham-item">
                 <a href="/gallery" className="ham-link">Gallery</a>

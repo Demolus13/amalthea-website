@@ -23,13 +23,13 @@ export default function Navbar() {
 
   return (
     <div id="navbar" className="poppins">
-      <div className="amalthea"><Link className="linkEventListener" to="/">AMALTHEA'23</Link></div>
+      <div className="amalthea"><Link to="/">AMALTHEA'23</Link></div>
       <div className="nav-items">
-        <div className="item"><Link className="linkEventListener" to="/events">EVENTS</Link></div>
-        <div className="item"><Link className="linkEventListener" to="/conclave">CONCALVE</Link></div>
-        <div className="item"><Link className="linkEventListener" to="/symposium">SYMPOSIUM</Link></div>
-        <div className="item"><Link className="linkEventListener" to="/tech-expo">TECH EXPO</Link></div>
-        <div className="item"><Link className="linkEventListener" to="/sponsors">SPONSORS</Link></div>
+        <div className="item"><Link to="/events">EVENTS</Link></div>
+        <div className="item"><Link to="/conclave">CONCALVE</Link></div>
+        <div className="item"><Link to="/symposium">SYMPOSIUM</Link></div>
+        <div className="item"><Link to="/tech-expo">TECH EXPO</Link></div>
+        <div className="item"><Link to="/sponsors">SPONSORS</Link></div>
         <div className={`hamburger ${isActive ? "active" : ""}`} onClick={Toggle}>
           <span className="bar"></span>
           <span className="bar"></span>

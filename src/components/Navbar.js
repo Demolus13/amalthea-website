@@ -55,7 +55,7 @@ export default function Navbar() {
                 <a href="/team" className="ham-link">Our Team</a>
               </li>
               <li className="subham-item">
-                <a href="/how-to-reach" className="ham-link">how to reach</a>
+                <a href="/how-to-reach" className="ham-link">How to reach</a>
               </li>
               <li className="subham-item">
                 <a href="/gallery" className="ham-link">Gallery</a>

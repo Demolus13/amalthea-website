@@ -58,7 +58,7 @@
     position: fixed;
     bottom: -120%;
     right: 0px;
-    background-color: #1F2123;
+    background-color: #170036;
     height: 100%;
     transition: 0.5s;
     z-index: 2;
@@ -132,9 +132,35 @@
     top: 0px;
 }
 
+
 /* Responsive Section */
 @media screen and (max-width: 850px) {
     .item {
         display: none;
+    }
+
+    .ham-menu{
+        width: 50%;
+    }
+
+    .ham-container{
+        margin: 30px;;
+    }
+
+    .ham-item a{
+        font-size:1.5rem !important
+    }
+
+    .subham-item a{
+        font-size: 1rem;;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .ham-item a{    
+        font-size:1rem !important
+    }
+    .subham-item a{
+        font-size: 0.75rem !important;;
     }
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../styles/Navbar.css'
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [isActive, setActive] = useState(false);
@@ -12,16 +13,23 @@ export default function Navbar() {
   else {
     document.body.style.overflowY = "scroll";
   }
+  const Links = document.getElementsByClassName("linkEventListener");
+  for (let index = 0; index < Links.length; index++) {
+    const link = Links[index];
+    link.addEventListener("click", () => {
+      Toggle();
+    })
+  }
 
   return (
     <div id="navbar" className="poppins">
-      <div className="amalthea"><a href="/">AMALTHEA'23</a></div>
+      <div className="amalthea"><Link className="linkEventListener" to="/">AMALTHEA'23</Link></div>
       <div className="nav-items">
-        <div className="item"><a href="/events">EVENTS</a></div>
-        <div className="item"><a href="/conclave">CONCALVE</a></div>
-        <div className="item"><a href="/symposium">SYMPOSIUM</a></div>
-        <div className="item"><a href="/tech-expo">TECH EXPO</a></div>
-        <div className="item"><a href="/sponsors">SPONSORS</a></div>
+        <div className="item"><Link className="linkEventListener" to="/events">EVENTS</Link></div>
+        <div className="item"><Link className="linkEventListener" to="/conclave">CONCALVE</Link></div>
+        <div className="item"><Link className="linkEventListener" to="/symposium">SYMPOSIUM</Link></div>
+        <div className="item"><Link className="linkEventListener" to="/tech-expo">TECH EXPO</Link></div>
+        <div className="item"><Link className="linkEventListener" to="/sponsors">SPONSORS</Link></div>
         <div className={`hamburger ${isActive ? "active" : ""}`} onClick={Toggle}>
           <span className="bar"></span>
           <span className="bar"></span>
@@ -30,38 +38,38 @@ export default function Navbar() {
         <div className={`ham-menu ${isActive ? "active" : ""}`}>
           <div className="ham-container">
             <li className="ham-item">
-              <a href="/" className="ham-link">Home</a>
+              <Link to="/" className="ham-link linkEventListener">Home</Link>
             </li>
             <li className="ham-item">
-              <a href="/events" className="ham-link">Events</a>
+              <Link to="/events" className="ham-link linkEventListener">Events</Link>
             </li>
             <li className="ham-item">
-              <a href="/conclave" className="ham-link">Conclave</a>
+              <Link to="/conclave" className="ham-link linkEventListener">Conclave</Link>
             </li>
             <li className="ham-item">
-              <a href="/symposium" className="ham-link">Symposium</a>
+              <Link to="/symposium" className="ham-link linkEventListener">Symposium</Link>
             </li>
             <li className="ham-item">
-              <a href="/tech-expo" className="ham-link">Tech Expo</a>
+              <Link to="/tech-expo" className="ham-link linkEventListener">Tech Expo</Link>
             </li>
             <li className="ham-item">
-              <a href="/sponsors" className="ham-link">Sponsors</a>
+              <Link to="/sponsors" className="ham-link linkEventListener">Sponsors</Link>
             </li>
             <ul>
               <li className="subham-item">
-                <a href="/about" className="ham-link">About Us</a>
+                <Link to="/about" className="ham-link linkEventListener">About Us</Link>
               </li>
               <li className="subham-item">
-                <a href="/team" className="ham-link">Our Team</a>
+                <Link to="/team" className="ham-link linkEventListener">Our Team</Link>
               </li>
               <li className="subham-item">
-                <a href="/women-in-tech" className="ham-link">Women in Tech</a>
+                <Link to="/women-in-tech" className="ham-link linkEventListener">Women in Tech</Link>
               </li>
               <li className="subham-item">
-                <a href="/how-to-reach" className="ham-link">How to reach</a>
+                <Link to="/how-to-reach" className="ham-link linkEventListener">How to reach</Link>
               </li>
               <li className="subham-item">
-                <a href="/gallery" className="ham-link">Gallery</a>
+                <Link to="/gallery" className="ham-link linkEventListener">Gallery</Link>
               </li>
             </ul>
           </div>

@@ -49,14 +49,14 @@ export default function Sponsors() {
           SPONSORS
         </h1>
       </div>
-      <img className="aml-bg-1 L1" src="../Images/AML-BG-1.png" alt="" />
-      <img className="aml-bg-2 L1" src="../Images/AML-BG-2.png" alt="" />
-      <img className="aml-bg-3 L2" src="../Images/AML-BG-3.png" alt="" />
-      <img className="aml-bg-4 L2" src="../Images/AML-BG-4.png" alt="" />
-      <img className="aml-bg-5" src="../Images/AML-BG-5.png" alt="" />
-      <img className="aml-bg-8 L2" src="../Images/AML-BG-6.png" alt="" />
-      <img className="aml-bg-6" src="../Images/AML-BG-5.png" alt="" />
-      <img className="aml-bg-7 L2" src="../Images/AML-BG-6.png" alt="" />
+      <img className="aml-bg-1 L1" src="./Images/AML-BG-1.png" alt="" />
+      <img className="aml-bg-2 L1" src="./Images/AML-BG-2.png" alt="" />
+      <img className="aml-bg-3 L2" src="./Images/AML-BG-3.png" alt="" />
+      <img className="aml-bg-4 L2" src="./Images/AML-BG-4.png" alt="" />
+      <img className="aml-bg-5" src="./Images/AML-BG-5.png" alt="" />
+      <img className="aml-bg-8 L2" src="./Images/AML-BG-6.png" alt="" />
+      <img className="aml-bg-6" src="./Images/AML-BG-5.png" alt="" />
+      <img className="aml-bg-7 L2" src="./Images/AML-BG-6.png" alt="" />
       <section className="nav-home"></section>
       <div className="content">
         <div className="main">
@@ -64,11 +64,11 @@ export default function Sponsors() {
           <h2 className="myheading divider line glow">PLATINUM SPONSORS</h2>
           <div className="sponsor-section">
             <div className="sponsor-card">
-              <img src="../Images/jsw.png" alt="JSW logo" />
+              <img src="./Images/jsw.png" alt="JSW logo" />
             </div>
             <div className="sponsor-card">
               <img
-                src="../Images/indextb.png"
+                src="./Images/indextb.png"
                 style={{ height: "80%" }}
                 alt="indextb logo"
               />
@@ -78,7 +78,7 @@ export default function Sponsors() {
           <div className="sponsor-section">
             <div className="sponsor-card">
               <img
-                src="../Images/gsmda.jpeg"
+                src="./Images/gsmda.jpeg"
                 alt="GSMDA logo"
                 style={{ width: 200 }}
               />
@@ -86,7 +86,7 @@ export default function Sponsors() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your platinum sponsor */}
               <img
-                src="../Images/CPwhite.png"
+                src="./Images/CPwhite.png"
                 style={{ width: 200 }}
                 alt="cp logo"
               />
@@ -99,7 +99,7 @@ export default function Sponsors() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your gold sponsor */}
               <img
-                src="../Images/adityabirla.png"
+                src="./Images/adityabirla.png"
                 alt="Aditya Birla logo"
                 style={{ width: 250 }}
               />
@@ -107,7 +107,7 @@ export default function Sponsors() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your gold sponsor */}
               <img
-                src="../Images/./gujaratmaritimeboard.png"
+                src="./Images/./gujaratmaritimeboard.png"
                 style={{ width: 200 }}
                 alt="Gujarat Maritime Board logo"
               />
@@ -115,7 +115,7 @@ export default function Sponsors() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your gold sponsor */}
               <img
-                src="../Images/metro.png"
+                src="./Images/metro.png"
                 alt="Metro logo"
                 style={{ width: 200 }}
               />
@@ -128,19 +128,19 @@ export default function Sponsors() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your silver sponsor */}
               <img
-                src="../Images/vrajgroupwhite.png"
+                src="./Images/vrajgroupwhite.png"
                 alt="Vraj Group logo"
                 style={{ width: 200 }}
               />
             </div>
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your silver sponsor */}
-              <img src="../Images/GP.png" alt="GP logo" />
+              <img src="./Images/GP.png" alt="GP logo" />
             </div>
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your silver sponsor */}
               <img
-                src="../Images/AC.png"
+                src="./Images/AC.png"
                 alt="AC logo"
                 style={{ width: 200 }}
               />
@@ -153,7 +153,7 @@ export default function Sponsors() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your other sponsor */}
               <img
-                src="../Images/ITC.png"
+                src="./Images/ITC.png"
                 alt="ITC logo"
                 style={{ width: 200 }}
               />
@@ -161,38 +161,38 @@ export default function Sponsors() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your other sponsor */}
               <img
-                src="../Images/nutanix.png"
+                src="./Images/nutanix.png"
                 alt="nutanix logo"
                 style={{ height: 70 }}
               />
             </div>
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your other sponsor */}
-              <img src="../Images/Reliance.png" alt="reliance logo" />
+              <img src="./Images/Reliance.png" alt="reliance logo" />
             </div>
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your other sponsor */}
-              <img src="../Images/crazylabs.png" alt="crazylabs logo" />
+              <img src="./Images/crazylabs.png" alt="crazylabs logo" />
             </div>
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your other sponsor */}
-              <img src="../Images/redbull.png" alt="redbull logo" />
+              <img src="./Images/redbull.png" alt="redbull logo" />
             </div>
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your other sponsor */}
               <img
-                src="../Images/tatachemicals.png"
+                src="./Images/tatachemicals.png"
                 alt="tata chemicals logo"
               />
             </div>
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your other sponsor */}
-              <img src="../Images/codechef.png" alt="codechef logo" />
+              <img src="./Images/codechef.png" alt="codechef logo" />
             </div>
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your other sponsor */}
               <img
-                src="../Images/wazirx.png"
+                src="./Images/wazirx.png"
                 alt="wazrix logo"
                 style={{ width: 200 }}
               />
@@ -200,7 +200,7 @@ export default function Sponsors() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your other sponsor */}
               <img
-                src="../Images/adani.png"
+                src="./Images/adani.png"
                 alt="adani logo"
                 style={{ height: 120 }}
               />
@@ -208,7 +208,7 @@ export default function Sponsors() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your other sponsor */}
               <img
-                src="../Images/beamable.png"
+                src="./Images/beamable.png"
                 alt="beamable logo"
                 style={{ height: 70 }}
               />
@@ -220,7 +220,7 @@ export default function Sponsors() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your silver sponsor */}
               <img
-                src="../Images/jklakshmi.png"
+                src="./Images/jklakshmi.png"
                 alt="JK Lakshmi cement logo"
                 style={{ height: 100 }}
               />
@@ -234,7 +234,7 @@ export default function Sponsors() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your silver sponsor */}
               <img
-                src="../Images/htc.png"
+                src="./Images/htc.png"
                 alt="htc logo"
                 style={{ height: 150 }}
               />
@@ -242,7 +242,7 @@ export default function Sponsors() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your silver sponsor */}
               <img
-                src="../Images/isro.png"
+                src="./Images/isro.png"
                 alt="isro logo"
                 style={{ width: 200 }}
               />
@@ -250,7 +250,7 @@ export default function Sponsors() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your silver sponsor */}
               <img
-                src="../Images/apple.png"
+                src="./Images/apple.png"
                 alt="apple logo"
                 style={{ width: 200 }}
               />
@@ -258,7 +258,7 @@ export default function Sponsors() {
             <div className="sponsor-card">
               {/* Replace the image source with the logo of your silver sponsor */}
               <img
-                src="../Images/microsoft.png"
+                src="./Images/microsoft.png"
                 alt="microsoft logo"
                 style={{ height: 100 }}
               />

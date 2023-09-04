@@ -163,4 +163,7 @@
     .subham-item a{
         font-size: 0.75rem !important;;
     }
+    .ham-container ul{
+        padding-left: 0.35rem;
+    }
 }

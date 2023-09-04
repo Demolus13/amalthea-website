@@ -1,27 +1,23 @@
 export const events = [
   {
     name: "Robowars",
-    description: "bla bla bla",
+    description:
+      "Introducing RoboWars: \n Prepare for an ultimate experience in the ultimate battle of damage, strength, and technology. Witness the head-to-head clash of engineering beasts with metals and electric circuits. To all robo-maniacs, Amalthea 23 presents the most-awaited RoboWars for the first time at IIT Gandhinagar, where all the participants are about Savage Arena, Warrior; Victory is not granted but earned.\nThrilling Robot Combating Event \nIn a fierce battle for supremacy.\nThe robots will face off in an enclosed arena with various obstacles and hazards.",
     imgSrc: "./images/robowars.png",
   },
   {
-    name: "Drift",
+    name: "coming soon",
     description: "bla bla bla",
-    imgSrc: "./images/Drift.png",
+    imgSrc: "./images/coming_soon.png",
   },
   {
-    name: "Brinwiz",
+    name: "coming soon",
     description: "bla bla bla",
-    imgSrc: "./images/Brainwiz.png",
+    imgSrc: "./images/coming_soon.png",
   },
   {
-    name: "Icon",
+    name: "coming soon",
     description: "bla bla bla",
-    imgSrc: "./images/Icon.png",
-  },
-  {
-    name: "Game Jam",
-    description: "bla bla bla",
-    imgSrc: "./images/Game-Jam.png",
+    imgSrc: "./images/coming_soon.png",
   },
 ];

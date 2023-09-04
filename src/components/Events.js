@@ -92,11 +92,23 @@ export default function Events() {
 }
 
 const EventCard = event => {
+  const isMobile = window.screen.width < 500 ? true : false;
+
   return (
     <div className="event-card">
-      <img src={event.imgSrc} alt={event.name}></img>
-      <span className="events-info">
-        <i className="far fa-chevron"></i>
+      <img
+        src={
+          event.name === "coming soon" && isMobile
+            ? "./images/coming_soon_mobile.png"
+            : event.imgSrc
+        }
+        style={{
+          height: event.name === "coming soon" && isMobile ? "95vh" : "",
+        }}
+        alt={event.name}></img>
+      <span
+        className="events-info"
+        style={{ display: event.name === "coming soon" ? "none" : "block" }}>
         <div className="events-buttons-holder">
           <button>Register</button>
           <button>Rulebook</button>

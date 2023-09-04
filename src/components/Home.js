@@ -1,8 +1,19 @@
 import React, { useEffect } from "react";
 import "../styles/Home.css";
+import { useState } from "react";
 
 export default function Home() {
+  const [windowSize, setWindowSize] = useState([
+    {
+      innerWidth: window.screen.width,
+      innerHeight: window.screen.height,
+    },
+  ]);
   useEffect(() => {
+    function handleResize() {
+      setWindowSize(window.innerWidth, window.innerHeight);
+    }
+    window.addEventListener("resize", handleResize);
     const H = window.innerHeight;
     window.onbeforeunload = () => {
       window.scrollTo(0, 0);
@@ -21,6 +32,7 @@ export default function Home() {
     const tt = document.querySelectorAll(".title");
     const unit = document.getElementById("unit");
     const event_unit = document.querySelectorAll(".event-unit");
+    const expo2 = document.getElementById("expo2");
     body.style.height = `${34 * H}px`;
 
     const handleScroll = () => {
@@ -31,10 +43,10 @@ export default function Home() {
         const s2 = 1 - scroll / (1.25 * H);
         const s3 = 1 - scroll / (0.35 * H);
 
-        L1.forEach(l => {
+        L1.forEach((l) => {
           l.style.transform = `scale(${s1})`;
         });
-        L2.forEach(l => {
+        L2.forEach((l) => {
           l.style.transform = `scale(${s2})`;
         });
         aml.style.opacity = s3;
@@ -53,11 +65,11 @@ export default function Home() {
       }
 
       if (scroll > 0.5 * H && scroll < 2 * H) {
-        L3.forEach(l => {
+        L3.forEach((l) => {
           l.classList.add("active");
         });
       } else {
-        L3.forEach(l => {
+        L3.forEach((l) => {
           l.classList.remove("active");
         });
       }
@@ -91,6 +103,8 @@ export default function Home() {
       }
 
       if (scroll > 7 * H && scroll < 14.5 * H) {
+        expo2.style.display = "inherit";
+        
         ot.style.opacity = 0;
         const top = (1 - (2 * (scroll - 7 * H)) / (3 * H)) * 100;
         unit.style.top = `${top}vh`;
@@ -106,11 +120,13 @@ export default function Home() {
           tt[i + 1].classList.remove("active");
         }
       } else {
-        tt.forEach(tt_i => {
+        expo2.style.display = "none";
+        tt.forEach((tt_i) => {
           tt_i.classList.add("deactive");
           tt_i.classList.remove("active");
         });
       }
+
 
       if (14.5 * H < scroll) {
         unit.style.top = "-300vh";
@@ -134,13 +150,13 @@ export default function Home() {
         }
       }
       if (scroll < 14 * H) {
-        event_unit.forEach(eu => {
+        event_unit.forEach((eu) => {
           eu.style.top = "100vh";
           eu.style.bottom = "-100vh";
         });
       }
       if (32 * H < scroll) {
-        event_unit.forEach(eu => {
+        event_unit.forEach((eu) => {
           eu.style.top = "0vh";
           eu.style.bottom = "0vh";
         });
@@ -210,14 +226,39 @@ export default function Home() {
       </div>
       <div id="unit" style={{ zIndex: -4 }}>
         <div className="subunit">
-          <div className="gallery-item item-1">
-            <img className="gallery-img" src="./Images/conclave1.jpeg" alt="" />
-          </div>
+          {window.screen.width < 600 ? (
+            ""
+          ) : window.screen.width > 600 && window.screen.width < 937 ? (
+            <>
+              <div className="gallery-item item-3">
+                <img
+                  className="gallery-img"
+                  src="./Images/conclave3.jpeg"
+                  alt=""
+                />
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="gallery-item item-1">
+                <img
+                  className="gallery-img"
+                  src="./Images/conclave1.jpeg"
+                  alt=""
+                />
+              </div>
+              <div className="gallery-item item-3">
+                <img
+                  className="gallery-img"
+                  src="./Images/conclave3.jpeg"
+                  alt=""
+                />
+              </div>
+            </>
+          )}
+
           <div className="gallery-item item-2">
             <img className="gallery-img" src="./Images/conclave2.JPG" alt="" />
-          </div>
-          <div className="gallery-item item-3">
-            <img className="gallery-img" src="./Images/conclave3.jpeg" alt="" />
           </div>
           <div className="gallery-item item-4">
             <img className="gallery-img" src="./Images/conclave4.jpeg" alt="" />
@@ -225,19 +266,30 @@ export default function Home() {
         </div>
         <div className="subunit"></div>
         <div className="subunit">
-          <div className="gallery-item item-1">
-            <img className="gallery-img" src="./Images/expo1.jpeg" alt="" />
-          </div>
-          <div className="gallery-item item-2">
+          {window.screen.width < 600 ? (
+            ""
+          ) : window.screen.width < 600 && window.screen.width > 936 ? (
+            <div className="gallery-item item-3">
+              <img className="gallery-img" src="./Images/expo3.jpg" alt="" />
+            </div>
+          ) : (
+            <>
+              {" "}
+              <div className="gallery-item item-1" id="expo1">
+                <img className="gallery-img" src="./Images/expo1.jpeg" alt="" />
+              </div>
+              <div className="gallery-item item-3">
+                <img className="gallery-img" src="./Images/expo3.jpg" alt="" />
+              </div>
+            </>
+          )}
+          <div className="gallery-item item-2" id="expo2">
             <img className="gallery-img" src="./Images/expo2.jpeg" alt="" />
           </div>
-          <div className="gallery-item item-3">
-            <img className="gallery-img" src="./Images/expo3.jpg" alt="" />
-          </div>
-          <div className="gallery-item item-4">
+          <div className="gallery-item item-4" id="expo4">
             <img className="gallery-img" src="./Images/expo4.jpeg" alt="" />
           </div>
-          <div className="gallery-item item-5">
+          <div className="gallery-item item-5" id="expo5">
             <img className="gallery-img" src="./Images/expo5.jpeg" alt="" />
           </div>
         </div>
@@ -274,7 +326,8 @@ export default function Home() {
       <div className="event-unit">
         <div
           className="event"
-          style={{ backgroundImage: "url(/Images/Drift.png)" }}>
+          style={{ backgroundImage: "url(/Images/Drift.png)" }}
+        >
           <div className="details">
             <h2 className="event-name oswald">DRIFT RACING</h2>
             <div className="actions-even-name">
@@ -291,7 +344,8 @@ export default function Home() {
       <div className="event-unit">
         <div
           className="event"
-          style={{ backgroundImage: "url(/Images/Brainwiz.png)" }}>
+          style={{ backgroundImage: "url(/Images/Brainwiz.png)" }}
+        >
           <div className="details">
             <h2 className="event-name oswald">BRAINWIZ</h2>
             <div className="actions-even-name">
@@ -308,7 +362,8 @@ export default function Home() {
       <div className="event-unit">
         <div
           className="event"
-          style={{ backgroundImage: "url(/Images/Game-Jam.png)" }}>
+          style={{ backgroundImage: "url(/Images/Game-Jam.png)" }}
+        >
           <div className="details">
             <h2 className="event-name oswald">GAMEJAM</h2>
             <div className="actions-even-name">
@@ -352,7 +407,8 @@ export default function Home() {
       <div className="event-unit">
         <div
           className="event"
-          style={{ backgroundImage: "url(/Images/Icon.png)" }}>
+          style={{ backgroundImage: "url(/Images/Icon.png)" }}
+        >
           <div className="details">
             <h2 className="event-name oswald">ICON</h2>
             <div className="actions-even-name">

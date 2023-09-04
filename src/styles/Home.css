@@ -383,6 +383,26 @@
     margin-left: 0px;
     padding-right: 0;
   }
+
+  .item-4{
+    scale: 3;
+    width: 200%;
+  }
+
+  .item-3{
+    width: 200%;
+  transform: translate(-50%, -50%);
+  scale: 1;
+  }
+
+  .item-2{
+    width: 200%;
+  transform: translate(0, 40%);
+  }
+
+  #expo1{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 394px) {
@@ -422,8 +442,9 @@
   }
 
   .item-4{
-    scale: 3;
+    scale: 2;
     padding-left: 30%;
+    padding-right: 30%;
   }
   .item-5{
     padding-left: 65%;

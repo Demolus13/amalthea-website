@@ -3,15 +3,17 @@ import "../styles/Home.css";
 import { useState } from "react";
 
 export default function Home() {
-  const [windowSize, setWindowSize] = useState([{
-    innerWidth: window.screen.width,
-    innerHeight: window.screen.height
-  }]);
+  const [windowSize, setWindowSize] = useState([
+    {
+      innerWidth: window.screen.width,
+      innerHeight: window.screen.height,
+    },
+  ]);
   useEffect(() => {
     function handleResize() {
-      setWindowSize(window.innerWidth,  window.innerHeight);
+      setWindowSize(window.innerWidth, window.innerHeight);
     }
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     const H = window.innerHeight;
     window.onbeforeunload = () => {
       window.scrollTo(0, 0);
@@ -219,7 +221,19 @@ export default function Home() {
       </div>
       <div id="unit" style={{ zIndex: -4 }}>
         <div className="subunit">
-          {window.screen.width > 600 ? (
+          {window.screen.width < 600 ? (
+            ""
+          ) : window.screen.width > 600 && window.screen.width < 937 ? (
+            <>
+              <div className="gallery-item item-3">
+                <img
+                  className="gallery-img"
+                  src="./Images/conclave3.jpeg"
+                  alt=""
+                />
+              </div>
+            </>
+          ) : (
             <>
               <div className="gallery-item item-1">
                 <img
@@ -236,9 +250,8 @@ export default function Home() {
                 />
               </div>
             </>
-          ) : (
-            ""
           )}
+
           <div className="gallery-item item-2">
             <img className="gallery-img" src="./Images/conclave2.JPG" alt="" />
           </div>
@@ -248,18 +261,22 @@ export default function Home() {
         </div>
         <div className="subunit"></div>
         <div className="subunit">
-          {window.screen.width > 600 ? (
+          {window.screen.width < 600 ? (
+            ""
+          ) : window.screen.width < 600 && window.screen.width > 936 ? (
+            <div className="gallery-item item-3">
+              <img className="gallery-img" src="./Images/expo3.jpg" alt="" />
+            </div>
+          ) : (
             <>
               {" "}
-              <div className="gallery-item item-1">
+              <div className="gallery-item item-1" id="expo1">
                 <img className="gallery-img" src="./Images/expo1.jpeg" alt="" />
               </div>
               <div className="gallery-item item-3">
                 <img className="gallery-img" src="./Images/expo3.jpg" alt="" />
               </div>
             </>
-          ) : (
-            ""
           )}
           <div className="gallery-item item-2" id="expo2">
             <img className="gallery-img" src="./Images/expo2.jpeg" alt="" />

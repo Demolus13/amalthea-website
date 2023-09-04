@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "../styles/Events.css";
-import { events } from "../EventsData";
+import { events } from "../utilities/EventsData";
 
 export default function Events() {
   useEffect(() => {

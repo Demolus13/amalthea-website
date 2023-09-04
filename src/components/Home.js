@@ -239,15 +239,9 @@ export default function Home() {
           ) : (
             ""
           )}
-          {/* <div className="gallery-item item-1">
-            <img className="gallery-img" src="./Images/conclave1.jpeg" alt="" />
-          </div> */}
           <div className="gallery-item item-2">
             <img className="gallery-img" src="./Images/conclave2.JPG" alt="" />
           </div>
-          {/* <div className="gallery-item item-3">
-            <img className="gallery-img" src="./Images/conclave3.jpeg" alt="" />
-          </div> */}
           <div className="gallery-item item-4">
             <img className="gallery-img" src="./Images/conclave4.jpeg" alt="" />
           </div>
@@ -267,15 +261,9 @@ export default function Home() {
           ) : (
             ""
           )}
-          {/* <div className="gallery-item item-1">
-            <img className="gallery-img" src="./Images/expo1.jpeg" alt="" />
-          </div> */}
           <div className="gallery-item item-2" id="expo2">
             <img className="gallery-img" src="./Images/expo2.jpeg" alt="" />
           </div>
-          {/* <div className="gallery-item item-3">
-            <img className="gallery-img" src="./Images/expo3.jpg" alt="" />
-          </div> */}
           <div className="gallery-item item-4" id="expo4">
             <img className="gallery-img" src="./Images/expo4.jpeg" alt="" />
           </div>

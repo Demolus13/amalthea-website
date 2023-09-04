@@ -393,17 +393,27 @@
 
   .item-3{
     width: 200%;
-  transform: translate(-50%, -50%);
-  scale: 1;
+    transform: translate(-40%, -95%);
+    scale: 0.75;
   }
 
   .item-2{
     width: 200%;
-  transform: translate(0, 40%);
+  transform: translate(0, 15%);
   }
 
   #expo1{
     display: none;
+  }
+
+  #conclave3{
+    width: 200%;
+    transform: translate(-45%, -95%);
+    scale: 0.75;
+  }
+
+  #conclave2{
+    transform: translate(0, 15%);
   }
 }
 
@@ -462,6 +472,10 @@
     transform: translate(0%, -20%);
   
   }
+
+  #conclave2{
+    transform: translate(0, -20%);
+}
 }
 @media screen and ((max-height: 500px)) {
   .event-name {

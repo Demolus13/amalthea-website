@@ -32,6 +32,7 @@ export default function Home() {
     const tt = document.querySelectorAll(".title");
     const unit = document.getElementById("unit");
     const event_unit = document.querySelectorAll(".event-unit");
+    const expo2 = document.getElementById("expo2");
     body.style.height = `${34 * H}px`;
 
     const handleScroll = () => {
@@ -102,6 +103,8 @@ export default function Home() {
       }
 
       if (scroll > 7 * H && scroll < 14.5 * H) {
+        expo2.style.display = "inherit";
+        
         ot.style.opacity = 0;
         const top = (1 - (2 * (scroll - 7 * H)) / (3 * H)) * 100;
         unit.style.top = `${top}vh`;
@@ -117,11 +120,13 @@ export default function Home() {
           tt[i + 1].classList.remove("active");
         }
       } else {
+        expo2.style.display = "none";
         tt.forEach((tt_i) => {
           tt_i.classList.add("deactive");
           tt_i.classList.remove("active");
         });
       }
+
 
       if (14.5 * H < scroll) {
         unit.style.top = "-300vh";

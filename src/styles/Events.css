@@ -1,7 +1,49 @@
 .events-body {
-    width: 100%;
-    height: 200vh;
-    background-color: black;
-    position: absolute;
-    z-index: -1;
+  width: 100%;
+  height: 3000vh;
+  background-color: black;
+  position: absolute;
+  z-index: -1;
+}
+
+#events-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  opacity: 0;
+  position: fixed;
+  background: #00000000;
+  width: 100%;
+  height: 100vh;
+}
+
+#events-cards-holder {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #331e52;
+  width: 95vw;
+  height: 95vh;
+}
+.event-card {
+  position: absolute;
+  top: 100vh;
+  width: 100%;
+  transition: top 0.8s cubic-bezier(0.62, 0.05, 0.32, 0.95);
+}
+.event-card > img {
+  width: 100%;
+  min-height: 95vh;
+}
+
+@media screen and (max-width: 600px) {
+  #events-cards-holder {
+    border-radius: 0px;
+    width: 100vw;
+    height: 100vh;
+  }
+  .event-card > img {
+    min-height: 100vh;
+  }
 }

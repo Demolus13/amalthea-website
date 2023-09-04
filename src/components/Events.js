@@ -96,7 +96,7 @@ const EventCard = event => {
       <img
         src={
           event.name === "coming soon" && isMobile
-            ? "./images/coming_soon_mobile.png"
+            ? "./Images/coming_soon_mobile.png"
             : event.imgSrc
         }
         style={{

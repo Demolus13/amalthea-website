@@ -73,7 +73,7 @@
   position: absolute;
   top: 100vh;
   width: 100%;
-  transition: top 1s cubic-bezier(0.62, 0.05, 0.32, 0.95);
+  transition: top 0.75s cubic-bezier(0.62, 0.05, 0.32, 0.95);
   height: 95vh;
 }
 .event-card > img {
@@ -82,19 +82,20 @@
   object-fit: cover;
 }
 .event-card > span {
-  border: 3px solid white;
+  border: 3px solid #e37430;
+  box-shadow: 0 0 15px 3px #e37430;
   border-left: 0;
   border-bottom: 0;
   position: absolute;
   border-top-right-radius: 20px;
-  background: #d6e6ff25;
+  background: #00000025;
   backdrop-filter: blur(6px);
   width: 30%;
   min-width: 400px;
   height: 10%;
   bottom: 0;
   left: 0;
-  transition: height 1s cubic-bezier(0.62, 0, 0.33, 0.99);
+  transition: height 1.25s cubic-bezier(0.62, 0, 0.33, 0.99);
 }
 .event-card > span:hover {
   height: 80%;
@@ -103,13 +104,35 @@
   height: 100px;
   width: 100px;
 }
+.events-text-holder {
+  color: white;
+  padding: 2rem;
+  transform: translateY(100%);
+  transition: transform 1s cubic-bezier(0.62, 0, 0.33, 0.99);
+}
+.event-card > span:hover > .events-text-holder {
+  transform: translateY(0);
+}
 .events-buttons-holder {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   position: absolute;
   bottom: 0;
-  padding: 20px;
+  padding: 15px;
+}
+.events-buttons-holder > button {
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-weight: 550;
+  padding: 7px 10px;
+  background: #e37430;
+  transition: transform 0.5s;
+}
+.events-buttons-holder > button:hover {
+  /* transform: scale(1.05); */
+  background: #e56617;
 }
 
 @media screen and (max-width: 600px) {
@@ -130,9 +153,15 @@
     min-width: 0px;
     position: static;
     border-radius: 0px;
-    border-top: 3px solid white;
     border-right: none;
     width: 100%;
     height: 100%;
+  }
+  .events-text-holder {
+    padding-top: 0.75rem;
+    transform: translateY(0);
+  }
+  .events-text-holder > p {
+    font-size: 0.9rem;
   }
 }

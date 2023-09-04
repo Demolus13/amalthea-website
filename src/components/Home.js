@@ -4,18 +4,16 @@ import { useState } from "react";
 
 export default function Home() {
   const [windowSize, setWindowSize] = useState({
-      innerWidth: window.screen.width,
-      innerHeight: window.screen.height,
-    });
+    innerWidth: window.screen.width,
+    innerHeight: window.screen.height,
+  });
   useEffect(() => {
     function handleResize() {
       setWindowSize(window.innerWidth, window.innerHeight);
     }
     window.addEventListener("resize", handleResize);
     const H = window.innerHeight;
-    window.onbeforeunload = () => {
-      window.scrollTo(0, 0);
-    };
+    window.scrollTo(0, 0);
 
     const body = document.querySelector(".home-body");
     const circle = document.querySelector(".circle");
@@ -30,6 +28,7 @@ export default function Home() {
     const tt = document.querySelectorAll(".title");
     const unit = document.getElementById("unit");
     const event_unit = document.querySelectorAll(".event-unit");
+    const event_ = document.querySelectorAll(".event");
     body.style.height = `${34 * H}px`;
 
     const handleScroll = () => {
@@ -40,10 +39,10 @@ export default function Home() {
         const s2 = 1 - scroll / (1.25 * H);
         const s3 = 1 - scroll / (0.35 * H);
 
-        L1.forEach((l) => {
+        L1.forEach(l => {
           l.style.transform = `scale(${s1})`;
         });
-        L2.forEach((l) => {
+        L2.forEach(l => {
           l.style.transform = `scale(${s2})`;
         });
         aml.style.opacity = s3;
@@ -62,11 +61,11 @@ export default function Home() {
       }
 
       if (scroll > 0.5 * H && scroll < 2 * H) {
-        L3.forEach((l) => {
+        L3.forEach(l => {
           l.classList.add("active");
         });
       } else {
-        L3.forEach((l) => {
+        L3.forEach(l => {
           l.classList.remove("active");
         });
       }
@@ -100,7 +99,6 @@ export default function Home() {
       }
 
       if (scroll > 7 * H && scroll < 14.5 * H) {
-        
         ot.style.opacity = 0;
         const top = (1 - (2 * (scroll - 7 * H)) / (3 * H)) * 100;
         unit.style.top = `${top}vh`;
@@ -116,12 +114,11 @@ export default function Home() {
           tt[i + 1].classList.remove("active");
         }
       } else {
-        tt.forEach((tt_i) => {
+        tt.forEach(tt_i => {
           tt_i.classList.add("deactive");
           tt_i.classList.remove("active");
         });
       }
-
 
       if (14.5 * H < scroll) {
         unit.style.top = "-300vh";
@@ -145,13 +142,13 @@ export default function Home() {
         }
       }
       if (scroll < 14 * H) {
-        event_unit.forEach((eu) => {
+        event_unit.forEach(eu => {
           eu.style.top = "100vh";
           eu.style.bottom = "-100vh";
         });
       }
       if (32 * H < scroll) {
-        event_unit.forEach((eu) => {
+        event_unit.forEach(eu => {
           eu.style.top = "0vh";
           eu.style.bottom = "0vh";
         });
@@ -290,12 +287,18 @@ export default function Home() {
         </div>
       </div>
       <div className="event-unit">
-        <div className="event">
+        <div
+          className="event"
+          style={{
+            backgroundImage: "url(/Images/robowars.png)",
+            borderColor: "#e37430",
+            boxShadow: "0 0 15px 3px #e37430",
+          }}>
           <div className="details">
             <h2 className="event-name oswald">ROBOWARS</h2>
             <div className="actions-even-name">
-              <h5 className="apply_rule montserrat">Register </h5>
-              <h5 className="apply_rule montserrat">Rule Book </h5>
+              {/* <h5 className="apply_rule montserrat">Register </h5>
+              <h5 className="apply_rule montserrat">Rule Book </h5> */}
             </div>
           </div>
 
@@ -305,12 +308,16 @@ export default function Home() {
         </div>
       </div>
       <div className="event-unit">
-        <div className="event">
+        <div
+          className="event"
+          style={{
+            backgroundImage: "url(/Images/coming_soon_mobile.png)",
+          }}>
           <div className="details">
             <h2 className="event-name oswald">DRA</h2>
             <div className="actions-even-name">
-              <h5 className="apply_rule montserrat">Register </h5>
-              <h5 className="apply_rule montserrat">Rule Book </h5>
+              {/* <h5 className="apply_rule montserrat">Register </h5>
+              <h5 className="apply_rule montserrat">Rule Book </h5> */}
             </div>
           </div>
           <h3 className="date oswald">
@@ -321,13 +328,14 @@ export default function Home() {
       <div className="event-unit">
         <div
           className="event"
-          style={{ backgroundImage: "url(/Images/Drift.png)" }}
-        >
+          style={{
+            backgroundImage: "url(/Images/coming_soon_mobile.png)",
+          }}>
           <div className="details">
             <h2 className="event-name oswald">DRIFT RACING</h2>
             <div className="actions-even-name">
-              <h5 className="apply_rule montserrat">Register </h5>
-              <h5 className="apply_rule montserrat">Rule Book </h5>
+              {/* <h5 className="apply_rule montserrat">Register </h5>
+              <h5 className="apply_rule montserrat">Rule Book </h5> */}
             </div>
           </div>
 
@@ -339,13 +347,14 @@ export default function Home() {
       <div className="event-unit">
         <div
           className="event"
-          style={{ backgroundImage: "url(/Images/Brainwiz.png)" }}
-        >
+          style={{
+            backgroundImage: "url(/Images/coming_soon_mobile.png)",
+          }}>
           <div className="details">
             <h2 className="event-name oswald">BRAINWIZ</h2>
             <div className="actions-even-name">
-              <h5 className="apply_rule montserrat">Register </h5>
-              <h5 className="apply_rule montserrat">Rule Book </h5>
+              {/* <h5 className="apply_rule montserrat">Register </h5>
+              <h5 className="apply_rule montserrat">Rule Book </h5> */}
             </div>
           </div>
 
@@ -357,41 +366,14 @@ export default function Home() {
       <div className="event-unit">
         <div
           className="event"
-          style={{ backgroundImage: "url(/Images/Game-Jam.png)" }}
-        >
+          style={{
+            backgroundImage: "url(/Images/coming_soon_mobile.png)",
+          }}>
           <div className="details">
             <h2 className="event-name oswald">GAMEJAM</h2>
             <div className="actions-even-name">
-              <h5 className="apply_rule montserrat">Register </h5>
-              <h5 className="apply_rule montserrat">Rule Book </h5>
-            </div>
-          </div>
-          <h3 className="date oswald">
-            xx-Nov <br /> 2023
-          </h3>
-        </div>
-      </div>
-      <div className="event-unit">
-        <div className="event">
-          <div className="details">
-            <h2 className="event-name oswald">STOCKRUSH</h2>
-            <div className="actions-even-name">
-              <h5 className="apply_rule montserrat">Register </h5>
-              <h5 className="apply_rule montserrat">Rule Book </h5>
-            </div>
-          </div>
-          <h3 className="date oswald">
-            xx-Nov <br /> 2023
-          </h3>
-        </div>
-      </div>
-      <div className="event-unit">
-        <div className="event">
-          <div className="details">
-            <h2 className="event-name oswald">INNOVATION NEXUS</h2>
-            <div className="actions-even-name">
-              <h5 className="apply_rule montserrat">Register </h5>
-              <h5 className="apply_rule montserrat">Rule Book </h5>
+              {/* <h5 className="apply_rule montserrat">Register </h5>
+              <h5 className="apply_rule montserrat">Rule Book </h5> */}
             </div>
           </div>
           <h3 className="date oswald">
@@ -402,13 +384,14 @@ export default function Home() {
       <div className="event-unit">
         <div
           className="event"
-          style={{ backgroundImage: "url(/Images/Icon.png)" }}
-        >
+          style={{
+            backgroundImage: "url(/Images/coming_soon_mobile.png)",
+          }}>
           <div className="details">
-            <h2 className="event-name oswald">ICON</h2>
+            <h2 className="event-name oswald">STOCKRUSH</h2>
             <div className="actions-even-name">
-              <h5 className="apply_rule montserrat">Register </h5>
-              <h5 className="apply_rule montserrat">Rule Book </h5>
+              {/* <h5 className="apply_rule montserrat">Register </h5>
+              <h5 className="apply_rule montserrat">Rule Book </h5> */}
             </div>
           </div>
           <h3 className="date oswald">
@@ -417,12 +400,52 @@ export default function Home() {
         </div>
       </div>
       <div className="event-unit">
-        <div className="event">
+        <div
+          className="event"
+          style={{
+            backgroundImage: "url(/Images/coming_soon_mobile.png)",
+          }}>
+          <div className="details">
+            <h2 className="event-name oswald">INNOVATION NEXUS</h2>
+            <div className="actions-even-name">
+              {/* <h5 className="apply_rule montserrat">Register </h5>
+              <h5 className="apply_rule montserrat">Rule Book </h5> */}
+            </div>
+          </div>
+          <h3 className="date oswald">
+            xx-Nov <br /> 2023
+          </h3>
+        </div>
+      </div>
+      <div className="event-unit">
+        <div
+          className="event"
+          style={{
+            backgroundImage: "url(/Images/coming_soon_mobile.png)",
+          }}>
+          <div className="details">
+            <h2 className="event-name oswald">ICON</h2>
+            <div className="actions-even-name">
+              {/* <h5 className="apply_rule montserrat">Register </h5>
+              <h5 className="apply_rule montserrat">Rule Book </h5> */}
+            </div>
+          </div>
+          <h3 className="date oswald">
+            xx-Nov <br /> 2023
+          </h3>
+        </div>
+      </div>
+      <div className="event-unit">
+        <div
+          className="event"
+          style={{
+            backgroundImage: "url(/Images/coming_soon_mobile.png)",
+          }}>
           <div className="details">
             <h2 className="event-name oswald">DECODE</h2>
             <div className="actions-even-name">
-              <h5 className="apply_rule montserrat">Register </h5>
-              <h5 className="apply_rule montserrat">Rule Book </h5>
+              {/* <h5 className="apply_rule montserrat">Register </h5>
+              <h5 className="apply_rule montserrat">Rule Book </h5> */}
             </div>
           </div>
 

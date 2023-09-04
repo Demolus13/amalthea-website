@@ -5,7 +5,6 @@ import { events } from "../EventsData";
 export default function Events() {
   useEffect(() => {
     const H = window.innerHeight;
-    console.log(H);
     window.scrollTo(0, 0);
 
     const L1 = document.querySelectorAll(".L1");
@@ -17,8 +16,6 @@ export default function Events() {
       eventCards[i].style.zIndex = i;
     }
     eventCards[0].style.top = "0px";
-
-    console.log(eventCards);
 
     const handleScroll = () => {
       const scroll = window.scrollY;
@@ -42,7 +39,7 @@ export default function Events() {
       }
 
       if (scroll > H) {
-        const rem = (scroll + H) / 3;
+        const rem = (scroll + H) / 5;
         const count = Number.parseInt((rem / H).toPrecision(1));
         console.log(count);
         for (let i = 0; i <= count && i < eventCards.length; i++) {
@@ -109,7 +106,11 @@ const EventCard = event => {
       <span
         className="events-info"
         style={{ display: event.name === "coming soon" ? "none" : "block" }}>
-        <div className="events-buttons-holder">
+        <div className="events-text-holder">
+          <h1 className="oswald">{event.name}</h1>
+          <p className="montserrat">{event.description}</p>
+        </div>
+        <div className="events-buttons-holder montserrat">
           <button>Register</button>
           <button>Rulebook</button>
         </div>

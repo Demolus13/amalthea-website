@@ -1,169 +1,171 @@
 #navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 3.5rem;
-    font-size: 0.95rem;
-    font-weight: 500;
-    width: 100%;
-    position: absolute;
-    z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
 }
 
 .nav-items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
 }
 
 #navbar a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 /* Hamburger Section */
 .hamburger {
-    cursor: pointer;
-    z-index: 3;
-    scale: 0.75;
+  cursor: pointer;
+  z-index: 3;
+  scale: 0.75;
 }
 
 .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px 10px;
-    border-radius: 1.5px;
-    transition: all 0.5s ease;
-    background-color: white;
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 10px;
+  border-radius: 1.5px;
+  transition: all 0.5s ease;
+  background-color: white;
 }
 
 .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
 
 .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
 }
 
 .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 /* Hamburger Menu */
 .ham-menu {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    bottom: -120%;
-    right: 0px;
-    background-color: #1f2123;
-    height: 100%;
-    transition: 0.5s;
-    z-index: 2;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: -120%;
+  right: 0px;
+  background-color: #1f2123;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 2;
 }
 
 .ham-menu.active {
-    bottom: 0px;
+  bottom: 0px;
 }
 
 .ham-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 6rem;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 6rem;
+  width: 100%;
 }
 
 .ham-container ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    min-width: 210px;
-    margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 210px;
+  margin-bottom: 5px;
 }
 
 .ham-item {
-    list-style: none;
-    padding: 0.5rem 0rem;
+  list-style: none;
+  padding: 0.5rem 0rem;
 }
 
 .ham-item a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
 }
 
-.ham-container ul{
-    padding-left: 1rem;
+.ham-container ul {
+  padding-left: 1rem;
 }
 
 .subham-item {
-    list-style: none;
-    background-image: url(../../public/Images/Robo.png);
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 1.5rem;
-    padding-left: 2.5rem;
-    margin: 7.5px 0px;
-    color: white;
+  list-style: none;
+  background-image: url(../../public/Images/Robo.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 1.5rem;
+  padding-left: 2.5rem;
+  margin: 7.5px 0px;
+  color: white;
 }
 
 .subham-item a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.25rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1.25rem;
 }
 
 .backdrop {
-    position: fixed;
-    top: -100%;
-    left: 0px;
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-    z-index: 1;
-    opacity: 0.6;
+  position: fixed;
+  top: -100%;
+  left: 0px;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 1;
+  opacity: 0.6;
 }
 
 .backdrop.active {
-    top: 0px;
+  top: 0px;
 }
-
 
 /* Responsive Section */
 @media screen and (max-width: 850px) {
-    .item {
-        display: none;
-    }
+  #navbar {
+    padding: 1.5rem 2rem;
+  }
+  .item {
+    display: none;
+  }
 
-    .ham-menu{
-        width: 50%;
-    }
+  .ham-menu {
+    width: 50%;
+  }
 
-    .ham-container{
-        margin: 30px;;
-    }
+  .ham-container {
+    margin: 30px;
+  }
 
-    .ham-item a{
-        font-size:1.5rem !important
-    }
+  .ham-item a {
+    font-size: 1.5rem !important;
+  }
 
-    .subham-item a{
-        font-size: 1rem;;
-    }
+  .subham-item a {
+    font-size: 1rem;
+  }
 }
 
-@media screen and (max-width:600px) {
-    .ham-item a{    
-        font-size:1rem !important
-    }
-    .subham-item a{
-        font-size: 0.75rem !important;;
-    }
-    .ham-container ul{
-        padding-left: 0.35rem;
-    }
+@media screen and (max-width: 600px) {
+  .ham-item a {
+    font-size: 1rem !important;
+  }
+  .subham-item a {
+    font-size: 0.75rem !important;
+  }
+  .ham-container ul {
+    padding-left: 0.35rem;
+  }
 }

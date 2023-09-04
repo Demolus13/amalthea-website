@@ -28,7 +28,6 @@ export default function Home() {
     const tt = document.querySelectorAll(".title");
     const unit = document.getElementById("unit");
     const event_unit = document.querySelectorAll(".event-unit");
-    const event_ = document.querySelectorAll(".event");
     body.style.height = `${34 * H}px`;
 
     const handleScroll = () => {

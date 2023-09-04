@@ -24,6 +24,7 @@
 }
 
 .center {
+  z-index: -1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,6 +74,7 @@
   transform-origin: bottom right;
 }
 .aml-bg-5 {
+  z-index: -1;
   position: fixed;
   right: -5vw;
   top: 15vh;
@@ -81,6 +83,7 @@
   transform-origin: center;
 }
 .aml-bg-6 {
+  z-index: -1;
   position: fixed;
   left: -5vw;
   bottom: 15vh;
@@ -271,7 +274,6 @@
   inset: 0px;
   top: 100vh;
   bottom: -100vh;
-  
 }
 
 .event {

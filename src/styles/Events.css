@@ -7,6 +7,7 @@
 }
 
 #events-content {
+  z-index: -1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +17,48 @@
   background: #00000000;
   width: 100%;
   height: 100vh;
+}
+
+#events-content:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(50deg, #e81cff 0%, #4073ff 100%);
+  transform: scale(0.5);
+  filter: blur(50px);
+  opacity: 0.8;
+  transition: opacity 0.3s;
+  border-radius: inherit;
+  animation: rotate 60s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) scale(1.5);
+  }
+  to {
+    transform: rotate(360deg) scale(2);
+  }
+}
+
+/* 
+* Prevents issues when the parent creates a 
+* stacking context. (For example, using the transform
+* property )
+*/
+#events-content::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  border-radius: inherit;
 }
 
 #events-cards-holder {
@@ -30,20 +73,63 @@
   position: absolute;
   top: 100vh;
   width: 100%;
-  transition: top 0.8s cubic-bezier(0.62, 0.05, 0.32, 0.95);
+  transition: top 1s cubic-bezier(0.62, 0.05, 0.32, 0.95);
+  height: 95vh;
 }
 .event-card > img {
+  height: 95vh;
   width: 100%;
-  min-height: 95vh;
+  object-fit: cover;
+}
+.event-card > span {
+  border: 3px solid white;
+  border-left: 0;
+  border-bottom: 0;
+  position: absolute;
+  border-top-right-radius: 20px;
+  background: #d6e6ff25;
+  backdrop-filter: blur(15px);
+  width: 30%;
+  min-width: 400px;
+  height: 10%;
+  bottom: 0;
+  left: 0;
+  transition: height 1s cubic-bezier(0.62, 0, 0.33, 0.99);
+}
+.event-card > span:hover {
+  height: 80%;
+}
+.event-card > span > i {
+  height: 100px;
+  width: 100px;
+}
+.events-buttons-holder {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
 }
 
 @media screen and (max-width: 600px) {
   #events-cards-holder {
-    border-radius: 0px;
-    width: 100vw;
-    height: 100vh;
+    height: 80vh;
+    border-radius: 15px;
+  }
+  .event-card {
+    height: 80vh;
   }
   .event-card > img {
-    min-height: 100vh;
+    height: 80vh;
+  }
+  .event-card > span {
+    left: 5%;
+    right: 5%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-left: 3px solid white;
+    width: 90%;
+    min-width: 0px;
   }
 }

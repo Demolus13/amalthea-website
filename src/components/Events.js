@@ -42,7 +42,7 @@ export default function Events() {
       }
 
       if (scroll > H) {
-        const rem = (scroll + H) / 5;
+        const rem = (scroll + H) / 3;
         const count = Number.parseInt((rem / H).toPrecision(1));
         console.log(count);
         for (let i = 0; i <= count && i < eventCards.length; i++) {
@@ -95,7 +95,13 @@ const EventCard = event => {
   return (
     <div className="event-card">
       <img src={event.imgSrc} alt={event.name}></img>
-      <h1 style={{ position: "absolute" }}>{event.name}</h1>
+      <span className="events-info">
+        <i className="far fa-chevron"></i>
+        <div className="events-buttons-holder">
+          <button>Register</button>
+          <button>Rulebook</button>
+        </div>
+      </span>
     </div>
   );
 };

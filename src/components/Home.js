@@ -3,12 +3,10 @@ import "../styles/Home.css";
 import { useState } from "react";
 
 export default function Home() {
-  const [windowSize, setWindowSize] = useState([
-    {
+  const [windowSize, setWindowSize] = useState({
       innerWidth: window.screen.width,
       innerHeight: window.screen.height,
-    },
-  ]);
+    });
   useEffect(() => {
     function handleResize() {
       setWindowSize(window.innerWidth, window.innerHeight);
@@ -32,7 +30,6 @@ export default function Home() {
     const tt = document.querySelectorAll(".title");
     const unit = document.getElementById("unit");
     const event_unit = document.querySelectorAll(".event-unit");
-    const expo2 = document.getElementById("expo2");
     body.style.height = `${34 * H}px`;
 
     const handleScroll = () => {
@@ -103,7 +100,6 @@ export default function Home() {
       }
 
       if (scroll > 7 * H && scroll < 14.5 * H) {
-        expo2.style.display = "inherit";
         
         ot.style.opacity = 0;
         const top = (1 - (2 * (scroll - 7 * H)) / (3 * H)) * 100;
@@ -120,7 +116,6 @@ export default function Home() {
           tt[i + 1].classList.remove("active");
         }
       } else {
-        expo2.style.display = "none";
         tt.forEach((tt_i) => {
           tt_i.classList.add("deactive");
           tt_i.classList.remove("active");
@@ -168,7 +163,7 @@ export default function Home() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [windowSize]);
   return (
     <div className="home-body">
       <div className="container">
@@ -230,7 +225,7 @@ export default function Home() {
             ""
           ) : window.screen.width > 600 && window.screen.width < 937 ? (
             <>
-              <div className="gallery-item item-3">
+              <div className="gallery-item item-3" id="conclave3">
                 <img
                   className="gallery-img"
                   src="./Images/conclave3.jpeg"
@@ -247,7 +242,7 @@ export default function Home() {
                   alt=""
                 />
               </div>
-              <div className="gallery-item item-3">
+              <div className="gallery-item item-3" id="conclave3">
                 <img
                   className="gallery-img"
                   src="./Images/conclave3.jpeg"
@@ -257,7 +252,7 @@ export default function Home() {
             </>
           )}
 
-          <div className="gallery-item item-2">
+          <div className="gallery-item item-2" id="conclave2">
             <img className="gallery-img" src="./Images/conclave2.JPG" alt="" />
           </div>
           <div className="gallery-item item-4">

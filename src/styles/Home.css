@@ -416,6 +416,29 @@
   .rule-book {
     font-size: 19px;
   }
+
+  .item-2{
+    width: 200%;
+  }
+
+  .item-4{
+    scale: 3;
+    padding-left: 30%;
+  }
+  .item-5{
+    padding-left: 65%;
+    transform: translate(-15%, -240%);
+    scale: 1.5;
+  }
+
+  #expo2{
+    transform: translate(0%, 20%);
+  }
+
+  #expo4{
+    transform: translate(0%, -20%);
+  
+  }
 }
 @media screen and ((max-height: 500px)) {
   .event-name {
@@ -490,4 +513,5 @@
     height: 20%;
     width: 100%;
   }
+
 }

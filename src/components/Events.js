@@ -64,18 +64,6 @@ export default function Events() {
           ec.style.bottom = "0vh";
         });
       }
-
-    //   if (scroll > H) {
-    //     const rem = (scroll + H) / 5;
-    //     const count = Number.parseInt((rem / H).toPrecision(1));
-    //     console.log(count);
-    //     for (let i = 0; i <= count && i < eventCards.length; i++) {
-    //       eventCards[i].style.top = "0px";
-    //     }
-    //     for (let i = eventCards.length - 1; i > count; i--) {
-    //       eventCards[i].style.top = "100vh";
-    //     }
-    //   }
     };
 
     window.addEventListener("scroll", handleScroll);

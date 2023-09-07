@@ -58,7 +58,7 @@ export default function Events() {
           eventCards[i].style.bottom = "-100vh";
         }
       }
-      if (9 * H < scroll) {
+      if (8.75 * H < scroll) {
         eventCards.forEach(ec => {
           ec.style.top = "0vh";
           ec.style.bottom = "0vh";

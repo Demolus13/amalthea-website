@@ -36,9 +36,9 @@ export default function Events() {
         content.style.opacity = 1;
       }
 
-      if (0.5 * H < scroll) {
-        const j = Math.floor((scroll - 0.5*H) / (2 * H));
-        const top = (1 - ((scroll - 0.5*H) % (2 * H)) / (2 * H)) * 100;
+      if (0.75 * H < scroll) {
+        const j = Math.floor((scroll - 0.75*H) / (2 * H)) + 1;
+        const top = (1 - ((scroll - 0.75*H) % (2 * H)) / (2 * H)) * 100;
         if (0 < j && j < 4) {
           eventCards[j].style.top = `${top}vh`;
           eventCards[j].style.bottom = `-${top}vh`;
@@ -52,7 +52,7 @@ export default function Events() {
           eventCards[i].style.bottom = "-100vh";
         }
       }
-      if (scroll < 0.5 * H) {
+      if (scroll < 0.75 * H) {
         for (let i = 1; i < 4; i++) {
           eventCards[i].style.top = "100vh";
           eventCards[i].style.bottom = "-100vh";

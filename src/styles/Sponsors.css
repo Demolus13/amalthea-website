@@ -48,7 +48,39 @@ body {
   animation: slide-out 1s ease-in-out;
 }
 
+.platinum-sponsor{
+  border-bottom: 5px solid #e5e4e2;
+}
+
+.diamond-sponsor{
+  border-bottom: 5px solid #4EE2EC;
+}
+
+.gold-sponsor{
+  border-bottom: 5px solid gold;
+}
+
+.silver-sponsor{
+  border-bottom: 5px solid #c0c0c0;
+}
+
+.event-parters{
+  border-bottom: 5px solid #e75cd6;
+}
+
+.conclave-partners{
+  border-bottom: 5px solid #e72a2a;
+}
+
+.design-innovation-partners{
+  border-bottom: 5px solid #b0f719;
+}
+
 .sponsor-card {
+  background-color: #2f4052;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 300px;
   height: 200px;
   /* Changed the border color to light gray */
@@ -67,6 +99,17 @@ body {
   /* Center items horizontally */
   align-items: center;
   /* Center items vertically */
+  padding-top: 0;
+}
+
+.sponsor-card img{
+  background-color: white;
+}
+
+.sponsor-card h5{
+  color: white;
+  font-weight: 800;
+  font-style: italic;
 }
 
 .sponsor-card img {

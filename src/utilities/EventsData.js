@@ -6,17 +6,17 @@ export const events = [
     imgSrc: "./Images/robowars.png",
   },
   {
-    name: "coming soon",
+    name: "coming soon1",
     description: "bla bla bla",
     imgSrc: "./Images/coming_soon.png",
   },
   {
-    name: "coming soon",
+    name: "coming soon2",
     description: "bla bla bla",
     imgSrc: "./Images/coming_soon.png",
   },
   {
-    name: "coming soon",
+    name: "coming soon3",
     description: "bla bla bla",
     imgSrc: "./Images/coming_soon.png",
   },

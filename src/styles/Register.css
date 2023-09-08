@@ -1,0 +1,14 @@
+#register-container {
+  height: 100vh;
+  background: #170036;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+#robowars-register {
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.361);
+}

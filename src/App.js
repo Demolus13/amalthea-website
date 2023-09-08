@@ -11,17 +11,73 @@ import { Routes, Route } from "react-router-dom";
 import Register from "./components/Register";
 
 function App() {
+  console.log();
   return (
     <>
-      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/events" element={<Events />} />
-        <Route path="/conclave" element={<Conclave />} />
-        <Route path="/symposium" element={<Symposium />} />
-        <Route path="/tech-expo" element={<TechExpo />} />
-        <Route path="/sponsors" element={<Sponsors />} />
-        <Route path="/women-in-tech" element={<WIT />} />
+        <Route
+          path="/"
+          element={
+            <>
+              <Navbar />
+              <Home />
+            </>
+          }
+        />
+        <Route
+          path="/events"
+          element={
+            <>
+              <Navbar />
+              <Events />
+            </>
+          }
+        />
+        <Route
+          path="/conclave"
+          element={
+            <>
+              <Navbar />
+              <Conclave />
+            </>
+          }
+        />
+        <Route
+          path="/symposium"
+          element={
+            <>
+              <Navbar />
+              <Symposium />
+            </>
+          }
+        />
+        <Route
+          path="/tech-expo"
+          element={
+            <>
+              <Navbar />
+              <TechExpo />
+            </>
+          }
+        />
+        <Route
+          path="/sponsors"
+          element={
+            <>
+              <Navbar />
+              <Sponsors />
+            </>
+          }
+        />
+        <Route
+          path="/women-in-tech"
+          element={
+            <>
+              <Navbar />
+              <WIT />
+            </>
+          }
+        />
         <Route path="/register/:event" element={<Register />} />
       </Routes>
     </>

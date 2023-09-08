@@ -49,6 +49,11 @@ export default function Navbar() {
             <li className="ham-item">
               <Link to="/symposium" className="ham-link linkEventListener">Symposium</Link>
             </li>
+            <ul>
+              <li className="subham-item">
+                <Link to="/about" className="ham-link linkEventListener">Women in Tech</Link>
+              </li>
+            </ul>
             <li className="ham-item">
               <Link to="/tech-expo" className="ham-link linkEventListener">Tech Expo</Link>
             </li>
@@ -61,9 +66,6 @@ export default function Navbar() {
               </li>
               <li className="subham-item">
                 <Link to="/team" className="ham-link linkEventListener">Our Team</Link>
-              </li>
-              <li className="subham-item">
-                <Link to="/women-in-tech" className="ham-link linkEventListener">Women in Tech</Link>
               </li>
               <li className="subham-item">
                 <Link to="/how-to-reach" className="ham-link linkEventListener">How to reach</Link>

@@ -12,18 +12,16 @@ export default function Events() {
     const L2 = document.querySelectorAll(".L2");
     const aml = document.getElementById("aml");
     const content = document.getElementById("events-content");
-    const eventCards = document.querySelectorAll(".event-card");
-    for (let i = 0; i < eventCards.length; i++) {
-      eventCards[i].style.zIndex = i;
-    }
-    eventCards[0].style.top = "0px";
-
+    const eventCards = document.querySelectorAll(".event-card-holder");
+    
     const handleScroll = () => {
       const scroll = window.scrollY;
+      eventCards[0].style.top = "0vh";
+      eventCards[0].style.bottom = "0vh";
 
       if (scroll < 0.5 * H) {
-        const s1 = 1 - scroll / H;
-        const s2 = 1 - scroll / H;
+        const s1 = 1 - scroll / (0.75 * H);
+        const s2 = 1 - scroll / (0.75 * H);
         const s3 = 1 - scroll / (0.5 * H);
 
         L1.forEach(l => {
@@ -39,16 +37,33 @@ export default function Events() {
         content.style.opacity = 1;
       }
 
-      if (scroll > H) {
-        const rem = (scroll + H) / 5;
-        const count = Number.parseInt((rem / H).toPrecision(1));
-        console.log(count);
-        for (let i = 0; i <= count && i < eventCards.length; i++) {
-          eventCards[i].style.top = "0px";
+      if (0.75 * H < scroll) {
+        const j = Math.floor((scroll - 0.75*H) / (2 * H)) + 1;
+        const top = (1 - ((scroll - 0.75*H) % (2 * H)) / (2 * H)) * 100;
+        if (0 < j && j < 4) {
+          eventCards[j].style.top = `${top}vh`;
+          eventCards[j].style.bottom = `-${top}vh`;
         }
-        for (let i = eventCards.length - 1; i > count; i--) {
+        for (let i = 1; i < j && j < 4; i++) {
+          eventCards[i].style.top = "0vh";
+          eventCards[i].style.bottom = "0vh";
+        }
+        for (let i = j + 1; i < 4; i++) {
           eventCards[i].style.top = "100vh";
+          eventCards[i].style.bottom = "-100vh";
         }
+      }
+      if (scroll < 0.75 * H) {
+        for (let i = 1; i < 4; i++) {
+          eventCards[i].style.top = "100vh";
+          eventCards[i].style.bottom = "-100vh";
+        }
+      }
+      if (8.75 * H < scroll) {
+        eventCards.forEach(ec => {
+          ec.style.top = "0vh";
+          ec.style.bottom = "0vh";
+        });
       }
     };
 
@@ -78,11 +93,9 @@ export default function Events() {
         <img className="aml-bg-6" src="./Images/AML-BG-5.png" alt="" />
         <img className="aml-bg-7 L2" src="./Images/AML-BG-6.png" alt="" />
         <div id="events-content">
-          <div id="events-cards-holder">
             {events.map(event => {
               return <EventCard key={event.name} {...event} />;
             })}
-          </div>
         </div>
       </div>
     </div>
@@ -93,6 +106,7 @@ const EventCard = event => {
   const isMobile = window.screen.width < 500 ? true : false;
 
   return (
+    <div className="event-card-holder">
     <div className="event-card">
       <img
         src={
@@ -118,6 +132,7 @@ const EventCard = event => {
           <button>Rulebook</button>
         </div>
       </span>
+    </div>
     </div>
   );
 };

@@ -13,13 +13,9 @@ const RobowarsRegistration = () => {
           id="email"
           type="email"
           value={email}
+          required
+          placeholder="Enter Email"
           onChange={e => setEmail(e.target.value)}
-        />
-        <input
-          id="password"
-          type="password"
-          value={password}
-          onChange={e => setPassword(e.target.value)}
         />
       </form>
     </div>

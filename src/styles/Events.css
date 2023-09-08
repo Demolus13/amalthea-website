@@ -121,7 +121,7 @@
   bottom: 0;
   padding: 15px;
 }
-.events-buttons-holder > button {
+.events-buttons-holder button {
   color: white;
   border: none;
   border-radius: 15px;
@@ -130,7 +130,7 @@
   background: #e37430;
   transition: transform 0.5s;
 }
-.events-buttons-holder > button:hover {
+.events-buttons-holder button:hover {
   /* transform: scale(1.05); */
   background: #e56617;
 }

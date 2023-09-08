@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "../styles/Events.css";
 import { events } from "../utilities/EventsData";
+import { Link } from "react-router-dom";
 
 export default function Events() {
   useEffect(() => {
@@ -111,7 +112,9 @@ const EventCard = event => {
           <p className="montserrat">{event.description}</p>
         </div>
         <div className="events-buttons-holder montserrat">
-          <button>Register</button>
+          <Link to={`/register/${event.name}`}>
+            <button>Register</button>
+          </Link>
           <button>Rulebook</button>
         </div>
       </span>

@@ -13,7 +13,7 @@ export default function Events() {
     const aml = document.getElementById("aml");
     const content = document.getElementById("events-content");
     const eventCards = document.querySelectorAll(".event-card-holder");
-    
+
     const handleScroll = () => {
       const scroll = window.scrollY;
       eventCards[0].style.top = "0vh";
@@ -38,8 +38,8 @@ export default function Events() {
       }
 
       if (0.75 * H < scroll) {
-        const j = Math.floor((scroll - 0.75*H) / (2 * H)) + 1;
-        const top = (1 - ((scroll - 0.75*H) % (2 * H)) / (2 * H)) * 100;
+        const j = Math.floor((scroll - 0.75 * H) / (2 * H)) + 1;
+        const top = (1 - ((scroll - 0.75 * H) % (2 * H)) / (2 * H)) * 100;
         if (0 < j && j < 4) {
           eventCards[j].style.top = `${top}vh`;
           eventCards[j].style.bottom = `-${top}vh`;
@@ -93,9 +93,9 @@ export default function Events() {
         <img className="aml-bg-6" src="./Images/AML-BG-5.png" alt="" />
         <img className="aml-bg-7 L2" src="./Images/AML-BG-6.png" alt="" />
         <div id="events-content">
-            {events.map(event => {
-              return <EventCard key={event.name} {...event} />;
-            })}
+          {events.map(event => {
+            return <EventCard key={event.name} {...event} />;
+          })}
         </div>
       </div>
     </div>
@@ -107,32 +107,32 @@ const EventCard = event => {
 
   return (
     <div className="event-card-holder">
-    <div className="event-card">
-      <img
-        src={
-          event.name === "coming soon" && isMobile
-            ? "./Images/coming_soon_mobile.png"
-            : event.imgSrc
-        }
-        style={{
-          height: event.name === "coming soon" && isMobile ? "95vh" : "",
-        }}
-        alt={event.name}></img>
-      <span
-        className="events-info"
-        style={{ display: event.name === "coming soon" ? "none" : "block" }}>
-        <div className="events-text-holder">
-          <h1 className="oswald">{event.name}</h1>
-          <p className="montserrat">{event.description}</p>
-        </div>
-        <div className="events-buttons-holder montserrat">
-          <Link to={`/register/${event.name}`}>
-            <button>Register</button>
-          </Link>
-          <button>Rulebook</button>
-        </div>
-      </span>
-    </div>
+      <div className="event-card">
+        <img
+          src={
+            event.name === "coming soon" && isMobile
+              ? "./Images/coming_soon_mobile.png"
+              : event.imgSrc
+          }
+          style={{
+            height: event.name === "coming soon" && isMobile ? "95vh" : "",
+          }}
+          alt={event.name}></img>
+        <span
+          className="events-info"
+          style={{ display: event.name === "coming soon" ? "none" : "block" }}>
+          <div className="events-text-holder">
+            <h1 className="oswald">{event.name}</h1>
+            <p className="montserrat">{event.description}</p>
+          </div>
+          <div className="events-buttons-holder montserrat">
+            <Link to={`/register/${event.name.toLowerCase()}`}>
+              <button>Register</button>
+            </Link>
+            <button>Rulebook</button>
+          </div>
+        </span>
+      </div>
     </div>
   );
 };

@@ -1,25 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 
 const RobowarsRegistration = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [isLoggedIn, setLoggedIn] = useState(false);
-
-  return (
-    <div id="robowars-register">
-      <h2>Register</h2>
-      <form>
-        <input
-          id="email"
-          type="email"
-          value={email}
-          required
-          placeholder="Enter Email"
-          onChange={e => setEmail(e.target.value)}
-        />
-      </form>
-    </div>
-  );
+  return <div style={{ flexGrow: 1 }}>rooboossss</div>;
 };
 
 export default RobowarsRegistration;

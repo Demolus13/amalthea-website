@@ -7,8 +7,55 @@
   color: aliceblue;
 }
 
-#robowars-register {
+#register-card {
+  min-width: 30vw;
+  height: 50vh;
   padding: 15px;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.361);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#register-card.active {
+  height: 70vh;
+  min-width: 50vw;
+  justify-content: flex-start;
+  align-items: start;
+}
+#register-card.active button {
+  color: white;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.258);
+  border-radius: 5px;
+  border: none;
+}
+#register-card.active button:hover {
+  background: rgba(255, 255, 255, 0.328);
+}
+
+#register-card > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+#register-card > form > input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+#register-card > form > button {
+  color: white;
+  width: 100%;
+  max-width: 350px;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.258);
+  border-radius: 5px;
+  border: none;
+}
+#register-card > form > button:hover {
+  background: rgba(255, 255, 255, 0.328);
 }

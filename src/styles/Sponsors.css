@@ -56,6 +56,10 @@ body {
   border-bottom: 5px solid #4EE2EC;
 }
 
+.diamond-sponsor h5, .gold-sponsor h5, .req-adjust{
+  padding-bottom: 40px;
+  padding-top: 10px;
+}
 .gold-sponsor{
   border-bottom: 5px solid gold;
 }
@@ -82,7 +86,7 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 300px;
-  height: 200px;
+  height: 250px;
   /* Changed the border color to light gray */
   /* border: 1px solid #ccc; */
   /* border-radius: 10px; */

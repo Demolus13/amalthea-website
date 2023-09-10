@@ -4,13 +4,13 @@ import RobowarsRegistration from "./RegistrationPages/RobowarsReg";
 import "../styles/Register.css";
 import { auth } from "../utilities/FirebaseConfig";
 import { useAuthState } from "react-firebase-hooks/auth";
+
 import {
   isSignInWithEmailLink,
   sendSignInLinkToEmail,
   signInWithEmailLink,
   signOut,
 } from "firebase/auth";
-
 const Register = () => {
   const eventsComponents = {
     robowars: <RobowarsRegistration />,

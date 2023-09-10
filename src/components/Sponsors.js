@@ -158,7 +158,7 @@ export default function Sponsors() {
                   borderBottom: "10px solid white",
                 }}
               />
-              <h5>Vraj Group</h5>
+              <h5 className="req-adjust">Vraj Group</h5>
             </div>
             <div className="sponsor-card silver-sponsor">
               {/* Replace the image source with the logo of your silver sponsor */}
@@ -168,7 +168,7 @@ export default function Sponsors() {
             <div className="sponsor-card silver-sponsor">
               {/* Replace the image source with the logo of your silver sponsor */}
               <img src="./Images/AC.png" alt="AC logo" />
-              <h5>Alstonia Consulting</h5>
+              <h5 className="req-adjust">Alstonia Consulting</h5>
             </div>
           </div>
           {/* HTML code for the other sponsors section of the web page */}
@@ -383,7 +383,7 @@ export default function Sponsors() {
                   height: "100%"
                 }}
               />
-              <h5>Apple</h5>
+              <h5>Microsoft</h5>
             </div>
           </div>
         </div>

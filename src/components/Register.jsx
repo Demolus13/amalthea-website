@@ -23,8 +23,6 @@ const Register = () => {
   const [isMailSent, setIsMailSent] = useState(false);
   const [user, loading, error] = useAuthState(auth);
   const navigate = useNavigate();
-  console.log(error);
-  console.log(user);
 
   useEffect(() => {
     if (!user) {
@@ -50,6 +48,7 @@ const Register = () => {
           })
           .catch(error => {
             setLoginError(error.message);
+            navigate(`/register/${event}`);
           });
       }
     }
@@ -61,7 +60,7 @@ const Register = () => {
 
     sendSignInLinkToEmail(auth, email, {
       //url to be redirected to after clicking link in email
-      url: "http://localhost:3000/register/Robowars",
+      url: "http://localhost:3000/register/robowars",
       handleCodeInApp: true,
     })
       .then(() => {
@@ -80,6 +79,7 @@ const Register = () => {
   };
 
   const handleLogout = () => {
+    navigate(`/register/${event}`);
     signOut(auth)
       .then(() => {
         setEmail("");
@@ -102,16 +102,24 @@ const Register = () => {
               <>
                 <div>
                   <h4>Hello,</h4>
-                  <h6>Logged in with {user.email}</h6>
+                  <h6>Logged in with: {user.email}</h6>
                 </div>
                 {eventsComponents[event]}
                 <button onClick={handleLogout}>Logout</button>
               </>
             ) : (
               <>
-                <div>
-                  <h2>Login or Register</h2>
-                  <h6>Only the Team Leader has to Login</h6>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                  }}>
+                  <h2>Login and Register</h2>
+                  <h6>Only the Team Leader has to Register</h6>
+                  <h6>
+                    This email will be registered as the Leader's email address
+                  </h6>
                 </div>
                 <form onSubmit={handleLogin}>
                   <input

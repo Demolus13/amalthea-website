@@ -52,3 +52,7 @@
     background:#fff !important;
   }
 }
+
+.firebase-emulator-warning{
+  display: none;
+}

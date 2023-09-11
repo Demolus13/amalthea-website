@@ -85,8 +85,8 @@
   object-fit: cover;
 }
 .event-card > span {
-  border: 3px solid #e37430;
-  box-shadow: 0 0 15px 3px #e37430;
+  border: 3px solid;
+  box-shadow: 0 0 15px 3px;
   border-left: 0;
   border-bottom: 0;
   position: absolute;

@@ -126,8 +126,7 @@ const EventCard = event => {
             <p className="montserrat">{event.description}</p>
           </div>
           <div className="events-buttons-holder montserrat">
-            <Link to="/register/robowars">
-            {/* <Link to={`/register/${event.name.toLowerCase()}`}> */}
+            <Link to={`/register/${event.name.toLowerCase()}`}>
               <button>Register</button>
             </Link>
             <button>Rulebook</button>

@@ -67,8 +67,8 @@
   align-items: center;
   position: fixed;
   inset: 0px;
-  top: 100vh;
-  bottom: -100vh;
+  top: 120vh;
+  bottom: -120vh;
 }
 .event-card {
   position: absolute;

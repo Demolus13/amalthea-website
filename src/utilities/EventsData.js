@@ -7,10 +7,10 @@ export const events = [
     accentColor: "#e37430",
   },
   {
-    name: "coming soon",
+    name: "BrainWiz",
     description: "bla bla bla",
-    imgSrc: "./Images/coming_soon.png",
-    accentColor: "#000000",
+    imgSrc: "./Images/Brainwiz.png",
+    accentColor: "",
   },
   {
     name: "coming soon",

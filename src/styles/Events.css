@@ -91,7 +91,6 @@
   border-bottom: 0;
   position: absolute;
   border-top-right-radius: 20px;
-  background: #00000025;
   backdrop-filter: blur(6px);
   width: 30%;
   min-width: 400px;
@@ -131,7 +130,6 @@
   border-radius: 15px;
   font-weight: 550;
   padding: 7px 10px;
-  background: #e37430;
   transition: transform 0.5s;
 }
 .events-buttons-holder button:hover {

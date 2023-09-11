@@ -120,16 +120,33 @@ const EventCard = event => {
           alt={event.name}></img>
         <span
           className="events-info"
-          style={{ display: event.name === "coming soon" ? "none" : "block" }}>
-          <div className="events-text-holder">
+          style={{
+            background: event.spanBg,
+            display: event.name === "coming soon" ? "none" : "block",
+            borderColor: event.accentColor,
+            boxShadow: "0 0 15px 3px " + event.accentColor,
+          }}>
+          <div
+            className="events-text-holder"
+            style={{ color: event.textColor }}>
             <h1 className="oswald">{event.name}</h1>
-            <p className="montserrat">{event.description}</p>
+            <p style={{ fontWeight: event.weight }} className="montserrat">
+              {event.description}
+            </p>
           </div>
           <div className="events-buttons-holder montserrat">
             <Link to={`/register/${event.name.toLowerCase()}`}>
-              <button>Register</button>
+              <button style={{ background: event.accentColor }}>
+                Register
+              </button>
             </Link>
-            <button>Rulebook</button>
+            <button
+              onClick={() => {
+                window.open(event.rulebookPath);
+              }}
+              style={{ background: event.accentColor }}>
+              Rulebook
+            </button>
           </div>
         </span>
       </div>

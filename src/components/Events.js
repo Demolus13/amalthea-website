@@ -39,7 +39,7 @@ export default function Events() {
 
       if (0.75 * H < scroll) {
         const j = Math.floor((scroll - 0.75 * H) / (2 * H)) + 1;
-        const top = (1 - ((scroll - 0.75 * H) % (2 * H)) / (2 * H)) * 100;
+        const top = (1 - ((scroll - 0.75 * H) % (2 * H)) / (2 * H)) * 120;
         if (0 < j && j < 4) {
           eventCards[j].style.top = `${top}vh`;
           eventCards[j].style.bottom = `-${top}vh`;

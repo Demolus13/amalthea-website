@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { createRef, useEffect, useState } from "react";
 import "../styles/Events.css";
 import { events } from "../utilities/EventsData";
 import { Link } from "react-router-dom";
 
 export default function Events() {
-  const [iframeActive, setIframeActive] = useState(false);
   useEffect(() => {
     const H = window.innerHeight;
     window.scrollTo(0, 0);
@@ -15,30 +14,16 @@ export default function Events() {
     const eventCards = document.querySelectorAll(".event-card-holder");
     const event_info = document.getElementsByClassName("events-info");
     const iframes = document.getElementsByClassName("content-iframe");
-    for (let index = 0; index < iframes.length; index++) {
-      const iframe = iframes[index];
-      iframe.onmouseover = () => {
-        handleHover(0)
+    
+    
+    if(event_info[0].clientHeight >= window.innerHeight * 0.2)
+    {
+      console.log("Called")
+      for (let i = 0; i < iframes.length; i++) {
+        const element = iframes[i];
+        element.style.left = "2.5%";
+        
       }
-    }
-    event_info[0].onmouseenter = () => {
-      handleHover(0);
-    };
-
-    event_info[0].onmouseout = () => {
-      handleExit(0);
-    };
-
-    //document.onmo
-    for (let index = 0; index < event_info.length; index++) {
-      const element = event_info[index];
-      element.addEventListener("mouseenter", () => {
-        console.log(index);
-      });
-
-      // element.addEventListener("mouseexit", ()=>{
-      //   handleExit(index)
-      // })
     }
     // event_info.forEach((element, index) => {
     //   element.addEventListener("hover",  () => {
@@ -134,12 +119,9 @@ export default function Events() {
             event["index"] = index;
             return <EventCard key={event.name} {...event} />;
           })}
-          <h3 className="content-title-0 disable-left">
-            Robowars Video Release
-          </h3>
-          {events.map((event) => {
+          {/* {events.map((event) => {
             return <EventVisualContent key={event.name} {...event} />;
-          })}
+          })} */}
         </div>
       </div>
     </div>
@@ -151,23 +133,51 @@ const EventVisualContent = (event) => {
     <div className={`contxents-visual`}>
       {event.contents.map((content, index) => {
         return (
-            <iframe
-              className={`content-iframe content-iframe-${index} ${
-                index < 4 ? "disable-left" : "disable-right"
-              } contents-for-${event.name}`}
-              height="25%"
-              width="25%"
-              src={content}
-              title="Iframe Example"
-            ></iframe>
+          <iframe
+          className={`content-iframe content-iframe-${index} ${
+            index < 4 ? "disable-left" : "disable-right"
+          } contents-for-${event.name}`}
+          height="25%"
+          width="25%"
+          src={content.src}
+          title="Iframe Example"
+          allow="fullscreen"
+          autoplay="false"
+        ></iframe>
         );
       })}
     </div>
   );
 };
+
+const iFrame = (src) => {
+  return (
+    <>
+    <iframe className="fullScreenIframe" src={src}/>
+    <button className="fullScreenIframeClose">Close</button>
+    </>
+  )
+}
 const EventCard = (event) => {
   const isMobile = window.screen.width < 500 ? true : false;
+  
+const useRefDimensions = (ref) => {
+  const [dimensions, setDimensions] = useState({ width: 1, height: 2 })
+  React.useEffect(() => {
+    console.log(ref.current)
+    if (ref.current) {
+      const { current } = ref
+      const boundingRect = current.getBoundingClientRect()
+      const { width, height } = boundingRect
+      setDimensions({ width: width, height: height })
+    }
+  }, [ref])
+  return dimensions
+}
+  const divRef = createRef();
+  const dimensions = useRefDimensions(divRef)
 
+  
   return (
     <div className="event-card-holder">
       <div className="event-card">
@@ -182,10 +192,15 @@ const EventCard = (event) => {
           }}
           alt={event.name}
         ></img>
+        
+         <h5 className={`content-title-0 content-title-for-${event.name} ${ (dimensions.height <= window.innerHeight * 0.6) ? "disable-left" : ""}`}>{event.contentTitle}</h5>
+          <EventVisualContent key={event.name} {...event} />
         <span
           className={`events-info events-info-${event._index}`}
           style={{ display: event.name === "coming soon" ? "none" : "block" }}
+          ref={divRef}
         >
+         
           <div className="content-placeholder">
             <div className="content"></div>
             <div className="events-text-holder">
@@ -208,27 +223,36 @@ const EventCard = (event) => {
   );
 };
 
+
 const handleHover = (index) => {
+  const event_info = document.getElementsByClassName("events-info");
   var handleHoverElements = document.getElementsByClassName(
     `contents-for-${events[index].name}`
   );
-  var handleHoverTitle = document.getElementsByClassName(`contents-0-${index}`);
+  //var title = document.getElementsByClassName(`content-title-for-${events[index].name}`)
   for (let index = 0; index < handleHoverElements.length; index++) {
     const element = handleHoverElements[index];
-    element.classList.remove("disable-left");
+    //element.classList.remove("disable-left");
   }
+  //title[index].classList.remove("disable-left")
   document.onmouseover = () => {
     handleHover(0);
   };
+  console.log("Hovering")
 };
 
 const handleExit = (index) => {
   var handleHoverElements = document.getElementsByClassName(
     `contents-for-${events[index].name}`
   );
+  //var title = document.getElementsByClassName(`content-title-for-Robowars`);
   for (let index = 0; index < handleHoverElements.length; index++) {
     const element = handleHoverElements[index];
-    element.classList.add("disable-left");
+    //element.classList.add("disable-left");
   }
+  //title[0].classList.add("disable-left")
   console.log("Called");
+};
+
+const handleThumbnailClick = (src) => {
 };

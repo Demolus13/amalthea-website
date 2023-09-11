@@ -302,7 +302,7 @@ export default function Home() {
           </div>
 
           <h3 className="date oswald">
-            xx-Nov <br /> 2023
+            04-Nov <br /> 2023
           </h3>
         </div>
       </div>
@@ -441,7 +441,7 @@ export default function Home() {
             backgroundImage: "url(/Images/coming_soon_mobile.png)",
           }}>
           <div className="details">
-            <h2 className="event-name oswald">DECODE</h2>
+            <h2 className="event-name oswald">D'CODE</h2>
             <div className="actions-even-name">
               {/* <h5 className="apply_rule montserrat">Register </h5>
               <h5 className="apply_rule montserrat">Rule Book </h5> */}

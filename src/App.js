@@ -9,9 +9,9 @@ import Sponsors from "./components/Sponsors";
 import WIT from "./components/WIT";
 import { Routes, Route } from "react-router-dom";
 import Register from "./components/Register";
+import BrainwizReg from "./components/RegistrationPages/BrainwizReg"
 
 function App() {
-  console.log();
   return (
     <>
       <Routes>
@@ -25,7 +25,7 @@ function App() {
           }
         />
         <Route
-          path="/events"
+          path="/events-23"
           element={
             <>
               <Navbar />
@@ -34,7 +34,7 @@ function App() {
           }
         />
         <Route
-          path="/conclave"
+          path="/conclave-23"
           element={
             <>
               <Navbar />
@@ -43,7 +43,7 @@ function App() {
           }
         />
         <Route
-          path="/symposium"
+          path="/symposium-23"
           element={
             <>
               <Navbar />
@@ -52,7 +52,7 @@ function App() {
           }
         />
         <Route
-          path="/tech-expo"
+          path="/tech-expo-23"
           element={
             <>
               <Navbar />
@@ -61,7 +61,7 @@ function App() {
           }
         />
         <Route
-          path="/sponsors"
+          path="/sponsors-23"
           element={
             <>
               <Navbar />
@@ -70,7 +70,7 @@ function App() {
           }
         />
         <Route
-          path="/women-in-tech"
+          path="/women-in-tech-23"
           element={
             <>
               <Navbar />
@@ -78,6 +78,7 @@ function App() {
             </>
           }
         />
+        <Route path="/register/brainwiz" element={<BrainwizReg />} />
         <Route path="/register/:event" element={<Register />} />
       </Routes>
     </>

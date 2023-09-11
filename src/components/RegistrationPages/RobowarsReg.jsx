@@ -128,7 +128,10 @@ const RobowarsRegistration = () => {
   return (
     <div className="register-content">
       {isAlreadyRegistered ? (
-        <h2>You have Already Registered a Team!</h2>
+        <>
+          <h3>You have Already Registered a Team!</h3>
+          <h5>Contact Us if you want to Edit Registered Info</h5>
+        </>
       ) : (
         <form onSubmit={handleMakeTeam}>
           <div className="reg-info-row">

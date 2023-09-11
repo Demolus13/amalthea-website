@@ -34,6 +34,7 @@ function RegistrationForm() {
                     body: JSON.stringify(formData),
                     headers: {
                         'Content-Type': 'application/json',
+                        'Access-Control-Allow-Origin': '*'
                     },
                 }
             );

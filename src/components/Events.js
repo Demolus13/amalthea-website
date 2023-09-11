@@ -62,7 +62,7 @@ export default function Events() {
           eventCards[i].style.top = "0vh";
           eventCards[i].style.bottom = "0vh";
         }
-        for (let i = j + 1; i < 4; i++) {
+        for (let i = j + 1; i < 5; i++) {
           eventCards[i].style.top = "100vh";
           eventCards[i].style.bottom = "-100vh";
         }

@@ -21,10 +21,10 @@ export default function Sponsors() {
         const s2 = 1 - scroll / H;
         const s3 = 1 - scroll / (0.5 * H);
 
-        L1.forEach((l) => {
+        L1.forEach(l => {
           l.style.transform = `scale(${s1})`;
         });
-        L2.forEach((l) => {
+        L2.forEach(l => {
           l.style.transform = `scale(${s2})`;
         });
         aml.style.opacity = s3;
@@ -125,7 +125,7 @@ export default function Sponsors() {
                   borderBottom: "10px solid white",
                 }}
               />
-              <h5>Gujrat Maritime Board</h5>
+              <h5>Gujarat Maritime Board</h5>
             </div>
             <div className="sponsor-card gold-sponsor">
               {/* Replace the image source with the logo of your gold sponsor */}
@@ -139,7 +139,7 @@ export default function Sponsors() {
                   borderBottom: "10px solid white",
                 }}
               />
-              <h5>Gujrat Metro</h5>
+              <h5>Gujarat Metro</h5>
             </div>
           </div>
           {/* HTML code for the silver sponsors section of the web page */}
@@ -163,7 +163,7 @@ export default function Sponsors() {
             <div className="sponsor-card silver-sponsor">
               {/* Replace the image source with the logo of your silver sponsor */}
               <img src="./Images/GP.png" alt="GP logo" />
-              <h5>Gujrat State Petronet</h5>
+              <h5>Gujarat State Petronet</h5>
             </div>
             <div className="sponsor-card silver-sponsor">
               {/* Replace the image source with the logo of your silver sponsor */}
@@ -380,7 +380,7 @@ export default function Sponsors() {
                   borderRight: "15px solid white",
                   borderTop: "50px solid white",
                   borderBottom: "50px solid white",
-                  height: "100%"
+                  height: "100%",
                 }}
               />
               <h5>Microsoft</h5>

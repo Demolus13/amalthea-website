@@ -1,16 +1,15 @@
-import React, { useState } from 'react'
-import '../styles/Navbar.css'
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import "../styles/Navbar.css";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isActive, setActive] = useState(false);
   const Toggle = () => {
-    setActive(!isActive)
-  }
+    setActive(!isActive);
+  };
   if (isActive) {
     document.body.style.overflowY = "hidden";
-  }
-  else {
+  } else {
     document.body.style.overflowY = "scroll";
   }
   const Links = document.getElementsByClassName("linkEventListener");
@@ -18,12 +17,14 @@ export default function Navbar() {
     const link = Links[index];
     link.addEventListener("click", () => {
       Toggle();
-    })
+    });
   }
 
   return (
     <div id="navbar" className="poppins">
-      <div className="amalthea"><Link to="/">AMALTHEA'23</Link></div>
+      <div className="amalthea">
+        <Link to="/">AMALTHEA'23</Link>
+      </div>
       <div className="nav-items">
         <div className="item"><Link to="/events-23">EVENTS</Link></div>
         <div className="item"><Link to="/conclave-23">CONCALVE</Link></div>
@@ -38,7 +39,9 @@ export default function Navbar() {
         <div className={`ham-menu ${isActive ? "active" : ""}`}>
           <div className="ham-container">
             <li className="ham-item">
-              <Link to="/" className="ham-link linkEventListener">Home</Link>
+              <Link to="/" className="ham-link linkEventListener">
+                Home
+              </Link>
             </li>
             <li className="ham-item">
               <Link to="/events-23" className="ham-link linkEventListener">Events</Link>

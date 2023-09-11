@@ -1,7 +1,9 @@
-import React, { createRef, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/Events.css";
 import { events } from "../utilities/EventsData";
 import { Link } from "react-router-dom";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 export default function Events() {
   useEffect(() => {
@@ -22,12 +24,6 @@ export default function Events() {
         element.style.left = "2.5%";
       }
     }
-    // event_info.forEach((element, index) => {
-    //   element.addEventListener("hover",  () => {
-    //     handleHover(index)
-    //   })
-    // });
-
     const handleScroll = () => {
       const scroll = window.scrollY;
       eventCards[0].style.top = "0vh";
@@ -115,9 +111,6 @@ export default function Events() {
             event["index"] = index;
             return <EventCard key={event.name} {...event} />;
           })}
-          {/* {events.map((event) => {
-            return <EventVisualContent key={event.name} {...event} />;
-          })} */}
         </div>
       </div>
     </div>
@@ -129,50 +122,51 @@ const EventVisualContent = (event) => {
     <div className={`contxents-visual`}>
       {event.contents.map((content, index) => {
         return (
-          <iframe
+          <video
             className={`content-iframe content-iframe-${index} ${
-              index < 4 ? "disable-left" : "disable-right"
+              index %2 ===0 ? "disable-left" : "disable-right"
             } contents-for-${event.name}`}
-            height="25%"
-            width="25%"
+            id={`content-iframe-${index}-${event.name}`}
+            height="40%"
+            width="40%"
             src={content.src}
             title="Iframe Example"
             allow="fullscreen"
-            autoplay="false"
-          ></iframe>
+            autoPlay="false"
+            controls="true"
+            autoStart="false"
+          >
+          </video>
         );
       })}
     </div>
   );
 };
 
-const iFrame = (src) => {
-  return (
-    <>
-      <iframe className="fullScreenIframe" src={src} />
-      <button className="fullScreenIframeClose">Close</button>
-    </>
-  );
-};
 const EventCard = (event) => {
   const isMobile = window.screen.width < 500 ? true : false;
-
-  // const useRefDimensions = (ref) => {
-  //   const [dimensions, setDimensions] = useState({ width: 1, height: 2 });
-  //   React.useEffect(() => {
-  //     console.log(ref.current);
-  //     if (ref.current) {
-  //       const { current } = ref;
-  //       const boundingRect = current.getBoundingClientRect();
-  //       const { width, height } = boundingRect;
-  //       setDimensions({ width: width, height: height });
-  //     }
-  //   }, [ref]);
-  //   return dimensions;
-  // };
-  // const divRef = createRef();
-  // const dimensions = useRefDimensions(divRef);
-
+  const [open, setOpen] = useState(false);
+  
+  function handleClick(event_index) {
+    const event_info = document.getElementById(`events-info-${event_index}`)
+    const desc_info = document.getElementById(`events-text-holder-${event_index}`)
+    for (let index = 0; index < event.contents.length; index++) {
+      const iframe = document.getElementById(`content-iframe-${index}-${event.name}`);
+      if(open)
+      {
+        iframe.style.transitionDelay = "0s";
+      }
+      else{
+        iframe.style.transitionDelay = "0s";
+      }
+      index %2 ===0 ? iframe.classList.toggle("disable-left") :  iframe.classList.toggle("disable-right")    
+    }
+    document.querySelectorAll("video").forEach(element => {element.pause()})
+    event_info.classList.toggle("event-card-lock-hover")
+    desc_info.classList.toggle("events-text-holder-lock-hover")
+    setOpen(!open);
+    
+  }
   return (
     <div className="event-card-holder">
       <div className="event-card">
@@ -198,7 +192,8 @@ const EventCard = (event) => {
         </h5>
         <EventVisualContent key={event.name} {...event} />
         <span
-          className={`events-info events-info-${event._index}`}
+          className="events-info"
+          id={`events-info-${event.index}`}
           style={{
             background: event.spanBg,
             display: event.name === "coming soon" ? "none" : "block",
@@ -211,10 +206,13 @@ const EventCard = (event) => {
             <div className="content"></div>
             <div
               className="events-text-holder"
+              id={`events-text-holder-${event.index}`}
               style={{ color: event.textColor }}
             >
               <h1 className="oswald">{event.name}</h1>
-              <p className="montserrat" style={{ fontWeight: event.weight }}>{event.description}</p>
+              <p className="montserrat" style={{ fontWeight: event.weight }}>
+                {event.description}
+              </p>
             </div>
             <div className="events-buttons-holder montserrat">
               <Link to={`/register/${event.name.toLowerCase()}`}>
@@ -222,6 +220,9 @@ const EventCard = (event) => {
                   Register
                 </button>
               </Link>
+              <button id="hover-eq" style={{ background: event.accentColor }} onClick={() => {handleClick(event.index)}}>
+                {open ? <ArrowDownwardIcon />:<ArrowUpwardIcon />}
+              </button>
               <button
                 onClick={() => {
                   window.open(event.rulebookPath);
@@ -238,35 +239,3 @@ const EventCard = (event) => {
     </div>
   );
 };
-
-const handleHover = (index) => {
-  const event_info = document.getElementsByClassName("events-info");
-  var handleHoverElements = document.getElementsByClassName(
-    `contents-for-${events[index].name}`
-  );
-  //var title = document.getElementsByClassName(`content-title-for-${events[index].name}`)
-  for (let index = 0; index < handleHoverElements.length; index++) {
-    const element = handleHoverElements[index];
-    //element.classList.remove("disable-left");
-  }
-  //title[index].classList.remove("disable-left")
-  document.onmouseover = () => {
-    handleHover(0);
-  };
-  console.log("Hovering");
-};
-
-const handleExit = (index) => {
-  var handleHoverElements = document.getElementsByClassName(
-    `contents-for-${events[index].name}`
-  );
-  //var title = document.getElementsByClassName(`content-title-for-Robowars`);
-  for (let index = 0; index < handleHoverElements.length; index++) {
-    const element = handleHoverElements[index];
-    //element.classList.add("disable-left");
-  }
-  //title[0].classList.add("disable-left")
-  console.log("Called");
-};
-
-const handleThumbnailClick = (src) => {};

@@ -132,7 +132,7 @@ const EventVisualContent = (event) => {
             src={content.src}
             title="Iframe Example"
             allow="fullscreen"
-            autoPlay="false"
+            // autoPlay="false"
             controls="true"
             autoStart="false"
           >

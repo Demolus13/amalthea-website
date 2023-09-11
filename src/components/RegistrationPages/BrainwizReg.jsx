@@ -21,8 +21,7 @@ function RegistrationForm() {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
-    const corsAnywhereURL = 'https://cors-anywhere.herokuapp.com/';
-const scriptURL = `${corsAnywhereURL}https://script.google.com/macros/s/AKfycbwDWQeHlG63fMfnQtPof6iz1D3yROUgVm3Xj0bpHSr-cKnInDmuyS3lf6F15n8MDrUp-g/exec`;
+    const scriptURL = "https://script.google.com/macros/s/AKfycbwDWQeHlG63fMfnQtPof6iz1D3yROUgVm3Xj0bpHSr-cKnInDmuyS3lf6F15n8MDrUp-g/exec";
 
 
     const handleSubmit = async (e) => {
@@ -30,7 +29,7 @@ const scriptURL = `${corsAnywhereURL}https://script.google.com/macros/s/AKfycbwD
 
         try {
             const response = await fetch(scriptURL,
-                  {
+                {
                     method: 'POST',
                     body: JSON.stringify(formData),
                     headers: {

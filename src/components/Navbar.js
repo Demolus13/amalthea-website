@@ -51,7 +51,7 @@ export default function Navbar() {
             </li>
             <ul>
               <li className="subham-item">
-                <Link to="/about" className="ham-link linkEventListener">Women in Tech</Link>
+                <Link to="/women-in-tech" className="ham-link linkEventListener">Women in Tech</Link>
               </li>
             </ul>
             <li className="ham-item">

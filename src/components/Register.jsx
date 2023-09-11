@@ -116,9 +116,12 @@ const Register = () => {
                     alignItems: "center",
                   }}>
                   <h2>Login and Register</h2>
-                  <h6>Only the Team Leader has to Register</h6>
                   <h6>
-                    This email will be registered as the Leader's email address
+                    {event === "robowars" ? (
+                      <>Only the Team Leader has to Register</>
+                    ) : (
+                      ""
+                    )}
                   </h6>
                 </div>
                 <form onSubmit={handleLogin}>

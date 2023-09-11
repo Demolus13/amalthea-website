@@ -14,15 +14,12 @@ export default function Events() {
     const eventCards = document.querySelectorAll(".event-card-holder");
     const event_info = document.getElementsByClassName("events-info");
     const iframes = document.getElementsByClassName("content-iframe");
-    
-    
-    if(event_info[0].clientHeight >= window.innerHeight * 0.2)
-    {
-      console.log("Called")
+
+    if (event_info[0].clientHeight >= window.innerHeight * 0.2) {
+      console.log("Called");
       for (let i = 0; i < iframes.length; i++) {
         const element = iframes[i];
         element.style.left = "2.5%";
-        
       }
     }
     // event_info.forEach((element, index) => {
@@ -60,8 +57,7 @@ export default function Events() {
       }
       if (0.75 * H < scroll) {
         const j = Math.floor((scroll - 0.75 * H) / (2 * H)) + 1;
-        const top = (1 - ((scroll - 0.75 * H) % (2 * H)) / (2 * H)) * 100;
-
+        const top = (1 - ((scroll - 0.75 * H) % (2 * H)) / (2 * H)) * 120;
         if (0 < j && j < 4) {
           eventCards[j].style.top = `${top}vh`;
           eventCards[j].style.bottom = `-${top}vh`;
@@ -134,16 +130,16 @@ const EventVisualContent = (event) => {
       {event.contents.map((content, index) => {
         return (
           <iframe
-          className={`content-iframe content-iframe-${index} ${
-            index < 4 ? "disable-left" : "disable-right"
-          } contents-for-${event.name}`}
-          height="25%"
-          width="25%"
-          src={content.src}
-          title="Iframe Example"
-          allow="fullscreen"
-          autoplay="false"
-        ></iframe>
+            className={`content-iframe content-iframe-${index} ${
+              index < 4 ? "disable-left" : "disable-right"
+            } contents-for-${event.name}`}
+            height="25%"
+            width="25%"
+            src={content.src}
+            title="Iframe Example"
+            allow="fullscreen"
+            autoplay="false"
+          ></iframe>
         );
       })}
     </div>
@@ -153,31 +149,30 @@ const EventVisualContent = (event) => {
 const iFrame = (src) => {
   return (
     <>
-    <iframe className="fullScreenIframe" src={src}/>
-    <button className="fullScreenIframeClose">Close</button>
+      <iframe className="fullScreenIframe" src={src} />
+      <button className="fullScreenIframeClose">Close</button>
     </>
-  )
-}
+  );
+};
 const EventCard = (event) => {
   const isMobile = window.screen.width < 500 ? true : false;
-  
-const useRefDimensions = (ref) => {
-  const [dimensions, setDimensions] = useState({ width: 1, height: 2 })
-  React.useEffect(() => {
-    console.log(ref.current)
-    if (ref.current) {
-      const { current } = ref
-      const boundingRect = current.getBoundingClientRect()
-      const { width, height } = boundingRect
-      setDimensions({ width: width, height: height })
-    }
-  }, [ref])
-  return dimensions
-}
-  const divRef = createRef();
-  const dimensions = useRefDimensions(divRef)
 
-  
+  // const useRefDimensions = (ref) => {
+  //   const [dimensions, setDimensions] = useState({ width: 1, height: 2 });
+  //   React.useEffect(() => {
+  //     console.log(ref.current);
+  //     if (ref.current) {
+  //       const { current } = ref;
+  //       const boundingRect = current.getBoundingClientRect();
+  //       const { width, height } = boundingRect;
+  //       setDimensions({ width: width, height: height });
+  //     }
+  //   }, [ref]);
+  //   return dimensions;
+  // };
+  // const divRef = createRef();
+  // const dimensions = useRefDimensions(divRef);
+
   return (
     <div className="event-card-holder">
       <div className="event-card">
@@ -192,28 +187,49 @@ const useRefDimensions = (ref) => {
           }}
           alt={event.name}
         ></img>
-        
-         <h5 className={`content-title-0 content-title-for-${event.name} ${ (dimensions.height <= window.innerHeight * 0.6) ? "disable-left" : ""}`}>{event.contentTitle}</h5>
-          <EventVisualContent key={event.name} {...event} />
+
+        <h5
+          className={`content-title-0 content-title-for-${event.name} ${
+            //dimensions.height <= window.innerHeight * 0.6 ? "disable-left" : ""
+            "disable-left"
+          }`}
+        >
+          {event.contentTitle}
+        </h5>
+        <EventVisualContent key={event.name} {...event} />
         <span
           className={`events-info events-info-${event._index}`}
-          style={{ display: event.name === "coming soon" ? "none" : "block" }}
-          ref={divRef}
+          style={{
+            background: event.spanBg,
+            display: event.name === "coming soon" ? "none" : "block",
+            borderColor: event.accentColor,
+            boxShadow: "0 0 15px 3px " + event.accentColor,
+          }}
+          // ref={divRef}
         >
-         
           <div className="content-placeholder">
             <div className="content"></div>
-            <div className="events-text-holder">
+            <div
+              className="events-text-holder"
+              style={{ color: event.textColor }}
+            >
               <h1 className="oswald">{event.name}</h1>
-              <p className="montserrat">{event.description}</p>
+              <p className="montserrat" style={{ fontWeight: event.weight }}>{event.description}</p>
             </div>
             <div className="events-buttons-holder montserrat">
-              <div></div>
-              <Link to={`/register/robowars`}>
-                <button>Register</button>
+              <Link to={`/register/${event.name.toLowerCase()}`}>
+                <button style={{ background: event.accentColor }}>
+                  Register
+                </button>
               </Link>
-              <button>Rulebook</button>
-              <div></div>
+              <button
+                onClick={() => {
+                  window.open(event.rulebookPath);
+                }}
+                style={{ background: event.accentColor }}
+              >
+                Rulebook
+              </button>
             </div>
           </div>
           <div className="content"></div>
@@ -222,7 +238,6 @@ const useRefDimensions = (ref) => {
     </div>
   );
 };
-
 
 const handleHover = (index) => {
   const event_info = document.getElementsByClassName("events-info");
@@ -238,7 +253,7 @@ const handleHover = (index) => {
   document.onmouseover = () => {
     handleHover(0);
   };
-  console.log("Hovering")
+  console.log("Hovering");
 };
 
 const handleExit = (index) => {
@@ -254,5 +269,4 @@ const handleExit = (index) => {
   console.log("Called");
 };
 
-const handleThumbnailClick = (src) => {
-};
+const handleThumbnailClick = (src) => {};

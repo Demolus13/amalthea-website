@@ -15,6 +15,30 @@ export const events = [
         src: "Videos/untitled.mp4",
       }
     ],
+    accentColor: "#e37430",
+    textColor: "#fff",
+    weight: "500",
+    spanBg: "#00000025",
+    rulebookPath: "./RoboWars Amalthea '23.pdf",
+  },
+  {
+    name: "BrainWiz",
+    description:
+      "Welcome to BrainWiz, an exciting scientific journey designed exclusively for students in classes 9 to 12! This competition is not just about testing your logical and analytical abilities; it's an opportunity to unlock the doors to the world of engineering and gain real insights. Join us, and you'll have the incredible chance to engage with esteemed professors and accomplished alumni from IIT-GN, true experts in their respective fields. Get ready to embark on a thrilling adventure of knowledge and innovation",
+    imgSrc: "./Images/Brainwiz.png",
+    accentColor: "#213555",
+    textColor: "#213555",
+    weight: "600",
+    spanBg: "#ffffff25",
+    contents: [],
+    rulebookPath: "./BrainWiz'23_Rulebook.pdf",
+  },
+  {
+    name: "coming soon",
+    description: "bla bla bla",
+    imgSrc: "./Images/coming_soon.png",
+    contents: [],
+    accentColor: "#000",
   },
   {
     name: "coming soon",
@@ -27,11 +51,6 @@ export const events = [
     description: "bla bla bla",
     imgSrc: "./Images/coming_soon.png",
     contents: [],
-  },
-  {
-    name: "coming soon",
-    description: "bla bla bla",
-    imgSrc: "./Images/coming_soon.png",
-    contents: [],
+    accentColor: "#000",
   },
 ];

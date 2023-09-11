@@ -7,9 +7,8 @@ import Symposium from "./components/Symposium";
 import TechExpo from "./components/TechExpo";
 import Sponsors from "./components/Sponsors";
 import WIT from "./components/WIT";
-import Robowars from "./components/RegistrationPages/Robowars";
 import { Routes, Route } from "react-router-dom";
-// import Register from "./components/Register";
+import Register from "./components/Register";
 
 function App() {
   console.log();
@@ -79,8 +78,7 @@ function App() {
             </>
           }
         />
-        {/* <Route path="/register/:event" element={<Register />} /> */}
-        <Route path="/register/robowars" element={<Robowars />} />
+        <Route path="/register/:event" element={<Register />} />
       </Routes>
     </>
   );

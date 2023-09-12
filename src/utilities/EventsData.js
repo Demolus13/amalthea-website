@@ -19,7 +19,7 @@ export const events = [
     textColor: "#fff",
     weight: "500",
     spanBg: "#00000025",
-    rulebookPath: "./RoboWars Amalthea '23.pdf",
+    rulebookPath: "./RuleBooks/RoboWars Amalthea '23.pdf",
   },
   {
     name: "BrainWiz",
@@ -31,7 +31,7 @@ export const events = [
     weight: "600",
     spanBg: "#ffffff25",
     contents: [],
-    rulebookPath: "./BrainWiz'23_Rulebook.pdf",
+    rulebookPath: "./RuleBooks/BrainWiz'23_Rulebook.pdf",
   },
   {
     name: "coming soon",

@@ -9,18 +9,19 @@ export const events = [
       {
         thumbnail: "Images/V1.png",
         src: "Videos/V1.mp4",
-        desc: "Robowars 1"
+        desc: "Robowars 1",
       },
       {
         thumbnail: "Images/V2.png",
         src: "Videos/V2.mp4",
-        desc: "Robowars 2"
+        desc: "Robowars 2",
       },
     ],
     accentColor: "#e37430",
     textColor: "#fff",
     weight: "500",
     spanBg: "#00000025",
+    cardBg: "#20201e",
     rulebookPath: "./RuleBooks/RoboWars Amalthea '23.pdf",
   },
   {
@@ -32,6 +33,7 @@ export const events = [
     textColor: "#213555",
     weight: "600",
     spanBg: "#ffffffbf",
+    cardBg: "#F5EFE7",
     contents: [],
     rulebookPath: "./RuleBooks/BrainWiz'23_Rulebook.pdf",
   },

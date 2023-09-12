@@ -133,7 +133,7 @@
 }
 
 /* Responsive Section */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 850px) {
 
   #navbar {
     padding: 1.5rem 2rem;
@@ -151,7 +151,7 @@
   }
 
   .ham-item a{
-    font-size: max(2vw, 2vh) !important;
+    font-size: min(2vw, 2vh) !important;
   }
 
   .subham-item a {
@@ -171,7 +171,7 @@
   }
 }
 
-@media screen and ((max-height: 850px) and (min-width:600px)) {
+/* @media screen and ((max-height: 850px) and (min-width:600px)) {
   #navbar {
     padding: 1.5rem 2rem;
   }
@@ -214,4 +214,4 @@
   .subham-item{
     margin: 0.1rem;
   }
-}
+} */

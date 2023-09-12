@@ -218,7 +218,8 @@ const EventCard = (event) => {
               </p>
             </div>
             <div className="events-buttons-holder montserrat">
-              <Link to={`/register/${event.name.toLowerCase()}`}>
+              {/* <Link to={`/register/${event.name.toLowerCase()}`}> */}
+              <Link to={`/events-23`}>
                 <button style={{ background: event.accentColor }}>
                   Register
                 </button>

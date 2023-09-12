@@ -27,7 +27,7 @@ export default function Navbar() {
       </div>
       <div className="nav-items">
         <div className="item"><Link to="/events-23">EVENTS</Link></div>
-        <div className="item"><Link to="/conclave-23">CONCALVE</Link></div>
+        <div className="item"><Link to="/conclave-23">CONCLAVE</Link></div>
         <div className="item"><Link to="/symposium-23">SYMPOSIUM</Link></div>
         <div className="item"><Link to="/tech-expo-23">TECH EXPO</Link></div>
         <div className="item"><Link to="/sponsors-23">SPONSORS</Link></div>

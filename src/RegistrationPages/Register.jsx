@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import RobowarsRegistration from "./RegistrationPages/RobowarsReg";
+import RobowarsRegistration from "./RobowarsReg";
 import "../styles/Register.css";
 import { auth } from "../utilities/FirebaseConfig";
 import { useAuthState } from "react-firebase-hooks/auth";

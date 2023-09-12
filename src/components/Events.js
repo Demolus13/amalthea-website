@@ -47,6 +47,9 @@ export default function Events() {
         content.style.opacity = 1;
       }
       if (0.55 * H < scroll) {
+        L1.forEach((l) => {
+          l.style.transform = "scale(0)";
+        });
         L2.forEach((l) => {
           l.style.transform = "scale(0)";
         });

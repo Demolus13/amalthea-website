@@ -7,8 +7,12 @@ import Symposium from "./components/Symposium";
 import TechExpo from "./components/TechExpo";
 import Sponsors from "./components/Sponsors";
 import WIT from "./components/WIT";
+import About from "./components/About";
+import OurTeam from "./components/OurTeam";
+import HTR from "./components/HTR";
+import Gallery from "./components/Gallery";
 import { Routes, Route } from "react-router-dom";
-import Register from "./components/Register";
+import Register from "./RegistrationPages/Register";
 import BrainwizReg from "./components/RegistrationPages/BrainwizReg"
 
 function App() {
@@ -75,6 +79,42 @@ function App() {
             <>
               <Navbar />
               <WIT />
+            </>
+          }
+        />
+        <Route
+          path="/about-23"
+          element={
+            <>
+              <Navbar />
+              <About />
+            </>
+          }
+        />
+        <Route
+          path="team-23"
+          element={
+            <>
+              <Navbar />
+              <OurTeam />
+            </>
+          }
+        />
+        <Route
+          path="/how-to-reach-23"
+          element={
+            <>
+              <Navbar />
+              <HTR />
+            </>
+          }
+        />
+        <Route
+          path="/gallery-23"
+          element={
+            <>
+              <Navbar />
+              <Gallery />
             </>
           }
         />

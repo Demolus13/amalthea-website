@@ -3,7 +3,7 @@
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    background: url(Event\ banners-02.png);
+    background: url(../../public/Images/Event\ banners-02.png);
     background-size: cover;
     display: flex;
     flex-direction: column;

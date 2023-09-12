@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Brainwiz.css'
+import '../../styles/Brainwiz.css'
 
 function RegistrationForm() {
     const [formData, setFormData] = useState({

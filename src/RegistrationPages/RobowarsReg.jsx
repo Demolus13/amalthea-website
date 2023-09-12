@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { auth, database } from "../../utilities/FirebaseConfig";
+import { auth, database } from "../utilities/FirebaseConfig";
 import { child, onValue, ref, set } from "firebase/database";
 import { useAuthState } from "react-firebase-hooks/auth";
 

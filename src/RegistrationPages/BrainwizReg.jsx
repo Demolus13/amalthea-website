@@ -1,21 +1,25 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/Brainwiz.css'
 
 function ContactForm() {
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top of the page on component load
+    }, []);
+
     const [formData, setFormData] = useState({
-        name: '', // Name
-        email: '', // Email
-        contact: '', // Contact
-        class: 'Class 9th', // Class
-        stream: 'PCM', // Stream
-        school: '', // School
-        address: '', // Address
-        city: '', // City
-        state: '', // State
-        guardianName: '', // Guardian Name
-        guardianContact: '', // Guardian Contact
-        googleDriveLink1: '', // Google Drive Link 1
-        googleDriveLink2: '', // Google Drive Link 2
+        name: '',
+        email: '',
+        contact: '',
+        class: 'Class 9th',
+        stream: 'Not applicable',
+        school: '',
+        address: '',
+        city: '',
+        state: '',
+        guardianName: '',
+        guardianContact: '',
+        googleDriveLink1: '',
+        googleDriveLink2: '',
     });
 
     const handleInputChange = (e) => {
@@ -28,41 +32,47 @@ function ContactForm() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const scriptURL =
-            'https://docs.google.com/forms/u/0/d/1sVVvsl6RHEpFmnkucCIfhuwreoRy--kPTr-u2azqmQA/formResponse';
+
+        const driveLinkPattern = /^https:\/\/drive\.google\.com\/.*$/;
+
+        if (!driveLinkPattern.test(formData.googleDriveLink1) || !driveLinkPattern.test(formData.googleDriveLink2)) {
+            alert('Please enter valid Google Drive links');
+            return;
+        }
+
+        const scriptURL = 'https://docs.google.com/forms/u/0/d/1sVVvsl6RHEpFmnkucCIfhuwreoRy--kPTr-u2azqmQA/formResponse';
         const form = new FormData();
-        form.append('entry.756603207', formData.name); // Name
-        form.append('entry.2010326846', formData.email); // Email
-        form.append('entry.2070518104', formData.contact); // Contact
-        form.append('entry.1796367140', formData.class); // Class
-        form.append('entry.1820839827', formData.stream); // Stream
-        form.append('entry.421132129', formData.school); // School
-        form.append('entry.1800670499', formData.address); // Address
-        form.append('entry.993662820', formData.city); // City
-        form.append('entry.147516377', formData.state); // State
-        form.append('entry.151031277', formData.guardianName); // Guardian Name
-        form.append('entry.656237450', formData.guardianContact); // Guardian Contact
-        form.append('entry.627039335', formData.googleDriveLink1); // Google Drive Link 1
-        form.append('entry.1143467285', formData.googleDriveLink2); // Google Drive Link 2
+        form.append('entry.756603207', formData.name);
+        form.append('entry.2010326846', formData.email);
+        form.append('entry.2070518104', formData.contact);
+        form.append('entry.1796367140', formData.class);
+        form.append('entry.1820839827', formData.stream);
+        form.append('entry.421132129', formData.school);
+        form.append('entry.1800670499', formData.address);
+        form.append('entry.993662820', formData.city);
+        form.append('entry.147516377', formData.state);
+        form.append('entry.151031277', formData.guardianName);
+        form.append('entry.656237450', formData.guardianContact);
+        form.append('entry.627039335', formData.googleDriveLink1);
+        form.append('entry.1143467285', formData.googleDriveLink2);
 
         try {
             await fetch(scriptURL, { method: 'POST', mode: 'no-cors', body: form });
             alert('Thank you! Your form is submitted successfully.');
-            // Reset the form after successful submission
             setFormData({
-                name: '', // Name
-                email: '', // Email
-                contact: '', // Contact
-                class: '', // Class
-                stream: '', // Stream
-                school: '', // School
-                address: '', // Address
-                city: '', // City
-                state: '', // State
-                guardianName: '', // Guardian Name
-                guardianContact: '', // Guardian Contact
-                googleDriveLink1: '', // Google Drive Link 1
-                googleDriveLink2: '', // Google Drive Link 2
+                name: '',
+                email: '',
+                contact: '',
+                class: '',
+                stream: '',
+                school: '',
+                address: '',
+                city: '',
+                state: '',
+                guardianName: '',
+                guardianContact: '',
+                googleDriveLink1: '',
+                googleDriveLink2: '',
             });
         } catch (error) {
             console.error('Error!', error.message);
@@ -105,6 +115,8 @@ function ContactForm() {
                             value={formData.contact}
                             onChange={handleInputChange}
                             required
+                            pattern="[0-9]{10}"
+                            title="Please enter a 10-digit phone number"
                         />
                     </div>
                     <div className="form-group">
@@ -131,6 +143,7 @@ function ContactForm() {
                             onChange={handleInputChange}
                             required
                         >
+                            <option value="Not applicable">Not applicable</option>
                             <option value="PCM">PCM</option>
                             <option value="PCB">PCB</option>
                             <option value="PCMB">PCMB</option>
@@ -202,10 +215,12 @@ function ContactForm() {
                             value={formData.guardianContact}
                             onChange={handleInputChange}
                             required
+                            pattern="[0-9]{10}"
+                            title="Please enter a 10-digit phone number"
                         />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="googleDriveLink">
+                        <label htmlFor="googleDriveLink1">
                             Google Drive Link for School ID Card/Aadhar Card:
                         </label>
                         <input
@@ -215,11 +230,12 @@ function ContactForm() {
                             value={formData.googleDriveLink1}
                             onChange={handleInputChange}
                             placeholder="Paste your Google Drive link here"
+                            required
                         />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="googleDriveLink">
-                            Google Drive Link for Recent Photographs &#40;Passport Size&#41;:
+                        <label htmlFor="googleDriveLink2">
+                            Google Drive Link for Recent Photographs (Passport Size):
                         </label>
                         <input
                             type="text"
@@ -228,6 +244,7 @@ function ContactForm() {
                             value={formData.googleDriveLink2}
                             onChange={handleInputChange}
                             placeholder="Paste your Google Drive link here"
+                            required
                         />
                     </div>
                     <div className="form-group">

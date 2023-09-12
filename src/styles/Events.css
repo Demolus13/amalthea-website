@@ -87,7 +87,6 @@
 .event-card > span {
   border: 3px solid;
   box-shadow: 0 0 15px 3px;
-  border-left: 0;
   border-top-left-radius: 20px;
   border-bottom: 0;
   position: absolute;
@@ -102,13 +101,13 @@
 }
 
 /* .event-card > span:hover, .event-card > span:focus , .event-card > .span-focus{ */
-.span-focus{
+.span-focus {
   height: 100%;
   /* left: 0%; */
   width: 100%;
 }
 
-.event-card-lock-hover{
+.event-card-lock-hover {
   height: 100% !important;
   /* left: 0%; */
   width: 100% !important;
@@ -119,7 +118,6 @@
   width: 100px;
 }
 
-
 .events-text-holder {
   color: white;
   padding: 2rem;
@@ -127,9 +125,6 @@
   transition: transform 1s cubic-bezier(0.62, 0, 0.33, 0.99);
   width: 50%;
 }
-/* .event-card > span:hover > .content-placeholder > .events-text-holder , .event-card > .span-focus > .content-placeholder > .events-text-holder {
-  transform: translateY(0);
-} */
 
 .events-text-holder-lock-hover {
   transform: translateY(0) !important;
@@ -168,7 +163,7 @@
   left: -100%;
 }
 
-.fullScreenIframe{
+.fullScreenIframe {
   position: fixed;
   top: 10%;
   left: 10%;
@@ -185,7 +180,7 @@
   transform: translate(500%, -0%);
 }
 
-.content-title-0{
+.content-title-0 {
   font-size: 100%;
   top: 12.5%;
   left: 2.5%;
@@ -227,9 +222,9 @@
     position: static;
     border-radius: 0px;
     border-right: none;
+    border-left: none;
     width: 100%;
     height: 100%;
-    border: 3px solid #e56617;
   }
   .events-text-holder {
     padding-top: 0.75rem;
@@ -238,8 +233,8 @@
   .events-text-holder > p {
     font-size: 0.9rem;
   }
-  #hover-eq{
-    display: none ;
+  #hover-eq {
+    display: none;
   }
 }
 
@@ -247,15 +242,36 @@
   .content-iframe {
     display: none !important  ;
   }
-  .content-title-0{
+  .content-title-0 {
     display: none;
   }
-  .content{
+  .content {
     display: none !important;
   }
 
-  .content-placeholder{
+  .content-placeholder {
     width: 200%;
     display: block;
+  }
+  .events-buttons-holder {
+    width: 100%;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .event-card > span {
+    height: 20%;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .events-text-holder {
+    width: 100%;
+  }
+  .content-iframe {
+    display: none !important  ;
+  }
+  .event-card > span {
+    height: 17%;
   }
 }

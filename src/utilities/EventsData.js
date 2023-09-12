@@ -9,11 +9,13 @@ export const events = [
       {
         thumbnail: "Images/V1.png",
         src: "Videos/V1.mp4",
+        desc: "Robowars 1"
       },
       {
         thumbnail: "Images/V2.png",
         src: "Videos/untitled.mp4",
-      }
+        desc: "Robowars 2"
+      },
     ],
     accentColor: "#e37430",
     textColor: "#fff",
@@ -29,7 +31,7 @@ export const events = [
     accentColor: "#213555",
     textColor: "#213555",
     weight: "600",
-    spanBg: "#ffffff25",
+    spanBg: "#ffffffbf",
     contents: [],
     rulebookPath: "./RuleBooks/BrainWiz'23_Rulebook.pdf",
   },

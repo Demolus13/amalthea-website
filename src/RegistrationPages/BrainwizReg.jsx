@@ -29,7 +29,7 @@ function ContactForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const scriptURL =
-            'https://docs.google.com/forms/u/0/d/1b1oAwO6LX-oYZAAy8eaJYln0QoQPDQKMGeYuoWed4y8/formResponse';
+            'https://docs.google.com/forms/u/0/d/1sVVvsl6RHEpFmnkucCIfhuwreoRy--kPTr-u2azqmQA/formResponse';
         const form = new FormData();
         form.append('entry.756603207', formData.name); // Name
         form.append('entry.2010326846', formData.email); // Email

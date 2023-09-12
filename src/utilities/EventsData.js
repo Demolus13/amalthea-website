@@ -9,10 +9,12 @@ export const events = [
       {
         thumbnail: "Images/V1.png",
         src: "Videos/V1.MP4",
+        desc: "Robowars 1"
       },
       {
         thumbnail: "Images/V2.png",
         src: "Videos/untitled.mp4",
+        desc: "Robowars 2"
       },
     ],
     accentColor: "#e37430",

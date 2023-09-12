@@ -133,7 +133,7 @@ const EventVisualContent = (event) => {
             height="40%"
             width="40%"
             src={content.src}
-            title="Iframe Example"
+            title={content.desc}
             allow="fullscreen"
             // autoPlay="false"
             controls="true"

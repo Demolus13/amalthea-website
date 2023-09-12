@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import '../../styles/Brainwiz.css'
+import '../styles/Brainwiz.css'
 
 function RegistrationForm() {
+    window.scrollTo(0, 0);
     const [formData, setFormData] = useState({
         name: '',
         email: '',

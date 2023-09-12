@@ -13,7 +13,7 @@ import HTR from "./components/HTR";
 import Gallery from "./components/Gallery";
 import { Routes, Route } from "react-router-dom";
 import Register from "./RegistrationPages/Register";
-import BrainwizReg from "./components/RegistrationPages/BrainwizReg"
+import BrainwizReg from "./RegistrationPages/BrainwizReg"
 
 function App() {
   return (

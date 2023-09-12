@@ -125,9 +125,6 @@
   transition: transform 1s cubic-bezier(0.62, 0, 0.33, 0.99);
   width: 50%;
 }
-/* .event-card > span:hover > .content-placeholder > .events-text-holder , .event-card > .span-focus > .content-placeholder > .events-text-holder {
-  transform: translateY(0);
-} */
 
 .events-text-holder-lock-hover {
   transform: translateY(0) !important;
@@ -255,5 +252,26 @@
   .content-placeholder {
     width: 200%;
     display: block;
+  }
+  .events-buttons-holder {
+    width: 100%;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .event-card > span {
+    height: 20%;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .events-text-holder {
+    width: 100%;
+  }
+  .content-iframe {
+    display: none !important  ;
+  }
+  .event-card > span {
+    height: 17%;
   }
 }

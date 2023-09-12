@@ -258,4 +258,7 @@
     width: 200%;
     display: block;
   }
+  .events-buttons-holder{
+    width: 100%;
+  }
 }

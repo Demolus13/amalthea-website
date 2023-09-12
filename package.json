@@ -1,5 +1,6 @@
 {
   "name": "amalthea",
+  "homepage": "https://amalthea.iitgn.ac.in/",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3000/",

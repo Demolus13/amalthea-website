@@ -1,52 +1,69 @@
 import React, { useState } from 'react';
 import '../styles/Brainwiz.css'
 
-function RegistrationForm() {
-    window.scrollTo(0, 0);
+function ContactForm() {
     const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        contact: '',
-        class: 'Class 9th',
-        stream: 'PCM',
-        school: '',
-        address: '',
-        city: '',
-        state: '',
-        guardianName: '',
-        guardianContact: '',
-        googleDriveLink: '',
+        name: '', // Name
+        email: '', // Email
+        contact: '', // Contact
+        class: 'Class 9th', // Class
+        stream: 'PCM', // Stream
+        school: '', // School
+        address: '', // Address
+        city: '', // City
+        state: '', // State
+        guardianName: '', // Guardian Name
+        guardianContact: '', // Guardian Contact
+        googleDriveLink1: '', // Google Drive Link 1
+        googleDriveLink2: '', // Google Drive Link 2
     });
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
     };
-    const scriptURL = "https://script.google.com/macros/s/AKfycbwDWQeHlG63fMfnQtPof6iz1D3yROUgVm3Xj0bpHSr-cKnInDmuyS3lf6F15n8MDrUp-g/exec";
-
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        const scriptURL =
+            'https://docs.google.com/forms/u/0/d/1b1oAwO6LX-oYZAAy8eaJYln0QoQPDQKMGeYuoWed4y8/formResponse';
+        const form = new FormData();
+        form.append('entry.756603207', formData.name); // Name
+        form.append('entry.2010326846', formData.email); // Email
+        form.append('entry.2070518104', formData.contact); // Contact
+        form.append('entry.1796367140', formData.class); // Class
+        form.append('entry.1820839827', formData.stream); // Stream
+        form.append('entry.421132129', formData.school); // School
+        form.append('entry.1800670499', formData.address); // Address
+        form.append('entry.993662820', formData.city); // City
+        form.append('entry.147516377', formData.state); // State
+        form.append('entry.151031277', formData.guardianName); // Guardian Name
+        form.append('entry.656237450', formData.guardianContact); // Guardian Contact
+        form.append('entry.627039335', formData.googleDriveLink1); // Google Drive Link 1
+        form.append('entry.1143467285', formData.googleDriveLink2); // Google Drive Link 2
 
         try {
-            const response = await fetch(scriptURL,
-                {
-                    method: 'POST',
-                    mode: 'no-cors',
-                    body: JSON.stringify(formData),
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Access-Control-Allow-Origin': '*'
-                    },
-                }
-            );
-            console.log(response);
-            if (response.ok) {
-                alert('Thank you! Your form is submitted successfully.');
-                window.location.reload();
-            } else {
-                throw new Error('Failed to submit the form.');
-            }
+            await fetch(scriptURL, { method: 'POST', mode: 'no-cors', body: form });
+            alert('Thank you! Your form is submitted successfully.');
+            // Reset the form after successful submission
+            setFormData({
+                name: '', // Name
+                email: '', // Email
+                contact: '', // Contact
+                class: '', // Class
+                stream: '', // Stream
+                school: '', // School
+                address: '', // Address
+                city: '', // City
+                state: '', // State
+                guardianName: '', // Guardian Name
+                guardianContact: '', // Guardian Contact
+                googleDriveLink1: '', // Google Drive Link 1
+                googleDriveLink2: '', // Google Drive Link 2
+            });
         } catch (error) {
             console.error('Error!', error.message);
         }
@@ -114,9 +131,9 @@ function RegistrationForm() {
                             onChange={handleInputChange}
                             required
                         >
-                            <option value="Science">PCM</option>
-                            <option value="Commerce">PCB</option>
-                            <option value="Arts">PCMB</option>
+                            <option value="PCM">PCM</option>
+                            <option value="PCB">PCB</option>
+                            <option value="PCMB">PCMB</option>
                         </select>
                     </div>
                     <div className="form-group">
@@ -193,9 +210,22 @@ function RegistrationForm() {
                         </label>
                         <input
                             type="text"
-                            id="googleDriveLink"
-                            name="googleDriveLink"
-                            value={formData.googleDriveLink}
+                            id="googleDriveLink1"
+                            name="googleDriveLink1"
+                            value={formData.googleDriveLink1}
+                            onChange={handleInputChange}
+                            placeholder="Paste your Google Drive link here"
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="googleDriveLink">
+                            Google Drive Link for Recent Photographs &#40;Passport Size&#41;:
+                        </label>
+                        <input
+                            type="text"
+                            id="googleDriveLink2"
+                            name="googleDriveLink2"
+                            value={formData.googleDriveLink2}
                             onChange={handleInputChange}
                             placeholder="Paste your Google Drive link here"
                         />
@@ -215,4 +245,4 @@ function RegistrationForm() {
     );
 }
 
-export default RegistrationForm;
+export default ContactForm;

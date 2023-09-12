@@ -6,9 +6,9 @@ import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 export default function Events() {
+  // window.scrollTo(0, 0);
   useEffect(() => {
     const H = window.innerHeight;
-    window.scrollTo(0, 0);
     const L1 = document.querySelectorAll(".L1");
     const L2 = document.querySelectorAll(".L2");
     const aml = document.getElementById("aml");
@@ -218,8 +218,8 @@ const EventCard = (event) => {
               </p>
             </div>
             <div className="events-buttons-holder montserrat">
-              {/* <Link to={`/register/${event.name.toLowerCase()}`}> */}
-              <Link to={`/events-23`}>
+              <Link to={`/register/${event.name.toLowerCase()}`}>
+              {/* <Link to={`/events-23`}> */}
                 <button style={{ background: event.accentColor }}>
                   Register
                 </button>

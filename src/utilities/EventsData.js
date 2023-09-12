@@ -13,7 +13,7 @@ export const events = [
       {
         thumbnail: "Images/V2.png",
         src: "Videos/untitled.mp4",
-      }
+      },
     ],
     accentColor: "#e37430",
     textColor: "#fff",
@@ -29,7 +29,7 @@ export const events = [
     accentColor: "#213555",
     textColor: "#213555",
     weight: "600",
-    spanBg: "#ffffff25",
+    spanBg: "#ffffffbf",
     contents: [],
     rulebookPath: "./RuleBooks/BrainWiz'23_Rulebook.pdf",
   },

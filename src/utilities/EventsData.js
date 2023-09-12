@@ -13,7 +13,7 @@ export const events = [
       },
       {
         thumbnail: "Images/V2.png",
-        src: "Videos/V2.mp4",
+        src: "Videos/untitled.mp4",
         desc: "Robowars 2"
       },
     ],

@@ -8,7 +8,7 @@ export const events = [
     contents: [
       {
         thumbnail: "Images/V1.png",
-        src: "Videos/V1.mp4",
+        src: "Videos/V1.MP4",
       },
       {
         thumbnail: "Images/V2.png",

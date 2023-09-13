@@ -32,7 +32,7 @@ export const events = [
     accentColor: "#213555",
     textColor: "#213555",
     weight: "600",
-    spanBg: "#ffffffbf25",
+    spanBg: "rgba(255, 255, 255, 0.50)",
     cardBg: "#F5EFE7",
     contents: [],
     rulebookPath: "./RuleBooks/BrainWiz'23_Rulebook.pdf",
@@ -41,7 +41,7 @@ export const events = [
     name: "Youth Tech-Tic",
     description:
       "Have you ever pondered the practical application of your academic knowledge in addressing real-world challenges? Worry not, because Youth Tech-tic, brought to you by Amalthea, is here to enlighten you on the intricate thought processes required to craft viable solutions. The event is very well designed for students in classes 9 to 12 to unleash their creativity and knowledge.\nThis event transcends mere competition. It offers you the opportunity not only to vie for prizes but also to connect with distinguished professionals, including professors, alumni, and experts in various domains right here at IITGN.\nPrepare to embark on a captivating journey into the realms of learning and innovation!",
-    imgSrc: "./Images/vertical_tech_tic.png",
+    imgSrc: "./Images/YTT.png",
     accentColor: "#2B4A59",
     textColor: "#2B4A59",
     weight: "600",

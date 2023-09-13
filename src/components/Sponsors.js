@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "../styles/Sponsors.css";
-import Footer from "./Footer.js";
+// import Footer from "./Footer.js";
 
 export default function Sponsors() {
   useEffect(() => {
@@ -387,7 +387,7 @@ export default function Sponsors() {
             </div>
           </div>
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );

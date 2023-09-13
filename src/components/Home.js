@@ -347,7 +347,9 @@ export default function Home() {
         <div
           className="event"
           style={{
-            backgroundImage: "url(/Images/coming_soon_mobile.png)",
+            backgroundImage: "url(/Images/Brainwiz.png)",
+            border: "solid 5px #213555",
+            boxShadow: "0 0 15px 3px #213555"
           }}>
           <div className="details">
             <h2 className="event-name oswald">BRAINWIZ</h2>
@@ -358,7 +360,7 @@ export default function Home() {
           </div>
 
           <h3 className="date oswald">
-            xx-Nov <br /> 2023
+            04-Nov <br /> 2023
           </h3>
         </div>
       </div>

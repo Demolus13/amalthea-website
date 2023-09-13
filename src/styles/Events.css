@@ -200,6 +200,10 @@
   left: 57.5%;
 }
 
+button{
+  cursor: pointer;
+}
+
 @media screen and (max-width: 600px) {
   .event-card-holder {
     /* height: 80vh; */
@@ -244,7 +248,7 @@
   .content-title-0 {
     display: none;
   }
-  .content {
+  .event-card .content {
     display: none !important;
   }
 

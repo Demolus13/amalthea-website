@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Events.css";
 import { events } from "../utilities/EventsData";
-import { Link } from "react-router-dom";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
@@ -126,9 +125,8 @@ const EventVisualContent = event => {
       {event.contents.map((content, index) => {
         return (
           <video
-            className={`content-iframe content-iframe-${index} ${
-              index % 2 === 0 ? "disable-left" : "disable-right"
-            } contents-for-${event.name}`}
+            className={`content-iframe content-iframe-${index} ${index % 2 === 0 ? "disable-left" : "disable-right"
+              } contents-for-${event.name}`}
             id={`content-iframe-${index}-${event.name}`}
             height="40%"
             width="40%"
@@ -191,7 +189,7 @@ const EventCard = event => {
           className={`content-title-0 content-title-for-${event.name} ${
             //dimensions.height <= window.innerHeight * 0.6 ? "disable-left" : ""
             "disable-left"
-          }`}>
+            }`}>
           {event.contentTitle}
         </h5>
         <EventVisualContent key={event.name} {...event} />
@@ -204,7 +202,7 @@ const EventCard = event => {
             borderColor: event.accentColor,
             boxShadow: "0 0 15px 3px " + event.accentColor,
           }}
-          // ref={divRef}
+        // ref={divRef}
         >
           <div className="content-placeholder">
             <div className="content"></div>
@@ -218,12 +216,13 @@ const EventCard = event => {
               </p>
             </div>
             <div className="events-buttons-holder montserrat">
-              <Link to={`/register/${event.name.toLowerCase()}`}>
-                {/* <Link to={`/events-23`}> */}
-                <button style={{ background: event.accentColor }}>
-                  Register
-                </button>
-              </Link>
+              <button
+                onClick={() => {
+                  window.open(`/register/${event.name.toLowerCase()}`);
+                }}
+                style={{ background: event.accentColor }}>
+                Register
+              </button>
               <button
                 id="hover-eq"
                 style={{ background: event.accentColor }}

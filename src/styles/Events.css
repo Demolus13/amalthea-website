@@ -143,7 +143,8 @@
 .events-buttons-holder button {
   color: white;
   border: none;
-  border-radius: 15px;
+  border-radius: 12px;
+  font-size: 1.1rem;
   font-weight: 550;
   padding: 7px 10px;
   transition: transform 0.5s;
@@ -200,7 +201,7 @@
   left: 57.5%;
 }
 
-button{
+button {
   cursor: pointer;
 }
 

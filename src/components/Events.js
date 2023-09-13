@@ -125,8 +125,9 @@ const EventVisualContent = event => {
       {event.contents.map((content, index) => {
         return (
           <video
-            className={`content-iframe content-iframe-${index} ${index % 2 === 0 ? "disable-left" : "disable-right"
-              } contents-for-${event.name}`}
+            className={`content-iframe content-iframe-${index} ${
+              index % 2 === 0 ? "disable-left" : "disable-right"
+            } contents-for-${event.name}`}
             id={`content-iframe-${index}-${event.name}`}
             height="40%"
             width="40%"
@@ -189,7 +190,7 @@ const EventCard = event => {
           className={`content-title-0 content-title-for-${event.name} ${
             //dimensions.height <= window.innerHeight * 0.6 ? "disable-left" : ""
             "disable-left"
-            }`}>
+          }`}>
           {event.contentTitle}
         </h5>
         <EventVisualContent key={event.name} {...event} />
@@ -202,7 +203,7 @@ const EventCard = event => {
             borderColor: event.accentColor,
             boxShadow: "0 0 15px 3px " + event.accentColor,
           }}
-        // ref={divRef}
+          // ref={divRef}
         >
           <div className="content-placeholder">
             <div className="content"></div>

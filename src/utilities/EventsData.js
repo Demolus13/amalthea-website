@@ -38,11 +38,17 @@ export const events = [
     rulebookPath: "./RuleBooks/BrainWiz'23_Rulebook.pdf",
   },
   {
-    name: "coming soon",
-    description: "bla bla bla",
-    imgSrc: "./Images/coming_soon.png",
+    name: "Youth Tech-Tic",
+    description:
+      "In today's world, confidence, communication skills, and the ability to think critically are invaluable attributes. The Amalthea Youth Tech Challenge aims to address the fear of public speaking, instill a sense of respect for others opinions, and provide students with a taste of real-world problem-solving scenarios. By participating in this event, students can expect personal growth, skill development, and a chance to shine on a larger stage.",
+    imgSrc: "./Images/vertical_tech_tic.png",
+    accentColor: "#2B4A59",
+    textColor: "#2B4A59",
+    weight: "600",
+    spanBg: "#f1faffbf",
+    cardBg: "#C5CFD4",
     contents: [],
-    accentColor: "#000",
+    rulebookPath: "./RuleBooks/Youth_Tech-Tic_Rulebook.pdf",
   },
   {
     name: "coming soon",

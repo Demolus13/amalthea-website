@@ -85,7 +85,7 @@ function ContactForm() {
                 <h2>BrainWiz Registration Form</h2>
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
-                        <label htmlFor="name">Name:</label>
+                        <label htmlFor="name" style={{paddingTop: "15px"}}>Name:</label>
                         <input
                             type="text"
                             id="name"
@@ -258,7 +258,7 @@ function ContactForm() {
                     For any further details please contact the following organisers,
                 </div>
                 <div className="organisers">Dewansh Singh Chandel - +91 80859 07445, dewanshsingh.chandel@iitgn.ac.in</div>
-                <div className="organisers">Lavanya - +91 8708493621, layanya.lavanya@iitgn.ac.in</div>
+                <div className="organisers">Lavanya - +91 87084 93621, lavanya.lavanya@iitgn.ac.in</div>
                 <div className="organisers">Farhan Obaid- +91 76673 36359, farhan.obaid@iitgna.ac.in</div>
             </div>
         </div>

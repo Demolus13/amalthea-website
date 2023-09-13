@@ -87,11 +87,11 @@ function ContactForm() {
         <div className='rw-body'>
             <div className="rw-container">
                 <h2>RoboWars Registration Form</h2>
-                <div className="info">
+                <div className="info" style={{paddingTop: "15px"}}>
                 Register your team for Robowars @AMALTHEA here!!! <br /> Number of members allowed in a team are  3-5.
                 </div>
                 <form onSubmit={handleSubmit}>
-                    <div className="form-group">
+                    <div className="form-group" style={{paddingTop: "15px"}}>
                         <label htmlFor="teamname">Team Name:</label>
                         <input
                             type="text"
@@ -219,7 +219,6 @@ function ContactForm() {
                             name="name4"
                             value={formData.name4}
                             onChange={handleInputChange}
-                            // required
                         />
                     </div>
                     <div className="form-group">
@@ -284,8 +283,8 @@ function ContactForm() {
                 <div className="info">
                     For any further details please contact/mail the following organisers,
                 </div>
-                <div className="organisers">Aditya Mehta - +91 9429428442, mehta.aditya@iitgn.ac.in</div>
-                <div className="organisers">Hitesh Kumar - +91 9569970238, hitesh.kumar@iitgn.ac.in</div>
+                <div className="organisers">Aditya Mehta - +91 94294 28442, mehta.aditya@iitgn.ac.in</div>
+                <div className="organisers">Hitesh Kumar - +91 95699 70238, hitesh.kumar@iitgn.ac.in</div>
             </div>
         </div>
         </>

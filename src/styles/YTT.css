@@ -1,0 +1,84 @@
+.ytt-bg {
+    background: url(../../public/Images/YTTform-01.png);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    inset: 0px;
+}
+.ytt-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+.ytt-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #f1faff25;
+    backdrop-filter: blur(6px);
+    padding: 20px;
+    /* background-color: #fff; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px #2B4A59;
+    display: flex;
+    flex-direction: column;
+}
+
+.ytt-container h2 {
+    text-align: center;
+    color: #2B4A59;
+    font-weight: 700;
+}
+
+.ytt-container p{
+    font-weight: bold;
+    color: black;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.ytt-container label {
+    display: block;
+    font-weight: bold;
+    color: black;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+
+.ytt-container button[type="submit"] {
+    background-color: #2B4A59;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.ytt-container button[type="submit"]:hover {
+    background-color: #20475a;
+}
+
+.ytt-container .info {
+    padding: 3px;
+    color: black;
+}
+
+.ytt-container .organisers {
+    padding: 2px;
+    color: black;
+}

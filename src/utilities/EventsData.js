@@ -14,7 +14,11 @@ export const events = [
       {
         thumbnail: "Images/V2.png",
         src: "Videos/V2.mp4",
+<<<<<<< HEAD
+        desc: "Robowars 2"
+=======
         desc: "Robowars 2",
+>>>>>>> 7af8ce94b81bca5c2009c07e6860db547eaccac9
       },
     ],
     accentColor: "#e37430",

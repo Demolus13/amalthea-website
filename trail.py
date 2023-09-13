@@ -6,4 +6,3 @@ def getNums(num) -> list:
         return [num]
     else:
         return getNums(num // 10).append(num % 10)
-

@@ -14,6 +14,7 @@ import Gallery from "./components/Gallery";
 import { Routes, Route } from "react-router-dom";
 import RobowarsReg from "./RegistrationPages/RobowarsReg";
 import BrainwizReg from "./RegistrationPages/BrainwizReg"
+import YTTReg from "./RegistrationPages/YTTReg"
 
 function App() {
   return (
@@ -118,8 +119,9 @@ function App() {
             </>
           }
         />
-        <Route path="/register/brainwiz" element={<BrainwizReg />} />
         <Route path="/register/robowars" element={<RobowarsReg />} />
+        <Route path="/register/brainwiz" element={<BrainwizReg />} />
+        <Route path="/register/youth tech-tic" element={<YTTReg />} />
       </Routes>
     </>
   );

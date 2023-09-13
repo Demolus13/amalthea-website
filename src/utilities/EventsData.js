@@ -14,7 +14,11 @@ export const events = [
       {
         thumbnail: "Images/V2.png",
         src: "Videos/V2.mp4",
+<<<<<<< HEAD
         desc: "Robowars 2",
+=======
+        desc: "Robowars 2"
+>>>>>>> deff3a58e1a643c0400550be6dce8467190e1b92
       },
     ],
     accentColor: "#e37430",
@@ -32,17 +36,23 @@ export const events = [
     accentColor: "#213555",
     textColor: "#213555",
     weight: "600",
-    spanBg: "#ffffffbf",
+    spanBg: "rgba(255, 255, 255, 0.50)",
     cardBg: "#F5EFE7",
     contents: [],
     rulebookPath: "./RuleBooks/BrainWiz'23_Rulebook.pdf",
   },
   {
-    name: "coming soon",
-    description: "bla bla bla",
-    imgSrc: "./Images/coming_soon.png",
+    name: "Youth Tech-Tic",
+    description:
+      "Have you ever pondered the practical application of your academic knowledge in addressing real-world challenges? Worry not, because Youth Tech-tic, brought to you by Amalthea, is here to enlighten you on the intricate thought processes required to craft viable solutions. The event is very well designed for students in classes 9 to 12 to unleash their creativity and knowledge.\nThis event transcends mere competition. It offers you the opportunity not only to vie for prizes but also to connect with distinguished professionals, including professors, alumni, and experts in various domains right here at IITGN.\nPrepare to embark on a captivating journey into the realms of learning and innovation!",
+    imgSrc: "./Images/YTT.png",
+    accentColor: "#2B4A59",
+    textColor: "#2B4A59",
+    weight: "600",
+    spanBg: "#f1faffbf25",
+    cardBg: "#C5CFD4",
     contents: [],
-    accentColor: "#000",
+    rulebookPath: "./RuleBooks/Youth_Tech-Tic_Rulebook.pdf",
   },
   {
     name: "coming soon",

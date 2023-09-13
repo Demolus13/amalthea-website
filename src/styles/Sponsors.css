@@ -86,7 +86,7 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 300px;
-  height: 250px;
+  height: 300px;
   /* Changed the border color to light gray */
   /* border: 1px solid #ccc; */
   /* border-radius: 10px; */
@@ -114,6 +114,20 @@ body {
   color: white;
   font-weight: 800;
   font-style: italic;
+  padding: 20px;
+  font-size: 20px;;
+}
+.platinum-sponsor img{
+  height: 250px;;
+}
+
+.gold-sponsor img{
+  height: 320px;
+}
+.diamond-sponsor h5{
+  padding-top: 15px;
+  padding-bottom: 15px;;
+  font-size: 20px;;
 }
 
 .sponsor-card img {
@@ -235,15 +249,28 @@ body {
     font-size: 1.15rem;
   }
 
+
+  #aditya-birla img{
+    width: 300px;;
+    height: 240px;;
+  }
+
   #design-and-head{
     font-size: 0.95rem;
   }
 
+  #ac-consult img{
+    width: 300px;;
+    height: 240px;;
+  }
+
   .sponsor-card{
-    scale: 0.7;
+    scale: 0.9;
   }
 
   .main{
-    padding: 5%;
+    padding: 1%;
   }
+
+
 }

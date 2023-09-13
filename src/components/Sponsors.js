@@ -73,7 +73,7 @@ export default function Sponsors() {
                 style={{ border: "20px solid white" }}
                 alt="indextb logo"
               />
-              <h5>Industrial Extension Beurau</h5>
+              <h5 style={{padding: "20px 0px"}}>Industrial Extension Beurau</h5>
             </div>
           </div>
           <h2 className="myheading divider line glow">DIAMOND SPONSORS</h2>
@@ -108,7 +108,7 @@ export default function Sponsors() {
           <h2 className="myheading divider line glow">GOLD SPONSORS</h2>
           <div className="sponsor-section">
             {/* HTML code for each gold sponsor card */}
-            <div className="sponsor-card gold-sponsor">
+            <div className="sponsor-card gold-sponsor" id="aditya-birla">
               {/* Replace the image source with the logo of your gold sponsor */}
               <img src="./Images/adityabirla.png" alt="Aditya Birla logo" />
               <h5>Aditya Birla</h5>
@@ -165,7 +165,7 @@ export default function Sponsors() {
               <img src="./Images/GP.png" alt="GP logo" />
               <h5>Gujarat State Petronet</h5>
             </div>
-            <div className="sponsor-card silver-sponsor">
+            <div className="sponsor-card silver-sponsor" id="ac-consult">
               {/* Replace the image source with the logo of your silver sponsor */}
               <img src="./Images/AC.png" alt="AC logo" />
               <h5 className="req-adjust">Alstonia Consulting</h5>

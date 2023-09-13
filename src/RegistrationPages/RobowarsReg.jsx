@@ -1,202 +1,295 @@
-// import React, { useEffect, useState } from "react";
-// import { auth, database } from "../utilities/FirebaseConfig";
-// import { child, onValue, ref, set } from "firebase/database";
-// import { useAuthState } from "react-firebase-hooks/auth";
+import React, { useEffect, useState } from 'react';
+import '../styles/Robowars.css'
 
-// const RobowarsRegistration = () => {
-//   const [isAlreadyRegistered, setIsAlreadyRegistered] = useState(false);
-//   const [leaderName, setLeaderName] = useState("");
-//   const [leaderNumber, setLeaderNumber] = useState("");
-//   const [teamName, setTeamName] = useState("");
-//   const [numberOfMembers, setNumberOfMembers] = useState(3);
-//   const [arr, setArr] = useState([]);
+function ContactForm() {
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top of the page on component load
+    }, []);
 
-//   const [members, setMembers] = useState({});
+    const [formData, setFormData] = useState({
+        teamname: '',
+        name1: '',
+        contact1: '',
+        email1: '',
+        name2: '',
+        contact2: '',
+        email2: '',
+        name3: '',
+        contact3: '',
+        email3: '',
+        name4: '',
+        contact4: '',
+        email4: '',
+        name5: '',
+        contact5: '',
+        email5: '',
+    });
 
-//   const [infoMsg, setInfoMsg] = useState("");
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
+    };
 
-//   const [user, loading, error] = useAuthState(auth);
-//   const [teamsObj, setTeamsObj] = useState({});
+    const handleSubmit = async (e) => {
+        e.preventDefault();
 
-//   useEffect(() => {
-//     //checking if team already registered
-//     onValue(ref(database, "robowars/leaders"), snapshot => {
-//       const data = snapshot.val();
-//       if (Object.keys(data).includes(user.uid)) setIsAlreadyRegistered(true);
-//       else {
-//         //fetching data from database and storing
-//         onValue(ref(database, "robowars/teams"), snapshot => {
-//           const data = snapshot.val();
-//           setTeamsObj(data);
-//           console.log(data);
-//         });
-//       }
-//     });
-//   }, []);
+        const scriptURL = 'https://docs.google.com/forms/u/0/d/1EdPQXwaXiw_zz7cClSLNunKJlSx2Ahci0RwFe398JC8/formResponse';
+        const form = new FormData();
+        form.append('entry.885410789', formData.teamname);
+        form.append('entry.1596401966', formData.name1);
+        form.append('entry.1248385505', formData.contact1);
+        form.append('entry.1796106927', formData.email1);
+        form.append('entry.448792404', formData.name2);
+        form.append('entry.431975505', formData.contact2);
+        form.append('entry.889230415', formData.email2);
+        form.append('entry.1313114890', formData.name3);
+        form.append('entry.328984450', formData.contact3);
+        form.append('entry.1999670641', formData.email3);
+        form.append('entry.1521351325', formData.name4);
+        form.append('entry.1173621349', formData.contact4);
+        form.append('entry.1835794694', formData.email4);
+        form.append('entry.291839970', formData.name5);
+        form.append('entry.542093335', formData.contact5);
+        form.append('entry.454925531', formData.email5);
 
-//   const handleMembers = e => {
-//     const newMembers = members;
-//     if (e.target.type === "text") {
-//       newMembers[e.target.id] = {
-//         ...members[e.target.id],
-//         name: e.target.value,
-//       };
-//     }
-//     if (e.target.type === "number") {
-//       newMembers[e.target.id] = {
-//         ...members[e.target.id],
-//         number: e.target.value,
-//       };
-//     }
-//     if (e.target.type === "email") {
-//       newMembers[e.target.id] = {
-//         ...members[e.target.id],
-//         email: e.target.value,
-//       };
-//     }
-//     setMembers(newMembers);
-//   };
+        try {
+            await fetch(scriptURL, { method: 'POST', mode: 'no-cors', body: form });
+            alert('Thank you! Your form is submitted successfully.');
+            setFormData({
+                teamname: '',
+                name1: '',
+                contact1: '',
+                email1: '',
+                name2: '',
+                contact2: '',
+                email2: '',
+                name3: '',
+                contact3: '',
+                email3: '',
+                name4: '',
+                contact4: '',
+                email4: '',
+                name5: '',
+                contact5: '',
+                email5: '',
+            });
+        } catch (error) {
+            console.error('Error!', error.message);
+        }
+    };
 
-//   //make table row for n members
-//   useEffect(() => {
-//     let newMembers = members;
-//     for (
-//       let i = Object.keys(members).length - 1;
-//       i > numberOfMembers - 1;
-//       i--
-//     ) {
-//       delete newMembers[i]; //delete extra rows of data from members object
-//     }
-//     setMembers(newMembers);
-//     const newArr = Array.from({ length: numberOfMembers }, (v, k) => (
-//       <tr key={k}>
-//         <td>
-//           <input id={k} onChange={handleMembers} required type="text" />
-//         </td>
-//         <td>
-//           <input id={k} onChange={handleMembers} required type="number" />
-//         </td>
-//         <td>
-//           <input id={k} onChange={handleMembers} required type="email" />
-//         </td>
-//       </tr>
-//     ));
-//     setArr(newArr);
-//   }, [numberOfMembers]);
+    return (
+        <>
+        <div className="rw-bg"></div>
+        <div className='rw-body'>
+            <div className="rw-container">
+                <h2>RoboWars Registration Form</h2>
+                <div className="info">
+                Register your team for Robowars @AMALTHEA here!!! <br /> Number of members allowed in a team are  3-5.
+                </div>
+                <form onSubmit={handleSubmit}>
+                    <div className="form-group">
+                        <label htmlFor="teamname">Team Name:</label>
+                        <input
+                            type="text"
+                            id="teamname"
+                            name="teamname"
+                            value={formData.teamname}
+                            onChange={handleInputChange}
+                            required
+                        />
+                    </div>
+                    <p>Member 1 &#40;Captain&#41;:</p>
+                    <div className="form-group">
+                        <label htmlFor="name1">Name:</label>
+                        <input
+                            type="text"
+                            id="name1"
+                            name="name1"
+                            value={formData.name1}
+                            onChange={handleInputChange}
+                            required
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="contact1">Contact Number:</label>
+                        <input
+                            type="tel"
+                            id="contact1"
+                            name="contact1"
+                            value={formData.contact1}
+                            onChange={handleInputChange}
+                            required
+                            pattern="[0-9]{10}"
+                            title="Please enter a 10-digit phone number"
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="email1">Email:</label>
+                        <input
+                            type="email"
+                            id="email1"
+                            name="email1"
+                            value={formData.email1}
+                            onChange={handleInputChange}
+                            required
+                        />
+                    </div>
+                    <p>Member 2:</p>
+                    <div className="form-group">
+                        <label htmlFor="name2">Name:</label>
+                        <input
+                            type="text"
+                            id="name2"
+                            name="name2"
+                            value={formData.name2}
+                            onChange={handleInputChange}
+                            required
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="contact2">Contact Number:</label>
+                        <input
+                            type="tel"
+                            id="contact2"
+                            name="contact2"
+                            value={formData.contact2}
+                            onChange={handleInputChange}
+                            required
+                            pattern="[0-9]{10}"
+                            title="Please enter a 10-digit phone number"
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="email2">Email:</label>
+                        <input
+                            type="email"
+                            id="email2"
+                            name="email2"
+                            value={formData.email2}
+                            onChange={handleInputChange}
+                            required
+                        />
+                    </div>
+                    <p>Member 3:</p>
+                    <div className="form-group">
+                        <label htmlFor="name3">Name:</label>
+                        <input
+                            type="text"
+                            id="name3"
+                            name="name3"
+                            value={formData.name3}
+                            onChange={handleInputChange}
+                            required
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="contact3">Contact Number:</label>
+                        <input
+                            type="tel"
+                            id="contact3"
+                            name="contact3"
+                            value={formData.contact3}
+                            onChange={handleInputChange}
+                            required
+                            pattern="[0-9]{10}"
+                            title="Please enter a 10-digit phone number"
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="email3">Email:</label>
+                        <input
+                            type="email"
+                            id="email3"
+                            name="email3"
+                            value={formData.email3}
+                            onChange={handleInputChange}
+                            required
+                        />
+                    </div>
+                    <p>Member 4:</p>
+                    <div className="form-group">
+                        <label htmlFor="name4">Name:</label>
+                        <input
+                            type="text"
+                            id="name4"
+                            name="name4"
+                            value={formData.name4}
+                            onChange={handleInputChange}
+                            // required
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="contact4">Contact Number:</label>
+                        <input
+                            type="tel"
+                            id="contact4"
+                            name="contact4"
+                            value={formData.contact4}
+                            onChange={handleInputChange}
+                            pattern="[0-9]{10}"
+                            title="Please enter a 10-digit phone number"
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="email4">Email:</label>
+                        <input
+                            type="email"
+                            id="email4"
+                            name="email4"
+                            value={formData.email4}
+                            onChange={handleInputChange}
+                        />
+                    </div>
+                    <p>Member 5:</p>
+                    <div className="form-group">
+                        <label htmlFor="name5">Name:</label>
+                        <input
+                            type="text"
+                            id="name5"
+                            name="name5"
+                            value={formData.name5}
+                            onChange={handleInputChange}
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="contact5">Contact Number:</label>
+                        <input
+                            type="tel"
+                            id="contact5"
+                            name="contact5"
+                            value={formData.contact5}
+                            onChange={handleInputChange}
+                            pattern="[0-9]{10}"
+                            title="Please enter a 10-digit phone number"
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="email5">Email:</label>
+                        <input
+                            type="email"
+                            id="email5"
+                            name="email5"
+                            value={formData.email5}
+                            onChange={handleInputChange}
+                        />
+                    </div>
+                    <div className="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+                <div className="info">
+                    For any further details please contact/mail the following organisers,
+                </div>
+                <div className="organisers">Aditya Mehta - +91 9429428442, mehta.aditya@iitgn.ac.in</div>
+                <div className="organisers">Hitesh Kumar - +91 9569970238, hitesh.kumar@iitgn.ac.in</div>
+            </div>
+        </div>
+        </>
+    );
+}
 
-//   const handleMakeTeam = e => {
-//     setInfoMsg("");
-//     e.preventDefault();
-//     if (leaderNumber.length !== 10) {
-//       setInfoMsg("Contact Number must be 10 digits long!");
-//       return;
-//     }
-
-//     const team = {
-//       leaderName,
-//       leaderNumber,
-//       leaderEmail: user.email,
-//       teamName,
-//       numberOfMembers,
-//       members,
-//     };
-//     console.log(team);
-
-//     //checking if a team with the same name exists
-//     if (Object.keys(teamsObj).includes(teamName)) {
-//       setInfoMsg(
-//         teamName.toUpperCase() + " is already Taken, Please Enter Another Name!"
-//       );
-//       return;
-//     } else {
-//       //Setting data in firebase database
-//       set(ref(database, "robowars/teams/" + teamName), {
-//         leaderName,
-//         leaderUID: user.uid,
-//         numberOfMembers,
-//         members,
-//       });
-//       set(ref(database, "robowars/leaders/" + user.uid), {
-//         leaderName,
-//         leaderEmail: user.email,
-//         leaderNumber,
-//         teamName,
-//       });
-//       setInfoMsg(" Team Registered! ");
-//     }
-//   };
-//   return (
-//     <div className="register-content">
-//       {isAlreadyRegistered ? (
-//         <>
-//           <h3>You have Already Registered a Team!</h3>
-//           <h5>Contact Us if you want to Edit Registered Info</h5>
-//         </>
-//       ) : (
-//         <form onSubmit={handleMakeTeam}>
-//           <div className="reg-info-row">
-//             <span>Leader's Name: </span>
-//             <input
-//               value={leaderName}
-//               onChange={e => setLeaderName(e.target.value.toLowerCase())}
-//               required
-//               id="leader-name"
-//               type="text"
-//             />
-//           </div>
-//           <div className="reg-info-row">
-//             <span>Leader's Contact Number: </span>
-//             <input
-//               value={leaderNumber}
-//               onChange={e => setLeaderNumber(e.target.value)}
-//               required
-//               minLength={10}
-//               id="leader-contact"
-//               type="number"
-//             />
-//           </div>
-//           <div className="reg-info-row">
-//             <span>Team's Name: </span>
-//             <input
-//               value={teamName}
-//               onChange={e => setTeamName(e.target.value.toLowerCase())}
-//               required
-//               id="team-name"
-//               type="text"
-//             />
-//           </div>
-//           <div className="reg-info-row">
-//             <span>Number of Members (including Leader): </span>
-//             <select
-//               value={numberOfMembers}
-//               onChange={e => setNumberOfMembers(e.target.value)}
-//               required
-//               id="team-members">
-//               <option value="3">3</option>
-//               <option value="4">4</option>
-//               <option value="5">5</option>
-//             </select>
-//           </div>
-//           <div className="robowars-team-table">
-//             <table>
-//               <thead>
-//                 <tr>
-//                   <th>Name</th>
-//                   <th>Number</th>
-//                   <th>Email</th>
-//                 </tr>
-//               </thead>
-//               <tbody>{arr}</tbody>
-//             </table>
-//           </div>
-//           <div style={{ display: "flex", justifyContent: "space-between" }}>
-//             <span style={{ marginLeft: "15px" }}>{infoMsg}</span>
-//             <button type="submit">Make Team</button>
-//           </div>
-//         </form>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default RobowarsRegistration;
+export default ContactForm;

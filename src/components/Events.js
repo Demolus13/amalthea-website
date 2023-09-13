@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Events.css";
 import { events } from "../utilities/EventsData";
-import { Link } from "react-router-dom";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
 export default function Events() {
+  // window.scrollTo(0, 0);
   useEffect(() => {
     const H = window.innerHeight;
-    window.scrollTo(0, 0);
     const L1 = document.querySelectorAll(".L1");
     const L2 = document.querySelectorAll(".L2");
     const aml = document.getElementById("aml");
@@ -34,10 +33,10 @@ export default function Events() {
         const s2 = 1 - scroll / (0.5 * H);
         const s3 = 1 - scroll / (0.5 * H);
 
-        L1.forEach((l) => {
+        L1.forEach(l => {
           l.style.transform = `scale(${s1})`;
         });
-        L2.forEach((l) => {
+        L2.forEach(l => {
           l.style.transform = `scale(${s2})`;
         });
         aml.style.opacity = s3;
@@ -47,10 +46,10 @@ export default function Events() {
         content.style.opacity = 1;
       }
       if (0.55 * H < scroll) {
-        L1.forEach((l) => {
+        L1.forEach(l => {
           l.style.transform = "scale(0)";
         });
-        L2.forEach((l) => {
+        L2.forEach(l => {
           l.style.transform = "scale(0)";
         });
       }
@@ -77,7 +76,7 @@ export default function Events() {
         }
       }
       if (8.75 * H < scroll) {
-        eventCards.forEach((ec) => {
+        eventCards.forEach(ec => {
           ec.style.top = "0vh";
           ec.style.bottom = "0vh";
         });
@@ -120,15 +119,14 @@ export default function Events() {
   );
 }
 
-const EventVisualContent = (event) => {
+const EventVisualContent = event => {
   return (
     <div className={`contxents-visual`}>
       {event.contents.map((content, index) => {
         return (
           <video
-            className={`content-iframe content-iframe-${index} ${
-              index %2 ===0 ? "disable-left" : "disable-right"
-            } contents-for-${event.name}`}
+            className={`content-iframe content-iframe-${index} ${index % 2 === 0 ? "disable-left" : "disable-right"
+              } contents-for-${event.name}`}
             id={`content-iframe-${index}-${event.name}`}
             height="40%"
             width="40%"
@@ -137,42 +135,45 @@ const EventVisualContent = (event) => {
             allow="fullscreen"
             // autoPlay="false"
             controls="true"
-            autoStart="false"
-          >
-          </video>
+            autoStart="false"></video>
         );
       })}
     </div>
   );
 };
 
-const EventCard = (event) => {
+const EventCard = event => {
   const isMobile = window.screen.width < 500 ? true : false;
   const [open, setOpen] = useState(false);
-  
+
   function handleClick(event_index) {
-    const event_info = document.getElementById(`events-info-${event_index}`)
-    const desc_info = document.getElementById(`events-text-holder-${event_index}`)
+    const event_info = document.getElementById(`events-info-${event_index}`);
+    const desc_info = document.getElementById(
+      `events-text-holder-${event_index}`
+    );
     for (let index = 0; index < event.contents.length; index++) {
-      const iframe = document.getElementById(`content-iframe-${index}-${event.name}`);
-      if(open)
-      {
+      const iframe = document.getElementById(
+        `content-iframe-${index}-${event.name}`
+      );
+      if (open) {
+        iframe.style.transitionDelay = "0s";
+      } else {
         iframe.style.transitionDelay = "0s";
       }
-      else{
-        iframe.style.transitionDelay = "0s";
-      }
-      index %2 ===0 ? iframe.classList.toggle("disable-left") :  iframe.classList.toggle("disable-right")    
+      index % 2 === 0
+        ? iframe.classList.toggle("disable-left")
+        : iframe.classList.toggle("disable-right");
     }
-    document.querySelectorAll("video").forEach(element => {element.pause()})
-    event_info.classList.toggle("event-card-lock-hover")
-    desc_info.classList.toggle("events-text-holder-lock-hover")
+    document.querySelectorAll("video").forEach(element => {
+      element.pause();
+    });
+    event_info.classList.toggle("event-card-lock-hover");
+    desc_info.classList.toggle("events-text-holder-lock-hover");
     setOpen(!open);
-    
   }
   return (
     <div className="event-card-holder">
-      <div className="event-card">
+      <div className="event-card" style={{ background: event.cardBg }}>
         <img
           src={
             event.name === "coming soon" && isMobile
@@ -182,15 +183,13 @@ const EventCard = (event) => {
           style={{
             height: event.name === "coming soon" && isMobile ? "95vh" : "",
           }}
-          alt={event.name}
-        ></img>
+          alt={event.name}></img>
 
         <h5
           className={`content-title-0 content-title-for-${event.name} ${
             //dimensions.height <= window.innerHeight * 0.6 ? "disable-left" : ""
             "disable-left"
-          }`}
-        >
+            }`}>
           {event.contentTitle}
         </h5>
         <EventVisualContent key={event.name} {...event} />
@@ -203,36 +202,40 @@ const EventCard = (event) => {
             borderColor: event.accentColor,
             boxShadow: "0 0 15px 3px " + event.accentColor,
           }}
-          // ref={divRef}
+        // ref={divRef}
         >
           <div className="content-placeholder">
             <div className="content"></div>
             <div
               className="events-text-holder"
               id={`events-text-holder-${event.index}`}
-              style={{ color: event.textColor }}
-            >
+              style={{ color: event.textColor }}>
               <h1 className="oswald">{event.name}</h1>
               <p className="montserrat" style={{ fontWeight: event.weight }}>
                 {event.description}
               </p>
             </div>
             <div className="events-buttons-holder montserrat">
-              {/* <Link to={`/register/${event.name.toLowerCase()}`}> */}
-              <Link to={`/events-23`}>
-                <button style={{ background: event.accentColor }}>
-                  Register
-                </button>
-              </Link>
-              <button id="hover-eq" style={{ background: event.accentColor }} onClick={() => {handleClick(event.index)}}>
-                {open ? <ArrowDownwardIcon />:<ArrowUpwardIcon />}
+              <button
+                onClick={() => {
+                  window.open(`/register/${event.name.toLowerCase()}`);
+                }}
+                style={{ background: event.accentColor }}>
+                Register
+              </button>
+              <button
+                id="hover-eq"
+                style={{ background: event.accentColor }}
+                onClick={() => {
+                  handleClick(event.index);
+                }}>
+                {open ? <ArrowDownwardIcon /> : <ArrowUpwardIcon />}
               </button>
               <button
                 onClick={() => {
                   window.open(event.rulebookPath);
                 }}
-                style={{ background: event.accentColor }}
-              >
+                style={{ background: event.accentColor }}>
                 Rulebook
               </button>
             </div>

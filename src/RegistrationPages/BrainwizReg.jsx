@@ -1,52 +1,79 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/Brainwiz.css'
 
-function RegistrationForm() {
-    window.scrollTo(0, 0);
+function ContactForm() {
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top of the page on component load
+    }, []);
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         contact: '',
         class: 'Class 9th',
-        stream: 'PCM',
+        stream: 'Not applicable',
         school: '',
         address: '',
         city: '',
         state: '',
         guardianName: '',
         guardianContact: '',
-        googleDriveLink: '',
+        googleDriveLink1: '',
+        googleDriveLink2: '',
     });
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
     };
-    const scriptURL = "https://script.google.com/macros/s/AKfycbwDWQeHlG63fMfnQtPof6iz1D3yROUgVm3Xj0bpHSr-cKnInDmuyS3lf6F15n8MDrUp-g/exec";
-
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        const driveLinkPattern = /^https:\/\/drive\.google\.com\/.*$/;
+
+        if (!driveLinkPattern.test(formData.googleDriveLink1) || !driveLinkPattern.test(formData.googleDriveLink2)) {
+            alert('Please enter valid Google Drive links');
+            return;
+        }
+
+        const scriptURL = 'https://docs.google.com/forms/u/0/d/1sVVvsl6RHEpFmnkucCIfhuwreoRy--kPTr-u2azqmQA/formResponse';
+        const form = new FormData();
+        form.append('entry.756603207', formData.name);
+        form.append('entry.2010326846', formData.email);
+        form.append('entry.2070518104', formData.contact);
+        form.append('entry.1796367140', formData.class);
+        form.append('entry.1820839827', formData.stream);
+        form.append('entry.421132129', formData.school);
+        form.append('entry.1800670499', formData.address);
+        form.append('entry.993662820', formData.city);
+        form.append('entry.147516377', formData.state);
+        form.append('entry.151031277', formData.guardianName);
+        form.append('entry.656237450', formData.guardianContact);
+        form.append('entry.627039335', formData.googleDriveLink1);
+        form.append('entry.1143467285', formData.googleDriveLink2);
+
         try {
-            const response = await fetch(scriptURL,
-                {
-                    method: 'POST',
-                    mode: 'no-cors',
-                    body: JSON.stringify(formData),
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Access-Control-Allow-Origin': '*'
-                    },
-                }
-            );
-            console.log(response);
-            if (response.ok) {
-                alert('Thank you! Your form is submitted successfully.');
-                window.location.reload();
-            } else {
-                throw new Error('Failed to submit the form.');
-            }
+            await fetch(scriptURL, { method: 'POST', mode: 'no-cors', body: form });
+            alert('Thank you! Your form is submitted successfully.');
+            setFormData({
+                name: '',
+                email: '',
+                contact: '',
+                class: '',
+                stream: '',
+                school: '',
+                address: '',
+                city: '',
+                state: '',
+                guardianName: '',
+                guardianContact: '',
+                googleDriveLink1: '',
+                googleDriveLink2: '',
+            });
         } catch (error) {
             console.error('Error!', error.message);
         }
@@ -88,6 +115,8 @@ function RegistrationForm() {
                             value={formData.contact}
                             onChange={handleInputChange}
                             required
+                            pattern="[0-9]{10}"
+                            title="Please enter a 10-digit phone number"
                         />
                     </div>
                     <div className="form-group">
@@ -114,9 +143,10 @@ function RegistrationForm() {
                             onChange={handleInputChange}
                             required
                         >
-                            <option value="Science">PCM</option>
-                            <option value="Commerce">PCB</option>
-                            <option value="Arts">PCMB</option>
+                            <option value="Not applicable">Not applicable</option>
+                            <option value="PCM">PCM</option>
+                            <option value="PCB">PCB</option>
+                            <option value="PCMB">PCMB</option>
                         </select>
                     </div>
                     <div className="form-group">
@@ -185,19 +215,39 @@ function RegistrationForm() {
                             value={formData.guardianContact}
                             onChange={handleInputChange}
                             required
+                            pattern="[0-9]{10}"
+                            title="Please enter a 10-digit phone number"
                         />
                     </div>
+                    <div className="info" style={{paddingBottom: "15px"}}>
+                        Please give access to these Google Drive Links
+                    </div>
                     <div className="form-group">
-                        <label htmlFor="googleDriveLink">
+                        <label htmlFor="googleDriveLink1">
                             Google Drive Link for School ID Card/Aadhar Card:
                         </label>
                         <input
                             type="text"
-                            id="googleDriveLink"
-                            name="googleDriveLink"
-                            value={formData.googleDriveLink}
+                            id="googleDriveLink1"
+                            name="googleDriveLink1"
+                            value={formData.googleDriveLink1}
                             onChange={handleInputChange}
                             placeholder="Paste your Google Drive link here"
+                            required
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="googleDriveLink2">
+                            Google Drive Link for Recent Photographs (Passport Size):
+                        </label>
+                        <input
+                            type="text"
+                            id="googleDriveLink2"
+                            name="googleDriveLink2"
+                            value={formData.googleDriveLink2}
+                            onChange={handleInputChange}
+                            placeholder="Paste your Google Drive link here"
+                            required
                         />
                     </div>
                     <div className="form-group">
@@ -207,12 +257,12 @@ function RegistrationForm() {
                 <div className="info">
                     For any further details please contact the following organisers,
                 </div>
-                <div className="organisers">Dewansh Singh Chandel - +91 80859 07445</div>
-                <div className="organisers">Lavanya - +91 870-8493621</div>
-                <div className="organisers">Farhan Obaid- +91 76673 36359</div>
+                <div className="organisers">Dewansh Singh Chandel - +91 80859 07445, dewanshsingh.chandel@iitgn.ac.in</div>
+                <div className="organisers">Lavanya - +91 8708493621, layanya.lavanya@iitgn.ac.in</div>
+                <div className="organisers">Farhan Obaid- +91 76673 36359, farhan.obaid@iitgna.ac.in</div>
             </div>
         </div>
     );
 }
 
-export default RegistrationForm;
+export default ContactForm;

@@ -1,0 +1,84 @@
+.rw-bg {
+    background: url(../../public/Images/V1.png);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    inset: 0px;
+}
+.rw-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+.rw-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #00000070;
+    backdrop-filter: blur(6px);
+    padding: 20px;
+    /* background-color: #fff; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+}
+
+.rw-container h2 {
+    text-align: center;
+    color: #e37430;
+    font-weight: 700;
+}
+
+.rw-container p{
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.rw-container label {
+    display: block;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+
+.rw-container button[type="submit"] {
+    background-color: #e37430;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.rw-container button[type="submit"]:hover {
+    background-color: #e46c22;
+}
+
+.rw-container .info {
+    padding: 3px;
+    color: whitesmoke;
+}
+
+.rw-container .organisers {
+    padding: 2px;
+    color: whitesmoke;
+}

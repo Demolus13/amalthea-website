@@ -12,7 +12,7 @@ import OurTeam from "./components/OurTeam";
 import HTR from "./components/HTR";
 import Gallery from "./components/Gallery";
 import { Routes, Route } from "react-router-dom";
-import Register from "./RegistrationPages/Register";
+import RobowarsReg from "./RegistrationPages/RobowarsReg";
 import BrainwizReg from "./RegistrationPages/BrainwizReg"
 
 function App() {
@@ -119,7 +119,7 @@ function App() {
           }
         />
         <Route path="/register/brainwiz" element={<BrainwizReg />} />
-        <Route path="/register/:event" element={<Register />} />
+        <Route path="/register/robowars" element={<RobowarsReg />} />
       </Routes>
     </>
   );

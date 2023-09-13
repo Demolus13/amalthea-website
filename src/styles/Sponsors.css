@@ -19,8 +19,6 @@ body {
 .myheading {
   font-size: 40px;
   margin-bottom: 10px;
-  /* Added a slide-in animation for the headings */
-  animation: slide-in 1s ease-in-out;
 }
 
 .main p {
@@ -43,7 +41,6 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
-  animation: slide-out 1s ease-in-out;
 }
 
 .platinum-sponsor{
@@ -173,26 +170,6 @@ body {
 
   to {
     opacity: 1;
-  }
-}
-
-@keyframes slide-in {
-  from {
-    transform: translateX(-25%);
-  }
-
-  to {
-    transform: translateX(0%);
-  }
-}
-
-@keyframes slide-out {
-  from {
-    transform: translateX(25%);
-  }
-
-  to {
-    transform: translateX(0%);
   }
 }
 

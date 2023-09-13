@@ -91,7 +91,6 @@ export default function Sponsors() {
               <h5>GSDMA</h5>
             </div>
             <div className="sponsor-card diamond-sponsor">
-              {/* Replace the image source with the logo of your platinum sponsor */}
               <img
                 src="./Images/CPwhite.png"
                 alt="cp logo"
@@ -104,17 +103,13 @@ export default function Sponsors() {
               <h5>GCPL</h5>
             </div>
           </div>
-          {/* HTML code for the gold sponsors section of the web page */}
           <h2 className="myheading divider line glow">GOLD SPONSORS</h2>
           <div className="sponsor-section">
-            {/* HTML code for each gold sponsor card */}
             <div className="sponsor-card gold-sponsor" id="aditya-birla">
-              {/* Replace the image source with the logo of your gold sponsor */}
               <img src="./Images/adityabirla.png" alt="Aditya Birla logo" />
               <h5>Aditya Birla</h5>
             </div>
             <div className="sponsor-card gold-sponsor">
-              {/* Replace the image source with the logo of your gold sponsor */}
               <img
                 src="./Images/./gujaratmaritimeboard.png"
                 alt="Gujarat Maritime Board logo"
@@ -128,7 +123,6 @@ export default function Sponsors() {
               <h5>Gujarat Maritime Board</h5>
             </div>
             <div className="sponsor-card gold-sponsor">
-              {/* Replace the image source with the logo of your gold sponsor */}
               <img
                 src="./Images/metro.png"
                 alt="Metro logo"
@@ -142,12 +136,9 @@ export default function Sponsors() {
               <h5>Gujarat Metro</h5>
             </div>
           </div>
-          {/* HTML code for the silver sponsors section of the web page */}
           <h2 className="myheading divider line glow">SILVER SPONSORS</h2>
           <div className="sponsor-section">
-            {/* HTML code for each silver sponsor card */}
             <div className="sponsor-card silver-sponsor">
-              {/* Replace the image source with the logo of your silver sponsor */}
               <img
                 src="./Images/vrajgroupwhite.png"
                 alt="Vraj Group logo"
@@ -161,22 +152,17 @@ export default function Sponsors() {
               <h5 className="req-adjust">Vraj Group</h5>
             </div>
             <div className="sponsor-card silver-sponsor">
-              {/* Replace the image source with the logo of your silver sponsor */}
               <img src="./Images/GP.png" alt="GP logo" />
               <h5>Gujarat State Petronet</h5>
             </div>
             <div className="sponsor-card silver-sponsor" id="ac-consult">
-              {/* Replace the image source with the logo of your silver sponsor */}
               <img src="./Images/AC.png" alt="AC logo" />
               <h5 className="req-adjust">Alstonia Consulting</h5>
             </div>
           </div>
-          {/* HTML code for the other sponsors section of the web page */}
           <h2 className="myheading divider line glow">EVENT PARTNERS</h2>
           <div className="sponsor-section">
-            {/* HTML code for each other sponsor card */}
             <div className="sponsor-card event-parters">
-              {/* Replace the image source with the logo of your other sponsor */}
               <img
                 src="./Images/ITC.png"
                 alt="ITC logo"
@@ -190,7 +176,6 @@ export default function Sponsors() {
               <h5>ITC</h5>
             </div>
             <div className="sponsor-card event-parters">
-              {/* Replace the image source with the logo of your other sponsor */}
               <img
                 src="./Images/nutanix.png"
                 alt="nutanix logo"
@@ -204,7 +189,6 @@ export default function Sponsors() {
               <h5>Nutanix</h5>
             </div>
             <div className="sponsor-card event-parters">
-              {/* Replace the image source with the logo of your other sponsor */}
               <img
                 src="./Images/Reliance.png"
                 alt="reliance logo"
@@ -218,12 +202,10 @@ export default function Sponsors() {
               <h5>Reliance Ltd.</h5>
             </div>
             <div className="sponsor-card event-parters">
-              {/* Replace the image source with the logo of your other sponsor */}
               <img src="./Images/crazylabs.png" alt="crazylabs logo" />
               <h5>Crazy Labs</h5>
             </div>
             <div className="sponsor-card event-parters">
-              {/* Replace the image source with the logo of your other sponsor */}
               <img
                 src="./Images/redbull.png"
                 alt="redbull logo"
@@ -237,7 +219,6 @@ export default function Sponsors() {
               <h5>Red Bull</h5>
             </div>
             <div className="sponsor-card event-parters">
-              {/* Replace the image source with the logo of your other sponsor */}
               <img
                 src="./Images/tatachemicals.png"
                 alt="tata chemicals logo"
@@ -249,7 +230,6 @@ export default function Sponsors() {
               <h5>Tata Chemicals</h5>
             </div>
             <div className="sponsor-card event-parters">
-              {/* Replace the image source with the logo of your other sponsor */}
               <img
                 src="./Images/codechef.png"
                 alt="codechef logo"
@@ -263,7 +243,6 @@ export default function Sponsors() {
               <h5>Code Chef</h5>
             </div>
             <div className="sponsor-card event-parters">
-              {/* Replace the image source with the logo of your other sponsor */}
               <img
                 src="./Images/wazirx.png"
                 alt="wazrix logo"
@@ -277,7 +256,6 @@ export default function Sponsors() {
               <h5>Wazirx</h5>
             </div>
             <div className="sponsor-card event-parters">
-              {/* Replace the image source with the logo of your other sponsor */}
               <img
                 src="./Images/adani.png"
                 alt="adani logo"
@@ -291,7 +269,6 @@ export default function Sponsors() {
               <h5>Adani Group</h5>
             </div>
             <div className="sponsor-card event-parters">
-              {/* Replace the image source with the logo of your other sponsor */}
               <img
                 src="./Images/beamable.png"
                 alt="beamable logo"
@@ -307,9 +284,7 @@ export default function Sponsors() {
           </div>
           <h2 className="myheading divider line glow">CONCLAVE PARTNER</h2>
           <div className="sponsor-section ">
-            {/* HTML code for each silver sponsor card */}
             <div className="sponsor-card conclave-partners">
-              {/* Replace the image source with the logo of your silver sponsor */}
               <img
                 src="./Images/jklakshmi.png"
                 alt="JK Lakshmi cement logo"
@@ -327,9 +302,7 @@ export default function Sponsors() {
             DESIGN AND INNOVATION PARTNERS
           </h2>
           <div className="sponsor-section">
-            {/* HTML code for each silver sponsor card */}
             <div className="sponsor-card design-innovation-partners">
-              {/* Replace the image source with the logo of your silver sponsor */}
               <img
                 src="./Images/htc.png"
                 alt="htc logo"
@@ -343,7 +316,6 @@ export default function Sponsors() {
               <h5>HTC</h5>
             </div>
             <div className="sponsor-card design-innovation-partners">
-              {/* Replace the image source with the logo of your silver sponsor */}
               <img
                 src="./Images/isro.png"
                 alt="isro logo"
@@ -357,7 +329,6 @@ export default function Sponsors() {
               <h5>ISRO</h5>
             </div>
             <div className="sponsor-card design-innovation-partners">
-              {/* Replace the image source with the logo of your silver sponsor */}
               <img
                 src="./Images/apple.png"
                 alt="apple logo"
@@ -371,7 +342,6 @@ export default function Sponsors() {
               <h5>Apple</h5>
             </div>
             <div className="sponsor-card design-innovation-partners">
-              {/* Replace the image source with the logo of your silver sponsor */}
               <img
                 src="./Images/microsoft.png"
                 alt="microsoft logo"

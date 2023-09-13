@@ -219,6 +219,9 @@ function ContactForm() {
                             title="Please enter a 10-digit phone number"
                         />
                     </div>
+                    <div className="info" style={{paddingBottom: "15px"}}>
+                        Please give access to these Google Drive Links
+                    </div>
                     <div className="form-group">
                         <label htmlFor="googleDriveLink1">
                             Google Drive Link for School ID Card/Aadhar Card:
@@ -254,9 +257,9 @@ function ContactForm() {
                 <div className="info">
                     For any further details please contact the following organisers,
                 </div>
-                <div className="organisers">Dewansh Singh Chandel - +91 80859 07445</div>
-                <div className="organisers">Lavanya - +91 870-8493621</div>
-                <div className="organisers">Farhan Obaid- +91 76673 36359</div>
+                <div className="organisers">Dewansh Singh Chandel - +91 80859 07445, dewanshsingh.chandel@iitgn.ac.in</div>
+                <div className="organisers">Lavanya - +91 8708493621, layanya.lavanya@iitgn.ac.in</div>
+                <div className="organisers">Farhan Obaid- +91 76673 36359, farhan.obaid@iitgna.ac.in</div>
             </div>
         </div>
     );

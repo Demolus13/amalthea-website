@@ -26,7 +26,7 @@ export default function Home() {
     const span = document.querySelector(".waw-span");
     const ot = document.getElementById("ot");
     const tt = document.querySelectorAll(".title");
-    const unit = document.getElementById("unit");
+    // const unit = document.getElementById("unit");
     const event_unit = document.querySelectorAll(".event-unit");
     body.style.height = `${34 * H}px`;
 
@@ -37,6 +37,7 @@ export default function Home() {
         const s1 = 1 - scroll / H;
         const s2 = 1 - scroll / (1.25 * H);
         const s3 = 1 - scroll / (0.35 * H);
+        span.style.height = "100%";
 
         L1.forEach(l => {
           l.style.transform = `scale(${s1})`;
@@ -49,14 +50,13 @@ export default function Home() {
       } else {
         aml.style.opacity = 0;
         waw.style.opacity = 1;
-      }
-
-      if (scroll < 0.5 * H) {
-        span.style.height = "100%";
-      }
-
-      if (scroll > 0.5 * H) {
         span.style.height = "0%";
+        L1.forEach(l => {
+          l.style.transform = `scale(0.5)`;
+        });
+        L2.forEach(l => {
+          l.style.transform = `scale(0.6)`;
+        });
       }
 
       if (scroll > 0.5 * H && scroll < 2 * H) {
@@ -69,15 +69,15 @@ export default function Home() {
         });
       }
 
-      if (scroll < H) {
-        circle.style.backgroundColor = "rgb(23, 0, 54)";
-        circle.style.transform = "scale(3)";
-      }
-
       if (scroll > 2.5 * H) {
         waw_cont.style.display = "none";
       } else {
         waw_cont.style.display = "flex";
+      }
+
+      if (scroll < 2 * H) {
+        circle.style.backgroundColor = "rgb(23, 0, 54)";
+        circle.style.transform = "scale(3)";
       }
 
       if (scroll > 2 * H && scroll < 7 * H) {
@@ -93,14 +93,14 @@ export default function Home() {
       if (7 * H < scroll) {
         circle.style.transform = "scale(0)";
       }
-      if (scroll < 7 * H) {
-        unit.style.top = "100vh";
-      }
+      // if (scroll < 7 * H) {
+      //   unit.style.top = "100vh";
+      // }
 
       if (scroll > 7 * H && scroll < 14.5 * H) {
         ot.style.opacity = 0;
-        const top = (1 - (2 * (scroll - 7 * H)) / (3 * H)) * 100;
-        unit.style.top = `${top}vh`;
+        // const top = (1 - (2 * (scroll - 7 * H)) / (3 * H)) * 100;
+        // unit.style.top = `${top}vh`;
         const i = Math.floor((scroll - 7 * H) / (3 * H));
         tt[i].classList.remove("deactive");
         tt[i].classList.add("active");
@@ -119,9 +119,9 @@ export default function Home() {
         });
       }
 
-      if (14.5 * H < scroll) {
-        unit.style.top = "-300vh";
-      }
+      // if (14.5 * H < scroll) {
+      //   unit.style.top = "-300vh";
+      // }
       if (14 * H < scroll) {
         const j = Math.floor((scroll - 14 * H) / (2 * H));
         const top = (1 - ((scroll - 14 * H) % (2 * H)) / (2 * H)) * 100;
@@ -140,12 +140,14 @@ export default function Home() {
           element.style.bottom = "-100vh";
         }
       }
+
       if (scroll < 14 * H) {
         event_unit.forEach(eu => {
           eu.style.top = "100vh";
           eu.style.bottom = "-100vh";
         });
       }
+
       if (32 * H < scroll) {
         event_unit.forEach(eu => {
           eu.style.top = "0vh";
@@ -215,7 +217,7 @@ export default function Home() {
       <div className="title center oswald" style={{ zIndex: -3 }}>
         <h2>THE LOCAL EVENTS</h2>
       </div>
-      <div id="unit" style={{ zIndex: -4 }}>
+      {/* <div id="unit" style={{ zIndex: -4 }}>
         <div className="subunit">
           {window.screen.width < 600 ? (
             ""
@@ -284,7 +286,7 @@ export default function Home() {
             <img className="gallery-img" src="./Images/expo5.jpeg" alt="" />
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="event-unit">
         <div
           className="event"

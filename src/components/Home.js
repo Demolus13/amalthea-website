@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "../styles/Home.css";
+import { home } from "../utilities/HomeData";
 import { useState } from "react";
 
 export default function Home() {
@@ -26,9 +27,8 @@ export default function Home() {
     const span = document.querySelector(".waw-span");
     const ot = document.getElementById("ot");
     const tt = document.querySelectorAll(".title");
-    // const unit = document.getElementById("unit");
     const event_unit = document.querySelectorAll(".event-unit");
-    body.style.height = `${34 * H}px`;
+    body.style.height = `${(15 + 2*home.length) * H}px`;
 
     const handleScroll = () => {
       const scroll = window.scrollY;
@@ -119,22 +119,19 @@ export default function Home() {
         });
       }
 
-      // if (14.5 * H < scroll) {
-      //   unit.style.top = "-300vh";
-      // }
       if (14 * H < scroll) {
         const j = Math.floor((scroll - 14 * H) / (2 * H));
         const top = (1 - ((scroll - 14 * H) % (2 * H)) / (2 * H)) * 100;
-        if (-1 < j && j < 9) {
+        if (-1 < j && j < home.length) {
           event_unit[j].style.top = `${top}vh`;
           event_unit[j].style.bottom = `-${top}vh`;
         }
-        for (let i = 0; i < j && j < 9; i++) {
+        for (let i = 0; i < j && j < home.length; i++) {
           const element = event_unit[i];
           element.style.top = "0vh";
           element.style.bottom = "0vh";
         }
-        for (let i = j + 1; i < 9; i++) {
+        for (let i = j + 1; i < home.length; i++) {
           const element = event_unit[i];
           element.style.top = "100vh";
           element.style.bottom = "-100vh";
@@ -148,7 +145,7 @@ export default function Home() {
         });
       }
 
-      if (32 * H < scroll) {
+      if (2 * (7 + home.length) * H < scroll) {
         event_unit.forEach(eu => {
           eu.style.top = "0vh";
           eu.style.bottom = "0vh";
@@ -217,268 +214,29 @@ export default function Home() {
       <div className="title center oswald" style={{ zIndex: -3 }}>
         <h2>THE LOCAL EVENTS</h2>
       </div>
-      {/* <div id="unit" style={{ zIndex: -4 }}>
-        <div className="subunit">
-          {window.screen.width < 600 ? (
-            ""
-          ) : window.screen.width > 600 && window.screen.width < 937 ? (
-            <>
-              <div className="gallery-item item-3" id="conclave3">
-                <img
-                  className="gallery-img"
-                  src="./Images/conclave3.jpeg"
-                  alt=""
-                />
+      <div>
+        {home.map((card, index) => (
+          <div className="event-unit" key={index}>
+            <div
+              className="event"
+              style={{
+                backgroundImage: `url(${card.cardBg})`,
+                border: card.cardBorder,
+                boxShadow: card.cardBoxShadow,
+              }}>
+              <div className="details">
+                <h2 className="event-name oswald">{card.name}</h2>
+                <div className="actions-even-name">
+                  {/* <h5 className="apply_rule montserrat">Register </h5>
+              <h5 className="apply_rule montserrat">Rule Book </h5> */}
+                </div>
               </div>
-            </>
-          ) : (
-            <>
-              <div className="gallery-item item-1">
-                <img
-                  className="gallery-img"
-                  src="./Images/conclave1.jpeg"
-                  alt=""
-                />
-              </div>
-              <div className="gallery-item item-3" id="conclave3">
-                <img
-                  className="gallery-img"
-                  src="./Images/conclave3.jpeg"
-                  alt=""
-                />
-              </div>
-            </>
-          )}
-
-          <div className="gallery-item item-2" id="conclave2">
-            <img className="gallery-img" src="./Images/conclave2.JPG" alt="" />
-          </div>
-          <div className="gallery-item item-4">
-            <img className="gallery-img" src="./Images/conclave4.jpeg" alt="" />
-          </div>
-        </div>
-        <div className="subunit"></div>
-        <div className="subunit">
-          {window.screen.width < 600 ? (
-            ""
-          ) : window.screen.width < 600 && window.screen.width > 936 ? (
-            <div className="gallery-item item-3">
-              <img className="gallery-img" src="./Images/expo3.jpg" alt="" />
-            </div>
-          ) : (
-            <>
-              {" "}
-              <div className="gallery-item item-1" id="expo1">
-                <img className="gallery-img" src="./Images/expo1.jpeg" alt="" />
-              </div>
-              <div className="gallery-item item-3">
-                <img className="gallery-img" src="./Images/expo3.jpg" alt="" />
-              </div>
-            </>
-          )}
-          <div className="gallery-item item-2" id="expo2">
-            <img className="gallery-img" src="./Images/expo2.jpeg" alt="" />
-          </div>
-          <div className="gallery-item item-4" id="expo4">
-            <img className="gallery-img" src="./Images/expo4.jpeg" alt="" />
-          </div>
-          <div className="gallery-item item-5" id="expo5">
-            <img className="gallery-img" src="./Images/expo5.jpeg" alt="" />
-          </div>
-        </div>
-      </div> */}
-      <div className="event-unit">
-        <div
-          className="event"
-          style={{
-            backgroundImage: "url(/Images/robowars.png)",
-            borderColor: "#e37430",
-            boxShadow: "0 0 15px 3px #e37430",
-          }}>
-          <div className="details">
-            <h2 className="event-name oswald">ROBOWARS</h2>
-            <div className="actions-even-name">
-              {/* <h5 className="apply_rule montserrat">Register </h5>
-              <h5 className="apply_rule montserrat">Rule Book </h5> */}
+              <h3 className="date oswald" style={{color: card.dateColor}}>
+                {card.date}-Nov <br /> 2023
+              </h3>
             </div>
           </div>
-
-          <h3 className="date oswald">
-            04-Nov <br /> 2023
-          </h3>
-        </div>
-      </div>
-      <div className="event-unit">
-        <div
-          className="event"
-          style={{
-            backgroundImage: "url(/Images/coming_soon_mobile.png)",
-          }}>
-          <div className="details">
-            <h2 className="event-name oswald">DRA</h2>
-            <div className="actions-even-name">
-              {/* <h5 className="apply_rule montserrat">Register </h5>
-              <h5 className="apply_rule montserrat">Rule Book </h5> */}
-            </div>
-          </div>
-          <h3 className="date oswald">
-            xx-Nov <br /> 2023
-          </h3>
-        </div>
-      </div>
-      <div className="event-unit">
-        <div
-          className="event"
-          style={{
-            backgroundImage: "url(/Images/coming_soon_mobile.png)",
-          }}>
-          <div className="details">
-            <h2 className="event-name oswald">DRIFT RACING</h2>
-            <div className="actions-even-name">
-              {/* <h5 className="apply_rule montserrat">Register </h5>
-              <h5 className="apply_rule montserrat">Rule Book </h5> */}
-            </div>
-          </div>
-
-          <h3 className="date oswald">
-            xx-Nov <br /> 2023
-          </h3>
-        </div>
-      </div>
-      <div className="event-unit">
-        <div
-          className="event"
-          style={{
-            backgroundImage: "url(/Images/Brainwiz.png)",
-            border: "solid 5px #213555",
-            boxShadow: "0 0 15px 3px #213555"
-          }}>
-          <div className="details">
-            <h2 className="event-name oswald">BRAINWIZ</h2>
-            <div className="actions-even-name">
-              {/* <h5 className="apply_rule montserrat">Register </h5>
-              <h5 className="apply_rule montserrat">Rule Book </h5> */}
-            </div>
-          </div>
-
-          <h3 className="date oswald" style={{color: "#213555"}}>
-            04-Nov <br /> 2023
-          </h3>
-        </div>
-      </div>
-      <div className="event-unit">
-        <div
-          className="event"
-          style={{
-            backgroundImage: "url(/Images/YTT-bg.png)",
-            border: "solid 5px #2B4A59",
-            boxShadow: "0 0 15px 3px #2B4A59"
-          }}>
-          <div className="details">
-            <h2 className="event-name oswald">YOUTH TECH-TIC</h2>
-            <div className="actions-even-name">
-              {/* <h5 className="apply_rule montserrat">Register </h5>
-              <h5 className="apply_rule montserrat">Rule Book </h5> */}
-            </div>
-          </div>
-
-          <h3 className="date oswald" style={{color: "#2B4A59"}}>
-            04-Nov <br /> 2023
-          </h3>
-        </div>
-      </div>
-      <div className="event-unit">
-        <div
-          className="event"
-          style={{
-            backgroundImage: "url(/Images/coming_soon_mobile.png)",
-            border: "solid 5px #190051",
-            boxShadow: "0 0 15px 3px #190051"
-          }}>
-          <div className="details">
-            <h2 className="event-name oswald">GAMEJAM</h2>
-            <div className="actions-even-name">
-              {/* <h5 className="apply_rule montserrat">Register </h5>
-              <h5 className="apply_rule montserrat">Rule Book </h5> */}
-            </div>
-          </div>
-          <h3 className="date oswald">
-            xx-Nov <br /> 2023
-          </h3>
-        </div>
-      </div>
-      <div className="event-unit">
-        <div
-          className="event"
-          style={{
-            backgroundImage: "url(/Images/coming_soon_mobile.png)",
-          }}>
-          <div className="details">
-            <h2 className="event-name oswald">STOCKRUSH</h2>
-            <div className="actions-even-name">
-              {/* <h5 className="apply_rule montserrat">Register </h5>
-              <h5 className="apply_rule montserrat">Rule Book </h5> */}
-            </div>
-          </div>
-          <h3 className="date oswald">
-            xx-Nov <br /> 2023
-          </h3>
-        </div>
-      </div>
-      <div className="event-unit">
-        <div
-          className="event"
-          style={{
-            backgroundImage: "url(/Images/coming_soon_mobile.png)",
-          }}>
-          <div className="details">
-            <h2 className="event-name oswald">INNOVATION NEXUS</h2>
-            <div className="actions-even-name">
-              {/* <h5 className="apply_rule montserrat">Register </h5>
-              <h5 className="apply_rule montserrat">Rule Book </h5> */}
-            </div>
-          </div>
-          <h3 className="date oswald">
-            xx-Nov <br /> 2023
-          </h3>
-        </div>
-      </div>
-      <div className="event-unit">
-        <div
-          className="event"
-          style={{
-            backgroundImage: "url(/Images/coming_soon_mobile.png)",
-          }}>
-          <div className="details">
-            <h2 className="event-name oswald">ICON</h2>
-            <div className="actions-even-name">
-              {/* <h5 className="apply_rule montserrat">Register </h5>
-              <h5 className="apply_rule montserrat">Rule Book </h5> */}
-            </div>
-          </div>
-          <h3 className="date oswald">
-            xx-Nov <br /> 2023
-          </h3>
-        </div>
-      </div>
-      <div className="event-unit">
-        <div
-          className="event"
-          style={{
-            backgroundImage: "url(/Images/coming_soon_mobile.png)",
-          }}>
-          <div className="details">
-            <h2 className="event-name oswald">D'CODE</h2>
-            <div className="actions-even-name">
-              {/* <h5 className="apply_rule montserrat">Register </h5>
-              <h5 className="apply_rule montserrat">Rule Book </h5> */}
-            </div>
-          </div>
-
-          <h3 className="date oswald">
-            xx-Nov <br /> 2023
-          </h3>
-        </div>
+        ))}
       </div>
     </div>
   );

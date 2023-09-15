@@ -219,7 +219,8 @@ const EventCard = event => {
             <div className="events-buttons-holder montserrat">
               <button
                 onClick={() => {
-                  window.open(`/register/${event.name.toLowerCase()}`);
+                  window.open(event.registerPath);
+
                 }}
                 style={{ background: event.accentColor }}>
                 Register

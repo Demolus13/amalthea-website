@@ -23,6 +23,7 @@ export const events = [
     spanBg: "#00000025",
     cardBg: "#20201e",
     rulebookPath: "./RuleBooks/RoboWars Amalthea '23.pdf",
+    registerPath: "https://amalthea.iitgn.ac.in/register/robowars"
   },
   {
     name: "BrainWiz",
@@ -36,6 +37,7 @@ export const events = [
     cardBg: "#F5EFE7",
     contents: [],
     rulebookPath: "./RuleBooks/BrainWiz'23_Rulebook.pdf",
+    registerPath: "https://amalthea.iitgn.ac.in/register/brainwiz"
   },
   {
     name: "Youth Tech-Tic",
@@ -49,6 +51,21 @@ export const events = [
     cardBg: "#C5CFD4",
     contents: [],
     rulebookPath: "./RuleBooks/Youth_Tech-Tic_Rulebook.pdf",
+    registerPath: "https://amalthea.iitgn.ac.in/register/youth tech-tic"
+  },
+  {
+    name: "GamJam",
+    description:
+    "Ever wondered what it takes to bring a video game to life? Curious about the thrill of designing and coding your own gaming masterpiece ? Look no further! Welcome to our Game Jam 2023- presented by Amalthea IIT Gandhinagar. With limited time and limitless potential, this game jam is your chance to create the next gaming sensation! So, dust off your gamepad, charge up your laptop, and prepare for an ultimate win and sheer gaming magic. We can't wait to see what epic adventures you'll conjure up! It’s an epic opportunity to expand your gaming network by connecting with your fellow gamers and learn the pro coding skills. So, gather your team and let's turn pixels into profit at the GameJam 2023.",
+    imgSrc: "./Images/YTT.png",
+    accentColor: "#2B4A59",
+    textColor: "#2B4A59",
+    weight: "600",
+    spanBg: "#f1faffbf25",
+    cardBg: "#C5CFD4",
+    contents: [],
+    rulebookPath: "./RuleBooks/Youth_Tech-Tic_Rulebook.pdf",
+    registerPath: "https://itch.io/jam/381312/preview"
   },
   {
     name: "coming soon",

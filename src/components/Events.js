@@ -56,26 +56,26 @@ export default function Events() {
       if (0.75 * H < scroll) {
         const j = Math.floor((scroll - 0.75 * H) / (2 * H)) + 1;
         const top = (1 - ((scroll - 0.75 * H) % (2 * H)) / (2 * H)) * 120;
-        if (0 < j && j < 4) {
+        if (0 < j && j < 6) {
           eventCards[j].style.top = `${top}vh`;
           eventCards[j].style.bottom = `-${top}vh`;
         }
-        for (let i = 1; i < j && j < 4; i++) {
+        for (let i = 1; i < j && j < 6; i++) {
           eventCards[i].style.top = "0vh";
           eventCards[i].style.bottom = "0vh";
         }
-        for (let i = j + 1; i < 5; i++) {
+        for (let i = j + 1; i < 6; i++) {
           eventCards[i].style.top = "100vh";
           eventCards[i].style.bottom = "-100vh";
         }
       }
       if (scroll < 0.75 * H) {
-        for (let i = 1; i < 4; i++) {
+        for (let i = 1; i < 6; i++) {
           eventCards[i].style.top = "100vh";
           eventCards[i].style.bottom = "-100vh";
         }
       }
-      if (8.75 * H < scroll) {
+      if (10.75 * H < scroll) {
         eventCards.forEach(ec => {
           ec.style.top = "0vh";
           ec.style.bottom = "0vh";

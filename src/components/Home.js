@@ -361,7 +361,28 @@ export default function Home() {
             </div>
           </div>
 
-          <h3 className="date oswald">
+          <h3 className="date oswald" style={{color: "#213555"}}>
+            04-Nov <br /> 2023
+          </h3>
+        </div>
+      </div>
+      <div className="event-unit">
+        <div
+          className="event"
+          style={{
+            backgroundImage: "url(/Images/YTT-bg.png)",
+            border: "solid 5px #2B4A59",
+            boxShadow: "0 0 15px 3px #2B4A59"
+          }}>
+          <div className="details">
+            <h2 className="event-name oswald">YOUTH TECH-TIC</h2>
+            <div className="actions-even-name">
+              {/* <h5 className="apply_rule montserrat">Register </h5>
+              <h5 className="apply_rule montserrat">Rule Book </h5> */}
+            </div>
+          </div>
+
+          <h3 className="date oswald" style={{color: "#2B4A59"}}>
             04-Nov <br /> 2023
           </h3>
         </div>
@@ -371,6 +392,8 @@ export default function Home() {
           className="event"
           style={{
             backgroundImage: "url(/Images/coming_soon_mobile.png)",
+            border: "solid 5px #190051",
+            boxShadow: "0 0 15px 3px #190051"
           }}>
           <div className="details">
             <h2 className="event-name oswald">GAMEJAM</h2>

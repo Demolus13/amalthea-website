@@ -80,6 +80,8 @@ function ContactForm() {
     };
 
     return (
+        <>
+        <div className="bw-bg"></div>
         <div className='bw-body'>
             <div className="bw-container">
                 <h2>BrainWiz Registration Form</h2>
@@ -104,7 +106,7 @@ function ContactForm() {
                             value={formData.email}
                             onChange={handleInputChange}
                             required
-                        />
+                            />
                     </div>
                     <div className="form-group">
                         <label htmlFor="contact">Contact Number:</label>
@@ -127,7 +129,7 @@ function ContactForm() {
                             value={formData.class}
                             onChange={handleInputChange}
                             required
-                        >
+                            >
                             <option value="Class 9th">Class 9th</option>
                             <option value="Class 10th">Class 10th</option>
                             <option value="Class 11th">Class 11th</option>
@@ -142,7 +144,7 @@ function ContactForm() {
                             value={formData.stream}
                             onChange={handleInputChange}
                             required
-                        >
+                            >
                             <option value="Not applicable">Not applicable</option>
                             <option value="PCM">PCM</option>
                             <option value="PCB">PCB</option>
@@ -160,7 +162,7 @@ function ContactForm() {
                             value={formData.school}
                             onChange={handleInputChange}
                             required
-                        />
+                            />
                     </div>
                     <div className="form-group">
                         <label htmlFor="address">Address:</label>
@@ -171,7 +173,7 @@ function ContactForm() {
                             value={formData.address}
                             onChange={handleInputChange}
                             required
-                        ></textarea>
+                            ></textarea>
                     </div>
                     <div className="form-group">
                         <label htmlFor="city">City:</label>
@@ -182,7 +184,7 @@ function ContactForm() {
                             value={formData.city}
                             onChange={handleInputChange}
                             required
-                        />
+                            />
                     </div>
                     <div className="form-group">
                         <label htmlFor="state">State:</label>
@@ -193,7 +195,7 @@ function ContactForm() {
                             value={formData.state}
                             onChange={handleInputChange}
                             required
-                        />
+                            />
                     </div>
                     <div className="form-group">
                         <label htmlFor="guardianName">Guardian Name:</label>
@@ -204,7 +206,7 @@ function ContactForm() {
                             value={formData.guardianName}
                             onChange={handleInputChange}
                             required
-                        />
+                            />
                     </div>
                     <div className="form-group">
                         <label htmlFor="guardianContact">Guardian Contact Number:</label>
@@ -217,7 +219,7 @@ function ContactForm() {
                             required
                             pattern="[0-9]{10}"
                             title="Please enter a 10-digit phone number"
-                        />
+                            />
                     </div>
                     <div className="info" style={{paddingBottom: "15px"}}>
                         Please give access to these Google Drive Links
@@ -234,7 +236,7 @@ function ContactForm() {
                             onChange={handleInputChange}
                             placeholder="Paste your Google Drive link here"
                             required
-                        />
+                            />
                     </div>
                     <div className="form-group">
                         <label htmlFor="googleDriveLink2">
@@ -248,7 +250,7 @@ function ContactForm() {
                             onChange={handleInputChange}
                             placeholder="Paste your Google Drive link here"
                             required
-                        />
+                            />
                     </div>
                     <div className="form-group">
                         <button type="submit">Submit</button>
@@ -262,6 +264,7 @@ function ContactForm() {
                 <div className="organisers">Farhan Obaid- +91 76673 36359, farhan.obaid@iitgna.ac.in</div>
             </div>
         </div>
+        </>
     );
 }
 

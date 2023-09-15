@@ -7,12 +7,10 @@ export const events = [
     contentTitle: "Robowar Video Release",
     contents: [
       {
-        thumbnail: "Images/V1.png",
         src: "Videos/V1.mp4",
         desc: "Robowars 1",
       },
       {
-        thumbnail: "Images/V2.png",
         src: "Videos/V2.mp4",
         desc: "Robowars 2"
       },

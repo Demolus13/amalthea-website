@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "../styles/Home.css";
 import { home } from "../utilities/HomeData";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 export default function Home() {
@@ -28,7 +29,7 @@ export default function Home() {
     const ot = document.getElementById("ot");
     const tt = document.querySelectorAll(".title");
     const event_unit = document.querySelectorAll(".event-unit");
-    body.style.height = `${(15 + 2*home.length) * H}px`;
+    body.style.height = `${(15 + 2 * home.length) * H}px`;
 
     const handleScroll = () => {
       const scroll = window.scrollY;
@@ -93,14 +94,9 @@ export default function Home() {
       if (7 * H < scroll) {
         circle.style.transform = "scale(0)";
       }
-      // if (scroll < 7 * H) {
-      //   unit.style.top = "100vh";
-      // }
 
       if (scroll > 7 * H && scroll < 14.5 * H) {
         ot.style.opacity = 0;
-        // const top = (1 - (2 * (scroll - 7 * H)) / (3 * H)) * 100;
-        // unit.style.top = `${top}vh`;
         const i = Math.floor((scroll - 7 * H) / (3 * H));
         tt[i].classList.remove("deactive");
         tt[i].classList.add("active");
@@ -169,14 +165,14 @@ export default function Home() {
           AMALTHEA
         </h1>
       </div>
-      <img className="aml-bg-1 L1" src="./Images/AML-BG-1.png" alt="" />
-      <img className="aml-bg-2 L1" src="./Images/AML-BG-2.png" alt="" />
+      <img className="aml-bg-1 L1" style={{ zIndex: 3 }} src="./Images/AML-BG-1.png" alt="" />
+      <img className="aml-bg-2 L1" style={{ zIndex: 3 }} src="./Images/AML-BG-2.png" alt="" />
       <img className="aml-bg-3 L2" src="./Images/AML-BG-3.png" alt="" />
       <img className="aml-bg-4 L2" src="./Images/AML-BG-4.png" alt="" />
       <img className="aml-bg-5" src="./Images/AML-BG-5.png" alt="" />
-      <img className="aml-bg-8 L2" src="./Images/AML-BG-6.png" alt="" />
+      <img className="aml-bg-8 L2" style={{ zIndex: 4 }} src="./Images/AML-BG-6.png" alt="" />
       <img className="aml-bg-6" src="./Images/AML-BG-5.png" alt="" />
-      <img className="aml-bg-7 L2" src="./Images/AML-BG-6.png" alt="" />
+      <img className="aml-bg-7 L2" style={{ zIndex: 4 }} src="./Images/AML-BG-6.png" alt="" />
       <img className="drone L3" src="./Images/Drone.png" alt="" />
       <img className="robo L3" src="./Images/Robo.png" alt="" />
       <div id="waw-container">
@@ -226,12 +222,28 @@ export default function Home() {
               }}>
               <div className="details">
                 <h2 className="event-name oswald">{card.name}</h2>
-                <div className="actions-even-name">
-                  {/* <h5 className="apply_rule montserrat">Register </h5>
-              <h5 className="apply_rule montserrat">Rule Book </h5> */}
+                <div className="actions-even-name"
+                style={{
+                  display: card.name === "COMING SOON" ? "none" : "flex",
+                }}>
+                  <Link className="apply_rule montserrat"
+                    to="/events-23"
+                    style={{
+                      backgroundColor: card.buttonBgColor,
+                      color: card.textColor,
+                    }}><h5>More Events</h5></Link>
+                  <h5 className="apply_rule montserrat"
+                    onClick={() => {
+                      window.open(card.rulebookPath);
+                    }}
+                    style={{
+                      backgroundColor: card.buttonBgColor,
+                      color: card.textColor,
+                    }}>RuleBook</h5>
                 </div>
               </div>
-              <h3 className="date oswald" style={{color: card.dateColor}}>
+              <h3 className="date oswald"
+                style={{ color: card.dateColor }}>
                 {card.date}-Nov <br /> 2023
               </h3>
             </div>

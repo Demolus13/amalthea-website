@@ -6,6 +6,9 @@ export const home = [
         cardBoxShadow: "0 0 15px 3px #e37430",
         dateColor: "#ffffff",
         date: "04",
+        buttonBgColor: "#e37430",
+        textColor: "#ffffff",
+        rulebookPath: "./RuleBooks/RoboWars RuleBook.pdf",
     },
     {
         name: "BRAINWIZ",
@@ -14,6 +17,9 @@ export const home = [
         cardBoxShadow: "0 0 15px 3px #213555",
         dateColor: "#213555",
         date: "04",
+        buttonBgColor: "#213555",
+        textColor: "#ffffff",
+        rulebookPath: "./RuleBooks/BrainWiz Rulebook.pdf",
     },
     {
         name: "YOUTH TECH-TIC",
@@ -22,6 +28,9 @@ export const home = [
         cardBoxShadow: "0 0 15px 3px #2B4A59",
         dateColor: "#2B4A59",
         date: "04",
+        buttonBgColor: "#2B4A59",
+        textColor: "#ffffff",
+        rulebookPath: "./RuleBooks/Youth Tech-Tic Rulebook.pdf",
     },
     {
         name: "GAMEJAM",
@@ -30,6 +39,9 @@ export const home = [
         cardBoxShadow: "0 0 15px 3px #190051",
         dateColor: "#05BECA",
         date: "04",
+        buttonBgColor: "#F10060",
+        textColor: "#ffffff",
+        rulebookPath: "./RuleBooks/GameJam Rulebook.pdf",
     },
     {
         name: "COMING SOON",
@@ -38,6 +50,8 @@ export const home = [
         cardBoxShadow: "0 0 15px 3px #d321a3",
         dateColor: "#ffffff",
         date: "xx",
+        buttonBgColor: "#d321a3",
+        textColor: "#ffffff"
     },
     {
         name: "COMING SOON",
@@ -46,5 +60,7 @@ export const home = [
         cardBoxShadow: "0 0 15px 3px #d321a3",
         dateColor: "#ffffff",
         date: "xx",
+        buttonBgColor: "#d321a3",
+        textColor: "#ffffff"
     },
 ];

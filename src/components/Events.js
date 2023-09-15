@@ -5,9 +5,10 @@ import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
 export default function Events() {
-  // window.scrollTo(0, 0);
   useEffect(() => {
+    window.scrollTo(0, 0);
     const H = window.innerHeight;
+    const body = document.querySelector(".events-body");
     const L1 = document.querySelectorAll(".L1");
     const L2 = document.querySelectorAll(".L2");
     const aml = document.getElementById("aml");
@@ -15,6 +16,7 @@ export default function Events() {
     const eventCards = document.querySelectorAll(".event-card-holder");
     const event_info = document.getElementsByClassName("events-info");
     const iframes = document.getElementsByClassName("content-iframe");
+    body.style.height = `${(1 + 2 * events.length) * H}px`;
 
     if (event_info[0].clientHeight >= window.innerHeight * 0.2) {
       console.log("Called");
@@ -56,26 +58,26 @@ export default function Events() {
       if (0.75 * H < scroll) {
         const j = Math.floor((scroll - 0.75 * H) / (2 * H)) + 1;
         const top = (1 - ((scroll - 0.75 * H) % (2 * H)) / (2 * H)) * 120;
-        if (0 < j && j < 6) {
+        if (0 < j && j < events.length) {
           eventCards[j].style.top = `${top}vh`;
           eventCards[j].style.bottom = `-${top}vh`;
         }
-        for (let i = 1; i < j && j < 6; i++) {
+        for (let i = 1; i < j && j < events.length; i++) {
           eventCards[i].style.top = "0vh";
           eventCards[i].style.bottom = "0vh";
         }
-        for (let i = j + 1; i < 6; i++) {
+        for (let i = j + 1; i < events.length; i++) {
           eventCards[i].style.top = "100vh";
           eventCards[i].style.bottom = "-100vh";
         }
       }
       if (scroll < 0.75 * H) {
-        for (let i = 1; i < 6; i++) {
+        for (let i = 1; i < events.length; i++) {
           eventCards[i].style.top = "100vh";
           eventCards[i].style.bottom = "-100vh";
         }
       }
-      if (10.75 * H < scroll) {
+      if ((0.75 + 2*events.length) * H < scroll) {
         eventCards.forEach(ec => {
           ec.style.top = "0vh";
           ec.style.bottom = "0vh";
@@ -134,7 +136,6 @@ const EventVisualContent = event => {
             src={content.src}
             title={content.desc}
             allow="fullscreen"
-            // autoPlay="false"
             controls="true"
             autoStart="false"></video>
         );

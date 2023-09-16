@@ -19,7 +19,7 @@ export const home = [
         date: "04",
         buttonBgColor: "#213555",
         textColor: "#ffffff",
-        rulebookPath: "./RuleBooks/BrainWiz Rulebook.pdf",
+        rulebookPath: "./RuleBooks/BrainWiz RuleBook.pdf",
     },
     {
         name: "YOUTH TECH-TIC",
@@ -30,7 +30,7 @@ export const home = [
         date: "04",
         buttonBgColor: "#2B4A59",
         textColor: "#ffffff",
-        rulebookPath: "./RuleBooks/Youth Tech-Tic Rulebook.pdf",
+        rulebookPath: "./RuleBooks/Youth Tech-Tic RuleBook.pdf",
     },
     // {
     //     name: "GAMEJAM",
@@ -41,7 +41,7 @@ export const home = [
     //     date: "04",
     //     buttonBgColor: "#F10060",
     //     textColor: "#ffffff",
-    //     rulebookPath: "./RuleBooks/GameJam Rulebook.pdf",
+    //     rulebookPath: "./RuleBooks/GameJam RuleBook.pdf",
     // },
     {
         name: "COMING SOON",

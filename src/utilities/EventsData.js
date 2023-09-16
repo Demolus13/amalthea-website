@@ -63,7 +63,7 @@ export const events = [
     cardBg: "#190051",
     contents: [],
     rulebookPath: "./RuleBooks/GameJam RuleBook.pdf",
-    registerPath: "https://itch.io/jam/381312/preview"
+    registerPath: "https://itch.io/jam/game-jam-2023-ad"
   },
   {
     name: "coming soon",

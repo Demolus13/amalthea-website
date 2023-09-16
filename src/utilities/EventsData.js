@@ -34,7 +34,7 @@ export const events = [
     spanBg: "rgba(255, 255, 255, 0.50)",
     cardBg: "#F5EFE7",
     contents: [],
-    rulebookPath: "./RuleBooks/BrainWiz Rulebook.pdf",
+    rulebookPath: "./RuleBooks/BrainWiz RuleBook.pdf",
     registerPath: "https://amalthea.iitgn.ac.in/register/brainwiz"
   },
   {
@@ -48,7 +48,7 @@ export const events = [
     spanBg: "#f1faffbf25",
     cardBg: "#C5CFD4",
     contents: [],
-    rulebookPath: "./RuleBooks/Youth Tech-Tic Rulebook.pdf",
+    rulebookPath: "./RuleBooks/Youth Tech-Tic RuleBook.pdf",
     registerPath: "https://amalthea.iitgn.ac.in/register/youth tech-tic"
   },
   // {
@@ -62,7 +62,7 @@ export const events = [
   //   spanBg: "#34005325",
   //   cardBg: "#190051",
   //   contents: [],
-  //   rulebookPath: "./RuleBooks/GameJam Rulebook.pdf",
+  //   rulebookPath: "./RuleBooks/GameJam RuleBook.pdf",
   //   registerPath: "https://itch.io/jam/381312/preview"
   // },
   {

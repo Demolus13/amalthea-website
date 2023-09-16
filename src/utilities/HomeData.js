@@ -37,7 +37,7 @@ export const home = [
         cardBg: "./Images/GameJam-bg.png",
         cardBorder: "solid 5px #190051",
         cardBoxShadow: "0 0 15px 3px #190051",
-        dateColor: "#ffffff",
+        dateColor: "#190051",
         date: "04",
         buttonBgColor: "#190051",
         textColor: "#ffffff",

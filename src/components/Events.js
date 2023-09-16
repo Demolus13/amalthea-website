@@ -30,7 +30,7 @@ export default function Events() {
       eventCards[0].style.top = "0vh";
       eventCards[0].style.bottom = "0vh";
 
-      if (scroll < H) {
+      if (scroll < 0.55 * H) {
         const s1 = 1 - scroll / (0.5 * H);
         const s2 = 1 - scroll / (0.5 * H);
         const s3 = 1 - scroll / (0.5 * H);
@@ -46,8 +46,6 @@ export default function Events() {
       } else {
         aml.style.opacity = 0;
         content.style.opacity = 1;
-      }
-      if (0.55 * H < scroll) {
         L1.forEach(l => {
           l.style.transform = "scale(0)";
         });

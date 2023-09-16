@@ -18,7 +18,7 @@ export default function Sponsors() {
 
       if (scroll < 0.5 * H) {
         const s1 = 1 - scroll / H;
-        const s2 = 1 - scroll / H;
+        const s2 = 1 - scroll / (1.25 * H);
         const s3 = 1 - scroll / (0.5 * H);
 
         L1.forEach(l => {
@@ -30,6 +30,12 @@ export default function Sponsors() {
         aml.style.opacity = s3;
       } else {
         aml.style.opacity = 0;
+        L1.forEach(l => {
+          l.style.transform = `scale(0.5)`;
+        });
+        L2.forEach(l => {
+          l.style.transform = `scale(0.6)`;
+        });
       }
     };
 

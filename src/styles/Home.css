@@ -320,36 +320,6 @@
     margin-left: 0px;
     padding-right: 0;
   }
-
-  .item-4 {
-    scale: 3;
-    width: 200%;
-  }
-
-  .item-3 {
-    width: 200%;
-    transform: translate(-40%, -95%);
-    scale: 0.75;
-  }
-
-  .item-2 {
-    width: 200%;
-    transform: translate(0, 15%);
-  }
-
-  #expo1 {
-    display: none;
-  }
-
-  #conclave3 {
-    width: 200%;
-    transform: translate(-45%, -95%);
-    scale: 0.75;
-  }
-
-  #conclave2 {
-    transform: translate(0, 15%);
-  }
 }
 
 @media screen and (max-width: 394px) {
@@ -409,18 +379,6 @@
   }
   .aml-bg-4 {
     width: 100%;
-  }
-
-  #expo2 {
-    transform: translate(0%, 20%);
-  }
-
-  #expo4 {
-    transform: translate(0%, -20%);
-  }
-
-  #conclave2 {
-    transform: translate(0, -20%);
   }
 }
 @media screen and (max-height: 500px) {

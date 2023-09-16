@@ -220,12 +220,12 @@ export default function Home() {
                 border: card.cardBorder,
                 boxShadow: card.cardBoxShadow,
               }}>
-              <div className="details">
-                <h2 className="event-name oswald">{card.name}</h2>
-                <div className="actions-even-name"
+              <div className="details"
                 style={{
-                  display: card.name === "COMING SOON" ? "none" : "flex",
+                  display: card.name === "COMING SOON" ? "none" : "block",
                 }}>
+                <h2 className="event-name oswald">{card.name}</h2>
+                <div className="actions-even-name">
                   <Link className="apply_rule montserrat"
                     to="/events-23"
                     style={{
@@ -243,7 +243,10 @@ export default function Home() {
                 </div>
               </div>
               <h3 className="date oswald"
-                style={{ color: card.dateColor }}>
+                style={{
+                  color: card.dateColor,
+                  display: card.name === "COMING SOON" ? "none" : "block",
+                }}>
                 {card.date}-Nov <br /> 2023
               </h3>
             </div>

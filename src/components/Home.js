@@ -29,7 +29,7 @@ export default function Home() {
     const ot = document.getElementById("ot");
     const tt = document.querySelectorAll(".title");
     const event_unit = document.querySelectorAll(".event-unit");
-    body.style.height = `${(16 + 2 * home.length) * H}px`;
+    body.style.height = `${(9 + 2 * home.length) * H}px`;
 
     const handleScroll = () => {
       const scroll = window.scrollY;
@@ -81,7 +81,7 @@ export default function Home() {
         circle.style.transform = "scale(3)";
       }
 
-      if (scroll > 2 * H && scroll < 7 * H) {
+      if (scroll > 2 * H && scroll < 6 * H) {
         const s4 = 3 - (scroll - 2 * H) / H;
         const r = 23 + (scroll - 2 * H) * 0.2;
         const g = 0 + (scroll - 2 * H) * 0.2;
@@ -91,15 +91,17 @@ export default function Home() {
         ot.style.opacity = 1;
       }
 
-      if (7 * H < scroll) {
+      if (6 * H < scroll) {
         circle.style.transform = "scale(0)";
       }
 
-      if (scroll > 7 * H && scroll < 14.5 * H) {
+      if (scroll > 6 * H && scroll < 10.5 * H) {
         ot.style.opacity = 0;
-        const i = Math.floor((scroll - 7 * H) / (3 * H));
-        tt[i].classList.remove("deactive");
-        tt[i].classList.add("active");
+        const i = Math.floor((scroll - 6 * H) / (1.5 * H));
+        if (i < 3) {
+          tt[i].classList.remove("deactive");
+          tt[i].classList.add("active");
+        }
         if (i > 0) {
           tt[i - 1].classList.add("deactive");
           tt[i - 1].classList.remove("active");
@@ -115,9 +117,9 @@ export default function Home() {
         });
       }
 
-      if (14 * H < scroll) {
-        const j = Math.floor((scroll - 14 * H) / (2 * H));
-        const top = (1 - ((scroll - 14 * H) % (2 * H)) / (2 * H)) * 100;
+      if (9.5 * H < scroll) {
+        const j = Math.floor((scroll - 9.5 * H) / (2 * H));
+        const top = (1 - ((scroll - 9.5 * H) % (2 * H)) / (2 * H)) * 100;
         if (-1 < j && j < home.length) {
           event_unit[j].style.top = `${top}vh`;
           event_unit[j].style.bottom = `-${top}vh`;
@@ -134,14 +136,14 @@ export default function Home() {
         }
       }
 
-      if (scroll < 14 * H) {
+      if (scroll < 9.5 * H) {
         event_unit.forEach(eu => {
           eu.style.top = "100vh";
           eu.style.bottom = "-100vh";
         });
       }
 
-      if (2 * (7 + home.length) * H < scroll) {
+      if ((9.5 + 2*home.length) * H < scroll) {
         event_unit.forEach(eu => {
           eu.style.top = "0vh";
           eu.style.bottom = "0vh";

@@ -16,7 +16,7 @@ export default function Events() {
     const eventCards = document.querySelectorAll(".event-card-holder");
     const event_info = document.getElementsByClassName("events-info");
     const iframes = document.getElementsByClassName("content-iframe");
-    body.style.height = `${(1 + 2 * events.length) * H}px`;
+    body.style.height = `${(1.15 + 2 * events.length) * H}px`;
 
     if (event_info[0].clientHeight >= window.innerHeight * 0.2) {
       console.log("Called");
@@ -30,10 +30,9 @@ export default function Events() {
       eventCards[0].style.top = "0vh";
       eventCards[0].style.bottom = "0vh";
 
-      if (scroll < 0.55 * H) {
+      if (scroll < 0.7 * H) {
         const s1 = 1 - scroll / (0.5 * H);
-        const s2 = 1 - scroll / (0.5 * H);
-        const s3 = 1 - scroll / (0.5 * H);
+        const s2 = 1 - scroll / (0.65 * H);
 
         L1.forEach(l => {
           l.style.transform = `scale(${s1})`;
@@ -41,8 +40,8 @@ export default function Events() {
         L2.forEach(l => {
           l.style.transform = `scale(${s2})`;
         });
-        aml.style.opacity = s3;
-        content.style.opacity = 1 - s3;
+        aml.style.opacity = s2;
+        content.style.opacity = 1 - s2;
       } else {
         aml.style.opacity = 0;
         content.style.opacity = 1;
@@ -53,9 +52,9 @@ export default function Events() {
           l.style.transform = "scale(0)";
         });
       }
-      if (0.75 * H < scroll) {
-        const j = Math.floor((scroll - 0.75 * H) / (2 * H)) + 1;
-        const top = (1 - ((scroll - 0.75 * H) % (2 * H)) / (2 * H)) * 120;
+      if (0.9 * H < scroll) {
+        const j = Math.floor((scroll - 0.9 * H) / (2 * H)) + 1;
+        const top = (1 - ((scroll - 0.9 * H) % (2 * H)) / (2 * H)) * 120;
         if (0 < j && j < events.length) {
           eventCards[j].style.top = `${top}vh`;
           eventCards[j].style.bottom = `-${top}vh`;
@@ -69,13 +68,13 @@ export default function Events() {
           eventCards[i].style.bottom = "-100vh";
         }
       }
-      if (scroll < 0.75 * H) {
+      if (scroll < 0.9 * H) {
         for (let i = 1; i < events.length; i++) {
           eventCards[i].style.top = "100vh";
           eventCards[i].style.bottom = "-100vh";
         }
       }
-      if ((0.75 + 2*events.length) * H < scroll) {
+      if ((0.9 + 2*events.length) * H < scroll) {
         eventCards.forEach(ec => {
           ec.style.top = "0vh";
           ec.style.bottom = "0vh";

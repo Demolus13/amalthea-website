@@ -12,7 +12,7 @@ export default function Conclave() {
         const aml = document.getElementById('aml');
         const content = document.getElementById("speakers-content");
         const h = content.offsetHeight;
-        body.style.height = `${0.8*H + h}px`;
+        body.style.height = `${H + h}px`;
 
         const handleScroll = () => {
             const scroll = window.scrollY;
@@ -33,7 +33,7 @@ export default function Conclave() {
             } else {
                 aml.style.opacity = 0;
                 content.style.opacity = 1;
-                const top = -scroll + 0.8*H;
+                const top = -scroll + H;
                 L1.forEach(l => {
                     l.style.transform = "scale(0)";
                 });

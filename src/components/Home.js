@@ -29,7 +29,7 @@ export default function Home() {
     const ot = document.getElementById("ot");
     const tt = document.querySelectorAll(".title");
     const event_unit = document.querySelectorAll(".event-unit");
-    body.style.height = `${(9 + 2 * home.length) * H}px`;
+    body.style.height = `${(10.5 + 2 * home.length) * H}px`;
 
     const handleScroll = () => {
       const scroll = window.scrollY;

@@ -39,9 +39,7 @@ export default function Navbar() {
         <div className={`ham-menu ${isActive ? "active" : ""}`}>
           <div className="ham-container">
             <li className="ham-item">
-              <Link to="/" className="ham-link linkEventListener">
-                Home
-              </Link>
+              <Link to="/" className="ham-link linkEventListener">Home</Link>
             </li>
             <li className="ham-item">
               <Link to="/events-23" className="ham-link linkEventListener">Events</Link>

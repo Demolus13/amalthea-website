@@ -6,10 +6,13 @@ export default function WIT() {
         const H = window.innerHeight;
         window.scrollTo(0, 0);
 
+        const body = document.querySelector(".wit-body")
         const L1 = document.querySelectorAll('.L1');
         const L2 = document.querySelectorAll('.L2');
         const aml = document.getElementById('aml');
         const content = document.getElementById("speakers-content");
+        const h = content.offsetHeight;
+        body.style.height = `${H + h}px`;
 
         const handleScroll = () => {
             const scroll = window.scrollY;
@@ -26,15 +29,21 @@ export default function WIT() {
                 });
                 aml.style.opacity = s2;
                 content.style.opacity = 1 - s2;
+                content.style.top = `${0}px`;
             } else {
                 aml.style.opacity = 0;
                 content.style.opacity = 1;
+                const top = -scroll + H;
                 L1.forEach(l => {
                     l.style.transform = "scale(0)";
                 });
                 L2.forEach(l => {
                     l.style.transform = "scale(0)";
                 });
+                console.log(top)
+                if (top < 0){
+                    content.style.top = `${top}px`
+                }
             }
         };
 

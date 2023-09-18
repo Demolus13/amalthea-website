@@ -119,7 +119,7 @@ export default function Home() {
 
       if (9.5 * H < scroll) {
         const j = Math.floor((scroll - 9.5 * H) / (2 * H));
-        const top = (1 - ((scroll - 9.5 * H) % (2 * H)) / (2 * H)) * 100;
+        const top = (1 - ((scroll - 9.5 * H) % (2 * H)) / (2 * H)) * 120;
         if (-1 < j && j < home.length) {
           event_unit[j].style.top = `${top}vh`;
           event_unit[j].style.bottom = `-${top}vh`;
@@ -131,15 +131,15 @@ export default function Home() {
         }
         for (let i = j + 1; i < home.length; i++) {
           const element = event_unit[i];
-          element.style.top = "100vh";
-          element.style.bottom = "-100vh";
+          element.style.top = "120vh";
+          element.style.bottom = "-120vh";
         }
       }
 
       if (scroll < 9.5 * H) {
         event_unit.forEach(eu => {
-          eu.style.top = "100vh";
-          eu.style.bottom = "-100vh";
+          eu.style.top = "120vh";
+          eu.style.bottom = "-120vh";
         });
       }
 

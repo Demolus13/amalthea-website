@@ -64,14 +64,14 @@ export default function Events() {
           eventCards[i].style.bottom = "0vh";
         }
         for (let i = j + 1; i < events.length; i++) {
-          eventCards[i].style.top = "100vh";
-          eventCards[i].style.bottom = "-100vh";
+          eventCards[i].style.top = "120vh";
+          eventCards[i].style.bottom = "-120vh";
         }
       }
       if (scroll < 0.9 * H) {
         for (let i = 1; i < events.length; i++) {
-          eventCards[i].style.top = "100vh";
-          eventCards[i].style.bottom = "-100vh";
+          eventCards[i].style.top = "120vh";
+          eventCards[i].style.bottom = "-120vh";
         }
       }
       if ((0.9 + 2*events.length) * H < scroll) {

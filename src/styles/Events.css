@@ -64,7 +64,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  position: absolute;
   inset: 0px;
   top: 120vh;
   bottom: -120vh;
@@ -94,7 +94,6 @@
   min-width: 400px;
   height: 10%;
   bottom: 0;
-  /* left: 25%; */
   transition: all 1.25s cubic-bezier(0.62, 0, 0.33, 0.99);
 }
 

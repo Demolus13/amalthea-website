@@ -88,7 +88,7 @@ function ContactForm() {
             <div className="dr-container">
                 <h2>Drift Racing Registration Form</h2>
                 <div className="info" style={{paddingTop: "15px"}}>
-                Register your team for Drift Racing @AMALTHEA here!!! <br /> Number of members allowed in a team are  3-5.
+                Register your team for Drift Racing @AMALTHEA here!!! <br /> Number of members allowed in a team are  2-5.
                 </div>
                 <form onSubmit={handleSubmit}>
                     <div className="form-group" style={{paddingTop: "15px"}}>
@@ -183,7 +183,6 @@ function ContactForm() {
                             name="name3"
                             value={formData.name3}
                             onChange={handleInputChange}
-                            required
                         />
                     </div>
                     <div className="form-group">
@@ -194,7 +193,6 @@ function ContactForm() {
                             name="contact3"
                             value={formData.contact3}
                             onChange={handleInputChange}
-                            required
                             pattern="[0-9]{10}"
                             title="Please enter a 10-digit phone number"
                         />
@@ -207,7 +205,6 @@ function ContactForm() {
                             name="email3"
                             value={formData.email3}
                             onChange={handleInputChange}
-                            required
                         />
                     </div>
                     <p>Member 4:</p>

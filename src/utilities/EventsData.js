@@ -17,7 +17,7 @@ export const events = [
     ],
     accentColor: "#e37430",
     textColor: "#fff",
-    weight: "500",
+    weight: "600",
     spanBg: "#00000025",
     cardBg: "#20201e",
     rulebookPath: "./RuleBooks/RoboWars RuleBook.pdf",
@@ -68,7 +68,7 @@ export const events = [
   {
     name: "Drift Racing",
     description:
-    "Ever wondered what it takes to bring a video game to life? Curious about the thrill of designing and coding your own gaming masterpiece ? Look no further! Welcome to our Game Jam 2023- presented by Amalthea IIT Gandhinagar. With limited time and limitless potential, this game jam is your chance to create the next gaming sensation! So, dust off your gamepad, charge up your laptop, and prepare for an ultimate win and sheer gaming magic. We can't wait to see what epic adventures you'll conjure up! It’s an epic opportunity to expand your gaming network by connecting with your fellow gamers and learn the pro coding skills. So, gather your team and let's turn pixels into profit at the GameJam 2023.",
+    "Get ready for the ultimate RC car racing experience at \"Drift,\" the highlight of IIT Gandhinagar's annual technical summit, Amalthea. Our event boasts the largest RC track in Gujarat, offering participants a thrilling and challenging racecourse. Prepare to showcase your precision, speed, and control as you navigate hairpin turns and nail-biting drifts. With a perfect blend of technical skill and adrenaline-pumping fun, \"Drift\" promises an unforgettable experience for all RC enthusiasts. Join us for this high-octane competition and prove your prowess on the track. Don't miss out on the action-packed excitement!",
     imgSrc: "./Images/Drift-Racing.png",
     accentColor: "#e37430",
     textColor: "#FFF8FF",

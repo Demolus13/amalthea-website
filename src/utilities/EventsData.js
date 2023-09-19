@@ -69,16 +69,15 @@ export const events = [
     name: "Drift Racing",
     description:
     "Ever wondered what it takes to bring a video game to life? Curious about the thrill of designing and coding your own gaming masterpiece ? Look no further! Welcome to our Game Jam 2023- presented by Amalthea IIT Gandhinagar. With limited time and limitless potential, this game jam is your chance to create the next gaming sensation! So, dust off your gamepad, charge up your laptop, and prepare for an ultimate win and sheer gaming magic. We can't wait to see what epic adventures you'll conjure up! It’s an epic opportunity to expand your gaming network by connecting with your fellow gamers and learn the pro coding skills. So, gather your team and let's turn pixels into profit at the GameJam 2023.",
-    imgSrc: "./Images/GameJam-bg.png",
-    accentColor: "#ec0062",
+    imgSrc: "./Images/Drift-Racing.png",
+    accentColor: "#e37430",
     textColor: "#FFF8FF",
     weight: "600",
-    spanBg: "#19005165",
-    cardBg: "#340053",
+    spanBg: "#00000065",
+    cardBg: "#20201e",
     contents: [],
     rulebookPath: "./RuleBooks/Drift RuleBook.pdf",
-    // registerPath: "https://amalthea.iitgn.ac.in/register/drift-racing"
-    registerPath: "http://localhost:3000/register/drift-racing"
+    registerPath: "https://amalthea.iitgn.ac.in/register/drift-racing"
   },
   {
     name: "coming soon",

@@ -15,6 +15,7 @@ import { Routes, Route } from "react-router-dom";
 import RobowarsReg from "./RegistrationPages/RobowarsReg";
 import BrainwizReg from "./RegistrationPages/BrainwizReg"
 import YTTReg from "./RegistrationPages/YTTReg"
+import DriftReg from "./RegistrationPages/DriftReg"
 
 function App() {
   return (
@@ -122,6 +123,7 @@ function App() {
         <Route path="/register/robowars" element={<RobowarsReg />} />
         <Route path="/register/brainwiz" element={<BrainwizReg />} />
         <Route path="/register/youth tech-tic" element={<YTTReg />} />
+        <Route path="/register/drift-racing" element={<DriftReg />} />
       </Routes>
     </>
   );

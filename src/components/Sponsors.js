@@ -50,7 +50,7 @@ export default function Sponsors() {
       <div className="container">
         <div className="circle"></div>
       </div>
-      <div className="center" style={{ zIndex: 1 }}>
+      <div className="center">
         <h1 id="aml" className="oswald">
           SPONSORS
         </h1>
@@ -66,299 +66,237 @@ export default function Sponsors() {
       <section className="nav-home"></section>
       <div className="content">
         <div className="main">
-          <h2 className="myheading divider line glow">PAST SPONSORS</h2>
-          <h2 className="myheading divider line glow">PLATINUM SPONSORS</h2>
-          <div className="sponsor-section">
+          <h2 className="myheading divider line glow oswald">PAST SPONSORS</h2>
+          <h2 className="myheading divider line glow oswald">PLATINUM SPONSORS</h2>
+          <div className="sponsor-section montserrat">
             <div className="sponsor-card platinum-sponsor">
+              <div className="sponsor-img">
               <img src="./Images/jsw.png" alt="JSW logo" />
+              </div>
               <h5>JSW</h5>
             </div>
             <div className="sponsor-card platinum-sponsor">
+              <div className="sponsor-img">
               <img
                 src="./Images/indextb.png"
-                style={{ border: "20px solid white" }}
                 alt="indextb logo"
               />
-              <h5 style={{padding: "20px 0px"}}>Industrial Extension Beurau</h5>
+              </div>
+              <h5>iNDEXTb</h5>
             </div>
           </div>
-          <h2 className="myheading divider line glow">DIAMOND SPONSORS</h2>
-          <div className="sponsor-section">
+          <h2 className="myheading divider line glow oswald">DIAMOND SPONSORS</h2>
+          <div className="sponsor-section montserrat">
             <div className="sponsor-card diamond-sponsor">
+            <div className="sponsor-img">
               <img
                 src="./Images/gsmda.jpeg"
                 alt="GSMDA logo"
-                style={{
-                  borderLeft: "30px solid white",
-                  borderRight: "30px solid white",
-                }}
               />
-
+            </div>
               <h5>GSDMA</h5>
             </div>
             <div className="sponsor-card diamond-sponsor">
+            <div className="sponsor-img">
               <img
                 src="./Images/CPwhite.png"
                 alt="cp logo"
-                style={{
-                  borderLeft: "30px solid white",
-                  borderRight: "30px solid white",
-                  borderTop: "10px solid white",
-                }}
               />
+            </div>
               <h5>GCPL</h5>
             </div>
           </div>
-          <h2 className="myheading divider line glow">GOLD SPONSORS</h2>
-          <div className="sponsor-section">
+          <h2 className="myheading divider line glow oswald">GOLD SPONSORS</h2>
+          <div className="sponsor-section montserrat">
             <div className="sponsor-card gold-sponsor" id="aditya-birla">
+            <div className="sponsor-img">
               <img src="./Images/adityabirla.png" alt="Aditya Birla logo" />
+            </div>
               <h5>Aditya Birla</h5>
             </div>
             <div className="sponsor-card gold-sponsor">
+            <div className="sponsor-img">
               <img
                 src="./Images/./gujaratmaritimeboard.png"
                 alt="Gujarat Maritime Board logo"
-                style={{
-                  borderLeft: "40px solid white",
-                  borderRight: "40px solid white",
-                  borderTop: "10px solid white",
-                  borderBottom: "10px solid white",
-                }}
               />
+            </div>
               <h5>Gujarat Maritime Board</h5>
             </div>
             <div className="sponsor-card gold-sponsor">
+            <div className="sponsor-img">
               <img
                 src="./Images/metro.png"
                 alt="Metro logo"
-                style={{
-                  borderLeft: "40px solid white",
-                  borderRight: "40px solid white",
-                  borderTop: "10px solid white",
-                  borderBottom: "10px solid white",
-                }}
               />
+            </div>
               <h5>Gujarat Metro</h5>
             </div>
           </div>
-          <h2 className="myheading divider line glow">SILVER SPONSORS</h2>
-          <div className="sponsor-section">
+          <h2 className="myheading divider line glow oswald">SILVER SPONSORS</h2>
+          <div className="sponsor-section montserrat">
             <div className="sponsor-card silver-sponsor">
+            <div className="sponsor-img">
               <img
                 src="./Images/vrajgroupwhite.png"
                 alt="Vraj Group logo"
-                style={{
-                  borderLeft: "40px solid white",
-                  borderRight: "40px solid white",
-                  borderTop: "10px solid white",
-                  borderBottom: "10px solid white",
-                }}
               />
+            </div>
               <h5 className="req-adjust">Vraj Group</h5>
             </div>
             <div className="sponsor-card silver-sponsor">
+            <div className="sponsor-img">
               <img src="./Images/GP.png" alt="GP logo" />
+            </div>
               <h5>Gujarat State Petronet</h5>
             </div>
             <div className="sponsor-card silver-sponsor" id="ac-consult">
+            <div className="sponsor-img">
               <img src="./Images/AC.png" alt="AC logo" />
+            </div>
               <h5 className="req-adjust">Alstonia Consulting</h5>
             </div>
           </div>
-          <h2 className="myheading divider line glow">EVENT PARTNERS</h2>
-          <div className="sponsor-section">
+          <h2 className="myheading divider line glow oswald">EVENT PARTNERS</h2>
+          <div className="sponsor-section montserrat">
             <div className="sponsor-card event-parters">
+            <div className="sponsor-img">
               <img
                 src="./Images/ITC.png"
                 alt="ITC logo"
-                style={{
-                  borderLeft: "80px solid white",
-                  borderRight: "80px solid white",
-                  borderTop: "20px solid white",
-                  borderBottom: "20px solid white",
-                }}
               />
+            </div>
               <h5>ITC</h5>
             </div>
             <div className="sponsor-card event-parters">
+            <div className="sponsor-img">
               <img
                 src="./Images/nutanix.png"
                 alt="nutanix logo"
-                style={{
-                  borderLeft: "80px solid white",
-                  borderRight: "80px solid white",
-                  borderTop: "60px solid white",
-                  borderBottom: "60px solid white",
-                }}
               />
+            </div>
               <h5>Nutanix</h5>
             </div>
             <div className="sponsor-card event-parters">
+            <div className="sponsor-img">
               <img
                 src="./Images/Reliance.png"
                 alt="reliance logo"
-                style={{
-                  borderLeft: "40px solid white",
-                  borderRight: "40px solid white",
-                  borderTop: "20px solid white",
-                  borderBottom: "20px solid white",
-                }}
               />
+            </div>
               <h5>Reliance Ltd.</h5>
             </div>
             <div className="sponsor-card event-parters">
+            <div className="sponsor-img">
               <img src="./Images/crazylabs.png" alt="crazylabs logo" />
+            </div>
               <h5>Crazy Labs</h5>
             </div>
             <div className="sponsor-card event-parters">
+            <div className="sponsor-img">
               <img
                 src="./Images/redbull.png"
                 alt="redbull logo"
-                style={{
-                  borderLeft: "40px solid white",
-                  borderRight: "40px solid white",
-                  borderTop: "20px solid white",
-                  borderBottom: "20px solid white",
-                }}
               />
+            </div>
               <h5>Red Bull</h5>
             </div>
             <div className="sponsor-card event-parters">
+            <div className="sponsor-img">
               <img
                 src="./Images/tatachemicals.png"
                 alt="tata chemicals logo"
-                style={{
-                  borderLeft: "40px solid white",
-                  borderRight: "40px solid white",
-                }}
               />
+            </div>
               <h5>Tata Chemicals</h5>
             </div>
             <div className="sponsor-card event-parters">
+            <div className="sponsor-img">
               <img
                 src="./Images/codechef.png"
                 alt="codechef logo"
-                style={{
-                  borderLeft: "40px solid white",
-                  borderRight: "40px solid white",
-                  borderTop: "20px solid white",
-                  borderBottom: "20px solid white",
-                }}
               />
+            </div>
               <h5>Code Chef</h5>
             </div>
             <div className="sponsor-card event-parters">
+            <div className="sponsor-img">
               <img
                 src="./Images/wazirx.png"
                 alt="wazrix logo"
-                style={{
-                  borderLeft: "80px solid white",
-                  borderRight: "80px solid white",
-                  borderTop: "20px solid white",
-                  borderBottom: "20px solid white",
-                }}
               />
+            </div>
               <h5>Wazirx</h5>
             </div>
             <div className="sponsor-card event-parters">
+            <div className="sponsor-img">
               <img
                 src="./Images/adani.png"
                 alt="adani logo"
-                style={{
-                  borderLeft: "50px solid white",
-                  borderRight: "50px solid white",
-                  borderTop: "60px solid white",
-                  borderBottom: "60px solid white",
-                }}
               />
+            </div>
               <h5>Adani Group</h5>
             </div>
             <div className="sponsor-card event-parters">
+            <div className="sponsor-img">
               <img
                 src="./Images/beamable.png"
                 alt="beamable logo"
-                style={{
-                  borderLeft: "50px solid white",
-                  borderRight: "50px solid white",
-                  borderTop: "60px solid white",
-                  borderBottom: "60px solid white",
-                }}
               />
+            </div>
               <h5>Beamable</h5>
             </div>
           </div>
-          <h2 className="myheading divider line glow">CONCLAVE PARTNER</h2>
-          <div className="sponsor-section ">
+          <h2 className="myheading divider line glow oswald">CONCLAVE PARTNER</h2>
+          <div className="sponsor-section montserrat">
             <div className="sponsor-card conclave-partners">
+            <div className="sponsor-img">
               <img
                 src="./Images/jklakshmi.png"
                 alt="JK Lakshmi cement logo"
-                style={{
-                  borderLeft: "20px solid white",
-                  borderRight: "20px solid white",
-                  borderTop: "40px solid white",
-                  borderBottom: "40px solid white",
-                }}
               />
+            </div>
               <h5>JK Lakshmi Cement</h5>
             </div>
           </div>
-          <h2 className="myheading divider line glow" id="design-and-head">
+          <h2 className="myheading divider line glow oswald" id="design-and-head">
             DESIGN AND INNOVATION PARTNERS
           </h2>
-          <div className="sponsor-section">
+          <div className="sponsor-section montserrat">
             <div className="sponsor-card design-innovation-partners">
+            <div className="sponsor-img">
               <img
                 src="./Images/htc.png"
                 alt="htc logo"
-                style={{
-                  borderLeft: "30px solid white",
-                  borderRight: "30px solid white",
-                  borderTop: "30px solid white",
-                  borderBottom: "30px solid white",
-                }}
               />
+            </div>
               <h5>HTC</h5>
             </div>
             <div className="sponsor-card design-innovation-partners">
+            <div className="sponsor-img">
               <img
                 src="./Images/isro.png"
                 alt="isro logo"
-                style={{
-                  borderLeft: "50px solid white",
-                  borderRight: "50px solid white",
-                  borderTop: "5px solid white",
-                  borderBottom: "5px solid white",
-                }}
               />
+            </div>
               <h5>ISRO</h5>
             </div>
             <div className="sponsor-card design-innovation-partners">
+            <div className="sponsor-img">
               <img
                 src="./Images/apple.png"
                 alt="apple logo"
-                style={{
-                  borderLeft: "90px solid white",
-                  borderRight: "90px solid white",
-                  borderTop: "15px solid white",
-                  borderBottom: "15px solid white",
-                }}
               />
+            </div>
               <h5>Apple</h5>
             </div>
             <div className="sponsor-card design-innovation-partners">
+            <div className="sponsor-img">
               <img
                 src="./Images/microsoft.png"
                 alt="microsoft logo"
-                style={{
-                  borderLeft: "15px solid white",
-                  borderRight: "15px solid white",
-                  borderTop: "50px solid white",
-                  borderBottom: "50px solid white",
-                  height: "100%",
-                }}
               />
+            </div>
               <h5>Microsoft</h5>
             </div>
           </div>

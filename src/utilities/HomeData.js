@@ -44,6 +44,17 @@ export const home = [
         rulebookPath: "./RuleBooks/GameJam RuleBook.pdf",
     },
     {
+        name: "DRIFT RACING",
+        cardBg: "./Images/GameJam-bg.png",
+        cardBorder: "solid 5px #190051",
+        cardBoxShadow: "0 0 15px 3px #190051",
+        dateColor: "#190051",
+        date: "04",
+        buttonBgColor: "#190051",
+        textColor: "#ffffff",
+        rulebookPath: "./RuleBooks/Drift RuleBook.pdf",
+    },
+    {
         name: "COMING SOON",
         cardBg: "./Images/coming_soon_mobile.png",
         cardBorder: "solid 5px #d321a3",

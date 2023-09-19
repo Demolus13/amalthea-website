@@ -68,8 +68,8 @@
 
 .sponsor-card {
   background-color: #2f4052;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   margin: 10px;
   overflow: hidden;
   /* Added a zoom-in effect for the sponsor cards */
@@ -93,8 +93,8 @@
   color: white;
   font-weight: 600;
   font-style: italic;
-  padding: 20px;
-  font-size: 20px;;
+  padding: 15px;
+  font-size: 15px;;
 }
 
 
@@ -175,18 +175,8 @@
     font-size: 1.15rem;
   }
 
-  #aditya-birla img{
-    width: 300px;;
-    height: 240px;;
-  }
-
   #design-and-head{
     font-size: 0.95rem;
-  }
-
-  #ac-consult img{
-    width: 300px;;
-    height: 240px;;
   }
 
   .sponsor-card{

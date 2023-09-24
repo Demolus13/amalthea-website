@@ -79,13 +79,13 @@ export default function About() {
               return <Card key={index} about={about} />;
             })}
           </div>
-          <h1 className="oswald">Coordinators</h1>
+          <h1 className="oswald">COORDINATORS</h1>
           <div>
             {CoordData.map((about, index) => {
               return <Card key={index} about={about} />;
             })}
           </div>
-          <h1 className="oswald">Tech Team</h1>
+          <h1 className="oswald">TECH TEAM</h1>
           <div>
             {TechTeamData.map((about, index) => {
               return <Card key={index} about={about} github={true} />;

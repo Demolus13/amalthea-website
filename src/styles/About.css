@@ -83,9 +83,16 @@
   margin: 5px;
 }
 #about #speakers-content .about-card > h3 {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.546) 0%,
+    rgba(0, 0, 0, 0.468) 75%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  position: relative;
   color: #ffedfe;
   z-index: 10;
-  padding-left: 4px;
+  padding-bottom: 2px;
   margin-top: -46px;
   margin-bottom: 11px;
   font-weight: 600;

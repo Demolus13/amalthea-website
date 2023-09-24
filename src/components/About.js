@@ -104,9 +104,9 @@ const Card = ({ about, github = false }) => {
 
       <h3 className="poppins">{about.name}</h3>
 
-      <span className="montserrat">{about.designation}</span>
+      <span className="montserrat" >{about.designation}</span>
 
-      <span className="montserrat" style={{ fontSize: "0.75rem" }}>
+      <span className="montserrat" style={{ fontSize: "0.85rem" }}>
         {about.number}
       </span>
 

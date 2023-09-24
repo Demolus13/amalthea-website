@@ -92,7 +92,7 @@ export const TechTeamData = [
     name: "Romit Mohane",
     imgSrc:
       "https://media.licdn.com/dms/image/D4D03AQEcT-uVrr0xRw/profile-displayphoto-shrink_800_800/0/1695235027134?e=1701302400&v=beta&t=IxXPN2YQlRVv4c3-2QCBcDSJLkz9viYjj_yWtDtHTpM",
-    designation: "Tech Team Member",
+    designation: "Developer",
     email: "23110279@iitgn.ac.in",
     number: "+91 84258 05555",
     linkedin: "https://www.linkedin.com/in/romit-mohane",

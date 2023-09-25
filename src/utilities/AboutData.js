@@ -69,7 +69,7 @@ export const CoordData = [
   },
   {
     name: "Hrriday Ruparel",
-    imgSrc: "./Images/noimg.jpg",
+    imgSrc: "./Images/hrriday.jpeg",
     designation: "Sponsorship Coordinator",
     email: "hrriday.ruparel@iitgn.ac.in",
     number: "+91 90740 94027",
@@ -105,7 +105,7 @@ export const CoordData = [
   },
   {
     name: "Aarav Shah",
-    imgSrc: "./Images/noimg.jpg",
+    imgSrc: "./Images/aarav.jpg",
     designation: "Tech Expo Coordinator",
     email: "aarav.shah@iitgn.ac.in",
     number: "+91 74878 47017",
@@ -154,6 +154,26 @@ export const TechTeamData = [
     github: "https://github.com/Vraj2811"
   },
   {
+    name: "Dipesh Patidar",
+    imgSrc: "./Images/dipesh.jpg",
+    designation: "Web Developer",
+    email: "dipesh.patidar@iitgn.ac.in",
+    number: "+91 62649 38418",
+    linkedin: "https://www.linkedin.com/in/dipesh-patidar-586133256/",
+    insta: "https://www.instagram.com/_dipesh_patidar_",
+    github: "https://github.com/dipesh6264",
+  },
+  {
+    name: "Pranav Joshi",
+    imgSrc: "./Images/pranav.jpeg",
+    designation: "Web Developer",
+    email: "pranav.joshi@iitgn.ac.in",
+    number: "+91 86989 55551",
+    linkedin: "",
+    insta: "https://instagram.com/ik_sm_stuff",
+    github: "https://github.com/PJ29072004",
+  },
+  {
     name: "Romit Mohane",
     imgSrc:
       "https://media.licdn.com/dms/image/D4D03AQEcT-uVrr0xRw/profile-displayphoto-shrink_800_800/0/1695235027134?e=1701302400&v=beta&t=IxXPN2YQlRVv4c3-2QCBcDSJLkz9viYjj_yWtDtHTpM",
@@ -174,26 +194,6 @@ export const TechTeamData = [
     insta: "https://instagram.com/ice71594",
     github: "https://github.com/VivekRaj2005",
   },
-  {
-    name: "Dipesh Patidar",
-    imgSrc: "./Images/dipesh.jpg",
-    designation: "Web Developer",
-    email: "dipesh.patidar@iitgn.ac.in",
-    number: "+91 62649 38418",
-    linkedin: "https://www.linkedin.com/in/dipesh-patidar-586133256/",
-    insta: "https://www.instagram.com/_dipesh_patidar_",
-    github: "https://github.com/dipesh6264",
-  },
-  // {
-  //   name: "Pranav Joshi",
-  //   imgSrc: "./Images/noimg.jpg",
-  //   designation: "Web Developer",
-  //   email: "pranav.joshi@iitgn.ac.in",
-  //   number: "+91 86989 55551",
-  //   linkedin: "",
-  //   insta: "https://instagram.com/ik_sm_stuff",
-  //   github: "https://github.com/PJ29072004",
-  // },
   {
     name: "Jaidev Khalane",
     imgSrc: "./Images/jaidev.jpeg",

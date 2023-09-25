@@ -74,7 +74,7 @@ export default function Events() {
           eventCards[i].style.bottom = "-120vh";
         }
       }
-      if ((0.9 + 2*events.length) * H < scroll) {
+      if ((0.9 + 2 * events.length) * H < scroll) {
         eventCards.forEach(ec => {
           ec.style.top = "0vh";
           ec.style.bottom = "0vh";
@@ -124,9 +124,8 @@ const EventVisualContent = event => {
       {event.contents.map((content, index) => {
         return (
           <video
-            className={`content-iframe content-iframe-${index} ${
-              index % 2 === 0 ? "disable-left" : "disable-right"
-            } contents-for-${event.name}`}
+            className={`content-iframe content-iframe-${index} ${index % 2 === 0 ? "disable-left" : "disable-right"
+              } contents-for-${event.name}`}
             id={`content-iframe-${index}-${event.name}`}
             height="40%"
             width="40%"
@@ -185,10 +184,8 @@ const EventCard = event => {
           alt={event.name}></img>
 
         <h5
-          className={`content-title-0 content-title-for-${event.name} ${
-            //dimensions.height <= window.innerHeight * 0.6 ? "disable-left" : ""
-            "disable-left"
-          }`}>
+          className={`content-title-0 content-title-for-${event.name} ${"disable-left"
+            }`}>
           {event.contentTitle}
         </h5>
         <EventVisualContent key={event.name} {...event} />
@@ -198,12 +195,13 @@ const EventCard = event => {
           style={{
             background: event.spanBg,
             display: event.name === "coming soon" ? "none" : "block",
+            height: event.name === "Robowars" ? "15%" : "10%",
             borderColor: event.accentColor,
             boxShadow: "0 0 15px 3px " + event.accentColor,
           }}
-          // ref={divRef}
-        >
+          >
           <div className="content-placeholder">
+            <h3 className="reg montserrat" style={{display: event.name === "Robowars" ? "block" : "none",}}>Registration are free till 15th Oct, afterwards charges will be applied</h3>
             <div className="content"></div>
             <div
               className="events-text-holder"
@@ -218,7 +216,7 @@ const EventCard = event => {
               <button
                 onClick={() => {
                   window.open(event.registerPath);
-
+                  
                 }}
                 style={{ background: event.accentColor }}>
                 Register

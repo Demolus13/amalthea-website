@@ -55,6 +55,17 @@ export const home = [
         rulebookPath: "./RuleBooks/Drift RuleBook.pdf",
     },
     {
+        name: "STOCKRUSH",
+        cardBg: "./Images/StockRush-bg.png",
+        cardBorder: "solid 5px #e0aa0d",
+        cardBoxShadow: "0 0 15px 3px #e0aa0d",
+        dateColor: "#ffffff",
+        date: "16",
+        buttonBgColor: "#e0aa0d",
+        textColor: "#ffffff",
+        rulebookPath: "./RuleBooks/StockRush RuleBook.pdf",
+    },
+    {
         name: "COMING SOON",
         cardBg: "./Images/coming_soon_mobile.png",
         cardBorder: "solid 5px #d321a3",

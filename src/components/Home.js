@@ -249,7 +249,7 @@ export default function Home() {
                   color: card.dateColor,
                   display: card.name === "COMING SOON" ? "none" : "block",
                 }}>
-                {card.date}-Nov <br /> 2023
+                {card.date}-{card.name === "STOCKRUSH" ? "Oct" : "Nov"} <br /> 2023
               </h3>
             </div>
           </div>

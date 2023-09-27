@@ -1,11 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/Conclave.css";
 
 export default function Conclave() {
+  const [onMouseHover, setOnMouseHover] = useState(false);
+
   useEffect(() => {
     const H = window.innerHeight;
     window.scrollTo(0, 0);
-
     const body = document.querySelector(".conclave-body");
     const L1 = document.querySelectorAll(".L1");
     const L2 = document.querySelectorAll(".L2");
@@ -21,10 +22,10 @@ export default function Conclave() {
         const s1 = 1 - scroll / (0.5 * H);
         const s2 = 1 - scroll / (0.65 * H);
 
-        L1.forEach(l => {
+        L1.forEach((l) => {
           l.style.transform = `scale(${s1})`;
         });
-        L2.forEach(l => {
+        L2.forEach((l) => {
           l.style.transform = `scale(${s2})`;
         });
         aml.style.opacity = s2;
@@ -34,10 +35,10 @@ export default function Conclave() {
         aml.style.opacity = 0;
         content.style.opacity = 1;
         const top = -scroll + H;
-        L1.forEach(l => {
+        L1.forEach((l) => {
           l.style.transform = "scale(0)";
         });
-        L2.forEach(l => {
+        L2.forEach((l) => {
           l.style.transform = "scale(0)";
         });
         if (top < 0) {
@@ -47,11 +48,34 @@ export default function Conclave() {
     };
 
     window.addEventListener("scroll", handleScroll);
+    
+    document.getElementById("conclave-boxes-1").addEventListener("mouseover", () => {
+      if (!onMouseHover)
+      {
+        console.log("Mouse In");
+        setOnMouseHover(true)
+      }
+      
+    })
+
+    document.getElementById("conclave-boxes-1").addEventListener("mouseout", () => {
+      if(onMouseHover)
+      {
+        console.log("Mouse oUT");
+        setOnMouseHover(false)
+      }
+      
+    })
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
+
+   
+   
   }, []);
+
+
   return (
     <div id="conclave">
       <div className="conclave-body">
@@ -71,7 +95,68 @@ export default function Conclave() {
         <img className="aml-bg-8 L2" src="./Images/AML-BG-6.png" alt="" />
         <img className="aml-bg-6" src="./Images/AML-BG-5.png" alt="" />
         <img className="aml-bg-7 L2" src="./Images/AML-BG-6.png" alt="" />
-        <div id="speakers-content"></div>
+        <div
+          id="speakers-content"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: "20px",
+            padding: "5%",
+          }}
+        >
+          <div className="conclave-boxes" id="conclave-boxes-1" style={{}}>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+              veritatis asperiores eum facilis deserunt vel. Voluptate ipsam
+              modi corporis. Mollitia amet magni nam cumque dolorum debitis
+              distinctio sed soluta doloremque, eligendi quia corporis itaque
+              repellendus reiciendis magnam consectetur molestias voluptatibus
+              velit, voluptate consequuntur aut, voluptates commodi! Ab commodi
+              quis adipisci. Sapiente repellendus fuga fugit eveniet
+              perferendis? Ab provident voluptas ad quidem voluptate voluptatem
+              quibusdam velit odio blanditiis, molestiae delectus a excepturi,
+              deserunt enim distinctio quod eaque incidunt atque, minima quae ex
+            </p>
+            <h1
+              className="montserrat"
+              style={{ whiteSpace: "nowrap", transform: "rotate(-90deg)" }}
+            >
+              Name of the speaker
+            </h1>
+          </div>
+          <div className="conclave-boxes" style={{}}>
+            <h1
+              className="montserrat"
+              style={{ whiteSpace: "nowrap", transform: "rotate(-90deg)" }}
+            >
+              Name of the speaker
+            </h1>
+          </div>
+          <div className="conclave-boxes" style={{}}>
+            <h1
+              className="montserrat"
+              style={{ whiteSpace: "nowrap", transform: "rotate(-90deg)" }}
+            >
+              Name of the speaker
+            </h1>
+          </div>
+          <div className="conclave-boxes" style={{}}>
+            <h1
+              className="montserrat"
+              style={{ whiteSpace: "nowrap", transform: "rotate(-90deg)" }}
+            >
+              Name of the speaker
+            </h1>
+          </div>
+          <div className="conclave-boxes" style={{}}>
+            <h1
+              className="montserrat"
+              style={{ whiteSpace: "nowrap", transform: "rotate(-90deg)" }}
+            >
+              Name of the speaker
+            </h1>
+          </div>
+        </div>
       </div>
     </div>
   );

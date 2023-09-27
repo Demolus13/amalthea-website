@@ -1,7 +1,7 @@
 export const home = [
     {
         name: "ROBOWARS",
-        cardBg: "./Images/Robowars.png",
+        cardBg: "./Images/Robowars.webp",
         cardBorder: "solid 5px #e37430",
         cardBoxShadow: "0 0 15px 3px #e37430",
         dateColor: "#ffffff",
@@ -12,7 +12,7 @@ export const home = [
     },
     {
         name: "BRAINWIZ",
-        cardBg: "./Images/Brainwiz.png",
+        cardBg: "./Images/Brainwiz.webp",
         cardBorder: "solid 5px #213555",
         cardBoxShadow: "0 0 15px 3px #213555",
         dateColor: "#213555",
@@ -23,7 +23,7 @@ export const home = [
     },
     {
         name: "YOUTH TECH-TIC",
-        cardBg: "./Images/YTT-bg.png",
+        cardBg: "./Images/YTT-bg.webp",
         cardBorder: "solid 5px #2B4A59",
         cardBoxShadow: "0 0 15px 3px #2B4A59",
         dateColor: "#2B4A59",
@@ -34,7 +34,7 @@ export const home = [
     },
     {
         name: "GAMEJAM",
-        cardBg: "./Images/GameJam-bg.png",
+        cardBg: "./Images/GameJam-bg.webp",
         cardBorder: "solid 5px #190051",
         cardBoxShadow: "0 0 15px 3px #190051",
         dateColor: "#190051",
@@ -45,7 +45,7 @@ export const home = [
     },
     {
         name: "DRIFT RACING",
-        cardBg: "./Images/Drift-Racing-bg.png",
+        cardBg: "./Images/Drift-Racing-bg.webp",
         cardBorder: "solid 5px #e37430",
         cardBoxShadow: "0 0 15px 3px #e37430",
         dateColor: "#ffffff",
@@ -56,7 +56,7 @@ export const home = [
     },
     {
         name: "STOCKRUSH",
-        cardBg: "./Images/StockRush-bg.png",
+        cardBg: "./Images/StockRush-bg.webp",
         cardBorder: "solid 5px #e0aa0d",
         cardBoxShadow: "0 0 15px 3px #e0aa0d",
         dateColor: "#ffffff",
@@ -67,7 +67,7 @@ export const home = [
     },
     {
         name: "COMING SOON",
-        cardBg: "./Images/coming_soon_mobile.png",
+        cardBg: "./Images/coming_soon_mobile.webp",
         cardBorder: "solid 5px #d321a3",
         cardBoxShadow: "0 0 15px 3px #d321a3",
         dateColor: "#ffffff",
@@ -77,7 +77,7 @@ export const home = [
     },
     {
         name: "COMING SOON",
-        cardBg: "./Images/coming_soon_mobile.png",
+        cardBg: "./Images/coming_soon_mobile.webp",
         cardBorder: "solid 5px #d321a3",
         cardBoxShadow: "0 0 15px 3px #d321a3",
         dateColor: "#ffffff",

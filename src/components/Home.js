@@ -167,16 +167,16 @@ export default function Home() {
           AMALTHEA
         </h1>
       </div>
-      <img className="aml-bg-1 L1" style={{ zIndex: 3 }} src="./Images/AML-BG-1.png" alt="" />
-      <img className="aml-bg-2 L1" style={{ zIndex: 3 }} src="./Images/AML-BG-2.png" alt="" />
-      <img className="aml-bg-3 L2" src="./Images/AML-BG-3.png" alt="" />
-      <img className="aml-bg-4 L2" src="./Images/AML-BG-4.png" alt="" />
-      <img className="aml-bg-5" src="./Images/AML-BG-5.png" alt="" />
-      <img className="aml-bg-8 L2" style={{ zIndex: 4 }} src="./Images/AML-BG-6.png" alt="" />
-      <img className="aml-bg-6" src="./Images/AML-BG-5.png" alt="" />
-      <img className="aml-bg-7 L2" style={{ zIndex: 4 }} src="./Images/AML-BG-6.png" alt="" />
-      <img className="drone L3" src="./Images/Drone.png" alt="" />
-      <img className="robo L3" src="./Images/Robo.png" alt="" />
+      <img className="aml-bg-1 L1" style={{ zIndex: 3 }} src="./Images/AML-BG-1.webp" alt="" />
+      <img className="aml-bg-2 L1" style={{ zIndex: 3 }} src="./Images/AML-BG-2.webp" alt="" />
+      <img className="aml-bg-3 L2" src="./Images/AML-BG-3.webp" alt="" />
+      <img className="aml-bg-4 L2" src="./Images/AML-BG-4.webp" alt="" />
+      <img className="aml-bg-5" src="./Images/AML-BG-5.webp" alt="" />
+      <img className="aml-bg-8 L2" style={{ zIndex: 4 }} src="./Images/AML-BG-6.webp" alt="" />
+      <img className="aml-bg-6" src="./Images/AML-BG-5.webp" alt="" />
+      <img className="aml-bg-7 L2" style={{ zIndex: 4 }} src="./Images/AML-BG-6.webp" alt="" />
+      <img className="drone L3" src="./Images/Drone.webp" alt="" />
+      <img className="robo L3" src="./Images/Robo.webp" alt="" />
       <div id="waw-container">
         <h2 id="waw" className="oswald">
           WHO ARE WE?

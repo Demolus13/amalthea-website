@@ -99,14 +99,14 @@ export default function Events() {
             EVENTS
           </h1>
         </div>
-        <img className="aml-bg-1 L1" src="./Images/AML-BG-1.png" alt="" />
-        <img className="aml-bg-2 L1" src="./Images/AML-BG-2.png" alt="" />
-        <img className="aml-bg-3 L2" src="./Images/AML-BG-3.png" alt="" />
-        <img className="aml-bg-4 L2" src="./Images/AML-BG-4.png" alt="" />
-        <img className="aml-bg-5" src="./Images/AML-BG-5.png" alt="" />
-        <img className="aml-bg-8 L2" src="./Images/AML-BG-6.png" alt="" />
-        <img className="aml-bg-6" src="./Images/AML-BG-5.png" alt="" />
-        <img className="aml-bg-7 L2" src="./Images/AML-BG-6.png" alt="" />
+        <img className="aml-bg-1 L1" src="./Images/AML-BG-1.webp" alt="" />
+        <img className="aml-bg-2 L1" src="./Images/AML-BG-2.webp" alt="" />
+        <img className="aml-bg-3 L2" src="./Images/AML-BG-3.webp" alt="" />
+        <img className="aml-bg-4 L2" src="./Images/AML-BG-4.webp" alt="" />
+        <img className="aml-bg-5" src="./Images/AML-BG-5.webp" alt="" />
+        <img className="aml-bg-8 L2" src="./Images/AML-BG-6.webp" alt="" />
+        <img className="aml-bg-6" src="./Images/AML-BG-5.webp" alt="" />
+        <img className="aml-bg-7 L2" src="./Images/AML-BG-6.webp" alt="" />
         <div id="events-content">
           {events.map((event, index) => {
             event["index"] = index;
@@ -175,7 +175,7 @@ const EventCard = event => {
         <img
           src={
             event.name === "coming soon" && isMobile
-              ? "./Images/coming_soon_mobile.png"
+              ? "./Images/coming_soon_mobile.webp"
               : event.imgSrc
           }
           style={{

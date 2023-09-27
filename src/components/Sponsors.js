@@ -55,14 +55,14 @@ export default function Sponsors() {
           SPONSORS
         </h1>
       </div>
-      <img className="aml-bg-1 L1" src="./Images/AML-BG-1.png" alt="" />
-      <img className="aml-bg-2 L1" src="./Images/AML-BG-2.png" alt="" />
-      <img className="aml-bg-3 L2" src="./Images/AML-BG-3.png" alt="" />
-      <img className="aml-bg-4 L2" src="./Images/AML-BG-4.png" alt="" />
-      <img className="aml-bg-5" src="./Images/AML-BG-5.png" alt="" />
-      <img className="aml-bg-8 L2" src="./Images/AML-BG-6.png" alt="" />
-      <img className="aml-bg-6" src="./Images/AML-BG-5.png" alt="" />
-      <img className="aml-bg-7 L2" src="./Images/AML-BG-6.png" alt="" />
+      <img className="aml-bg-1 L1" src="./Images/AML-BG-1.webp" alt="" />
+      <img className="aml-bg-2 L1" src="./Images/AML-BG-2.webp" alt="" />
+      <img className="aml-bg-3 L2" src="./Images/AML-BG-3.webp" alt="" />
+      <img className="aml-bg-4 L2" src="./Images/AML-BG-4.webp" alt="" />
+      <img className="aml-bg-5" src="./Images/AML-BG-5.webp" alt="" />
+      <img className="aml-bg-8 L2" src="./Images/AML-BG-6.webp" alt="" />
+      <img className="aml-bg-6" src="./Images/AML-BG-5.webp" alt="" />
+      <img className="aml-bg-7 L2" src="./Images/AML-BG-6.webp" alt="" />
       <section className="nav-home"></section>
       <div className="content">
         <div className="main">
@@ -71,14 +71,14 @@ export default function Sponsors() {
           <div className="sponsor-section montserrat">
             <div className="sponsor-card platinum-sponsor">
               <div className="sponsor-img">
-              <img src="./Images/jsw.png" alt="JSW logo" />
+              <img src="./Images/jsw.webp" alt="JSW logo" />
               </div>
               <h5>JSW</h5>
             </div>
             <div className="sponsor-card platinum-sponsor">
               <div className="sponsor-img">
               <img
-                src="./Images/indextb.png"
+                src="./Images/indextb.webp"
                 alt="indextb logo"
               />
               </div>
@@ -90,7 +90,7 @@ export default function Sponsors() {
             <div className="sponsor-card diamond-sponsor">
             <div className="sponsor-img">
               <img
-                src="./Images/gsmda.jpeg"
+                src="./Images/gsmda.webp"
                 alt="GSMDA logo"
               />
             </div>
@@ -99,7 +99,7 @@ export default function Sponsors() {
             <div className="sponsor-card diamond-sponsor">
             <div className="sponsor-img">
               <img
-                src="./Images/CPwhite.png"
+                src="./Images/CPwhite.webp"
                 alt="cp logo"
               />
             </div>
@@ -110,14 +110,14 @@ export default function Sponsors() {
           <div className="sponsor-section montserrat">
             <div className="sponsor-card gold-sponsor" id="aditya-birla">
             <div className="sponsor-img">
-              <img src="./Images/adityabirla.png" alt="Aditya Birla logo" />
+              <img src="./Images/adityabirla.webp" alt="Aditya Birla logo" />
             </div>
               <h5>Aditya Birla</h5>
             </div>
             <div className="sponsor-card gold-sponsor">
             <div className="sponsor-img">
               <img
-                src="./Images/./gujaratmaritimeboard.png"
+                src="./Images/./gujaratmaritimeboard.webp"
                 alt="Gujarat Maritime Board logo"
               />
             </div>
@@ -126,7 +126,7 @@ export default function Sponsors() {
             <div className="sponsor-card gold-sponsor">
             <div className="sponsor-img">
               <img
-                src="./Images/metro.png"
+                src="./Images/metro.webp"
                 alt="Metro logo"
               />
             </div>
@@ -138,7 +138,7 @@ export default function Sponsors() {
             <div className="sponsor-card silver-sponsor">
             <div className="sponsor-img">
               <img
-                src="./Images/vrajgroupwhite.png"
+                src="./Images/vrajgroupwhite.webp"
                 alt="Vraj Group logo"
               />
             </div>
@@ -146,13 +146,13 @@ export default function Sponsors() {
             </div>
             <div className="sponsor-card silver-sponsor">
             <div className="sponsor-img">
-              <img src="./Images/GP.png" alt="GP logo" />
+              <img src="./Images/GP.webp" alt="GP logo" />
             </div>
               <h5>Gujarat State Petronet</h5>
             </div>
             <div className="sponsor-card silver-sponsor" id="ac-consult">
             <div className="sponsor-img">
-              <img src="./Images/AC.png" alt="AC logo" />
+              <img src="./Images/AC.webp" alt="AC logo" />
             </div>
               <h5 className="req-adjust">Alstonia Consulting</h5>
             </div>
@@ -162,7 +162,7 @@ export default function Sponsors() {
             <div className="sponsor-card event-parters">
             <div className="sponsor-img">
               <img
-                src="./Images/ITC.png"
+                src="./Images/ITC.webp"
                 alt="ITC logo"
               />
             </div>
@@ -171,7 +171,7 @@ export default function Sponsors() {
             <div className="sponsor-card event-parters">
             <div className="sponsor-img">
               <img
-                src="./Images/nutanix.png"
+                src="./Images/nutanix.webp"
                 alt="nutanix logo"
               />
             </div>
@@ -180,7 +180,7 @@ export default function Sponsors() {
             <div className="sponsor-card event-parters">
             <div className="sponsor-img">
               <img
-                src="./Images/Reliance.png"
+                src="./Images/Reliance.webp"
                 alt="reliance logo"
               />
             </div>
@@ -188,14 +188,14 @@ export default function Sponsors() {
             </div>
             <div className="sponsor-card event-parters">
             <div className="sponsor-img">
-              <img src="./Images/crazylabs.png" alt="crazylabs logo" />
+              <img src="./Images/crazylabs.webp" alt="crazylabs logo" />
             </div>
               <h5>Crazy Labs</h5>
             </div>
             <div className="sponsor-card event-parters">
             <div className="sponsor-img">
               <img
-                src="./Images/redbull.png"
+                src="./Images/redbull.webp"
                 alt="redbull logo"
               />
             </div>
@@ -204,7 +204,7 @@ export default function Sponsors() {
             <div className="sponsor-card event-parters">
             <div className="sponsor-img">
               <img
-                src="./Images/tatachemicals.png"
+                src="./Images/tatachemicals.webp"
                 alt="tata chemicals logo"
               />
             </div>
@@ -213,7 +213,7 @@ export default function Sponsors() {
             <div className="sponsor-card event-parters">
             <div className="sponsor-img">
               <img
-                src="./Images/codechef.png"
+                src="./Images/codechef.webp"
                 alt="codechef logo"
               />
             </div>
@@ -222,7 +222,7 @@ export default function Sponsors() {
             <div className="sponsor-card event-parters">
             <div className="sponsor-img">
               <img
-                src="./Images/wazirx.png"
+                src="./Images/wazirx.webp"
                 alt="wazrix logo"
               />
             </div>
@@ -231,7 +231,7 @@ export default function Sponsors() {
             <div className="sponsor-card event-parters">
             <div className="sponsor-img">
               <img
-                src="./Images/adani.png"
+                src="./Images/adani.webp"
                 alt="adani logo"
               />
             </div>
@@ -240,7 +240,7 @@ export default function Sponsors() {
             <div className="sponsor-card event-parters">
             <div className="sponsor-img">
               <img
-                src="./Images/beamable.png"
+                src="./Images/beamable.webp"
                 alt="beamable logo"
               />
             </div>
@@ -252,7 +252,7 @@ export default function Sponsors() {
             <div className="sponsor-card conclave-partners">
             <div className="sponsor-img">
               <img
-                src="./Images/jklakshmi.png"
+                src="./Images/jklakshmi.webp"
                 alt="JK Lakshmi cement logo"
               />
             </div>
@@ -266,7 +266,7 @@ export default function Sponsors() {
             <div className="sponsor-card design-innovation-partners">
             <div className="sponsor-img">
               <img
-                src="./Images/htc.png"
+                src="./Images/htc.webp"
                 alt="htc logo"
               />
             </div>
@@ -275,7 +275,7 @@ export default function Sponsors() {
             <div className="sponsor-card design-innovation-partners">
             <div className="sponsor-img">
               <img
-                src="./Images/isro.png"
+                src="./Images/isro.webp"
                 alt="isro logo"
               />
             </div>
@@ -284,7 +284,7 @@ export default function Sponsors() {
             <div className="sponsor-card design-innovation-partners">
             <div className="sponsor-img">
               <img
-                src="./Images/apple.png"
+                src="./Images/apple.webp"
                 alt="apple logo"
               />
             </div>
@@ -293,7 +293,7 @@ export default function Sponsors() {
             <div className="sponsor-card design-innovation-partners">
             <div className="sponsor-img">
               <img
-                src="./Images/microsoft.png"
+                src="./Images/microsoft.webp"
                 alt="microsoft logo"
               />
             </div>

@@ -87,7 +87,7 @@ export const CoordData = [
   },
   {
     name: "Darshan Zala",
-    imgSrc: "./Images/noimg.webp",
+    imgSrc: "./Images/darshan.webp",
     designation: "Conclave & Symposium Coordinator",
     email: "darshan.zala@iitgn.ac.in",
     number: "+91 93284 22062",
@@ -96,7 +96,7 @@ export const CoordData = [
   },
   {
     name: "Dhruvi Sisodiya",
-    imgSrc: "./Images/noimg.webp",
+    imgSrc: "./Images/dhruvi.webp",
     designation: "Design Coordinator",
     email: "dhruvi.sisodiya@iitgn.ac.in",
     number: "+91 93289 21203",

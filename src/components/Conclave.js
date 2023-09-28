@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "../styles/Conclave.css";
+// import { conclaveSpeaker } from "../utilities/ConclaveData";
 
 export default function Conclave() {
-  const [onMouseHover, setOnMouseHover] = useState(false);
+  // const [onMouseHover, setOnMouseHover] = useState(false);
 
   useEffect(() => {
     const H = window.innerHeight;
@@ -48,31 +49,29 @@ export default function Conclave() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    
-    document.getElementById("conclave-boxes-1").addEventListener("mouseover", () => {
-      if (!onMouseHover)
-      {
-        console.log("Mouse In");
-        setOnMouseHover(true)
-      }
-      
-    })
 
-    document.getElementById("conclave-boxes-1").addEventListener("mouseout", () => {
-      if(onMouseHover)
-      {
-        console.log("Mouse oUT");
-        setOnMouseHover(false)
-      }
-      
-    })
+    // document.getElementById("conclave-boxes-1").addEventListener("mouseover", () => {
+    //   if (!onMouseHover)
+    //   {
+    //     console.log("Mouse In");
+    //     setOnMouseHover(true)
+    //   }
+
+    // })
+
+    // document.getElementById("conclave-boxes-1").addEventListener("mouseout", () => {
+    //   if(onMouseHover)
+    //   {
+    //     console.log("Mouse oUT");
+    //     setOnMouseHover(false)
+    //   }
+
+    // })
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
 
-   
-   
   }, []);
 
 
@@ -95,16 +94,8 @@ export default function Conclave() {
         <img className="aml-bg-8 L2" src="./Images/AML-BG-6.webp" alt="" />
         <img className="aml-bg-6" src="./Images/AML-BG-5.webp" alt="" />
         <img className="aml-bg-7 L2" src="./Images/AML-BG-6.webp" alt="" />
-        <div
-          id="speakers-content"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            gap: "20px",
-            padding: "5%",
-          }}
-        >
-          <div className="conclave-boxes" id="conclave-boxes-1" style={{}}>
+        <div id="speakers-content">
+          {/* <div className="conclave-boxes" id="conclave-boxes-1" style={{}}>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
               veritatis asperiores eum facilis deserunt vel. Voluptate ipsam
@@ -155,7 +146,7 @@ export default function Conclave() {
             >
               Name of the speaker
             </h1>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

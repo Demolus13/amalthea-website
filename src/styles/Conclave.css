@@ -6,6 +6,9 @@
 }
 
 #speakers-content {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
   z-index: -1;
   box-sizing: border-box;
   position: fixed;
@@ -16,7 +19,7 @@
   top: 0px;
 }
 
-.conclave-boxes {
+/* .conclave-boxes {
   border: 3px solid white;
   width: 20%;
   overflow: hidden;
@@ -29,7 +32,6 @@
   background-position: center;
   align-items: flex-end;
   color: white;
-  /* font-family: ; */
   font-family: 'Montserrat', sans-serif;
   border-radius: 20px;
   transition: 1.5s;
@@ -39,7 +41,6 @@
 .conclave-boxes:hover{
     width: 60vw;
     overflow: hidden;
-    /* transition-delay: 1.5s; */
 }
 
 .conclave-boxes:hover > h1{
@@ -58,7 +59,6 @@
     position: relative;
     transform: translateX(-100%);
     transition: transform 1.5s cubic-bezier(0.62, 0, 0.33, 0.99);
-    /* transition-delay: 1.5s; */
     width: 35vw;
     overflow: hidden;
     flex-shrink: 0;
@@ -67,6 +67,5 @@
 
 .conclave-boxes:hover > p{
     transform: translateX(0%);
-    /* position: relative; */
 
-}
+} */

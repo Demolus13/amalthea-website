@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
 import "../styles/Symposium.css";
+import { symposiumData } from "../utilities/SymposiumData";
 
 export default function Symposium() {
+
   useEffect(() => {
     const H = window.innerHeight;
     window.scrollTo(0, 0);
-
     const body = document.querySelector(".symposium-body");
     const L1 = document.querySelectorAll(".L1");
     const L2 = document.querySelectorAll(".L2");
@@ -71,8 +72,74 @@ export default function Symposium() {
         <img className="aml-bg-8 L2" src="./Images/AML-BG-6.webp" alt="" />
         <img className="aml-bg-6" src="./Images/AML-BG-5.webp" alt="" />
         <img className="aml-bg-7 L2" src="./Images/AML-BG-6.webp" alt="" />
-        <div id="speakers-content"></div>
+        <div id="speakers-content">
+          <h1
+            style={{ margin: "25px", color: "white", fontSize: "3rem" }}
+            className="oswald">
+            PAST SPEAKERS
+          </h1>
+          <div className="SpeakerContainer" style={{ width: "100%" }}>
+            <div className="row team-card">
+              {symposiumData.map(speaker => (
+                <SpeakerCard data={speaker} />
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
 }
+
+const SpeakerCard = ({ data }) => {
+  return (
+    <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div className="our-team" style={{ borderRadius: "10px" }}>
+        <div className="picture">
+          <img className="img-fluid" src={data.imgSrc} alt="profile pic" />
+        </div>
+        <div className="team-content">
+          <h2 className="name oswald">{data.name}</h2>
+          <p className="title poppins">{data.title}</p>
+          <p className="title poppins">Topic: {data.topic}</p>
+          <p className="title poppins">{data.time}</p>
+        </div>
+        <ul className="social">
+          <li>
+            <a
+              href="https://codepen.io/collection/XdWJOQ/">
+              <img
+                alt="linkedIn profile link"
+                src="/Images/linkedin.svg"
+                className="about-links"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://codepen.io/collection/XdWJOQ/">
+              <img
+                alt="instagram profile link"
+                src="/Images/instagram.svg"
+                className="about-links"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://codepen.io/collection/XdWJOQ/">
+                <img
+                alt="facebook profile link"
+                src="/Images/facebook.webp"
+                className="about-links"
+                style={{
+                  filter: 'invert(100%)'
+                }}
+              />
+              </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};

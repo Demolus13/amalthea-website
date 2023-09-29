@@ -95,10 +95,10 @@ export default function Conclave() {
           <h1
             style={{ margin: "25px", color: "white", fontSize: "3rem" }}
             className="oswald">
-            SPEAKERS
+            PAST SPEAKERS
           </h1>
-          <div className="SpeakerContainer" style={{ width: "80%" }}>
-            <div className="row">
+          <div className="SpeakerContainer" style={{ width: "100%" }}>
+            <div className="row team-card">
               {conclaveData.map(speaker => (
                 <SpeakerCard data={speaker} />
               ))}
@@ -118,36 +118,44 @@ const SpeakerCard = ({ data }) => {
           <img className="img-fluid" src={data.imgSrc} alt="profile pic" />
         </div>
         <div className="team-content">
-          <h3 className="name">{data.name}</h3>
-          <h4 className="title">{data.title}</h4>
-          <h4 className="title">Topic: {data.topic}</h4>
-          <h4 className="title">{data.time}</h4>
+          <h2 className="name oswald">{data.name}</h2>
+          <p className="title poppins">{data.title}</p>
+          <p className="title poppins">Topic: {data.topic}</p>
+          <p className="title poppins">{data.time}</p>
         </div>
         <ul className="social">
           <li>
             <a
-              href="https://codepen.io/collection/XdWJOQ/"
-              className="fa fa-facebook"
-              aria-hidden="true"
-            />
+              href="https://codepen.io/collection/XdWJOQ/">
+              <img
+                alt="linkedIn profile link"
+                src="/Images/linkedin.svg"
+                className="about-links"
+              />
+            </a>
           </li>
           <li>
             <a
-              href="https://codepen.io/collection/XdWJOQ/"
-              className="fa fa-twitter"
-              aria-hidden="true"></a>
+              href="https://codepen.io/collection/XdWJOQ/">
+              <img
+                alt="instagram profile link"
+                src="/Images/instagram.svg"
+                className="about-links"
+              />
+            </a>
           </li>
           <li>
             <a
-              href="https://codepen.io/collection/XdWJOQ/"
-              className="fa fa-google-plus"
-              aria-hidden="true"></a>
-          </li>
-          <li>
-            <a
-              href="https://codepen.io/collection/XdWJOQ/"
-              className="fa fa-linkedin"
-              aria-hidden="true"></a>
+              href="https://codepen.io/collection/XdWJOQ/">
+                <img
+                alt="facebook profile link"
+                src="/Images/facebook.webp"
+                className="about-links"
+                style={{
+                  filter: 'invert(100%)'
+                }}
+              />
+              </a>
           </li>
         </ul>
       </div>

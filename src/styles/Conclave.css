@@ -20,6 +20,13 @@
   top: 0px;
 }
 
+.team-card{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
 .our-team {
   padding: 30px 0 40px;
   margin-bottom: 30px;
@@ -27,6 +34,37 @@
   text-align: center;
   overflow: hidden;
   position: relative;
+  width: 300px;
+  height: 400px;
+}
+
+#conclave #speakers-content > h1 {
+  position: relative;
+  font-size: 3rem;
+}
+#conclave #speakers-content > h1::before,
+#conclave #speakers-content > h1::after {
+  content: "";
+  display: block;
+  width: 350px;
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    rgba(23, 0, 54, 1) 0%,
+    rgba(150, 33, 145, 1) 100%
+  );
+  left: -370px;
+  top: 2.3rem;
+  position: absolute;
+}
+#conclave #speakers-content > h1::after {
+  background: linear-gradient(
+    -90deg,
+    rgba(23, 0, 54, 1) 0%,
+    rgba(150, 33, 145, 1) 100%
+  );
+  left: unset;
+  right: -370px;
 }
 
 .our-team .picture {
@@ -82,11 +120,16 @@
   transform: scale(0.7);
 }
 
+.our-team h2{
+  color: black;
+}
+
 .our-team .title {
   display: block;
   font-size: 15px;
   color: #4e5052;
   text-transform: capitalize;
+  padding-top: 3px;
 }
 
 .our-team .social {
@@ -98,6 +141,10 @@
   bottom: -100px;
   left: 0;
   transition: all 0.5s ease 0s;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 5px;
 }
 
 .our-team:hover .social {
@@ -110,16 +157,19 @@
 
 .our-team .social li a {
   display: block;
-  padding: 10px;
   font-size: 17px;
   color: white;
   transition: all 0.3s ease 0s;
   text-decoration: none;
 }
 
+.social li a img{
+  height: 30px;
+  width: 30px;
+}
+
 .our-team .social li a:hover {
   color: #1369ce;
-  background-color: #f7f5ec;
 }
 
 .carousel-item img {

@@ -9,7 +9,7 @@
 */
 export const conclaveData = [
   {
-    imgSrc: "https://picsum.photos/130/130?image=1027",
+    imgSrc: "./Images/noimg.webp",
     name: "Abhinay Bhasin",
     title:
       "Director, Data Sciences Dentsu Aegis Network Forbes 30 under 30 | 2019",
@@ -17,22 +17,22 @@ export const conclaveData = [
     time: "19th October | 4pm - 5pm",
   },
   {
-    imgSrc: "https://picsum.photos/130/130?image=839",
+    imgSrc: "./Images/noimg.webp",
     name: "Patricia Knott",
     title: "Web Developer",
   },
   {
-    imgSrc: "https://picsum.photos/130/130?image=856",
+    imgSrc: "./Images/noimg.webp",
     name: "Justin Ramos",
     title: "Web Developer",
   },
   {
-    imgSrc: "https://picsum.photos/130/130?image=836",
+    imgSrc: "./Images/noimg.webp",
     name: "Mary Huntley",
     title: "Web Developer",
   },
   {
-    imgSrc: "https://picsum.photos/130/130?image=1027",
+    imgSrc: "./Images/noimg.webp",
     name: "Abhinay Bhasin",
     title:
       "Director, Data Sciences Dentsu Aegis Network Forbes 30 under 30 | 2019",
@@ -40,55 +40,28 @@ export const conclaveData = [
     time: "19th October | 4pm - 5pm",
   },
   {
-    imgSrc: "https://picsum.photos/130/130?image=839",
+    imgSrc: "./Images/noimg.webp",
     name: "Patricia Knott",
     title: "Web Developer",
   },
   {
-    imgSrc: "https://picsum.photos/130/130?image=856",
+    imgSrc: "./Images/noimg.webp",
     name: "Justin Ramos",
     title: "Web Developer",
   },
   {
-    imgSrc: "https://picsum.photos/130/130?image=836",
+    imgSrc: "./Images/noimg.webp",
     name: "Mary Huntley",
     title: "Web Developer",
   },
   {
-    imgSrc: "https://picsum.photos/130/130?image=836",
+    imgSrc: "./Images/noimg.webp",
     name: "Mary Huntley",
     title: "Web Developer",
   },
   {
-    imgSrc: "https://picsum.photos/130/130?image=836",
+    imgSrc: "./Images/noimg.webp",
     name: "Mary Huntley",
     title: "Web Developer",
   },
-];
-
-export const conclaveSpeaker = [
-  {
-    name: "dfsdfds",
-    imgSrc: "./Images/noimg.webp",
-    title: "dfsdfsf",
-    topic: "fdfdfd",
-  },
-  {
-    name: "dfsdfds",
-    imgSrc: "./Images/noimg.webp",
-    title: "dfsdfsf",
-    topic: "fdfdfd",
-  },
-  {
-    name: "dfsdfds",
-    imgSrc: "./Images/noimg.webp",
-    title: "dfsdfsf",
-    topic: "fdfdfd",
-  },
-  {
-    name: "dfsdfds",
-    imgSrc: "./Images/noimg.webp",
-    title: "dfsdfsf",
-    topic: "fdfdfd",
-  },
-];
+]

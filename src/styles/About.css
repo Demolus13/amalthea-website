@@ -37,7 +37,7 @@
     rgba(23, 0, 54, 1) 0%,
     rgba(150, 33, 145, 1) 100%
   );
-  left: -360px;
+  left: -370px;
   top: 2.3rem;
   position: absolute;
 }
@@ -48,7 +48,7 @@
     rgba(150, 33, 145, 1) 100%
   );
   left: unset;
-  right: -360px;
+  right: -370px;
 }
 #about #speakers-content > div {
   width: 100%;

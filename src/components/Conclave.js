@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "../styles/Conclave.css";
+import { conclaveData } from "../utilities/ConclaveData";
 
 export default function Conclave() {
   useEffect(() => {
@@ -71,8 +72,77 @@ export default function Conclave() {
         <img className="aml-bg-8 L2" src="./Images/AML-BG-6.png" alt="" />
         <img className="aml-bg-6" src="./Images/AML-BG-5.png" alt="" />
         <img className="aml-bg-7 L2" src="./Images/AML-BG-6.png" alt="" />
-        <div id="speakers-content"></div>
+        <div id="speakers-content">
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              flexWrap: "wrap",
+              alignItems: "center",
+              justifyContent: "center",
+              backgroundColor: "rgb(23 0 54)",
+              minHeight: "100vh",
+            }}>
+            <h1
+              style={{ margin: "25px", color: "white", fontSize: "3rem" }}
+              className="oswald">
+              SPEAKERS
+            </h1>
+            <div className="SpeakerContainer" style={{ width: "80%" }}>
+              <div className="row">
+                {conclaveData.map(speaker => (
+                  <SpeakerCard data={speaker} />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
 }
+
+const SpeakerCard = ({ data }) => {
+  return (
+    <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div className="our-team" style={{ borderRadius: "10px" }}>
+        <div className="picture">
+          <img className="img-fluid" src={data.imgSrc} alt="profile pic" />
+        </div>
+        <div className="team-content">
+          <h3 className="name">{data.name}</h3>
+          <h4 className="title">{data.title}</h4>
+          <h4 className="title">Topic: {data.topic}</h4>
+          <h4 className="title">{data.time}</h4>
+        </div>
+        <ul className="social">
+          <li>
+            <a
+              href="https://codepen.io/collection/XdWJOQ/"
+              className="fa fa-facebook"
+              aria-hidden="true"
+            />
+          </li>
+          <li>
+            <a
+              href="https://codepen.io/collection/XdWJOQ/"
+              className="fa fa-twitter"
+              aria-hidden="true"></a>
+          </li>
+          <li>
+            <a
+              href="https://codepen.io/collection/XdWJOQ/"
+              className="fa fa-google-plus"
+              aria-hidden="true"></a>
+          </li>
+          <li>
+            <a
+              href="https://codepen.io/collection/XdWJOQ/"
+              className="fa fa-linkedin"
+              aria-hidden="true"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};

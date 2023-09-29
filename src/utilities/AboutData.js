@@ -12,7 +12,7 @@
 export const CoreData = [
   {
     name: "Harsh Jain",
-    imgSrc: "./Images/harsh.jpeg",
+    imgSrc: "./Images/harsh.webp",
     designation: "Events & Event Management Core",
     email: "harsh.jain@iitgn.ac.in",
     number: "+91 98814 67068",
@@ -21,7 +21,7 @@ export const CoreData = [
   },
   {
     name: "Debojit Das",
-    imgSrc: "./Images/debojit.png",
+    imgSrc: "./Images/debojit.webp",
     designation: "Sponsorship & Conclave & Symposium Core",
     email: "debojit.das@iitgn.ac.in",
     number: "+91 96090 18007",
@@ -30,7 +30,7 @@ export const CoreData = [
   },
   {
     name: "Guntas Singh Saran",
-    imgSrc: "./Images/guntas.jpg",
+    imgSrc: "./Images/guntas.webp",
     designation: "Design & Finance Core",
     email: "guntassingh.saran@iitgn.ac.in",
     number: "+91 73409 64064",
@@ -39,7 +39,7 @@ export const CoreData = [
   },
   {
     name: "Agastya Narayana",
-    imgSrc: "./Images/agastya.jpeg",
+    imgSrc: "./Images/agastya.webp",
     designation: "Tech Expo & Marketing Core",
     email: "mangalampalli.narayana@iitgn.ac.in",
     number: "+91 99201 32149",
@@ -51,7 +51,7 @@ export const CoreData = [
 export const CoordData = [
   {
     name: "Suteekshna Mishra",
-    imgSrc: "./Images/suteekshna.jpg",
+    imgSrc: "./Images/suteekshna.webp",
     designation: "Events Coordinator",
     email: "suteekshna.mishra@iitgn.ac.in",
     number: "+91 90444 12185",
@@ -60,7 +60,7 @@ export const CoordData = [
   },
   {
     name: "Farhan Obaid",
-    imgSrc: "./Images/noimg.jpg",
+    imgSrc: "./Images/farhan.webp",
     designation: "Event Management Coordinator",
     email: "farhan.obaid@iitgn.ac.in",
     number: "+91 76673 36359",
@@ -69,7 +69,7 @@ export const CoordData = [
   },
   {
     name: "Hrriday Ruparel",
-    imgSrc: "./Images/noimg.jpg",
+    imgSrc: "./Images/hrriday.webp",
     designation: "Sponsorship Coordinator",
     email: "hrriday.ruparel@iitgn.ac.in",
     number: "+91 90740 94027",
@@ -78,7 +78,7 @@ export const CoordData = [
   },
   {
     name: "Nishi Shah",
-    imgSrc: "./Images/nishi.jpg",
+    imgSrc: "./Images/nishi.webp",
     designation: "Sponsorship Coordinator",
     email: "nishi.shah@iitgn.ac.in",
     number: "+91 95123 00877",
@@ -87,7 +87,7 @@ export const CoordData = [
   },
   {
     name: "Darshan Zala",
-    imgSrc: "./Images/noimg.jpg",
+    imgSrc: "./Images/darshan.webp",
     designation: "Conclave & Symposium Coordinator",
     email: "darshan.zala@iitgn.ac.in",
     number: "+91 93284 22062",
@@ -96,7 +96,7 @@ export const CoordData = [
   },
   {
     name: "Dhruvi Sisodiya",
-    imgSrc: "./Images/noimg.jpg",
+    imgSrc: "./Images/dhruvi.webp",
     designation: "Design Coordinator",
     email: "dhruvi.sisodiya@iitgn.ac.in",
     number: "+91 93289 21203",
@@ -105,7 +105,7 @@ export const CoordData = [
   },
   {
     name: "Aarav Shah",
-    imgSrc: "./Images/noimg.jpg",
+    imgSrc: "./Images/aarav.webp",
     designation: "Tech Expo Coordinator",
     email: "aarav.shah@iitgn.ac.in",
     number: "+91 74878 47017",
@@ -114,7 +114,7 @@ export const CoordData = [
   },
   {
     name: "Aaditya Roy",
-    imgSrc: "./Images/noimg.jpg",
+    imgSrc: "./Images/noimg.webp",
     designation: "Marketing Coordinator",
     email: "aaditya.roy@iitgn.ac.in",
     number: "+91 96879 11316",
@@ -123,7 +123,7 @@ export const CoordData = [
   },
   {
     name: "Kavya Gotecha",
-    imgSrc: "./Images/kavya.jpeg",
+    imgSrc: "./Images/kavya.webp",
     designation: "Marketing Coordinator",
     email: "kavya.gotecha@iitgn.ac.in",
     number: "+91 90999 04181",
@@ -135,7 +135,7 @@ export const CoordData = [
 export const TechTeamData = [
   {
     name: "Parth Govale",
-    imgSrc: "./Images/parth.jpeg",
+    imgSrc: "./Images/parth.webp",
     designation: "Web Developer",
     email: "parth.govale@iitgn.ac.in",
     number: "+91 96198 69044",
@@ -145,17 +145,17 @@ export const TechTeamData = [
   },
   {
     name: "Vraj Shah",
-    imgSrc: "./Images/noimg.jpg",
+    imgSrc: "./Images/vraj.webp",
     designation: "Web Developer",
     email: "vraj.shah@iitgn.ac.in",
-    number: "+91 73409 64064",
+    number: "+91 94846 38348",
     linkedin: "https://www.linkedin.com/in/vraj-shah-6a634a254/",
     insta: "https://www.instagram.com/vraj_shah_2811/",
     github: "https://github.com/Vraj2811"
   },
   {
     name: "Dipesh Patidar",
-    imgSrc: "./Images/dipesh.jpg",
+    imgSrc: "./Images/dipesh.webp",
     designation: "Web Developer",
     email: "dipesh.patidar@iitgn.ac.in",
     number: "+91 62649 38418",
@@ -165,7 +165,7 @@ export const TechTeamData = [
   },
   {
     name: "Pranav Joshi",
-    imgSrc: "./Images/noimg.jpg",
+    imgSrc: "./Images/pranav.webp",
     designation: "Web Developer",
     email: "pranav.joshi@iitgn.ac.in",
     number: "+91 86989 55551",
@@ -186,7 +186,7 @@ export const TechTeamData = [
   },
   {
     name: "Vivek Raj",
-    imgSrc: "./Images/vivek.jpeg",
+    imgSrc: "./Images/vivek.webp",
     designation: "Web Developer",
     email: "23110362@iitgn.ac.in",
     number: "+91 70120 60919",
@@ -196,7 +196,7 @@ export const TechTeamData = [
   },
   {
     name: "Jaidev Khalane",
-    imgSrc: "./Images/noimg.jpg",
+    imgSrc: "./Images/jaidev.webp",
     designation: "Web Developer",
     email: "jaidev.khalane@iitgn.ac.in",
     number: "+91 95156 30148",
@@ -206,7 +206,7 @@ export const TechTeamData = [
   },
   {
     name: "Kishan Ved",
-    imgSrc: "./Images/kishan.png",
+    imgSrc: "./Images/kishan.webp",
     designation: "Web Developer",
     email: "kishan.ved@iitgn.ac.in",
     number: "+91 96193 19866",

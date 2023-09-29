@@ -3,10 +3,11 @@ import "../styles/Conclave.css";
 import { conclaveData } from "../utilities/ConclaveData";
 
 export default function Conclave() {
+  // const [onMouseHover, setOnMouseHover] = useState(false);
+
   useEffect(() => {
     const H = window.innerHeight;
     window.scrollTo(0, 0);
-
     const body = document.querySelector(".conclave-body");
     const L1 = document.querySelectorAll(".L1");
     const L2 = document.querySelectorAll(".L2");
@@ -48,6 +49,24 @@ export default function Conclave() {
     };
 
     window.addEventListener("scroll", handleScroll);
+
+    // document.getElementById("conclave-boxes-1").addEventListener("mouseover", () => {
+    //   if (!onMouseHover)
+    //   {
+    //     console.log("Mouse In");
+    //     setOnMouseHover(true)
+    //   }
+
+    // })
+
+    // document.getElementById("conclave-boxes-1").addEventListener("mouseout", () => {
+    //   if(onMouseHover)
+    //   {
+    //     console.log("Mouse oUT");
+    //     setOnMouseHover(false)
+    //   }
+
+    // })
 
     return () => {
       window.removeEventListener("scroll", handleScroll);

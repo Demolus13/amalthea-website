@@ -16,6 +16,7 @@ import RobowarsReg from "./RegistrationPages/RobowarsReg";
 import BrainwizReg from "./RegistrationPages/BrainwizReg"
 import YTTReg from "./RegistrationPages/YTTReg"
 import DriftReg from "./RegistrationPages/DriftReg"
+import SRReg from "./RegistrationPages/SRReg"
 
 function App() {
   return (
@@ -124,6 +125,7 @@ function App() {
         <Route path="/register/brainwiz" element={<BrainwizReg />} />
         <Route path="/register/youth tech-tic" element={<YTTReg />} />
         <Route path="/register/drift-racing" element={<DriftReg />} />
+        <Route path="/register/stockrush" element={<SRReg />} />
       </Routes>
     </>
   );

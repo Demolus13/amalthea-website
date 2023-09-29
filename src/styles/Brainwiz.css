@@ -1,5 +1,5 @@
 .bw-bg{
-    background: url(../../public/Images/Brainwiz-bg.png);
+    background: url(../../public/Images/Brainwiz-bg.webp);
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -45,6 +45,7 @@ input[type="text"],
 input[type="email"],
 input[type="number"],
 input[type="tel"],
+input[type="url"],
 select,
 textarea {
     width: 100%;
@@ -60,7 +61,7 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     background: transparent;
-    background-image: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-down-b-128.png');
+    background-image: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-down-b-128.webp');
     background-position: right center;
     background-repeat: no-repeat;
     background-size: 20px;

@@ -29,7 +29,7 @@ export default function Home() {
     const ot = document.getElementById("ot");
     const tt = document.querySelectorAll(".title");
     const event_unit = document.querySelectorAll(".event-unit");
-    body.style.height = `${(10.5 + 2 * home.length) * H}px`;
+    body.style.height = `${(12.5 + 2 * home.length) * H}px`;
 
     const handleScroll = () => {
       const scroll = window.scrollY;
@@ -95,10 +95,10 @@ export default function Home() {
         circle.style.transform = "scale(0)";
       }
 
-      if (scroll > 6 * H && scroll < 10.5 * H) {
+      if (scroll > 6 * H && scroll < 12 * H) {
         ot.style.opacity = 0;
         const i = Math.floor((scroll - 6 * H) / (1.5 * H));
-        if (i < 3) {
+        if (i < 4) {
           tt[i].classList.remove("deactive");
           tt[i].classList.add("active");
         }
@@ -106,7 +106,7 @@ export default function Home() {
           tt[i - 1].classList.add("deactive");
           tt[i - 1].classList.remove("active");
         }
-        if (i < 2) {
+        if (i < 3) {
           tt[i + 1].classList.add("deactive");
           tt[i + 1].classList.remove("active");
         }
@@ -117,9 +117,9 @@ export default function Home() {
         });
       }
 
-      if (9.5 * H < scroll) {
-        const j = Math.floor((scroll - 9.5 * H) / (2 * H));
-        const top = (1 - ((scroll - 9.5 * H) % (2 * H)) / (2 * H)) * 120;
+      if (11.5 * H < scroll) {
+        const j = Math.floor((scroll - 11.5 * H) / (2 * H));
+        const top = (1 - ((scroll - 11.5 * H) % (2 * H)) / (2 * H)) * 120;
         if (-1 < j && j < home.length) {
           event_unit[j].style.top = `${top}vh`;
           event_unit[j].style.bottom = `-${top}vh`;
@@ -136,14 +136,14 @@ export default function Home() {
         }
       }
 
-      if (scroll < 9.5 * H) {
+      if (scroll < 11.5 * H) {
         event_unit.forEach(eu => {
           eu.style.top = "120vh";
           eu.style.bottom = "-120vh";
         });
       }
 
-      if ((9.5 + 2*home.length) * H < scroll) {
+      if ((11.5 + 2*home.length) * H < scroll) {
         event_unit.forEach(eu => {
           eu.style.top = "0vh";
           eu.style.bottom = "0vh";
@@ -167,16 +167,16 @@ export default function Home() {
           AMALTHEA
         </h1>
       </div>
-      <img className="aml-bg-1 L1" style={{ zIndex: 3 }} src="./Images/AML-BG-1.png" alt="" />
-      <img className="aml-bg-2 L1" style={{ zIndex: 3 }} src="./Images/AML-BG-2.png" alt="" />
-      <img className="aml-bg-3 L2" src="./Images/AML-BG-3.png" alt="" />
-      <img className="aml-bg-4 L2" src="./Images/AML-BG-4.png" alt="" />
-      <img className="aml-bg-5" src="./Images/AML-BG-5.png" alt="" />
-      <img className="aml-bg-8 L2" style={{ zIndex: 4 }} src="./Images/AML-BG-6.png" alt="" />
-      <img className="aml-bg-6" src="./Images/AML-BG-5.png" alt="" />
-      <img className="aml-bg-7 L2" style={{ zIndex: 4 }} src="./Images/AML-BG-6.png" alt="" />
-      <img className="drone L3" src="./Images/Drone.png" alt="" />
-      <img className="robo L3" src="./Images/Robo.png" alt="" />
+      <img className="aml-bg-1 L1" style={{ zIndex: 3 }} src="./Images/AML-BG-1.webp" alt="" />
+      <img className="aml-bg-2 L1" style={{ zIndex: 3 }} src="./Images/AML-BG-2.webp" alt="" />
+      <img className="aml-bg-3 L2" src="./Images/AML-BG-3.webp" alt="" />
+      <img className="aml-bg-4 L2" src="./Images/AML-BG-4.webp" alt="" />
+      <img className="aml-bg-5" src="./Images/AML-BG-5.webp" alt="" />
+      <img className="aml-bg-8 L2" style={{ zIndex: 4 }} src="./Images/AML-BG-6.webp" alt="" />
+      <img className="aml-bg-6" src="./Images/AML-BG-5.webp" alt="" />
+      <img className="aml-bg-7 L2" style={{ zIndex: 4 }} src="./Images/AML-BG-6.webp" alt="" />
+      <img className="drone L3" src="./Images/Drone.webp" alt="" />
+      <img className="robo L3" src="./Images/Robo.webp" alt="" />
       <div id="waw-container">
         <h2 id="waw" className="oswald">
           WHO ARE WE?
@@ -202,6 +202,9 @@ export default function Home() {
       </div>
       <div id="ot" className="center oswald" style={{ zIndex: -2 }}>
         <h2>OUR THEME</h2>
+      </div>
+      <div className="title center oswald" style={{ zIndex: -3 }}>
+        <h2>SYNCHRONIZING KNOWLEDGE</h2>
       </div>
       <div className="title center oswald" style={{ zIndex: -3 }}>
         <h2>CONCLAVE & SYMPOSIUM</h2>
@@ -249,7 +252,7 @@ export default function Home() {
                   color: card.dateColor,
                   display: card.name === "COMING SOON" ? "none" : "block",
                 }}>
-                {card.date}-Nov <br /> 2023
+                {card.date}-{card.name === "STOCKRUSH" ? "Oct" : "Nov"} <br /> 2023
               </h3>
             </div>
           </div>

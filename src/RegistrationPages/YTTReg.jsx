@@ -144,7 +144,7 @@ function ContactForm() {
                             Google Drive Link for School ID Card/other Identity Card:
                         </label>
                         <input
-                            type="text"
+                            type="url"
                             id="googleDriveLink"
                             name="googleDriveLink"
                             value={formData.googleDriveLink}

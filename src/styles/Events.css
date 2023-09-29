@@ -154,7 +154,7 @@
 
 .content-iframe {
   display: block;
-  z-index: 5;
+  z-index: 1;
   position: absolute;
   transition: all 2s;
   position: fixed;
@@ -190,13 +190,21 @@
   transition: 2s;
 }
 .content-iframe-0 {
-  top: 50%;
+  top: 42.5%;
   left: 2.5%;
 }
 
 .content-iframe-1 {
-  top: 50%;
+  top: 42.5%;
   left: 57.5%;
+}
+
+.event-card .reg{
+  position: fixed;
+  bottom: 75px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
 }
 
 button {

@@ -1,0 +1,94 @@
+.sr-bg{
+    background: url(../../public/Images/StockRush-bg.webp);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    inset: 0px;
+}
+
+.sr-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sr-container {
+    max-width: 600px;
+    margin: 40px auto;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    /* background-color: #fff; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.sr-container h2 {
+    text-align: center;
+    color: #e0aa0d;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.sr-container label {
+    display: block;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-down-b-128.webp');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding-right: 30px;
+    background-color: #fff;
+
+}
+
+.sr-container button[type="submit"] {
+    background-color: #e0aa0d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.sr-container button[type="submit"]:hover {
+    background-color: #e0a801;
+}
+
+.sr-container .info {
+    padding: 3px;
+    color: #ffffff;
+}
+
+.sr-container .organisers {
+    padding: 2px;
+    color: #ffffff;
+}

@@ -1,5 +1,5 @@
 .ytt-bg {
-    background: url(../../public/Images/YTT-bg.png);
+    background: url(../../public/Images/YTT-bg.webp);
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -50,6 +50,7 @@
 input[type="text"],
 input[type="email"],
 input[type="number"],
+input[type="url"],
 input[type="tel"] {
     width: 100%;
     padding: 10px;

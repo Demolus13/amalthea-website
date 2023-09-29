@@ -229,7 +229,7 @@ function ContactForm() {
                             Google Drive Link for School ID Card/Aadhar Card:
                         </label>
                         <input
-                            type="text"
+                            type="url"
                             id="googleDriveLink1"
                             name="googleDriveLink1"
                             value={formData.googleDriveLink1}
@@ -243,7 +243,7 @@ function ContactForm() {
                             Google Drive Link for Recent Photographs (Passport Size):
                         </label>
                         <input
-                            type="text"
+                            type="url"
                             id="googleDriveLink2"
                             name="googleDriveLink2"
                             value={formData.googleDriveLink2}

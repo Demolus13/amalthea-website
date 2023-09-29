@@ -83,36 +83,25 @@ export default function Conclave() {
             CONCLAVE
           </h1>
         </div>
-        <img className="aml-bg-1 L1" src="./Images/AML-BG-1.png" alt="" />
-        <img className="aml-bg-2 L1" src="./Images/AML-BG-2.png" alt="" />
-        <img className="aml-bg-3 L2" src="./Images/AML-BG-3.png" alt="" />
-        <img className="aml-bg-4 L2" src="./Images/AML-BG-4.png" alt="" />
-        <img className="aml-bg-5" src="./Images/AML-BG-5.png" alt="" />
-        <img className="aml-bg-8 L2" src="./Images/AML-BG-6.png" alt="" />
-        <img className="aml-bg-6" src="./Images/AML-BG-5.png" alt="" />
-        <img className="aml-bg-7 L2" src="./Images/AML-BG-6.png" alt="" />
+        <img className="aml-bg-1 L1" src="./Images/AML-BG-1.webp" alt="" />
+        <img className="aml-bg-2 L1" src="./Images/AML-BG-2.webp" alt="" />
+        <img className="aml-bg-3 L2" src="./Images/AML-BG-3.webp" alt="" />
+        <img className="aml-bg-4 L2" src="./Images/AML-BG-4.webp" alt="" />
+        <img className="aml-bg-5" src="./Images/AML-BG-5.webp" alt="" />
+        <img className="aml-bg-8 L2" src="./Images/AML-BG-6.webp" alt="" />
+        <img className="aml-bg-6" src="./Images/AML-BG-5.webp" alt="" />
+        <img className="aml-bg-7 L2" src="./Images/AML-BG-6.webp" alt="" />
         <div id="speakers-content">
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              flexWrap: "wrap",
-              alignItems: "center",
-              justifyContent: "center",
-              backgroundColor: "rgb(23 0 54)",
-              minHeight: "100vh",
-            }}>
-            <h1
-              style={{ margin: "25px", color: "white", fontSize: "3rem" }}
-              className="oswald">
-              SPEAKERS
-            </h1>
-            <div className="SpeakerContainer" style={{ width: "80%" }}>
-              <div className="row">
-                {conclaveData.map(speaker => (
-                  <SpeakerCard data={speaker} />
-                ))}
-              </div>
+          <h1
+            style={{ margin: "25px", color: "white", fontSize: "3rem" }}
+            className="oswald">
+            SPEAKERS
+          </h1>
+          <div className="SpeakerContainer" style={{ width: "80%" }}>
+            <div className="row">
+              {conclaveData.map(speaker => (
+                <SpeakerCard data={speaker} />
+              ))}
             </div>
           </div>
         </div>

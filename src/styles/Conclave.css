@@ -3,15 +3,12 @@
   background-color: black;
   position: absolute;
   z-index: -1;
-  width: 100%;
-  background-color: black;
-  position: absolute;
-  z-index: -1;
 }
 
-#speakers-content {
+#conclave #speakers-content {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 40px;
   z-index: -1;
   box-sizing: border-box;
@@ -128,54 +125,3 @@
 .carousel-item img {
   width: 100vw;
 }
-
-/* .conclave-boxes {
-  border: 3px solid white;
-  width: 20%;
-  overflow: hidden;
-  display: flex;
-  justify-content: flex-end;
-  height: 80vh;
-  background-image: url("../../public/Images/parth.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  align-items: flex-end;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  border-radius: 20px;
-  transition: 1.5s;
-
-}
-
-.conclave-boxes:hover{
-    width: 60vw;
-    overflow: hidden;
-}
-
-.conclave-boxes:hover > h1{
-    opacity: 0;
-    width: 0px;
-}
-
-.conclave-boxes h1{
-    white-space: nowrap;
-  width: 6vh;
-  transform-origin: left top 0;
-  transition: 1s;
-}
-
-.conclave-boxes p{
-    position: relative;
-    transform: translateX(-100%);
-    transition: transform 1.5s cubic-bezier(0.62, 0, 0.33, 0.99);
-    width: 35vw;
-    overflow: hidden;
-    flex-shrink: 0;
-    text-align: justify;
-}
-
-.conclave-boxes:hover > p{
-    transform: translateX(0%);
-
-} */

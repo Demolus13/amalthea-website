@@ -70,7 +70,7 @@ export default function Navbar() {
                 Symposium
               </Link>
             </li>
-            <ul>
+            {/* <ul>
               <li className="subham-item">
                 <Link
                   to="/women-in-tech-23"
@@ -78,7 +78,7 @@ export default function Navbar() {
                   Women in Tech
                 </Link>
               </li>
-            </ul>
+            </ul> */}
             <li className="ham-item">
               <Link to="/tech-expo-23" className="ham-link linkEventListener">
                 Tech Expo

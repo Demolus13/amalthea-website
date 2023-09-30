@@ -93,7 +93,7 @@ export default function Symposium() {
 
 const SpeakerCard = ({ data }) => {
   return (
-    <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+    <div className="col-12 col-sm-6 col-md-4 col-lg-3 symposium-card">
       <div className="our-team" style={{ borderRadius: "10px" }}>
         <div className="picture">
           <img className="img-fluid" src={data.imgSrc} alt="profile pic" />

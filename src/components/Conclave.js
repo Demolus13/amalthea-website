@@ -3,7 +3,6 @@ import "../styles/Conclave.css";
 import { conclaveData } from "../utilities/ConclaveData";
 
 export default function Conclave() {
-  // const [onMouseHover, setOnMouseHover] = useState(false);
 
   useEffect(() => {
     const H = window.innerHeight;
@@ -50,24 +49,6 @@ export default function Conclave() {
 
     window.addEventListener("scroll", handleScroll);
 
-    // document.getElementById("conclave-boxes-1").addEventListener("mouseover", () => {
-    //   if (!onMouseHover)
-    //   {
-    //     console.log("Mouse In");
-    //     setOnMouseHover(true)
-    //   }
-
-    // })
-
-    // document.getElementById("conclave-boxes-1").addEventListener("mouseout", () => {
-    //   if(onMouseHover)
-    //   {
-    //     console.log("Mouse oUT");
-    //     setOnMouseHover(false)
-    //   }
-
-    // })
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -112,7 +93,7 @@ export default function Conclave() {
 
 const SpeakerCard = ({ data }) => {
   return (
-    <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+    <div className="col-12 col-sm-6 col-md-4 col-lg-3 conclave-card">
       <div className="our-team" style={{ borderRadius: "10px" }}>
         <div className="picture">
           <img className="img-fluid" src={data.imgSrc} alt="profile pic" />

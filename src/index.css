@@ -8,6 +8,15 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+  display: none; /* Chrome*/
+}
+
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 /* Font */
 .oswald{
   font-family: 'Oswald', sans-serif;

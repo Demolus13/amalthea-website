@@ -204,7 +204,7 @@ export default function Home() {
         <h2>OUR THEME</h2>
       </div>
       <div className="title center oswald" style={{ zIndex: -3 }}>
-        <h2>SYNCHRONIZING KNOWLEDGE</h2>
+        <h2>SYNERGIZING KNOWLEDGE</h2>
       </div>
       <div className="title center oswald" style={{ zIndex: -3 }}>
         <h2>CONCLAVE & SYMPOSIUM</h2>

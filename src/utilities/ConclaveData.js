@@ -10,58 +10,58 @@
 export const conclaveData = [
   {
     imgSrc: "./Images/noimg.webp",
-    name: "Abhinay Bhasin",
-    title:
-      "Director, Data Sciences Dentsu Aegis Network Forbes 30 under 30 | 2019",
-    topic: "Evolution of Communication",
-    time: "19th October | 4pm - 5pm",
+    name: "MOHIT AGARWAL",
+    title: "Chief Financial Officer | Enking International",
+    topic: "Financial Literacy",
+    time: "23th Jan 2023 | 10:00am",
   },
   {
     imgSrc: "./Images/noimg.webp",
-    name: "Patricia Knott",
-    title: "Web Developer",
+    name: "J. D. PATIL",
+    title: "Whole-time Director | L&T's Defence Business",
+    topic: "India's Defence Modernisation",
+    time: "10th Dec 2021 | 11:00am"
   },
   {
     imgSrc: "./Images/noimg.webp",
-    name: "Justin Ramos",
-    title: "Web Developer",
+    name: "JAYNTI KANANI",
+    title: "Co-founder & CEO | Matic Network",
+    topic: "How Polygon is shaping the Blockchain technology",
+    time: "10th Dec 2021 | 6:30am"
   },
   {
     imgSrc: "./Images/noimg.webp",
-    name: "Mary Huntley",
-    title: "Web Developer",
+    name: "SHIVA SEKAR",
+    title: "Director - Regional Business Operations & Supply Growth | Uber India",
+    topic: "Changing Dynamics in Logistics Industry",
+    time: "10th Dec 2021 | 8:00am"
   },
   {
     imgSrc: "./Images/noimg.webp",
-    name: "Abhinay Bhasin",
-    title:
-      "Director, Data Sciences Dentsu Aegis Network Forbes 30 under 30 | 2019",
-    topic: "Evolution of Communication",
-    time: "19th October | 4pm - 5pm",
+    name: "KIRK BORNE",
+    title: "Chief Science Officer | DataPrime",
+    topic: "How Data and AI are reshaping our world?",
+    time: "11th Dec 2021 | 8:00pm",
   },
   {
     imgSrc: "./Images/noimg.webp",
-    name: "Patricia Knott",
-    title: "Web Developer",
+    name: "MITIKA BAJPAI",
+    title: "Sustainability Manager | Reliance Industries",
+    topic: "Technologies Shaping Our Sustainable Future",
+    time: "12th Dec 2021 | 8:00pm",
   },
   {
     imgSrc: "./Images/noimg.webp",
-    name: "Justin Ramos",
-    title: "Web Developer",
+    name: "RAJ CHOWDHURY",
+    title: "CEO | HashCash Consultants",
+    topic: "Cryptocurrency and the Blockchain Technology",
+    time: "3rd Dec 2021 | 8:00pm",
   },
   {
     imgSrc: "./Images/noimg.webp",
-    name: "Mary Huntley",
-    title: "Web Developer",
-  },
-  {
-    imgSrc: "./Images/noimg.webp",
-    name: "Mary Huntley",
-    title: "Web Developer",
-  },
-  {
-    imgSrc: "./Images/noimg.webp",
-    name: "Mary Huntley",
-    title: "Web Developer",
+    name: "NILESH SHAH",
+    title: "MD | Kotak Mahindra Asset Management Co. Ltd.",
+    topic: "Gen Z, Investments and the Indian Economy",
+    time: "13th Nov 2021 | 5:00pm",
   },
 ]

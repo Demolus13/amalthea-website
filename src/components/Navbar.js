@@ -90,7 +90,7 @@ export default function Navbar() {
               </Link>
             </li>
             <ul>
-              <li className="subham-item">
+              <li className="subham-item" style={{backgroundImage: `url(./Images/Robo.webp)`}}>
                 <Link to="/about-23" className="ham-link linkEventListener">
                   About Us
                 </Link>
@@ -100,14 +100,14 @@ export default function Navbar() {
                   Our Team
                 </Link>
               </li> */}
-              <li className="subham-item">
+              <li className="subham-item" style={{backgroundImage: `url(./Images/Robo.webp)`}}>
                 <Link
                   to="/how-to-reach-23"
                   className="ham-link linkEventListener">
                   How to reach
                 </Link>
               </li>
-              <li className="subham-item">
+              <li className="subham-item" style={{backgroundImage: `url(./Images/Robo.webp)`}}>
                 <Link to="/gallery-23" className="ham-link linkEventListener">
                   Gallery
                 </Link>

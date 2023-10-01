@@ -8,14 +8,14 @@ body {
   overflow-x: hidden;
 }
 
-body::-webkit-scrollbar {
-  display: none; /* Chrome*/
+/* body::-webkit-scrollbar {
+  display: none;
 }
 
 body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+} */
 
 /* Font */
 .oswald{

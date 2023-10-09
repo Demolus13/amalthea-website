@@ -82,7 +82,7 @@ export const events = [
   {
     name: "D'Code",
     description:
-    "Ready to Conquer the Market? Dive into the world of stock trading in this exhilarating event! Stockrush invites traders, investors, and financial enthusiasts worldwide to showcase their skills. With virtual currency and real-world strategies, seize the opportunity to dominate the NSE and BSE. Are you up for the challenge? \n Join us at Amalthea 23 for Stockrush - where trading prowess meets adrenaline!",
+    "D'code is a competitive programming event hosted on CodeChef for people intrigued by programming  all across India. Hack into the world of competitive programming and test your grit in algorithms.\ndef Dcode():\n\u00A0\u00A0\u00A0\u00A0if (Want to participate):\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0print('Register here')\nIt provides you with the best competitive environment and offers opportunity for programming enthusiasts to enhance their analytical skills.",
     imgSrc: "./Images/Dcode.webp",
     accentColor: "#42e8e0",
     textColor: "#FFF8FF",

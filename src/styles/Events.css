@@ -123,6 +123,10 @@
   width: 50%;
 }
 
+.events-text-holder p{
+  white-space: pre-line;
+}
+
 .events-text-holder-lock-hover {
   transform: translateY(0) !important;
 }

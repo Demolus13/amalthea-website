@@ -17,6 +17,7 @@ import BrainwizReg from "./RegistrationPages/BrainwizReg"
 import YTTReg from "./RegistrationPages/YTTReg"
 import DriftReg from "./RegistrationPages/DriftReg"
 import SRReg from "./RegistrationPages/SRReg"
+import DcodeReg from "./RegistrationPages/DcodeReg"
 
 function App() {
   return (
@@ -126,6 +127,7 @@ function App() {
         <Route path="/register/youth tech-tic" element={<YTTReg />} />
         <Route path="/register/drift-racing" element={<DriftReg />} />
         <Route path="/register/stockrush" element={<SRReg />} />
+        <Route path="/register/dcode" element={<DcodeReg />} />
       </Routes>
     </>
   );

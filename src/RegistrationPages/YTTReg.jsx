@@ -160,7 +160,7 @@ function ContactForm() {
                 <div className="info">
                     For any further details please contact the following organisers,
                 </div>
-                <div className="organisers">Harshit Kumar- +91 92790 39288, harshit.harshit@iitgn.ac.in</div>
+                <div className="organisers">Harshit Kumar - +91 92790 39288, harshit.harshit@iitgn.ac.in</div>
                 <div className="organisers">Suteekshna Mishra - +91 90444 12185, suteekshna.mishra@iitgn.ac.in</div>
             </div>
         </div>

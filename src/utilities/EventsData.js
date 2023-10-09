@@ -80,19 +80,33 @@ export const events = [
     registerPath: "https://amalthea.iitgn.ac.in/register/drift-racing"
   },
   {
-    name: "StockRush",
+    name: "D'Code",
     description:
     "Ready to Conquer the Market? Dive into the world of stock trading in this exhilarating event! Stockrush invites traders, investors, and financial enthusiasts worldwide to showcase their skills. With virtual currency and real-world strategies, seize the opportunity to dominate the NSE and BSE. Are you up for the challenge? \n Join us at Amalthea 23 for Stockrush - where trading prowess meets adrenaline!",
-    imgSrc: "./Images/StockRush.webp",
-    accentColor: "#e0aa0d",
+    imgSrc: "./Images/Dcode.webp",
+    accentColor: "#42e8e0",
     textColor: "#FFF8FF",
     weight: "600",
-    spanBg: "#00000065",
-    cardBg: "#20201e",
+    spanBg: "#00000045",
+    cardBg: "#180d5b",
     contents: [],
-    rulebookPath: "./RuleBooks/StockRush RuleBook.pdf",
-    registerPath: "https://amalthea.iitgn.ac.in/register/stockrush"
+    rulebookPath: "./RuleBooks/Dcode RuleBook.pdf",
+    registerPath: "https://amalthea.iitgn.ac.in/register/dcode"
   },
+  // {
+  //   name: "StockRush",
+  //   description:
+  //   "Ready to Conquer the Market? Dive into the world of stock trading in this exhilarating event! Stockrush invites traders, investors, and financial enthusiasts worldwide to showcase their skills. With virtual currency and real-world strategies, seize the opportunity to dominate the NSE and BSE. Are you up for the challenge? \n Join us at Amalthea 23 for Stockrush - where trading prowess meets adrenaline!",
+  //   imgSrc: "./Images/StockRush.webp",
+  //   accentColor: "#e0aa0d",
+  //   textColor: "#FFF8FF",
+  //   weight: "600",
+  //   spanBg: "#00000065",
+  //   cardBg: "#20201e",
+  //   contents: [],
+  //   rulebookPath: "./RuleBooks/StockRush RuleBook.pdf",
+  //   registerPath: "https://amalthea.iitgn.ac.in/register/stockrush"
+  // },
   {
     name: "coming soon",
     description: "bla bla bla",

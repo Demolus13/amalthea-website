@@ -116,10 +116,10 @@ export const events = [
   //   textColor: "#FFF8FF",
   //   weight: "600",
   //   spanBg: "#00000065",
-  //   cardBg: "#20201e",
+  //   cardBg: "#000201",
   //   contents: [],
   //   rulebookPath: "./RuleBooks/StockRush RuleBook.pdf",
-  //   registerPath: "http://localhost:3000/register/innovation-nexus"
+  //   registerPath: "https://amalthea.iitgn.ac.in/register/innovation-nexus"
   // },
   {
     name: "coming soon",

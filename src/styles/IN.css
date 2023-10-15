@@ -1,5 +1,5 @@
 .in-bg {
-    background: url(../../public/Images/Robowars.webp);
+    background: url(../../public/Images/IN-bg.webp);
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -28,7 +28,7 @@
 
 .in-container h2 {
     text-align: center;
-    color: #e37430;
+    color: #005d88;
     font-weight: 700;
 }
 
@@ -60,7 +60,7 @@ input[type="tel"] {
 }
 
 .in-container button[type="submit"] {
-    background-color: #e37430;
+    background-color: #005d88;
     color: #fff;
     padding: 10px 20px;
     border: none;

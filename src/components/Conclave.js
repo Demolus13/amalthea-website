@@ -73,7 +73,7 @@ export default function Conclave() {
         <img className="aml-bg-6" src="./Images/AML-BG-5.webp" alt="" />
         <img className="aml-bg-7 L2" src="./Images/AML-BG-6.webp" alt="" />
         <div id="speakers-content">
-          <h1
+          {/* <h1
             style={{ margin: "25px", color: "white", fontSize: "3rem" }}
             className="oswald">
             PAST SPEAKERS
@@ -84,7 +84,7 @@ export default function Conclave() {
                 <SpeakerCard data={speaker} />
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

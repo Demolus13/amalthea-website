@@ -114,7 +114,7 @@ export const CoordData = [
   },
   {
     name: "Aaditya Roy",
-    imgSrc: "./Images/noimg.webp",
+    imgSrc: "./Images/aaditya.webp",
     designation: "Marketing Coordinator",
     email: "aaditya.roy@iitgn.ac.in",
     number: "+91 96879 11316",

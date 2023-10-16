@@ -121,20 +121,20 @@ export const events = [
   //   rulebookPath: "./RuleBooks/StockRush RuleBook.pdf",
   //   registerPath: "https://amalthea.iitgn.ac.in/register/innovation-nexus"
   // },
-  {
-    name: "Drone Racing Amalthea",
-    description:
-    "Introducing 'Drone Racing Amalthea' (DRA) - an electrifying nighttime event filled with vibrant neon colors and adrenaline-pumping action. Get ready to pilot your drone through a thrilling obstacle course, showcasing your agility and precision.\nAt DRA, we're offering an enticing cash prize pool of INR 2,00,000 for the victorious drone racer who conquers the challenge. This event promises an unforgettable experience that combines the thrill of racing with the mesmerizing spectacle of neon lights.\nJoin us for an evening of high-speed excitement and the chance to claim your share of the INR 2,00,000 prize pool at Drone Racing Amalthea!",
-    imgSrc: "./Images/IN.webp",
-    accentColor: "#005d88",
-    textColor: "#FFF8FF",
-    weight: "600",
-    spanBg: "#00000065",
-    cardBg: "#000201",
-    contents: [],
-    rulebookPath: "./RuleBooks/StockRush RuleBook.pdf",
-    registerPath: "https://amalthea.iitgn.ac.in/register/dra"
-  },
+  // {
+  //   name: "Drone Racing Amalthea",
+  //   description:
+  //   "Introducing 'Drone Racing Amalthea' (DRA) - an electrifying nighttime event filled with vibrant neon colors and adrenaline-pumping action. Get ready to pilot your drone through a thrilling obstacle course, showcasing your agility and precision.\nAt DRA, we're offering an enticing cash prize pool of INR 2,00,000 for the victorious drone racer who conquers the challenge. This event promises an unforgettable experience that combines the thrill of racing with the mesmerizing spectacle of neon lights.\nJoin us for an evening of high-speed excitement and the chance to claim your share of the INR 2,00,000 prize pool at Drone Racing Amalthea!",
+  //   imgSrc: "./Images/IN.webp",
+  //   accentColor: "#005d88",
+  //   textColor: "#FFF8FF",
+  //   weight: "600",
+  //   spanBg: "#00000065",
+  //   cardBg: "#000201",
+  //   contents: [],
+  //   rulebookPath: "./RuleBooks/StockRush RuleBook.pdf",
+  //   registerPath: "https://amalthea.iitgn.ac.in/register/dra"
+  // },
   {
     name: "coming soon",
     description: "bla bla bla",

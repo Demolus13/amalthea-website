@@ -87,6 +87,17 @@ export const home = [
     //     textColor: "#ffffff",
     //     rulebookPath: "./RuleBooks/StockRush RuleBook.pdf",
     // },
+    // {
+    //     name: "DRA",
+    //     cardBg: "./Images/IN-bg.webp",
+    //     cardBorder: "solid 5px #005d88",
+    //     cardBoxShadow: "0 0 15px 3px #005d88",
+    //     dateColor: "#ffffff",
+    //     date: "04",
+    //     buttonBgColor: "#005d88",
+    //     textColor: "#ffffff",
+    //     rulebookPath: "./RuleBooks/StockRush RuleBook.pdf",
+    // },
     {
         name: "COMING SOON",
         cardBg: "./Images/coming_soon_mobile.webp",

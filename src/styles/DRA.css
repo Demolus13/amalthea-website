@@ -1,11 +1,11 @@
-.in-bg {
+.dra-bg {
     background: url(../../public/Images/IN-bg.webp);
     background-size: cover;
     background-position: center;
     position: fixed;
     inset: 0px;
 }
-.in-body {
+.dra-body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@
     flex-direction: column;
 
 }
-.in-container {
+.dra-container {
     max-width: 600px;
     margin: 40px auto;
     background-color: #00000070;
@@ -26,13 +26,13 @@
     flex-direction: column;
 }
 
-.in-container h2 {
+.dra-container h2 {
     text-align: center;
     color: #005d88;
     font-weight: 700;
 }
 
-.in-container p{
+.dra-container p{
     font-weight: bold;
     color: whitesmoke;
 }
@@ -41,7 +41,7 @@
     margin-bottom: 20px;
 }
 
-.in-container label {
+.dra-container label {
     display: block;
     font-weight: bold;
     color: whitesmoke;
@@ -59,7 +59,7 @@ input[type="tel"] {
 
 }
 
-.in-container button[type="submit"] {
+.dra-container button[type="submit"] {
     background-color: #005d88;
     color: #fff;
     padding: 10px 20px;
@@ -69,16 +69,16 @@ input[type="tel"] {
     font-size: 18px;
 }
 
-.in-container button[type="submit"]:hover {
-    background-color: #0271a4;
+.dra-container button[type="submit"]:hover {
+    background-color: #e46c22;
 }
 
-.in-container .info {
+.dra-container .info {
     padding: 3px;
     color: whitesmoke;
 }
 
-.in-container .organisers {
+.dra-container .organisers {
     padding: 2px;
     color: whitesmoke;
 }

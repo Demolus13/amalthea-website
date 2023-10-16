@@ -19,6 +19,7 @@ import DriftReg from "./RegistrationPages/DriftReg"
 import SRReg from "./RegistrationPages/SRReg"
 import DcodeReg from "./RegistrationPages/DcodeReg"
 import INReg from "./RegistrationPages/INReg"
+import DRAReg from "./RegistrationPages/DRAReg"
 
 function App() {
   return (
@@ -130,6 +131,7 @@ function App() {
         <Route path="/register/stockrush" element={<SRReg />} />
         <Route path="/register/dcode" element={<DcodeReg />} />
         <Route path="/register/innovation-nexus" element={<INReg />} />
+        <Route path="/register/dra" element={<DRAReg />} />
       </Routes>
     </>
   );

@@ -8,7 +8,7 @@ export const events = [
     textColor: "#FFF8FF",
     weight: "600",
     spanBg: "#00000065",
-    cardBg: "#000201",
+    cardBg: "#241f1f",
     contents: [],
     rulebookPath: "./RuleBooks/IDRL RuleBook.pdf",
     registerPath: "https://amalthea.iitgn.ac.in/register/dra"

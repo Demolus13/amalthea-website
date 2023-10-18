@@ -1,5 +1,19 @@
 export const events = [
   {
+    name: "Drone Racing Amalthea",
+    description:
+    "Introducing \"Drone Racing Amalthea\" (DRA) - an electrifying night drone racing event filled with vibrant neon colors and adrenaline-pumping action. Get ready to pilot your drone through a thrilling obstacle course, showcasing your agility and precision.\nAt DRA, we're offering an enticing cash prize pool of INR 2,00,000 for the victorious drone racer who conquers the challenge. This event promises an unforgettable experience that combines the thrill of racing with the mesmerizing spectacle of neon lights.\nJoin us for an evening of high-speed excitement and the chance to claim your share of the INR 2,00,000 prize pool at Drone Racing Amalthea!",
+    imgSrc: "./Images/DRA.webp",
+    accentColor: "#241f1f",
+    textColor: "#FFF8FF",
+    weight: "600",
+    spanBg: "#00000065",
+    cardBg: "#000201",
+    contents: [],
+    rulebookPath: "./RuleBooks/IDRL RuleBook.pdf",
+    registerPath: "https://amalthea.iitgn.ac.in/register/dra"
+  },
+  {
     name: "Robowars",
     description:
       "Prepare for an ultimate experience in the ultimate battle of damage, strength, and technology. Witness the head-to-head clash of engineering beasts with metals and electric circuits. To all robo-maniacs, Amalthea 23 presents the most-awaited RoboWars for the first time at IIT Gandhinagar, where all the participants are about Savage Arena, Warrior; Victory is not granted but earned.\nThrilling Robot Combating Event \nIn a fierce battle for supremacy.\nThe robots will face off in an enclosed arena with various obstacles and hazards.",
@@ -93,20 +107,20 @@ export const events = [
     rulebookPath: "./RuleBooks/Dcode RuleBook.pdf",
     registerPath: "https://amalthea.iitgn.ac.in/register/dcode"
   },
-  // {
-  //   name: "StockRush",
-  //   description:
-  //   "Ready to Conquer the Market? Dive into the world of stock trading in this exhilarating event! Stockrush invites traders, investors, and financial enthusiasts worldwide to showcase their skills. With virtual currency and real-world strategies, seize the opportunity to dominate the NSE and BSE. Are you up for the challenge? \n Join us at Amalthea 23 for Stockrush - where trading prowess meets adrenaline!",
-  //   imgSrc: "./Images/StockRush.webp",
-  //   accentColor: "#e0aa0d",
-  //   textColor: "#FFF8FF",
-  //   weight: "600",
-  //   spanBg: "#00000065",
-  //   cardBg: "#20201e",
-  //   contents: [],
-  //   rulebookPath: "./RuleBooks/StockRush RuleBook.pdf",
-  //   registerPath: "https://amalthea.iitgn.ac.in/register/stockrush"
-  // },
+  {
+    name: "StockRush",
+    description:
+    "Ready to Conquer the Market? Dive into the world of stock trading in this exhilarating event! Stockrush invites traders, investors, and financial enthusiasts worldwide to showcase their skills. With virtual currency and real-world strategies, seize the opportunity to dominate the NSE and BSE. Are you up for the challenge? \n Join us at Amalthea 23 for Stockrush - where trading prowess meets adrenaline!",
+    imgSrc: "./Images/StockRush.webp",
+    accentColor: "#e0aa0d",
+    textColor: "#FFF8FF",
+    weight: "600",
+    spanBg: "#00000065",
+    cardBg: "#20201e",
+    contents: [],
+    rulebookPath: "./RuleBooks/StockRush RuleBook.pdf",
+    registerPath: "https://amalthea.iitgn.ac.in/register/stockrush"
+  },
   // {
   //   name: "Innovation Nexus",
   //   description:
@@ -120,20 +134,6 @@ export const events = [
   //   contents: [],
   //   rulebookPath: "./RuleBooks/StockRush RuleBook.pdf",
   //   registerPath: "https://amalthea.iitgn.ac.in/register/innovation-nexus"
-  // },
-  // {
-  //   name: "Drone Racing Amalthea",
-  //   description:
-  //   "Introducing 'Drone Racing Amalthea' (DRA) - an electrifying nighttime event filled with vibrant neon colors and adrenaline-pumping action. Get ready to pilot your drone through a thrilling obstacle course, showcasing your agility and precision.\nAt DRA, we're offering an enticing cash prize pool of INR 2,00,000 for the victorious drone racer who conquers the challenge. This event promises an unforgettable experience that combines the thrill of racing with the mesmerizing spectacle of neon lights.\nJoin us for an evening of high-speed excitement and the chance to claim your share of the INR 2,00,000 prize pool at Drone Racing Amalthea!",
-  //   imgSrc: "./Images/IN.webp",
-  //   accentColor: "#005d88",
-  //   textColor: "#FFF8FF",
-  //   weight: "600",
-  //   spanBg: "#00000065",
-  //   cardBg: "#000201",
-  //   contents: [],
-  //   rulebookPath: "./RuleBooks/StockRush RuleBook.pdf",
-  //   registerPath: "https://amalthea.iitgn.ac.in/register/dra"
   // },
   {
     name: "coming soon",

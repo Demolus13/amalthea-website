@@ -1,5 +1,5 @@
 .dra-bg {
-    background: url(../../public/Images/IN-bg.webp);
+    background: url(../../public/Images/DRA-bg.webp);
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -28,7 +28,7 @@
 
 .dra-container h2 {
     text-align: center;
-    color: #005d88;
+    color: #241f1f;
     font-weight: 700;
 }
 
@@ -60,7 +60,7 @@ input[type="tel"] {
 }
 
 .dra-container button[type="submit"] {
-    background-color: #005d88;
+    background-color: #241f1f;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -70,7 +70,7 @@ input[type="tel"] {
 }
 
 .dra-container button[type="submit"]:hover {
-    background-color: #e46c22;
+    background-color: #0a0909;
 }
 
 .dra-container .info {

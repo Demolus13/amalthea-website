@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
 import "../styles/WIT.css";
+import { witData } from "../utilities/WITData";
 
 export default function WIT() {
+
   useEffect(() => {
     const H = window.innerHeight;
     window.scrollTo(0, 0);
-
     const body = document.querySelector(".wit-body");
     const L1 = document.querySelectorAll(".L1");
     const L2 = document.querySelectorAll(".L2");
@@ -71,8 +72,74 @@ export default function WIT() {
         <img className="aml-bg-8 L2" src="./Images/AML-BG-6.webp" alt="" />
         <img className="aml-bg-6" src="./Images/AML-BG-5.webp" alt="" />
         <img className="aml-bg-7 L2" src="./Images/AML-BG-6.webp" alt="" />
-        <div id="speakers-content"></div>
+        <div id="speakers-content">
+          <h1
+            style={{ margin: "25px", color: "white", fontSize: "3rem" }}
+            className="oswald">
+            SPEAKERS
+          </h1>
+          <div className="SpeakerContainer" style={{ width: "100%" }}>
+            <div className="row team-card">
+              {witData.map(speaker => (
+                <SpeakerCard data={speaker} />
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
 }
+
+const SpeakerCard = ({ data }) => {
+  return (
+    <div className="col-12 col-sm-6 col-md-4 col-lg-3 wit-card">
+      <div className="our-team" style={{ borderRadius: "10px" }}>
+        <div className="picture">
+          <img className="img-fluid" src={data.imgSrc} alt="profile pic" />
+        </div>
+        <div className="team-content">
+          <h2 className="name oswald">{data.name}</h2>
+          <p className="title poppins" style={{textAlign: "center"}}>{data.title}</p>
+          <p className="title poppins" style={{display: data.achievement === "" ? "none" : "block"}}><strong>Achievements:</strong> <br /> {data.achievement}</p>
+          <p className="title poppins" style={{display: data.edu === "" ? "none" : "block"}}><strong>Education:</strong> <br /> {data.edu}</p>
+        </div>
+        <ul className="social">
+          <li>
+            <a
+              href="/women-in-tech-23" target="_blank" rel="noreferrer">
+              <img
+                alt="linkedIn profile link"
+                src="/Images/linkedin.svg"
+                className="about-links"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="/women-in-tech-23" target="_blank" rel="noreferrer">
+              <img
+                alt="instagram profile link"
+                src="/Images/instagram.svg"
+                className="about-links"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href={data.web === "" ? "/women-in-tech-23" : data.web} rel="noreferrer" target="_blank">
+                <img
+                alt="website profile link"
+                src="/Images/world-wide-web.webp"
+                className="about-links"
+                style={{
+                  filter: 'invert(100%)'
+                }}
+              />
+              </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};

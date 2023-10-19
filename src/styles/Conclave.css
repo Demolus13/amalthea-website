@@ -27,7 +27,7 @@
   gap: 40px;
 }
 
-.our-team {
+#conclave .our-team {
   padding: 30px 10px 10px;
   margin-bottom: 30px;
   background-color: #f7f5ec;
@@ -35,7 +35,7 @@
   overflow: hidden;
   position: relative;
   width: 300px;
-  height: 450px;
+  height: 475px;
 }
 
 #conclave #speakers-content > h1 {
@@ -71,7 +71,7 @@
   display: inline-block;
   height: 130px;
   width: 130px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   z-index: 1;
   position: relative;
 }
@@ -128,8 +128,8 @@
   display: block;
   font-size: 15px;
   color: #4e5052;
-  text-transform: capitalize;
   padding-top: 3px;
+  text-align: start;
 }
 
 .conclave-card .our-team .social {

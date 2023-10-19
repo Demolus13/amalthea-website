@@ -73,10 +73,10 @@ export default function Conclave() {
         <img className="aml-bg-6" src="./Images/AML-BG-5.webp" alt="" />
         <img className="aml-bg-7 L2" src="./Images/AML-BG-6.webp" alt="" />
         <div id="speakers-content">
-          {/* <h1
+          <h1
             style={{ margin: "25px", color: "white", fontSize: "3rem" }}
             className="oswald">
-            PAST SPEAKERS
+            SPEAKERS
           </h1>
           <div className="SpeakerContainer" style={{ width: "100%" }}>
             <div className="row team-card">
@@ -84,7 +84,7 @@ export default function Conclave() {
                 <SpeakerCard data={speaker} />
               ))}
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
@@ -100,14 +100,14 @@ const SpeakerCard = ({ data }) => {
         </div>
         <div className="team-content">
           <h2 className="name oswald">{data.name}</h2>
-          <p className="title poppins">{data.title}</p>
-          <p className="title poppins">Topic: {data.topic}</p>
-          <p className="title poppins">{data.time}</p>
+          <p className="title poppins" style={{textAlign: "center"}}>{data.title}</p>
+          <p className="title poppins" style={{display: data.achievement === "" ? "none" : "block"}}><strong>Achievements:</strong> <br /> {data.achievement}</p>
+          <p className="title poppins" style={{display: data.edu === "" ? "none" : "block"}}><strong>Education:</strong> <br /> {data.edu}</p>
         </div>
         <ul className="social">
           <li>
             <a
-              href="https://codepen.io/collection/XdWJOQ/">
+              href="/conclave-23" target="_blank" rel="noreferrer">
               <img
                 alt="linkedIn profile link"
                 src="/Images/linkedin.svg"
@@ -117,7 +117,7 @@ const SpeakerCard = ({ data }) => {
           </li>
           <li>
             <a
-              href="https://codepen.io/collection/XdWJOQ/">
+              href="/conclave-23" target="_blank" rel="noreferrer">
               <img
                 alt="instagram profile link"
                 src="/Images/instagram.svg"
@@ -127,10 +127,10 @@ const SpeakerCard = ({ data }) => {
           </li>
           <li>
             <a
-              href="https://codepen.io/collection/XdWJOQ/">
+              href={data.web === "" ? "/conclave-23" : data.web} rel="noreferrer" target="_blank">
                 <img
-                alt="facebook profile link"
-                src="/Images/facebook.webp"
+                alt="website profile link"
+                src="/Images/world-wide-web.webp"
                 className="about-links"
                 style={{
                   filter: 'invert(100%)'

@@ -70,15 +70,15 @@ export default function Navbar() {
                 Symposium
               </Link>
             </li>
-            {/* <ul>
-              <li className="subham-item">
+            <ul>
+              <li className="subham-item" style={{backgroundImage: `url(./Images/Robo.webp)`}}>
                 <Link
                   to="/women-in-tech-23"
                   className="ham-link linkEventListener">
                   Women in Tech
                 </Link>
               </li>
-            </ul> */}
+            </ul>
             <li className="ham-item">
               <Link to="/tech-expo-23" className="ham-link linkEventListener">
                 Tech Expo

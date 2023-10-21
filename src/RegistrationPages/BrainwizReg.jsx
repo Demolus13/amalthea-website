@@ -84,8 +84,9 @@ function ContactForm() {
         <div className="bw-bg"></div>
         <div className='bw-body'>
             <div className="bw-container">
-                <h2>BrainWiz Registration Form</h2>
-                <form onSubmit={handleSubmit}>
+                <h2>BrainWiz</h2>
+                <h2>Registration Form is closed</h2>
+                {/* <form onSubmit={handleSubmit}>
                     <div className="form-group">
                         <label htmlFor="name" style={{paddingTop: "15px"}}>Name:</label>
                         <input
@@ -255,7 +256,7 @@ function ContactForm() {
                     <div className="form-group">
                         <button type="submit">Submit</button>
                     </div>
-                </form>
+                </form> */}
                 <div className="info">
                     For any further details please contact the following organisers,
                 </div>

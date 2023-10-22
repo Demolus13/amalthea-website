@@ -219,7 +219,7 @@ const EventCard = event => {
                   
                 }}
                 style={{ background: event.accentColor }}>
-                Register
+                {event.name === "BrainWiz" ? "9th-10th Round 1" : "Register"}
               </button>
               <button
                 id="hover-eq"
@@ -234,7 +234,7 @@ const EventCard = event => {
                   window.open(event.rulebookPath);
                 }}
                 style={{ background: event.accentColor }}>
-                Rulebook
+                {event.name === "BrainWiz" ? "11th-12th Round 1" : "Register"}
               </button>
             </div>
           </div>

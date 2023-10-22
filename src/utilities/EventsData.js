@@ -48,8 +48,8 @@ export const events = [
     spanBg: "rgba(255, 255, 255, 0.50)",
     cardBg: "#F5EFE7",
     contents: [],
-    rulebookPath: "./RuleBooks/BrainWiz RuleBook.pdf",
-    registerPath: "https://amalthea.iitgn.ac.in/register/brainwiz"
+    rulebookPath: "https://docs.google.com/forms/d/e/1FAIpQLSd_uVqPLwmpNlStQYZ2KAEtxoGaG1wRVGHReJBTSfZSwrh3rw/viewform?usp=sf_link",
+    registerPath: "https://docs.google.com/forms/d/e/1FAIpQLSdcIyHMHC3TsEnc_WW_sNrPPkAGGn6c9xVX91XyBadk67S7Vw/viewform?usp=sf_link"
   },
   {
     name: "Youth Tech-Tic",

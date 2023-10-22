@@ -9,7 +9,7 @@
 */
 export const conclaveData = [
   {
-    imgSrc: "./Images/noimg.webp",
+    imgSrc: "./Images/Geetha Kannan.jpeg",
     name: "GEETHA KANNAN",
     title: "Founder and CEO of Wequity, Women for Technology",
     achievement: "Ex VP HR of Infosys Tech Ltd. and Ex HR of ANZ",

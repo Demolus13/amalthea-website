@@ -9,7 +9,7 @@
 */
 export const witData = [
     {
-      imgSrc: "./Images/noimg.webp",
+      imgSrc: "./Images/Minu Sirsalewala.jpeg",
       name: "MINU SIRSALEWALA",
       title: "Executive Editor-Special Projects at Cyber Media India Limited",
       achievement: "Dataquest/PCQuest/Voice&Data",

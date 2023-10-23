@@ -201,7 +201,7 @@ const EventCard = event => {
           }}
           >
           <div className="content-placeholder">
-            <h3 className="reg montserrat" style={{display: event.name === "Robowars" ? "block" : "none",}}>Registration are free till 25th Oct, afterwards charges will be applied</h3>
+            <h3 className="reg montserrat" style={{display: event.name === "Robowars" ? "block" : "none",}}>Registration are free till 30th Oct, afterwards charges will be applied</h3>
             <div className="content"></div>
             <div
               className="events-text-holder"

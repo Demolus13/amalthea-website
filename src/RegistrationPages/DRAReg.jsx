@@ -13,6 +13,8 @@ function ContactForm() {
         email: '',
         aadhar: '',
         googleDriveLink: '',
+        read: '',
+        yes: '',
     });
 
     const handleInputChange = (e) => {
@@ -32,6 +34,14 @@ function ContactForm() {
             alert('Please enter valid Google Drive link');
             return;
         }
+        if (!(formData.read === 'Read')) {
+            alert('Please go through the RuleBook beside Register button');
+            return;
+        }
+        if (!(formData.yes === 'Yes')) {
+            alert("Type 'Yes' in order to agree");
+            return;
+        }
 
         const scriptURL = 'https://docs.google.com/forms/u/0/d/1KceJWTLK-dVhBZ_PFOWwtGbWp-Wkfk1ejWvl63uIuN8/formResponse';
         const form = new FormData();
@@ -41,6 +51,8 @@ function ContactForm() {
         form.append('entry.2132717047', formData.teamname);
         form.append('entry.1754055822', formData.aadhar);
         form.append('entry.99355105', formData.googleDriveLink);
+        form.append('entry.1407759009', formData.read);
+        form.append('entry.774401373', formData.yes);
 
         try {
             await fetch(scriptURL, { method: 'POST', mode: 'no-cors', body: form });
@@ -52,6 +64,8 @@ function ContactForm() {
                 email: '',
                 aadhar: '',
                 googleDriveLink: '',
+                read: '',
+                yes: '',
             });
         } catch (error) {
             console.error('Error!', error.message);
@@ -147,6 +161,30 @@ function ContactForm() {
                                 onChange={handleInputChange}
                                 placeholder="Paste your Google Drive link here"
                                 required
+                            />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="read">I have read the RuleBook and drone specifications and agree to adhere to it:</label>
+                            <input
+                                type="text"
+                                id="read"
+                                name="read"
+                                value={formData.read}
+                                onChange={handleInputChange}
+                                required
+                                placeholder="Type 'Read' to agree"
+                            />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="yes">I agree all decisions made by Amalthea team will be final:</label>
+                            <input
+                                type="text"
+                                id="yes"
+                                name="yes"
+                                value={formData.yes}
+                                onChange={handleInputChange}
+                                required
+                                placeholder="Type 'Yes' to agree"
                             />
                         </div>
                         <div className="form-group">

@@ -12,7 +12,7 @@ export const symposiumData = [
     imgSrc: "./Images/Dhairya.webp",
     name: "DHAIRYA SHAH",
     title: "Power Electronics Engineer from IIT",
-    achievement: "Conferred as Youngest CEO of the Year’ in Green Energy field and also Most Influencer 30 under 30",
+    achievement: "Conferred as Youngest CEO of the Year in Green Energy field and also Most Influencer 30 under 30",
     edu: "Lecturer in Nirma, PDPU and other Universities, he is a techno-crate with Business in his veins",
     web: " https://mindragreen.com/team/dhairya-shah/"
   },

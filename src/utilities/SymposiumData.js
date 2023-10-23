@@ -9,7 +9,7 @@
 */
 export const symposiumData = [
   {
-    imgSrc: "./Images/noimg.webp",
+    imgSrc: "./Images/Dhairya.webp",
     name: "DHAIRYA SHAH",
     title: "Power Electronics Engineer from IIT",
     achievement: "Conferred as Youngest CEO of the Year’ in Green Energy field and also Most Influencer 30 under 30",
@@ -25,7 +25,7 @@ export const symposiumData = [
     web: ""
   },
   {
-    imgSrc: "./Images/noimg.webp",
+    imgSrc: "./Images/Parsun Mishra.webp",
     name: "PRASUN MISHRA",
     title: "Assistant professor in Advanced Technology Development Centre (ATDC) at IIT Kharagpur",
     achievement: "Research activities in Design of Si, SiC, and GaN Converters and its Performance Analysis; High Performance Control of Electric",
@@ -41,7 +41,7 @@ export const symposiumData = [
     web: ""
   },
   {
-    imgSrc: "./Images/noimg.webp",
+    imgSrc: "./Images/Himmat Singh.webp",
     name: "HIMMAT SINGH",
     title: "Founder and Director of Photom Technologies",
     achievement: "Advanced LIV Fellow of Royal Academy of Engineering, London",

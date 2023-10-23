@@ -234,7 +234,7 @@ const EventCard = event => {
                   window.open(event.rulebookPath);
                 }}
                 style={{ background: event.accentColor }}>
-                {event.name === "BrainWiz" ? "11th-12th Round 1" : "Register"}
+                {event.name === "BrainWiz" ? "11th-12th Round 1" : "RuleBook"}
               </button>
             </div>
           </div>

@@ -1,4 +1,4 @@
-.content {
+.spons-content {
   position: relative;
   top: 100vh;
 }
@@ -34,35 +34,37 @@
   gap: 20px;
 }
 
-.platinum-sponsor{
+.platinum-sponsor {
   border-bottom: 5px solid #e5e4e2;
 }
 
-.diamond-sponsor{
-  border-bottom: 5px solid #4EE2EC;
+.diamond-sponsor {
+  border-bottom: 5px solid #4ee2ec;
 }
 
-.diamond-sponsor h5, .gold-sponsor h5, .req-adjust{
+.diamond-sponsor h5,
+.gold-sponsor h5,
+.req-adjust {
   padding-bottom: 40px;
   padding-top: 10px;
 }
-.gold-sponsor{
+.gold-sponsor {
   border-bottom: 5px solid gold;
 }
 
-.silver-sponsor{
+.silver-sponsor {
   border-bottom: 5px solid #c0c0c0;
 }
 
-.event-parters{
+.event-parters {
   border-bottom: 5px solid #e75cd6;
 }
 
-.conclave-partners{
+.conclave-partners {
   border-bottom: 5px solid #e72a2a;
 }
 
-.design-innovation-partners{
+.design-innovation-partners {
   border-bottom: 5px solid #b0f719;
 }
 
@@ -80,7 +82,7 @@
   align-items: center;
 }
 
-.sponsor-img{
+.sponsor-img {
   width: 100%;
   background-color: white;
   height: 80%;
@@ -89,14 +91,13 @@
   align-items: center;
 }
 
-.sponsor-card h5{
+.sponsor-card h5 {
   color: white;
   font-weight: 600;
   font-style: italic;
   padding: 15px;
-  font-size: 15px;;
+  font-size: 15px;
 }
-
 
 .sponsor-img img {
   max-width: 85%;
@@ -175,15 +176,15 @@
     font-size: 1.15rem;
   }
 
-  #design-and-head{
+  #design-and-head {
     font-size: 0.95rem;
   }
 
-  .sponsor-card{
+  .sponsor-card {
     scale: 0.9;
   }
 
-  .main{
+  .main {
     padding: 1%;
   }
 }

@@ -64,239 +64,198 @@ export default function Sponsors() {
       <img className="aml-bg-6" src="./Images/AML-BG-5.webp" alt="" />
       <img className="aml-bg-7 L2" src="./Images/AML-BG-6.webp" alt="" />
       <section className="nav-home"></section>
-      <div className="content">
+      <div className="spons-content">
         <div className="main">
           <h2 className="myheading divider line glow oswald">PAST SPONSORS</h2>
-          <h2 className="myheading divider line glow oswald">PLATINUM SPONSORS</h2>
+          <h2 className="myheading divider line glow oswald">
+            PLATINUM SPONSORS
+          </h2>
           <div className="sponsor-section montserrat">
             <div className="sponsor-card platinum-sponsor">
               <div className="sponsor-img">
-              <img src="./Images/jsw.webp" alt="JSW logo" />
+                <img src="./Images/jsw.webp" alt="JSW logo" />
               </div>
               <h5>JSW</h5>
             </div>
             <div className="sponsor-card platinum-sponsor">
               <div className="sponsor-img">
-              <img
-                src="./Images/indextb.webp"
-                alt="indextb logo"
-              />
+                <img src="./Images/indextb.webp" alt="indextb logo" />
               </div>
               <h5>iNDEXTb</h5>
             </div>
           </div>
-          <h2 className="myheading divider line glow oswald">DIAMOND SPONSORS</h2>
+          <h2 className="myheading divider line glow oswald">
+            DIAMOND SPONSORS
+          </h2>
           <div className="sponsor-section montserrat">
             <div className="sponsor-card diamond-sponsor">
-            <div className="sponsor-img">
-              <img
-                src="./Images/gsmda.webp"
-                alt="GSMDA logo"
-              />
-            </div>
+              <div className="sponsor-img">
+                <img src="./Images/gsmda.webp" alt="GSMDA logo" />
+              </div>
               <h5>GSDMA</h5>
             </div>
             <div className="sponsor-card diamond-sponsor">
-            <div className="sponsor-img">
-              <img
-                src="./Images/CPwhite.webp"
-                alt="cp logo"
-              />
-            </div>
+              <div className="sponsor-img">
+                <img src="./Images/CPwhite.webp" alt="cp logo" />
+              </div>
               <h5>GCPL</h5>
             </div>
           </div>
           <h2 className="myheading divider line glow oswald">GOLD SPONSORS</h2>
           <div className="sponsor-section montserrat">
             <div className="sponsor-card gold-sponsor" id="aditya-birla">
-            <div className="sponsor-img">
-              <img src="./Images/adityabirla.webp" alt="Aditya Birla logo" />
-            </div>
+              <div className="sponsor-img">
+                <img src="./Images/adityabirla.webp" alt="Aditya Birla logo" />
+              </div>
               <h5>Aditya Birla</h5>
             </div>
             <div className="sponsor-card gold-sponsor">
-            <div className="sponsor-img">
-              <img
-                src="./Images/./gujaratmaritimeboard.webp"
-                alt="Gujarat Maritime Board logo"
-              />
-            </div>
+              <div className="sponsor-img">
+                <img
+                  src="./Images/./gujaratmaritimeboard.webp"
+                  alt="Gujarat Maritime Board logo"
+                />
+              </div>
               <h5>Gujarat Maritime Board</h5>
             </div>
             <div className="sponsor-card gold-sponsor">
-            <div className="sponsor-img">
-              <img
-                src="./Images/metro.webp"
-                alt="Metro logo"
-              />
-            </div>
+              <div className="sponsor-img">
+                <img src="./Images/metro.webp" alt="Metro logo" />
+              </div>
               <h5>Gujarat Metro</h5>
             </div>
           </div>
-          <h2 className="myheading divider line glow oswald">SILVER SPONSORS</h2>
+          <h2 className="myheading divider line glow oswald">
+            SILVER SPONSORS
+          </h2>
           <div className="sponsor-section montserrat">
             <div className="sponsor-card silver-sponsor">
-            <div className="sponsor-img">
-              <img
-                src="./Images/vrajgroupwhite.webp"
-                alt="Vraj Group logo"
-              />
-            </div>
+              <div className="sponsor-img">
+                <img src="./Images/vrajgroupwhite.webp" alt="Vraj Group logo" />
+              </div>
               <h5 className="req-adjust">Vraj Group</h5>
             </div>
             <div className="sponsor-card silver-sponsor">
-            <div className="sponsor-img">
-              <img src="./Images/GP.webp" alt="GP logo" />
-            </div>
+              <div className="sponsor-img">
+                <img src="./Images/GP.webp" alt="GP logo" />
+              </div>
               <h5>Gujarat State Petronet</h5>
             </div>
             <div className="sponsor-card silver-sponsor" id="ac-consult">
-            <div className="sponsor-img">
-              <img src="./Images/AC.webp" alt="AC logo" />
-            </div>
+              <div className="sponsor-img">
+                <img src="./Images/AC.webp" alt="AC logo" />
+              </div>
               <h5 className="req-adjust">Alstonia Consulting</h5>
             </div>
           </div>
           <h2 className="myheading divider line glow oswald">EVENT PARTNERS</h2>
           <div className="sponsor-section montserrat">
             <div className="sponsor-card event-parters">
-            <div className="sponsor-img">
-              <img
-                src="./Images/ITC.webp"
-                alt="ITC logo"
-              />
-            </div>
+              <div className="sponsor-img">
+                <img src="./Images/ITC.webp" alt="ITC logo" />
+              </div>
               <h5>ITC</h5>
             </div>
             <div className="sponsor-card event-parters">
-            <div className="sponsor-img">
-              <img
-                src="./Images/nutanix.webp"
-                alt="nutanix logo"
-              />
-            </div>
+              <div className="sponsor-img">
+                <img src="./Images/nutanix.webp" alt="nutanix logo" />
+              </div>
               <h5>Nutanix</h5>
             </div>
             <div className="sponsor-card event-parters">
-            <div className="sponsor-img">
-              <img
-                src="./Images/Reliance.webp"
-                alt="reliance logo"
-              />
-            </div>
+              <div className="sponsor-img">
+                <img src="./Images/Reliance.webp" alt="reliance logo" />
+              </div>
               <h5>Reliance Ltd.</h5>
             </div>
             <div className="sponsor-card event-parters">
-            <div className="sponsor-img">
-              <img src="./Images/crazylabs.webp" alt="crazylabs logo" />
-            </div>
+              <div className="sponsor-img">
+                <img src="./Images/crazylabs.webp" alt="crazylabs logo" />
+              </div>
               <h5>Crazy Labs</h5>
             </div>
             <div className="sponsor-card event-parters">
-            <div className="sponsor-img">
-              <img
-                src="./Images/redbull.webp"
-                alt="redbull logo"
-              />
-            </div>
+              <div className="sponsor-img">
+                <img src="./Images/redbull.webp" alt="redbull logo" />
+              </div>
               <h5>Red Bull</h5>
             </div>
             <div className="sponsor-card event-parters">
-            <div className="sponsor-img">
-              <img
-                src="./Images/tatachemicals.webp"
-                alt="tata chemicals logo"
-              />
-            </div>
+              <div className="sponsor-img">
+                <img
+                  src="./Images/tatachemicals.webp"
+                  alt="tata chemicals logo"
+                />
+              </div>
               <h5>Tata Chemicals</h5>
             </div>
             <div className="sponsor-card event-parters">
-            <div className="sponsor-img">
-              <img
-                src="./Images/codechef.webp"
-                alt="codechef logo"
-              />
-            </div>
+              <div className="sponsor-img">
+                <img src="./Images/codechef.webp" alt="codechef logo" />
+              </div>
               <h5>Code Chef</h5>
             </div>
             <div className="sponsor-card event-parters">
-            <div className="sponsor-img">
-              <img
-                src="./Images/wazirx.webp"
-                alt="wazrix logo"
-              />
-            </div>
+              <div className="sponsor-img">
+                <img src="./Images/wazirx.webp" alt="wazrix logo" />
+              </div>
               <h5>Wazirx</h5>
             </div>
             <div className="sponsor-card event-parters">
-            <div className="sponsor-img">
-              <img
-                src="./Images/adani.webp"
-                alt="adani logo"
-              />
-            </div>
+              <div className="sponsor-img">
+                <img src="./Images/adani.webp" alt="adani logo" />
+              </div>
               <h5>Adani Group</h5>
             </div>
             <div className="sponsor-card event-parters">
-            <div className="sponsor-img">
-              <img
-                src="./Images/beamable.webp"
-                alt="beamable logo"
-              />
-            </div>
+              <div className="sponsor-img">
+                <img src="./Images/beamable.webp" alt="beamable logo" />
+              </div>
               <h5>Beamable</h5>
             </div>
           </div>
-          <h2 className="myheading divider line glow oswald">CONCLAVE PARTNER</h2>
+          <h2 className="myheading divider line glow oswald">
+            CONCLAVE PARTNER
+          </h2>
           <div className="sponsor-section montserrat">
             <div className="sponsor-card conclave-partners">
-            <div className="sponsor-img">
-              <img
-                src="./Images/jklakshmi.webp"
-                alt="JK Lakshmi cement logo"
-              />
-            </div>
+              <div className="sponsor-img">
+                <img
+                  src="./Images/jklakshmi.webp"
+                  alt="JK Lakshmi cement logo"
+                />
+              </div>
               <h5>JK Lakshmi Cement</h5>
             </div>
           </div>
-          <h2 className="myheading divider line glow oswald" id="design-and-head">
+          <h2
+            className="myheading divider line glow oswald"
+            id="design-and-head">
             DESIGN AND INNOVATION PARTNERS
           </h2>
           <div className="sponsor-section montserrat">
             <div className="sponsor-card design-innovation-partners">
-            <div className="sponsor-img">
-              <img
-                src="./Images/htc.webp"
-                alt="htc logo"
-              />
-            </div>
+              <div className="sponsor-img">
+                <img src="./Images/htc.webp" alt="htc logo" />
+              </div>
               <h5>HTC</h5>
             </div>
             <div className="sponsor-card design-innovation-partners">
-            <div className="sponsor-img">
-              <img
-                src="./Images/isro.webp"
-                alt="isro logo"
-              />
-            </div>
+              <div className="sponsor-img">
+                <img src="./Images/isro.webp" alt="isro logo" />
+              </div>
               <h5>ISRO</h5>
             </div>
             <div className="sponsor-card design-innovation-partners">
-            <div className="sponsor-img">
-              <img
-                src="./Images/apple.webp"
-                alt="apple logo"
-              />
-            </div>
+              <div className="sponsor-img">
+                <img src="./Images/apple.webp" alt="apple logo" />
+              </div>
               <h5>Apple</h5>
             </div>
             <div className="sponsor-card design-innovation-partners">
-            <div className="sponsor-img">
-              <img
-                src="./Images/microsoft.webp"
-                alt="microsoft logo"
-              />
-            </div>
+              <div className="sponsor-img">
+                <img src="./Images/microsoft.webp" alt="microsoft logo" />
+              </div>
               <h5>Microsoft</h5>
             </div>
           </div>

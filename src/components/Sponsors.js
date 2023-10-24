@@ -118,7 +118,7 @@ export default function Sponsors() {
             MEDIA PARTNERS
           </h2>
           <div className="sponsor-section montserrat">
-            <div className="sponsor-card design-innovation-partners">
+            <div className="sponsor-card media-partners">
               <div className="sponsor-img">
                 <img src="./Images/ProMFG.webp" alt="ProMFG logo" />
               </div>

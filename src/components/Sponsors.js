@@ -66,7 +66,6 @@ export default function Sponsors() {
       <section className="nav-home"></section>
       <div className="spons-content">
         <div className="main">
-          <h2 className="myheading divider line glow oswald">PAST SPONSORS</h2>
           <h2 className="myheading divider line glow oswald">
             PLATINUM SPONSORS
           </h2>
@@ -118,12 +117,6 @@ export default function Sponsors() {
               </div>
               <h5>Gujarat Maritime Board</h5>
             </div>
-            <div className="sponsor-card gold-sponsor">
-              <div className="sponsor-img">
-                <img src="./Images/metro.webp" alt="Metro logo" />
-              </div>
-              <h5>Gujarat Metro</h5>
-            </div>
           </div>
           <h2 className="myheading divider line glow oswald">
             SILVER SPONSORS
@@ -148,13 +141,36 @@ export default function Sponsors() {
               <h5 className="req-adjust">Alstonia Consulting</h5>
             </div>
           </div>
+          <h2 className="myheading divider line glow oswald">
+            BRONZE SPONSORS
+          </h2>
+          <div className="sponsor-section montserrat">
+          <div className="sponsor-card silver-sponsor">
+              <div className="sponsor-img">
+                <img src="./Images/metro.webp" alt="Metro logo" />
+              </div>
+              <h5>Gujarat Metro</h5>
+            </div>
+            <div className="sponsor-card silver-sponsor">
+              <div className="sponsor-img">
+                <img src="./Images/Union Bank.svg" alt="Union Bank" />
+              </div>
+              <h5>Union Bank of India</h5>
+            </div>
+            <div className="sponsor-card silver-sponsor" id="ac-consult">
+              <div className="sponsor-img">
+                <img src="./Images/GEDA.webp" alt="AC logo" />
+              </div>
+              <h5 className="req-adjust">GEDA</h5>
+            </div>
+          </div>
           <h2 className="myheading divider line glow oswald">EVENT PARTNERS</h2>
           <div className="sponsor-section montserrat">
             <div className="sponsor-card event-parters">
               <div className="sponsor-img">
-                <img src="./Images/ITC.webp" alt="ITC logo" />
+                <img src="./Images/Gujsail.webp" alt="GUJSAIL logo" />
               </div>
-              <h5>ITC</h5>
+              <h5>GUJSAIL</h5>
             </div>
             <div className="sponsor-card event-parters">
               <div className="sponsor-img">
@@ -231,32 +247,14 @@ export default function Sponsors() {
           <h2
             className="myheading divider line glow oswald"
             id="design-and-head">
-            DESIGN AND INNOVATION PARTNERS
+            MEDIA PARTNERS
           </h2>
           <div className="sponsor-section montserrat">
             <div className="sponsor-card design-innovation-partners">
               <div className="sponsor-img">
-                <img src="./Images/htc.webp" alt="htc logo" />
+                <img src="./Images/ProMFG.webp" alt="ProMFG logo" />
               </div>
-              <h5>HTC</h5>
-            </div>
-            <div className="sponsor-card design-innovation-partners">
-              <div className="sponsor-img">
-                <img src="./Images/isro.webp" alt="isro logo" />
-              </div>
-              <h5>ISRO</h5>
-            </div>
-            <div className="sponsor-card design-innovation-partners">
-              <div className="sponsor-img">
-                <img src="./Images/apple.webp" alt="apple logo" />
-              </div>
-              <h5>Apple</h5>
-            </div>
-            <div className="sponsor-card design-innovation-partners">
-              <div className="sponsor-img">
-                <img src="./Images/microsoft.webp" alt="microsoft logo" />
-              </div>
-              <h5>Microsoft</h5>
+              <h5>ProMFG</h5>
             </div>
           </div>
         </div>

@@ -98,24 +98,24 @@ export const home = [
     //     textColor: "#ffffff",
     //     rulebookPath: "./RuleBooks/StockRush RuleBook.pdf",
     // },
-    {
-        name: "COMING SOON",
-        cardBg: "./Images/coming_soon_mobile.webp",
-        cardBorder: "solid 5px #d321a3",
-        cardBoxShadow: "0 0 15px 3px #d321a3",
-        dateColor: "#ffffff",
-        date: "xx",
-        buttonBgColor: "#d321a3",
-        textColor: "#ffffff"
-    },
-    {
-        name: "COMING SOON",
-        cardBg: "./Images/coming_soon_mobile.webp",
-        cardBorder: "solid 5px #d321a3",
-        cardBoxShadow: "0 0 15px 3px #d321a3",
-        dateColor: "#ffffff",
-        date: "xx",
-        buttonBgColor: "#d321a3",
-        textColor: "#ffffff"
-    },
+    // {
+    //     name: "COMING SOON",
+    //     cardBg: "./Images/coming_soon_mobile.webp",
+    //     cardBorder: "solid 5px #d321a3",
+    //     cardBoxShadow: "0 0 15px 3px #d321a3",
+    //     dateColor: "#ffffff",
+    //     date: "xx",
+    //     buttonBgColor: "#d321a3",
+    //     textColor: "#ffffff"
+    // },
+    // {
+    //     name: "COMING SOON",
+    //     cardBg: "./Images/coming_soon_mobile.webp",
+    //     cardBorder: "solid 5px #d321a3",
+    //     cardBoxShadow: "0 0 15px 3px #d321a3",
+    //     dateColor: "#ffffff",
+    //     date: "xx",
+    //     buttonBgColor: "#d321a3",
+    //     textColor: "#ffffff"
+    // },
 ];

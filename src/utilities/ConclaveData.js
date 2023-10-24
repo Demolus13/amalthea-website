@@ -24,5 +24,12 @@ export const conclaveData = [
     edu: "IIT Delhi graduate",
     web: ""
   },
-
+  {
+    imgSrc: "./Images/noimg.webp",
+    name: "KISLAY PANKAJ",
+    title: "Co-founder and CEO of Lectrix Technologies",
+    achievement: "Ex-CTO of Micelio-Electric Vehicles and Ex-Founding Member of Ather Technologies",
+    edu: "BTech graduate from IITGN",
+    web: ""
+  },
 ]

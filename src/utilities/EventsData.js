@@ -135,17 +135,17 @@ export const events = [
   //   rulebookPath: "./RuleBooks/StockRush RuleBook.pdf",
   //   registerPath: "https://amalthea.iitgn.ac.in/register/innovation-nexus"
   // },
-  {
-    name: "coming soon",
-    description: "bla bla bla",
-    imgSrc: "./Images/coming_soon.webp",
-    contents: [],
-  },
-  {
-    name: "coming soon",
-    description: "bla bla bla",
-    imgSrc: "./Images/coming_soon.webp",
-    contents: [],
-    accentColor: "#000",
-  },
+  // {
+  //   name: "coming soon",
+  //   description: "bla bla bla",
+  //   imgSrc: "./Images/coming_soon.webp",
+  //   contents: [],
+  // },
+  // {
+  //   name: "coming soon",
+  //   description: "bla bla bla",
+  //   imgSrc: "./Images/coming_soon.webp",
+  //   contents: [],
+  //   accentColor: "#000",
+  // },
 ];

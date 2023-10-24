@@ -55,8 +55,11 @@
 .silver-sponsor {
   border-bottom: 5px solid #c0c0c0;
 }
+.bronze-sponsor {
+  border-bottom: 5px solid #CD7F32;
+}
 
-.event-parters {
+.event-partners {
   border-bottom: 5px solid #e75cd6;
 }
 
@@ -64,7 +67,7 @@
   border-bottom: 5px solid #e72a2a;
 }
 
-.design-innovation-partners {
+.past-sponsors {
   border-bottom: 5px solid #b0f719;
 }
 

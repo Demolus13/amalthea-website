@@ -89,9 +89,9 @@ export default function Sponsors() {
           <div className="sponsor-section montserrat">
             <div className="sponsor-card diamond-sponsor">
               <div className="sponsor-img">
-                <img src="./Images/gsmda.webp" alt="GSMDA logo" />
+                <img src="./Images/Gujsail.webp" alt="GUJSAIL logo" />
               </div>
-              <h5>GSDMA</h5>
+              <h5>GUJSAIL</h5>
             </div>
             <div className="sponsor-card diamond-sponsor">
               <div className="sponsor-img">

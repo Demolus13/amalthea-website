@@ -37,6 +37,44 @@
     color: whitesmoke;
 }
 
+.dra-container .logo-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 7.5rem;
+}
+
+.logo-container img{
+    height: 100px;
+    width: 100px;
+}
+
+#Gujsail{
+    background: url(../../public/Images/Gujsail.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 6.5rem;
+    width: 6.5rem;
+}
+#GOG{
+    background: url(../../public/Images/GOG.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 6.5rem;
+    width: 6.5rem;
+    filter: invert(100%);
+}
+#IITGN{
+    background: url(../../public/Images/IITGN-logo.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 6.5rem;
+    width: 6.5rem;
+}
+
 .form-group {
     margin-bottom: 20px;
 }

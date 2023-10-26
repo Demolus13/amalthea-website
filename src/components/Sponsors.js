@@ -67,9 +67,9 @@ export default function Sponsors() {
       <div className="spons-content">
         <div className="main">
           <h2 className="myheading divider line glow oswald">
-            CURRENT SPONSORS
+            CURRENT SPONSORS & PARTNERS
           </h2>
-          <h2 className="myheading divider line glow oswald">
+          {/* <h2 className="myheading divider line glow oswald">
             DIAMOND SPONSORS
           </h2>
           <div className="sponsor-section montserrat">
@@ -79,7 +79,7 @@ export default function Sponsors() {
               </div>
               <h5>GUJSAIL</h5>
             </div>
-          </div>
+          </div> */}
           <h2 className="myheading divider line glow oswald">
             BRONZE SPONSORS
           </h2>
@@ -103,7 +103,7 @@ export default function Sponsors() {
               <h5 className="req-adjust">GEDA</h5>
             </div>
           </div>
-          <h2 className="myheading divider line glow oswald">EVENT PARTNERS</h2>
+          {/* <h2 className="myheading divider line glow oswald">EVENT PARTNERS</h2>
           <div className="sponsor-section montserrat">
             <div className="sponsor-card event-partners">
               <div className="sponsor-img">
@@ -111,7 +111,7 @@ export default function Sponsors() {
               </div>
               <h5>GUJSAIL</h5>
             </div>
-          </div>
+          </div> */}
           <h2
             className="myheading divider line glow oswald"
             id="design-and-head">
@@ -123,6 +123,19 @@ export default function Sponsors() {
                 <img src="./Images/ProMFG.webp" alt="ProMFG logo" />
               </div>
               <h5>ProMFG</h5>
+            </div>
+          </div>
+          <h2
+            className="myheading divider line glow oswald"
+            id="design-and-head">
+            HEALTH CARE PARTNERS
+          </h2>
+          <div className="sponsor-section montserrat">
+            <div className="sponsor-card health-partners">
+              <div className="sponsor-img">
+                <img src="./Images/Alembic.webp" alt="Alembic logo" />
+              </div>
+              <h5>Alembic</h5>
             </div>
           </div>
           <h2 className="myheading divider line glow oswald">

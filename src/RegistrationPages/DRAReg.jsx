@@ -77,9 +77,14 @@ function ContactForm() {
             <div className="dra-bg"></div>
             <div className='dra-body'>
                 <div className="dra-container">
+                    <div className="logo-container">
+                        <div id="GOG"></div>
+                        <div id="Gujsail"></div>
+                        <div id="IITGN"></div>
+                    </div>
                     <h2>Drone Racing Amalthea Registration</h2>
                     <div className="info" style={{ paddingTop: "15px" }}>
-                        Amalthea presents DRA in its newest edition this year. This year's DRA comes with a twist. A 2 Day format with 2nd day extravaganza on the banks of Sabarmati(Sabarmati River Front).
+                        Registration form for DRA'23. <br /> <br /> Amalthea presents DRA in its newest edition this year. This year's DRA comes with a twist. A 2 Day format with 2nd day extravaganza on the banks of Sabarmati(Sabarmati River Front). <br /> <br /> Event will be a 2-day format: <br /> ‣Day 1(9 AM to 4 PM) will be on IIT Gandhinagar Campus and only racers who qualify for Day-2 will be invited for Day-2. <br /> ‣Day 2(12 PM to 9 PM) will be at  Sabarmati River Front with semi-finals and finals through Atal Bridge.
                     </div>
                     <form onSubmit={handleSubmit}>
                         <div className="form-group" style={{ paddingTop: "15px" }}>
@@ -194,6 +199,7 @@ function ContactForm() {
                     <div className="info">
                         For any further details please contact/mail the following organisers,
                     </div>
+                    <div className="organisers">Arvind Singh (Gujsail) - +91 84601 83787, Mgr-mktg-gujsail@Gujarat.gov.in</div>
                     <div className="organisers">Jinil Patel - +91 83206 14132, jinilkumar.patel@iitgn.ac.in</div>
                     <div className="organisers">Shubham Agrawal - +91 72785 03333, shubham.agrawal@iitgn.ac.in</div>
                     <div className="organisers">Suteekshna Mishra - +91 90444 12185, suteekshna.mishra@iitgn.ac.in</div>

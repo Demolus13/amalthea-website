@@ -9,6 +9,14 @@
 */
 export const symposiumData = [
   {
+    imgSrc: "./Images/Aabhijeet.webp",
+    name: "Abhijeet Sinha",
+    title: "Program Director - EASE of doing Buisness",
+    achievement: "Previously Vibrant Gujarat and Project Director - Swachh Bharat Mission",
+    edu: "",
+    web: ""
+  },
+  {
     imgSrc: "./Images/Dhairya.webp",
     name: "DHAIRYA SHAH",
     title: "Power Electronics Engineer from IIT",

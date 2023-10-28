@@ -17,11 +17,11 @@ export const conclaveData = [
     web: "https://www.theleadershipsummit.org/2022/speakers/geetha-kannan/"
   },
   {
-    imgSrc: "./Images/noimg.webp",
-    name: "AZHAR IQUBAL",
-    title: "Co-founder and CEO of Inshorts",
-    achievement: "",
-    edu: "IIT Delhi graduate",
+    imgSrc: "./Images/Aabhijeet.webp",
+    name: "Abhijeet Sinha",
+    title: "Program Director - EASE of doing Buisness",
+    achievement: "Previously Vibrant Gujarat and Project Director - Swachh Bharat Mission",
+    edu: "",
     web: ""
   },
   {

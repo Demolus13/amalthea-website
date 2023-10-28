@@ -81,6 +81,23 @@ export default function Sponsors() {
             </div>
           </div> */}
           <h2 className="myheading divider line glow oswald">
+            ASSOCIATE SPONSORS
+          </h2>
+          <div className="sponsor-section montserrat">
+            <div className="sponsor-card associate-sponsor">
+              <div className="sponsor-img">
+                <img src="./Images/RR.webp" alt="RR logo" />
+              </div>
+              <h5>RR Kabel</h5>
+            </div>
+            <div className="sponsor-card associate-sponsor">
+              <div className="sponsor-img">
+                <img src="./Images/OPAL.webp" alt="OPAL logo" />
+              </div>
+              <h5>OPAL</h5>
+            </div>
+          </div>
+          <h2 className="myheading divider line glow oswald">
             BRONZE SPONSORS
           </h2>
           <div className="sponsor-section montserrat">
@@ -96,11 +113,17 @@ export default function Sponsors() {
               </div>
               <h5>Union Bank of India</h5>
             </div>
-            <div className="sponsor-card bronze-sponsor" id="ac-consult">
+            <div className="sponsor-card bronze-sponsor">
               <div className="sponsor-img">
                 <img src="./Images/GEDA.webp" alt="AC logo" />
               </div>
               <h5 className="req-adjust">GEDA</h5>
+            </div>
+            <div className="sponsor-card bronze-sponsor">
+              <div className="sponsor-img">
+                <img src="./Images/GIL.webp" alt="GIL logo" />
+              </div>
+              <h5 className="req-adjust">GIL</h5>
             </div>
           </div>
           {/* <h2 className="myheading divider line glow oswald">EVENT PARTNERS</h2>

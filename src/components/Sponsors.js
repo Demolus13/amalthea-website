@@ -69,32 +69,46 @@ export default function Sponsors() {
           <h2 className="myheading divider line glow oswald">
             CURRENT SPONSORS & PARTNERS
           </h2>
-          {/* <h2 className="myheading divider line glow oswald">
-            DIAMOND SPONSORS
+          <h2 className="myheading divider line glow oswald">
+            PLATINUM SPONSORS
           </h2>
           <div className="sponsor-section montserrat">
-            <div className="sponsor-card diamond-sponsor">
+            <div className="sponsor-card platinum-sponsor">
               <div className="sponsor-img">
                 <img src="./Images/Gujsail.webp" alt="GUJSAIL logo" />
               </div>
               <h5>GUJSAIL</h5>
             </div>
-          </div> */}
+          </div>
           <h2 className="myheading divider line glow oswald">
-            ASSOCIATE SPONSORS
+            GOLD SPONSORS
           </h2>
           <div className="sponsor-section montserrat">
-            <div className="sponsor-card associate-sponsor">
+            <div className="sponsor-card gold-sponsor">
               <div className="sponsor-img">
-                <img src="./Images/RR.webp" alt="RR logo" />
+                <img src="./Images/GPCL.webp" alt="GPCL logo" />
               </div>
-              <h5>RR Kabel</h5>
+              <h5>GPCL</h5>
             </div>
-            <div className="sponsor-card associate-sponsor">
+          </div>
+          <h2 className="myheading divider line glow oswald">
+            SILVER SPONSORS
+          </h2>
+          <div className="sponsor-section montserrat">
+            <div className="sponsor-card silver-sponsor">
               <div className="sponsor-img">
-                <img src="./Images/OPAL.webp" alt="OPAL logo" />
+                <img src="./Images/indextb.webp" alt="iNDEXTb logo" />
               </div>
-              <h5>OPAL</h5>
+              <h5>iNDEXTb</h5>
+            </div>
+            <div className="sponsor-card silver-sponsor">
+              <div className="sponsor-img">
+                <img
+                  src="./Images/./gujaratmaritimeboard.webp"
+                  alt="Gujarat Maritime Board logo"
+                />
+              </div>
+              <h5>Gujarat Maritime Board</h5>
             </div>
           </div>
           <h2 className="myheading divider line glow oswald">
@@ -126,22 +140,52 @@ export default function Sponsors() {
               <h5 className="req-adjust">GIL</h5>
             </div>
           </div>
-          {/* <h2 className="myheading divider line glow oswald">EVENT PARTNERS</h2>
+          <h2 className="myheading divider line glow oswald">
+            ASSOCIATE SPONSORS
+          </h2>
           <div className="sponsor-section montserrat">
-            <div className="sponsor-card event-partners">
+            <div className="sponsor-card associate-sponsor">
+              <div className="sponsor-img">
+                <img src="./Images/RR.webp" alt="RR logo" />
+              </div>
+              <h5>RR Kabel</h5>
+            </div>
+            <div className="sponsor-card associate-sponsor">
+              <div className="sponsor-img">
+                <img src="./Images/OPAL.webp" alt="OPAL logo" />
+              </div>
+              <h5>OPAL</h5>
+            </div>
+          </div>
+          <h2 className="myheading divider line glow oswald">EVENT PARTNERS</h2>
+          <div className="sponsor-section montserrat">
+            <div className="sponsor-card event-partner">
               <div className="sponsor-img">
                 <img src="./Images/Gujsail.webp" alt="GUJSAIL logo" />
               </div>
               <h5>GUJSAIL</h5>
             </div>
-          </div> */}
+          </div>
+          <h2
+            className="myheading divider line glow oswald"
+            id="design-and-head">
+            NETWORKING DINNER PARTNERS
+          </h2>
+          <div className="sponsor-section montserrat">
+            <div className="sponsor-card partner">
+              <div className="sponsor-img">
+                <img src="./Images/Iotian.webp" alt="IOTian logo" />
+              </div>
+              <h5>IOTian</h5>
+            </div>
+          </div>
           <h2
             className="myheading divider line glow oswald"
             id="design-and-head">
             MEDIA PARTNERS
           </h2>
           <div className="sponsor-section montserrat">
-            <div className="sponsor-card media-partners">
+            <div className="sponsor-card partner">
               <div className="sponsor-img">
                 <img src="./Images/ProMFG.webp" alt="ProMFG logo" />
               </div>
@@ -154,7 +198,7 @@ export default function Sponsors() {
             HEALTH CARE PARTNERS
           </h2>
           <div className="sponsor-section montserrat">
-            <div className="sponsor-card health-partners">
+            <div className="sponsor-card partner">
               <div className="sponsor-img">
                 <img src="./Images/Alembic.webp" alt="Alembic logo" />
               </div>
@@ -165,37 +209,37 @@ export default function Sponsors() {
             PAST SPONSORS
           </h2>
           <div className="sponsor-section montserrat">
-          <div className="sponsor-card past-sponsors">
+          <div className="sponsor-card past-sponsor">
               <div className="sponsor-img">
                 <img src="./Images/jsw.webp" alt="JSW logo" />
               </div>
               <h5>JSW</h5>
             </div>
-            <div className="sponsor-card past-sponsors">
+            <div className="sponsor-card past-sponsor">
               <div className="sponsor-img">
                 <img src="./Images/indextb.webp" alt="indextb logo" />
               </div>
               <h5>iNDEXTb</h5>
             </div>
-            <div className="sponsor-card past-sponsors">
+            <div className="sponsor-card past-sponsor">
               <div className="sponsor-img">
                 <img src="./Images/gsdma.webp" alt="GSDMA logo" />
               </div>
               <h5>GSDMA</h5>
             </div>
-            <div className="sponsor-card past-sponsors">
+            <div className="sponsor-card past-sponsor">
               <div className="sponsor-img">
                 <img src="./Images/CPwhite.webp" alt="cp logo" />
               </div>
               <h5>GCPL</h5>
             </div>
-            <div className="sponsor-card past-sponsors" id="aditya-birla">
+            <div className="sponsor-card past-sponsor" id="aditya-birla">
               <div className="sponsor-img">
                 <img src="./Images/adityabirla.webp" alt="Aditya Birla logo" />
               </div>
               <h5>Aditya Birla</h5>
             </div>
-            <div className="sponsor-card past-sponsors">
+            <div className="sponsor-card past-sponsor">
               <div className="sponsor-img">
                 <img
                   src="./Images/./gujaratmaritimeboard.webp"
@@ -204,55 +248,55 @@ export default function Sponsors() {
               </div>
               <h5>Gujarat Maritime Board</h5>
             </div>
-            <div className="sponsor-card past-sponsors">
+            <div className="sponsor-card past-sponsor">
               <div className="sponsor-img">
                 <img src="./Images/vrajgroupwhite.webp" alt="Vraj Group logo" />
               </div>
               <h5 className="req-adjust">Vraj Group</h5>
             </div>
-            <div className="sponsor-card past-sponsors">
+            <div className="sponsor-card past-sponsor">
               <div className="sponsor-img">
                 <img src="./Images/GP.webp" alt="GP logo" />
               </div>
               <h5>Gujarat State Petronet</h5>
             </div>
-            <div className="sponsor-card past-sponsors" id="ac-consult">
+            <div className="sponsor-card past-sponsor" id="ac-consult">
               <div className="sponsor-img">
                 <img src="./Images/AC.webp" alt="AC logo" />
               </div>
               <h5 className="req-adjust">Alstonia Consulting</h5>
             </div>
-            <div className="sponsor-card past-sponsors">
+            <div className="sponsor-card past-sponsor">
               <div className="sponsor-img">
                 <img src="./Images/ITC.webp" alt="ITC logo" />
               </div>
               <h5>ITC</h5>
             </div>
-            <div className="sponsor-card past-sponsors">
+            <div className="sponsor-card past-sponsor">
               <div className="sponsor-img">
                 <img src="./Images/nutanix.webp" alt="nutanix logo" />
               </div>
               <h5>Nutanix</h5>
             </div>
-            <div className="sponsor-card past-sponsors">
+            <div className="sponsor-card past-sponsor">
               <div className="sponsor-img">
                 <img src="./Images/Reliance.webp" alt="reliance logo" />
               </div>
               <h5>Reliance Ltd.</h5>
             </div>
-            <div className="sponsor-card past-sponsors">
+            <div className="sponsor-card past-sponsor">
               <div className="sponsor-img">
                 <img src="./Images/crazylabs.webp" alt="crazylabs logo" />
               </div>
               <h5>Crazy Labs</h5>
             </div>
-            <div className="sponsor-card past-sponsors">
+            <div className="sponsor-card past-sponsor">
               <div className="sponsor-img">
                 <img src="./Images/redbull.webp" alt="redbull logo" />
               </div>
               <h5>Red Bull</h5>
             </div>
-            <div className="sponsor-card past-sponsors">
+            <div className="sponsor-card past-sponsor">
               <div className="sponsor-img">
                 <img
                   src="./Images/tatachemicals.webp"
@@ -261,31 +305,31 @@ export default function Sponsors() {
               </div>
               <h5>Tata Chemicals</h5>
             </div>
-            <div className="sponsor-card past-sponsors">
+            <div className="sponsor-card past-sponsor">
               <div className="sponsor-img">
                 <img src="./Images/codechef.webp" alt="codechef logo" />
               </div>
               <h5>Code Chef</h5>
             </div>
-            <div className="sponsor-card past-sponsors">
+            <div className="sponsor-card past-sponsor">
               <div className="sponsor-img">
                 <img src="./Images/wazirx.webp" alt="wazrix logo" />
               </div>
               <h5>Wazirx</h5>
             </div>
-            <div className="sponsor-card past-sponsors">
+            <div className="sponsor-card past-sponsor">
               <div className="sponsor-img">
                 <img src="./Images/adani.webp" alt="adani logo" />
               </div>
               <h5>Adani Group</h5>
             </div>
-            <div className="sponsor-card past-sponsors">
+            <div className="sponsor-card past-sponsor">
               <div className="sponsor-img">
                 <img src="./Images/beamable.webp" alt="beamable logo" />
               </div>
               <h5>Beamable</h5>
             </div>
-            <div className="sponsor-card past-sponsors">
+            <div className="sponsor-card past-sponsor">
               <div className="sponsor-img">
                 <img
                   src="./Images/jklakshmi.webp"
@@ -294,25 +338,25 @@ export default function Sponsors() {
               </div>
               <h5>JK Lakshmi Cement</h5>
             </div>
-            <div className="sponsor-card past-sponsors">
+            <div className="sponsor-card past-sponsor">
               <div className="sponsor-img">
                 <img src="./Images/apple.webp" alt="apple logo" />
               </div>
               <h5>Apple</h5>
             </div>
-            <div className="sponsor-card past-sponsors">
+            <div className="sponsor-card past-sponsor">
               <div className="sponsor-img">
                 <img src="./Images/isro.webp" alt="isro logo" />
               </div>
               <h5>ISRO</h5>
             </div>
-            <div className="sponsor-card past-sponsors">
+            <div className="sponsor-card past-sponsor">
               <div className="sponsor-img">
                 <img src="./Images/microsoft.webp" alt="microsoft logo" />
               </div>
               <h5>Microsoft</h5>
             </div>
-            <div className="sponsor-card past-sponsors">
+            <div className="sponsor-card past-sponsor">
               <div className="sponsor-img">
                 <img src="./Images/htc.webp" alt="htc logo" />
               </div>

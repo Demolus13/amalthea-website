@@ -102,9 +102,13 @@ export default function Navbar() {
               </li> */}
               <li className="subham-item" style={{backgroundImage: `url(./Images/Robo.webp)`}}>
                 <Link
-                  to="/how-to-reach-23"
+                  to="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open("/RuleBooks/Schedule.pdf");
+                  }}
                   className="ham-link linkEventListener">
-                  How to reach
+                  Schedule
                 </Link>
               </li>
               <li className="subham-item" style={{backgroundImage: `url(./Images/Robo.webp)`}}>

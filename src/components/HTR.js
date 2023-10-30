@@ -45,7 +45,7 @@ export default function HTR() {
                     <div className="circle"></div>
                 </div>
                 <div className="center" style={{ zIndex: 1 }}>
-                    <h1 id="aml" className="oswald">HOW TO REACH</h1>
+                    <h1 id="aml" className="oswald">SCHEDULE</h1>
                 </div>
                 <img className="aml-bg-1 L1" src="./Images/AML-BG-1.webp" alt="" />
                 <img className="aml-bg-2 L1" src="./Images/AML-BG-2.webp" alt="" />

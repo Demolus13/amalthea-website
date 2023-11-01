@@ -20,7 +20,7 @@ export const conclaveData = [
     imgSrc: "./Images/Aabhijeet.webp",
     name: "Abhijeet Sinha",
     title: "Program Director - EASE of doing Buisness",
-    achievement: "Previously Vibrant Gujarat and Project Director - Swachh Bharat Mission",
+    achievement: "Project Director-NHEV | DIISHA | Drone Pilot, President-Charge Point Operators Society (CPOs) Of India",
     edu: "",
     web: ""
   },

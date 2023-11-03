@@ -25,7 +25,7 @@ export const witData = [
       web: ""
     },
     {
-      imgSrc: "./Images/noimg.webp",
+      imgSrc: "./Images/oshi.webp",
       name: "OSHI KUMARI",
       title: "Co-founder at insideFPV ",
       achievement: "Consumer & Defence Drones | Shark Tank India Season 2 ",
@@ -33,22 +33,21 @@ export const witData = [
       web: ""
     },
     {
-      imgSrc: "./Images/noimg.webp",
+      imgSrc: "./Images/Deepa.webp",
       name: "DEEPA PARIKH",
       title: "Head of Solutions Engineering for India at Akamai Technologies",
       achievement: "SuperAchiever Winner at ITV Wonder Women 2023 awards and Pastspeaker at SheSparks 2023",
-      edu: "MS graduate in CS from Stony Brook University, New York",
       web: ""
     },
     {
-      imgSrc: "./Images/noimg.webp",
+      imgSrc: "./Images/GeethaKannan.webp",
       name: "GEETHA KANAN",
       title: "Founder and CEO of Wequity",
       achievement: "Founder and CEO of Wequity. Ex-VP HR of Infosys.",
       edu: "",
       web: ""
     },{
-      imgSrc: "./Images/noimg.webp",
+      imgSrc: "./Images/beena.webp",
       name: "BEENA KOTHADIA",
       title: "FExecutive Plant Management - General Electric",
       achievement: "India's Top 25 Women Ahead (ET) Award Winner | India's Top 10 Women Role Model Award Winner.",

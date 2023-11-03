@@ -25,7 +25,7 @@ export const symposiumData = [
     web: " https://mindragreen.com/team/dhairya-shah/"
   },
   {
-    imgSrc: "./Images/noimg.webp",
+    imgSrc: "./Images/shani.webp",
     name: "SHANI PANDYA",
     title: "Founder and CEO, Imagine Powertree, Co-Founder of Wedge",
     achievement: "Co-founded business incubator at PDEU",
@@ -41,7 +41,7 @@ export const symposiumData = [
     web: "https://www.iitkgp.ac.in/department/AT/faculty/at-prasun.mishra"
   },
   {
-    imgSrc: "./Images/noimg.webp",
+    imgSrc: "./Images/kaushal.webp",
     name: "KAUSHAL JHA",
     title: "Principal Investigator at NoonRay Energy",
     achievement: "CEO of Centre for Excellence in Energy and Telecommunications (CEET), IIT Madras",
@@ -57,7 +57,7 @@ export const symposiumData = [
     web: ""
   },
   {
-    imgSrc: "./Images/noimg.webp",
+    imgSrc: "./Images/nibedita.webp",
     name: "NIBEDITA DASH",
     title: "Researcher, The International Council on Clean Transportation",
     achievement: "Alma Mater Indian Institute of Science (IISc), Bangalore",

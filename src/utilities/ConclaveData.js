@@ -9,15 +9,15 @@
 */
 export const conclaveData = [
   {
-    imgSrc: "./Images/noimg.webp",
-    name: "RINKESH BANSA",
+    imgSrc: "./Images/rinkesh.webp",
+    name: "RINKESH BANSAL",
     title: "Program Dirctor and Master Inventor, IBM",
     achievement: " Inventor, Team Leader, Security Visionary. Expert in strategy, patents, and team building.",
     edu: "",
     web: ""
   },
   {
-    imgSrc: "./Images/Geetha Kannan.webp",
+    imgSrc: "./Images/GeethaKannan.webp",
     name: "GEETHA KANNAN",
     title: "Founder and CEO of Wequity, Women for Technology",
     achievement: "Ex VP HR of Infosys Tech Ltd. and Ex HR of ANZ",
@@ -33,15 +33,14 @@ export const conclaveData = [
     web: ""
   },
   {
-    imgSrc: "./Images/noimg.webp",
+    imgSrc: "./Images/kislay.webp",
     name: "KISLAY PANKAJ",
     title: "Co-founder and CEO of Lectrix Technologies",
     achievement: "Ex-CTO of Micelio-Electric Vehicles and Ex-Founding Member of Ather Technologies",
-    edu: "BTech graduate from IITGN",
     web: ""
   },
   {
-    imgSrc: "./Images/noimg.webp",
+    imgSrc: "./Images/rajagopalan.webp",
     name: "Dr. RAJAGOPALAN PANDEY",
     title: "Assistant Professor, NAMTECH",
     achievement: "Assistant Professor at NAMTECH",
@@ -49,7 +48,7 @@ export const conclaveData = [
     web: ""
   },
   {
-    imgSrc: "./Images/noimg.webp",
+    imgSrc: "./Images/sucharu.webp",
     name: "SUCHARU UPPAL",
     title: "Joint President, Brand and Retail at Grasim Industries Limited",
     achievement: "WeQual Awards Winner, Asia Pacific 2023",

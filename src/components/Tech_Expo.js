@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "../styles/TechExpo.css";
-import { conclaveData } from "../utilities/ConclaveData";
 
 export default function Tech_Expo() {
 

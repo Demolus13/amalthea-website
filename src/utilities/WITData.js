@@ -37,7 +37,7 @@ export const witData = [
       name: "DEEPA PARIKH",
       title: "Head of Solutions Engineering for India at Akamai Technologies",
       achievement: "SuperAchiever Winner at ITV Wonder Women 2023 awards and Pastspeaker at SheSparks 2023",
-      edu: "",
+      edu: "MS graduate in CS from Stony Brook University, New York",
       web: ""
     },
     {

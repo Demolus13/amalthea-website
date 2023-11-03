@@ -44,8 +44,10 @@ export const conclaveData = [
     name: "Dr. RAJAGOPALAN PANDEY",
     title: "Assistant Professor, NAMTECH",
     achievement: "Assistant Professor at NAMTECH",
-    edu: "",
-    web: ""
+    edu: "IIT Indore",
+    lin: "https://www.linkedin.com/in/rajagopalan-p-47934b65/?originalSubdomain=in",
+    ins:"",
+    web: "https://scholar.google.com/citations?user=ZhJsA0wAAAAJ&hl=en"
   },
   {
     imgSrc: "./Images/sucharu.webp",

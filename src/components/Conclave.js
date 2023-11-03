@@ -107,7 +107,7 @@ const SpeakerCard = ({ data }) => {
         <ul className="social">
           <li>
             <a
-              href="/conclave-23" target="_blank" rel="noreferrer">
+              href={data.lin === "" ? "/conclave-23" : data.lin} rel="noreferrer" target="_blank">
               <img
                 alt="linkedIn profile link"
                 src="/Images/linkedin.svg"

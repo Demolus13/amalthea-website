@@ -34,6 +34,10 @@
   gap: 20px;
 }
 
+.title-sponsor {
+  border-bottom: 5px solid rgb(0, 128, 255);
+}
+
 .platinum-sponsor {
   border-bottom: 5px solid #e5e4e2;
 }

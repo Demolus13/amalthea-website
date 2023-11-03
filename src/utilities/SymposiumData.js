@@ -56,4 +56,12 @@ export const symposiumData = [
     edu: "Youth CO:Lab Fellow, UNDP India",
     web: ""
   },
+  {
+    imgSrc: "./Images/noimg.webp",
+    name: "NIBEDITA DASH",
+    title: "Researcher, The International Council on Clean Transportation",
+    achievement: "Alma Mater Indian Institute of Science (IISc), Bangalore",
+    edu: "",
+    web: ""
+  },
   ]

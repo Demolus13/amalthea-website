@@ -69,6 +69,25 @@ export default function Sponsors() {
           <h2 className="myheading divider line glow oswald">
             CURRENT SPONSORS & PARTNERS
           </h2>
+
+          <h2 className="myheading divider line glow oswald">
+            TITLE SPONSOR
+          </h2>
+          <div className="sponsor-section montserrat">
+            <div
+              className="sponsor-card title-sponsor"
+              onClick={(e) => {
+                e.preventDefault();
+                window.open("https://www.namtech.ac/");
+              }}
+            >
+              <div className="sponsor-img">
+                <img src="./Images/namtech.webp" alt="NAMTECH logo" />
+              </div>
+              <h5>NAMTECH</h5>
+            </div>
+          </div>
+
           <h2 className="myheading divider line glow oswald">
             PLATINUM SPONSORS
           </h2>
@@ -106,6 +125,18 @@ export default function Sponsors() {
           </h2>
           <div className="sponsor-section montserrat">
             <div
+                className="sponsor-card silver-sponsor"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open("https://www.gujarattourism.com/");
+                }}
+              >
+                <div className="sponsor-img">
+                  <img src="./Images/gujarattourism.webp" alt="Gujarat Tourism logo" />
+                </div>
+                <h5>Gujarat Tourism</h5>
+              </div>
+            <div
               className="sponsor-card silver-sponsor"
               onClick={(e) => {
                 e.preventDefault();
@@ -137,6 +168,18 @@ export default function Sponsors() {
             BRONZE SPONSORS
           </h2>
           <div className="sponsor-section montserrat">
+            <div
+                className="sponsor-card bronze-sponsor"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open("https://www.guvnl.com/");
+                }}
+              >
+                <div className="sponsor-img">
+                  <img src="./Images/GUVNL.webp" alt="GUVNL logo" />
+                </div>
+                <h5>GUVNL</h5>
+              </div>
             <div
               className="sponsor-card bronze-sponsor"
               onClick={(e) => {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Events.css";
-import { events } from "../utilities/EventsData";
+import { events } from "../utilities/TechExpoData";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 

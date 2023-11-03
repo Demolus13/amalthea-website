@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Events from "./components/Events";
 import Conclave from "./components/Conclave";
 import Symposium from "./components/Symposium";
-import TechExpo from "./components/TechExpo";
+import TechExpo from "./components/Tech_Expo";
 import Sponsors from "./components/Sponsors";
 import WIT from "./components/WIT";
 import About from "./components/About";

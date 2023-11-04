@@ -102,7 +102,7 @@ const SpeakerCard = ({ data }) => {
           <h2 className="name oswald">{data.name}</h2>
           <p className="title poppins" style={{textAlign: "center"}}>{data.title}</p>
           <p className="title poppins" style={{display: data.achievement === "" ? "none" : "block"}}><strong>Achievements:</strong> <br /> {data.achievement}</p>
-          <p className="title poppins" style={{display: data.edu === "" ? "none" : "block"}}><strong>Education:</strong> <br /> {data.edu}</p>
+          <p className="title poppins" style={{display: data.edu === "" ? "none" : "block"}}><strong>Education:</strong> {data.edu}</p>
         </div>
         <ul className="social">
           <li>

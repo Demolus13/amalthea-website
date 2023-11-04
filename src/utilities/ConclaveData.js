@@ -47,7 +47,7 @@ export const conclaveData = [
     imgSrc: "./Images/rajagopalan.webp",
     name: "Dr. RAJAGOPALAN PANDEY",
     title: "Assistant Professor, NAMTECH",
-    achievement: "Assistant Professor at NAMTECH",
+    achievement: "NSCF International Young Scientist Award; Chaoyang Scholar Grant & Fellowship; Talent introduction fellow; Indo-Korea Research Fellow; Outstanding Researcher, Zhejiang University; Best Technology Development Award-2018, IIT Indore",
     edu: "IIT Indore",
     lin: "https://www.linkedin.com/in/rajagopalan-p-47934b65/?originalSubdomain=in",
     ins:"",
